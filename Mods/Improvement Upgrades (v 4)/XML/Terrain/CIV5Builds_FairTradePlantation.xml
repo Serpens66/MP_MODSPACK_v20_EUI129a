@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/5/2012 5:31:44 AM -->
+<GameData>
+	<Builds>
+		<Row>
+			<Type>BUILD_FAIR_TRADE_PLANTATION</Type>
+			<PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
+			<Time>1300</Time>
+			<ImprovementType>IMPROVEMENT_FAIR_TRADE_PLANTATION</ImprovementType>
+			<Description>TXT_KEY_BUILD_FAIR_TRADE_PLANTATION</Description>
+            <Help>TXT_KEY_BUILD_FAIR_TRADE_PLANTATION_HELP</Help>
+			<EntityEvent>ENTITY_EVENT_IRRIGATE</EntityEvent>
+			<OrderPriority>95</OrderPriority>
+			<IconIndex>27</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+	</Builds>
+	<BuildFeatures>
+		<Row>
+			<BuildType>BUILD_FAIR_TRADE_PLANTATION</BuildType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<Time>700</Time>
+			<Production>25</Production>
+			<Remove>false</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_FAIR_TRADE_PLANTATION</BuildType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<PrereqTech>TECH_MINING</PrereqTech>
+			<Time>400</Time>
+			<Production>25</Production>
+			<Remove>false</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_FAIR_TRADE_PLANTATION</BuildType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
+			<Time>600</Time>
+			<Remove>true</Remove>
+		</Row>
+	</BuildFeatures>
+</GameData>

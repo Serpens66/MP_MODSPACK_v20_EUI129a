@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This mod is a combination of: 
+SteampunkAirship mod by whoward          
+AirshipNLandIronclad by BlouBlou
+Units - Scout to Explorer by BlouBlou
+and
+JFD's Exploration Continued Expanded (v 20) by JFD   (Explorer and Adventurer)
+made by Serp
+ -->
+
+<GameData>
+	<ArtDefine_StrategicView>
+			<Row TileType="Unit">
+				<StrategicViewType>ART_DEF_UNIT_EXPLORERX</StrategicViewType>
+				<Asset>sv_explorer_mod.dds</Asset>
+			</Row>
+            
+            <Row TileType="Unit">
+				<StrategicViewType>ART_DEF_UNIT_ADVENTURER</StrategicViewType>
+				<Asset>sv_explorer_mod.dds</Asset>
+			</Row>
+	</ArtDefine_StrategicView>
+    
+    
+    
+    <!-- the following is done in sql ArtDefine file or UnitsSteampunkAirshipsDLL. This is just the xml translationto be able to coyp paste it into modpack
+    
+    <ArtDefine_UnitInfos>
+        <Row> 
+			<Type>ART_DEF_UNIT_ADVENTURER</Type> 
+			<DamageStates>1</DamageStates> 
+			<Formation>EarlyGreatArtist</Formation> 
+		</Row>
+        <Row> 
+			<Type>ART_DEF_UNIT_EXPLORERX</Type> 
+			<DamageStates>1</DamageStates> 
+			<Formation>Scout</Formation> 
+		</Row>
+    </ArtDefine_UnitInfos>
+    
+    <ArtDefine_UnitInfoMemberInfos>
+        <Row> 
+			<UnitInfoType>ART_DEF_UNIT_ADVENTURER</UnitInfoType> 
+			<UnitMemberInfoType>ART_DEF_UNIT_MEMBER_GREAT_EXPLORER</UnitMemberInfoType> 
+			<NumMembers>1</NumMembers> 
+		</Row>
+		<Row> 
+			<UnitInfoType>ART_DEF_UNIT_ADVENTURER</UnitInfoType> 
+			<UnitMemberInfoType>ART_DEF_UNIT_MEMBER_GREAT_EXPLORER_F1</UnitMemberInfoType> 
+			<NumMembers>6</NumMembers> 
+		</Row>
+		<Row> 
+			<UnitInfoType>ART_DEF_UNIT_ADVENTURER</UnitInfoType> 
+			<UnitMemberInfoType>ART_DEF_UNIT_MEMBER_GREAT_EXPLORER_F2</UnitMemberInfoType> 
+			<NumMembers>1</NumMembers> 
+		</Row>
+        
+        <Row> 
+			<UnitInfoType>ART_DEF_UNIT_EXPLORERX</UnitInfoType> 
+			<UnitMemberInfoType>ART_DEF_UNIT_MEMBER_EXPLORERX_1</UnitMemberInfoType> 
+			<NumMembers>2</NumMembers> 
+		</Row>
+        <Row> 
+			<UnitInfoType>ART_DEF_UNIT_EXPLORERX</UnitInfoType> 
+			<UnitMemberInfoType>ART_DEF_UNIT_MEMBER_EXPLORERX_2</UnitMemberInfoType> 
+			<NumMembers>1</NumMembers> 
+		</Row>
+        <Row> 
+			<UnitInfoType>ART_DEF_UNIT_EXPLORERX</UnitInfoType> 
+			<UnitMemberInfoType>ART_DEF_UNIT_MEMBER_EXPLORERX_3</UnitMemberInfoType> 
+			<NumMembers>2</NumMembers> 
+		</Row>
+        <Row> 
+			<UnitInfoType>ART_DEF_UNIT_EXPLORERX</UnitInfoType> 
+			<UnitMemberInfoType>ART_DEF_UNIT_MEMBER_EXPLORERX_4</UnitMemberInfoType> 
+			<NumMembers>1</NumMembers> 
+		</Row>
+	</ArtDefine_UnitInfoMemberInfos>
+    
+    <ArtDefine_UnitMemberCombats>
+        <Row> 
+			<UnitMemberType>ART_DEF_UNIT_MEMBER_EXPLORERX_1</UnitMemberType> 
+			<EnableActions>Idle Attack RunCharge AttackCity Bombard Death BombardDefend Run Fortify CombatReady Walk AttackCharge</EnableActions> 
+			<ShortMoveRadius>12</ShortMoveRadius> 
+			<ShortMoveRate>0.34999999403954</ShortMoveRate> 
+			<TargetHeight>8</TargetHeight> 
+			<HasShortRangedAttack>1</HasShortRangedAttack> 
+			<HasRefaceAfterCombat>1</HasRefaceAfterCombat> 
+			<ReformBeforeCombat>1</ReformBeforeCombat> 
+		</Row>
+        <Row> 
+			<UnitMemberType>ART_DEF_UNIT_MEMBER_EXPLORERX_2</UnitMemberType> 
+			<EnableActions>Idle Attack RunCharge AttackCity Bombard Death BombardDefend Run Fortify CombatReady Walk AttackCharge</EnableActions> 
+			<ShortMoveRadius>12</ShortMoveRadius> 
+			<ShortMoveRate>0.34999999403954</ShortMoveRate> 
+			<TargetHeight>8</TargetHeight> 
+			<HasShortRangedAttack>1</HasShortRangedAttack> 
+			<HasRefaceAfterCombat>1</HasRefaceAfterCombat> 
+			<ReformBeforeCombat>1</ReformBeforeCombat> 
+		</Row>
+        <Row> 
+			<UnitMemberType>ART_DEF_UNIT_MEMBER_EXPLORERX_3</UnitMemberType> 
+			<EnableActions>Idle Attack RunCharge AttackCity Bombard Death BombardDefend Run Fortify CombatReady Walk AttackCharge</EnableActions> 
+			<ShortMoveRadius>12</ShortMoveRadius> 
+			<ShortMoveRate>0.34999999403954</ShortMoveRate> 
+			<TargetHeight>8</TargetHeight> 
+			<HasShortRangedAttack>1</HasShortRangedAttack> 
+			<HasRefaceAfterCombat>1</HasRefaceAfterCombat> 
+			<ReformBeforeCombat>1</ReformBeforeCombat> 
+		</Row>
+        <Row> 
+			<UnitMemberType>ART_DEF_UNIT_MEMBER_EXPLORERX_4</UnitMemberType> 
+			<EnableActions>Idle Attack RunCharge AttackCity Bombard Death BombardDefend Run Fortify CombatReady Walk AttackCharge</EnableActions> 
+			<ShortMoveRadius>12</ShortMoveRadius> 
+			<ShortMoveRate>0.34999999403954</ShortMoveRate> 
+			<TargetHeight>8</TargetHeight> 
+			<HasShortRangedAttack>1</HasShortRangedAttack> 
+			<HasRefaceAfterCombat>1</HasRefaceAfterCombat> 
+			<ReformBeforeCombat>1</ReformBeforeCombat> 
+		</Row>
+    </ArtDefine_UnitMemberCombats>
+    
+    <ArtDefine_UnitMemberCombatWeapons>
+        <Row> 
+			<UnitMemberType>ART_DEF_UNIT_MEMBER_EXPLORERX_1</UnitMemberType> 
+			<Index>0</Index> 
+			<SubIndex>0</SubIndex> 
+			<WeaponTypeTag>BULLET</WeaponTypeTag> 
+			<WeaponTypeSoundOverrideTag>BULLET</WeaponTypeSoundOverrideTag> 
+		</Row>
+        <Row> 
+			<UnitMemberType>ART_DEF_UNIT_MEMBER_EXPLORERX_2</UnitMemberType> 
+			<Index>0</Index> 
+			<SubIndex>0</SubIndex> 
+			<WeaponTypeTag>BULLET</WeaponTypeTag> 
+			<WeaponTypeSoundOverrideTag>BULLET</WeaponTypeSoundOverrideTag> 
+		</Row>
+        <Row> 
+			<UnitMemberType>ART_DEF_UNIT_MEMBER_EXPLORERX_3</UnitMemberType> 
+			<Index>0</Index> 
+			<SubIndex>0</SubIndex> 
+			<WeaponTypeTag>BULLET</WeaponTypeTag> 
+			<WeaponTypeSoundOverrideTag>BULLET</WeaponTypeSoundOverrideTag> 
+		</Row>
+        <Row> 
+			<UnitMemberType>ART_DEF_UNIT_MEMBER_EXPLORERX_4</UnitMemberType> 
+			<Index>0</Index> 
+			<SubIndex>0</SubIndex> 
+			<WeaponTypeTag>BULLET</WeaponTypeTag> 
+			<WeaponTypeSoundOverrideTag>BULLET</WeaponTypeSoundOverrideTag> 
+		</Row>
+    </ArtDefine_UnitMemberCombatWeapons>
+    
+    <ArtDefine_UnitMemberInfos>
+        <Row> 
+			<Type>ART_DEF_UNIT_MEMBER_EXPLORERX_1</Type> 
+			<Scale>0.14</Scale> 
+			<Model>conquistador_musket_1.fxsxml</Model> 
+			<MaterialTypeTag>CLOTH</MaterialTypeTag> 
+			<MaterialTypeSoundOverrideTag>FLESH</MaterialTypeSoundOverrideTag> 
+		</Row>
+        <Row> 
+			<Type>ART_DEF_UNIT_MEMBER_EXPLORERX_2</Type> 
+			<Scale>0.14</Scale> 
+			<Model>conquistador_musket_2.fxsxml</Model> 
+			<MaterialTypeTag>CLOTH</MaterialTypeTag> 
+			<MaterialTypeSoundOverrideTag>FLESH</MaterialTypeSoundOverrideTag> 
+		</Row>
+        <Row> 
+			<Type>ART_DEF_UNIT_MEMBER_EXPLORERX_3</Type> 
+			<Scale>0.14</Scale> 
+			<Model>conquistador_musket_3.fxsxml</Model> 
+			<MaterialTypeTag>CLOTH</MaterialTypeTag> 
+			<MaterialTypeSoundOverrideTag>FLESH</MaterialTypeSoundOverrideTag> 
+		</Row>
+        <Row> 
+			<Type>ART_DEF_UNIT_MEMBER_EXPLORERX_4</Type> 
+			<Scale>0.14</Scale> 
+			<Model>conquistador_musket_4.fxsxml</Model> 
+			<MaterialTypeTag>CLOTH</MaterialTypeTag> 
+			<MaterialTypeSoundOverrideTag>FLESH</MaterialTypeSoundOverrideTag> 
+		</Row>
+    </ArtDefine_UnitMemberInfos>
+     -->
+
+
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_EXPLORERX</Type>
+			<Description>TXT_KEY_UNIT_EXPLORERX</Description>
+			<DefaultUnit>UNIT_EXPLORERX</DefaultUnit>
+		</Row>
+        
+        <Row>
+			<Type>UNITCLASS_ADVENTURER</Type>
+			<Description>TXT_KEY_UNIT_ADVENTURER</Description>
+			<DefaultUnit>UNIT_ADVENTURER</DefaultUnit>
+		</Row>
+        
+        <Row>
+			<Type>UNITCLASS_AIRSHIP</Type>
+			<Description>TXT_KEY_UNIT_AIRSHIP_CUS</Description>
+			<DefaultUnit>UNIT_AIRSHIP</DefaultUnit>
+		</Row>
+        <Row>
+			<Type>UNITCLASS_LAND_IRONCLAD</Type>
+			<Description>TXT_KEY_UNIT_LAND_IRONCLAD_CUS</Description>
+			<DefaultUnit>UNIT_LAND_IRONCLAD</DefaultUnit>
+		</Row>
+        <Row>
+			<Type>UNITCLASS_SKY_FORTRESS</Type>
+			<Description>TXT_KEY_UNIT_SKY_FORTRESS_CUS</Description>
+			<DefaultUnit>UNIT_SKY_FORTRESS</DefaultUnit>
+		</Row>
+	</UnitClasses>
+    
+	<Units>
+		<Update>
+			<Set ObsoleteTech="TECH_METAL_CASTING" />
+			<Where Type="UNIT_SCOUT" />
+		</Update>
+		<Update>
+			<Set ObsoleteTech="TECH_METAL_CASTING" />
+			<Where Type="UNIT_SHOSHONE_PATHFINDER" />
+		</Update>
+        
+		<Row>
+			<Class>UNITCLASS_EXPLORERX</Class>
+			<Type>UNIT_EXPLORERX</Type>
+			<PrereqTech>TECH_METAL_CASTING</PrereqTech>
+			<Combat>13</Combat>
+			<Cost>65</Cost>
+			<FaithCost>130</FaithCost>
+			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+			<Moves>3</Moves>
+			<CombatClass>UNITCOMBAT_RECON</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_EXPLORERX</Description>
+			<Strategy>TXT_KEY_UNIT_EXPLORERX_STRATEGY</Strategy>
+            <Civilopedia>TXT_KEY_EXPLORERX_PEDIA</Civilopedia>
+			<Help>TXT_KEY_UNIT_HELP_EXPLORERX</Help>
+			<NoBadGoodies>true</NoBadGoodies>
+			<Pillage>true</Pillage>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<ObsoleteTech>TECH_CHEMISTRY</ObsoleteTech>
+			<GoodyHutUpgradeUnitClass>UNITCLASS_ADVENTURER</GoodyHutUpgradeUnitClass>
+			<AdvancedStartCost>10</AdvancedStartCost>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>3</XPValueDefense>
+			<UnitArtInfo>ART_DEF_UNIT_EXPLORERX</UnitArtInfo>
+			<UnitFlagAtlas>EXPANSION2_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>5</UnitFlagIconOffset>
+			<IconAtlas>JFD_EXPLORATION_UNIT_ATLAS</IconAtlas>
+			<PortraitIndex>2</PortraitIndex>
+		</Row>
+        
+		<Row>
+			<Class>UNITCLASS_ADVENTURER</Class>
+			<Type>UNIT_ADVENTURER</Type>
+			<PrereqTech>TECH_CHEMISTRY</PrereqTech>
+			<Combat>21</Combat>
+			<Cost>130</Cost>
+			<FaithCost>260</FaithCost>
+			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+			<Moves>4</Moves>
+			<CombatClass>UNITCOMBAT_RECON</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_ADVENTURER</Description>
+			<Strategy>TXT_KEY_UNIT_ADVENTURER_STRATEGY</Strategy>
+            <Civilopedia>TXT_KEY_ADVENTURER_PEDIA</Civilopedia>
+			<Help>TXT_KEY_UNIT_HELP_ADVENTURER</Help>
+			<NoBadGoodies>true</NoBadGoodies>
+			<Pillage>true</Pillage>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<ObsoleteTech>TECH_STEAM_POWER</ObsoleteTech>
+			<GoodyHutUpgradeUnitClass>UNITCLASS_AIRSHIP</GoodyHutUpgradeUnitClass>
+			<AdvancedStartCost>10</AdvancedStartCost>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>3</XPValueDefense>
+			<UnitArtInfo>ART_DEF_UNIT_ADVENTURER</UnitArtInfo>
+			<UnitFlagAtlas>EXPANSION2_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>5</UnitFlagIconOffset>
+			<IconAtlas>JFD_EXPLORATION_UNIT_ATLAS</IconAtlas>
+			<PortraitIndex>4</PortraitIndex>
+		</Row>
+        
+        <Row>
+			<Class>UNITCLASS_AIRSHIP</Class>
+			<Type>UNIT_AIRSHIP</Type>
+			<PrereqTech>TECH_STEAM_POWER</PrereqTech>
+            <ObsoleteTech>TECH_COMBUSTION</ObsoleteTech>
+			<Combat>31</Combat>
+			<Cost>200</Cost>
+            <FaithCost>400</FaithCost>
+			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+			<Moves>4</Moves>
+			<CombatClass>UNITCOMBAT_HELICOPTER</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_FAST_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_AIRSHIP_CUS</Description>
+			<Strategy>TXT_KEY_UNIT_AIRSHIP_CUS_STRATEGY</Strategy>
+            <Civilopedia>TXT_KEY_UNIT_AIRSHIP_TEXT</Civilopedia>
+			<Help>TXT_KEY_UNIT_HELP_AIRSHIP_CUS</Help>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
+			<GoodyHutUpgradeUnitClass>UNITCLASS_SKY_FORTRESS</GoodyHutUpgradeUnitClass>
+			<AdvancedStartCost>30</AdvancedStartCost>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>3</XPValueDefense>
+			<UnitArtInfo>ART_DEF_UNIT_SMOKEY_STEAM_AIRSHIP_LEVEL_1</UnitArtInfo>
+			<UnitFlagIconOffset>7</UnitFlagIconOffset>
+			<UnitFlagAtlas>EXPANSION_SCEN_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+			<IconAtlas>EXPANSION_SCEN_UNIT_ATLAS</IconAtlas>
+			<PortraitIndex>7</PortraitIndex>
+			<MoveRate>WHEELED</MoveRate>
+		</Row>
+        
+       <Row>
+			<Type>UNIT_SKY_FORTRESS</Type>
+			<Class>UNITCLASS_SKY_FORTRESS</Class>
+			<PrereqTech>TECH_COMBUSTION</PrereqTech>
+			<Combat>43</Combat>
+			<Cost>320</Cost>
+            <FaithCost>500</FaithCost>
+			<RequiresFaithPurchaseEnabled>true</RequiresFaithPurchaseEnabled>
+			<Moves>5</Moves>
+			<CombatClass>UNITCOMBAT_HELICOPTER</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_FAST_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_SKY_FORTRESS_CUS</Description>
+			<Civilopedia>TXT_KEY_UNIT_SKY_FORTRESS_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_SKY_FORTRESS_CUS_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_SKY_FORTRESS_CUS_HELP</Help>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
+            <GoodyHutUpgradeUnitClass>UNITCLASS_HELICOPTER_GUNSHIP</GoodyHutUpgradeUnitClass>
+			<AdvancedStartCost>50</AdvancedStartCost>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>3</XPValueDefense>
+			<UnitArtInfo>ART_DEF_UNIT_SMOKEY_STEAM_AIRSHIP</UnitArtInfo>
+			<MoveRate>WHEELED</MoveRate>
+			<UnitFlagIconOffset>8</UnitFlagIconOffset>
+			<UnitFlagAtlas>EXPANSION_SCEN_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+			<PortraitIndex>8</PortraitIndex>
+			<IconAtlas>EXPANSION_SCEN_UNIT_ATLAS</IconAtlas>
+		</Row>
+
+        <Row>
+			<Class>UNITCLASS_LAND_IRONCLAD</Class>
+			<Type>UNIT_LAND_IRONCLAD</Type>
+			<PrereqTech>TECH_STEAM_POWER</PrereqTech>
+			<Combat>44</Combat>
+			<Cost>250</Cost>
+			<Moves>3</Moves>
+			<CombatClass>UNITCOMBAT_ARMOR</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_DEFENSE</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_LAND_IRONCLAD_CUS</Description>
+			<Strategy>TXT_KEY_UNIT_LAND_IRONCLAD_CUS_STRATEGY</Strategy>
+            <Civilopedia>TXT_KEY_UNIT_LAND_IRONCLAD_TEXT</Civilopedia>
+			<Help>TXT_KEY_UNIT_HELP_LAND_IRONCLAD_CUS</Help>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+            <ExtraMaintenanceCost>1</ExtraMaintenanceCost> 
+			<Mechanized>true</Mechanized>
+			<ObsoleteTech>TECH_COMBUSTION</ObsoleteTech>
+			<IgnoreBuildingDefense>true</IgnoreBuildingDefense>
+			<GoodyHutUpgradeUnitClass>UNITCLASS_WWI_TANK</GoodyHutUpgradeUnitClass>
+			<AdvancedStartCost>30</AdvancedStartCost>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>3</XPValueDefense>
+			<UnitArtInfo>ART_DEF_UNIT_SMOKEY_LANDSHIP_LEVEL_1</UnitArtInfo>
+			<UnitFlagAtlas>EXPANSION_SCEN_UNIT_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>3</UnitFlagIconOffset>
+			<IconAtlas>EXPANSION_SCEN_UNIT_ATLAS</IconAtlas>
+			<PortraitIndex>3</PortraitIndex>
+			<MoveRate>WHEELED</MoveRate>
+		</Row>
+        <!-- make helicopter able to fly also over ocean -->        
+	</Units>
+    
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_EXPLORERX</UnitType>
+			<UnitAIType>UNITAI_EXPLORE</UnitAIType>
+		</Row>
+
+        <Row>
+			<UnitType>UNIT_AIRSHIP</UnitType>
+			<UnitAIType>UNITAI_FAST_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_AIRSHIP</UnitType>
+			<UnitAIType>UNITAI_ATTACK_SEA</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_AIRSHIP</UnitType>
+			<UnitAIType>UNITAI_EXPLORE_SEA</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_AIRSHIP</UnitType>
+			<UnitAIType>UNITAI_ESCORT_SEA</UnitAIType>
+		</Row>
+
+		<Row>
+			<UnitType>UNIT_SKY_FORTRESS</UnitType>
+			<UnitAIType>UNITAI_FAST_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SKY_FORTRESS</UnitType>
+			<UnitAIType>UNITAI_ATTACK_SEA</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SKY_FORTRESS</UnitType>
+			<UnitAIType>UNITAI_EXPLORE_SEA</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SKY_FORTRESS</UnitType>
+			<UnitAIType>UNITAI_ESCORT_SEA</UnitAIType>
+		</Row>
+        
+        <Row>
+			<UnitType>UNIT_LAND_IRONCLAD</UnitType>
+			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LAND_IRONCLAD</UnitType>
+			<UnitAIType>UNITAI_FAST_ATTACK</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+
+	<Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_SCOUT</UnitType>
+			<UnitClassType>UNITCLASS_EXPLORERX</UnitClassType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SHOSHONE_PATHFINDER</UnitType>
+			<UnitClassType>UNITCLASS_EXPLORERX</UnitClassType>
+		</Row>
+        
+        <Row>
+			<UnitType>UNIT_EXPLORERX</UnitType>
+			<UnitClassType>UNITCLASS_ADVENTURER</UnitClassType>
+		</Row>
+        
+        <Row>
+			<UnitType>UNIT_ADVENTURER</UnitType>
+			<UnitClassType>UNITCLASS_AIRSHIP</UnitClassType>
+		</Row>
+        
+        <Row>
+			<UnitType>UNIT_LAND_IRONCLAD</UnitType>
+			<UnitClassType>UNITCLASS_WWI_TANK</UnitClassType>
+		</Row>
+        <Row>
+			<UnitType>UNIT_AIRSHIP</UnitType>
+			<UnitClassType>UNITCLASS_SKY_FORTRESS</UnitClassType>
+		</Row>
+	</Unit_ClassUpgrades>
+
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_EXPLORERX</UnitType>
+			<FlavorType>FLAVOR_RECON</FlavorType>
+			<Flavor>25</Flavor>
+		</Row>
+        <Row>
+			<UnitType>UNIT_ADVENTURER</UnitType>
+			<FlavorType>FLAVOR_RECON</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+        
+        
+        <Row>
+			<UnitType>UNIT_LAND_IRONCLAD</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>11</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LAND_IRONCLAD</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LAND_IRONCLAD</UnitType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+        
+        
+        <Row>
+			<UnitType>UNIT_AIRSHIP</UnitType>
+			<FlavorType>FLAVOR_RECON</FlavorType>
+			<Flavor>35</Flavor>
+		</Row>
+        <Row>
+			<UnitType>UNIT_AIRSHIP</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>9</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_AIRSHIP</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>7</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_AIRSHIP</UnitType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>12</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_AIRSHIP</UnitType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>14</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_AIRSHIP</UnitType>
+			<FlavorType>FLAVOR_NAVAL_RECON</FlavorType>
+			<Flavor>8</Flavor>
+		</Row>
+        
+        <Row>
+			<UnitType>UNIT_SKY_FORTRESS</UnitType>
+			<FlavorType>FLAVOR_RECON</FlavorType>
+			<Flavor>38</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SKY_FORTRESS</UnitType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>11</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SKY_FORTRESS</UnitType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>11</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SKY_FORTRESS</UnitType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>13</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SKY_FORTRESS</UnitType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>16</Flavor>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SKY_FORTRESS</UnitType>
+			<FlavorType>FLAVOR_NAVAL_RECON</FlavorType>
+			<Flavor>9</Flavor>
+		</Row>     
+	</Unit_Flavors>
+    
+    
+    <UnitPromotions>
+		<Row>
+			<Type>PROMOTION_INFERNAL_MACHINES</Type>
+			<Description>TXT_KEY_PROMOTION_INFERNAL_MACHINES</Description>
+			<Help>TXT_KEY_PROMOTION_INFERNAL_MACHINES_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_INFERNAL_MACHINES</PediaEntry>
+			<CannotBeChosen>true</CannotBeChosen>
+			<NearbyEnemyCombatMod>-10</NearbyEnemyCombatMod>
+			<NearbyEnemyCombatRange>1</NearbyEnemyCombatRange>
+		</Row>
+        
+        <Row>
+			<Type>PROMOTION_BETTER_EMBARKTION</Type>
+			<Description>TXT_KEY_PROMOTION_BETTER_EMBARKTION</Description>
+			<Help>TXT_KEY_PROMOTION_BETTER_EMBARKTION_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PortraitIndex>58</PortraitIndex>
+			<PediaEntry>TXT_KEY_PROMOTION_BETTER_EMBARKTION</PediaEntry>
+			<CannotBeChosen>true</CannotBeChosen>
+            <ExtraNavalMovement>1</ExtraNavalMovement>
+			<EmbarkExtraVisibility>3</EmbarkExtraVisibility>
+			<EmbarkDefenseModifier>50</EmbarkDefenseModifier>
+			<LostWithUpgrade>true</LostWithUpgrade>
+		</Row>
+	</UnitPromotions>
+    
+    
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_EXPLORERX</UnitType>
+			<PromotionType>PROMOTION_IGNORE_TERRAIN_COST</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_EXPLORERX</UnitType>
+			<PromotionType>PROMOTION_EXTRA_SIGHT_I</PromotionType>
+		</Row>
+        <Row>
+			<UnitType>UNIT_EXPLORERX</UnitType>
+			<PromotionType>PROMOTION_SURVIVALISM_1</PromotionType>
+		</Row>
+        <Row>
+			<UnitType>UNIT_EXPLORERX</UnitType>
+			<PromotionType>PROMOTION_BETTER_EMBARKTION</PromotionType>
+		</Row>
+        <Row>
+			<UnitType>UNIT_ADVENTURER</UnitType>
+			<PromotionType>PROMOTION_IGNORE_TERRAIN_COST</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_ADVENTURER</UnitType>
+			<PromotionType>PROMOTION_EXTRA_SIGHT_I</PromotionType>
+		</Row>
+        <Row>
+			<UnitType>UNIT_ADVENTURER</UnitType>
+			<PromotionType>PROMOTION_SURVIVALISM_1</PromotionType>
+		</Row>
+        <Row>
+			<UnitType>UNIT_ADVENTURER</UnitType>
+			<PromotionType>PROMOTION_BETTER_EMBARKTION</PromotionType>
+		</Row>
+
+        <Row>
+			<UnitType>UNIT_AIRSHIP</UnitType>
+			<PromotionType>PROMOTION_INFERNAL_MACHINES</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_AIRSHIP</UnitType>
+			<PromotionType>PROMOTION_ANTI_TANK</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_AIRSHIP</UnitType>
+			<PromotionType>PROMOTION_NO_DEFENSIVE_BONUSES</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_AIRSHIP</UnitType>
+			<PromotionType>PROMOTION_NO_CAPTURE</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_AIRSHIP</UnitType>
+			<PromotionType>PROMOTION_EXTRA_SIGHT_I</PromotionType>
+		</Row>
+        
+        <Row>
+			<UnitType>UNIT_AIRSHIP</UnitType>
+			<PromotionType>PROMOTION_BETTER_EMBARKTION</PromotionType>
+		</Row>
+        
+        
+		<Row>
+			<UnitType>UNIT_SKY_FORTRESS</UnitType>
+			<PromotionType>PROMOTION_INFERNAL_MACHINES</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SKY_FORTRESS</UnitType>
+			<PromotionType>PROMOTION_BETTER_EMBARKTION</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SKY_FORTRESS</UnitType>
+			<PromotionType>PROMOTION_ANTI_TANK</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SKY_FORTRESS</UnitType>
+			<PromotionType>PROMOTION_NO_DEFENSIVE_BONUSES</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SKY_FORTRESS</UnitType>
+			<PromotionType>PROMOTION_NO_CAPTURE</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SKY_FORTRESS</UnitType>
+			<PromotionType>PROMOTION_EXTRA_SIGHT_I</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SKY_FORTRESS</UnitType>
+			<PromotionType>PROMOTION_EXTRA_SIGHT_II</PromotionType>
+		</Row>
+        
+        <Row>
+			<UnitType>UNIT_LAND_IRONCLAD</UnitType>
+			<PromotionType>PROMOTION_INFERNAL_MACHINES</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+    
+
+    
+    <UnitGameplay2DScripts>
+        <Row UnitType="UNIT_EXPLORERX">
+			<SelectionSound>AS2D_SELECT_SCOUT</SelectionSound>
+			<FirstSelectionSound>AS2D_BIRTH_SCOUT</FirstSelectionSound>
+		</Row>
+        <Row UnitType="UNIT_ADVENTURER">
+			<SelectionSound>AS2D_SELECT_SCOUT</SelectionSound>
+			<FirstSelectionSound>AS2D_BIRTH_SCOUT</FirstSelectionSound>
+		</Row>
+    
+		<Row UnitType="UNIT_LAND_IRONCLAD">
+			<SelectionSound>AS2D_SELECT_TANK</SelectionSound>
+			<FirstSelectionSound>AS2D_BIRTH_TANK</FirstSelectionSound>
+		</Row>
+        <Row UnitType="UNIT_AIRSHIP">
+			<SelectionSound>AS2D_SELECT_BOMBER</SelectionSound>
+			<FirstSelectionSound>AS2D_BIRTH_BOMBER</FirstSelectionSound>
+		</Row>
+		<Row UnitType="UNIT_SKY_FORTRESS">
+			<SelectionSound>AS2D_SELECT_BOMBER</SelectionSound>
+			<FirstSelectionSound>AS2D_BIRTH_BOMBER</FirstSelectionSound>
+		</Row>
+	</UnitGameplay2DScripts>
+    
+	<Unit_ResourceQuantityRequirements>
+		<Row>
+			<UnitType>UNIT_AIRSHIP</UnitType>
+			<ResourceType>RESOURCE_COAL</ResourceType>
+			<Cost>1</Cost>
+		</Row>
+
+		<Row>
+			<UnitType>UNIT_SKY_FORTRESS</UnitType>
+			<ResourceType>RESOURCE_COAL</ResourceType>
+			<Cost>1</Cost>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SKY_FORTRESS</UnitType>
+			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
+			<Cost>1</Cost>
+		</Row>
+        
+        <Row>
+			<UnitType>UNIT_LAND_IRONCLAD</UnitType>
+			<ResourceType>RESOURCE_COAL</ResourceType>
+            <Cost>1</Cost>
+		</Row>
+        <Row>
+			<UnitType>UNIT_LAND_IRONCLAD</UnitType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+            <Cost>1</Cost>
+		</Row>
+	</Unit_ResourceQuantityRequirements>
+
+    
+    <!-- Units the barbarian and city states should not get -->
+	<Civilization_UnitClassOverrides>
+		<Row>
+			<UnitClassType>UNITCLASS_EXPLORERX</UnitClassType>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitType/>
+		</Row>
+        <Row>
+			<UnitClassType>UNITCLASS_EXPLORERX</UnitClassType>
+			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+			<UnitType/>
+		</Row>
+        <Row>
+			<UnitClassType>UNITCLASS_ADVENTURER</UnitClassType>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitType/>
+		</Row>
+        <Row>
+			<UnitClassType>UNITCLASS_ADVENTURER</UnitClassType>
+			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+			<UnitType/>
+		</Row>
+        <Row>
+			<UnitClassType>UNITCLASS_AIRSHIP</UnitClassType>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitType/>
+		</Row>
+        <Row>
+			<UnitClassType>UNITCLASS_AIRSHIP</UnitClassType>
+			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+			<UnitType/>
+		</Row>
+        <Row>
+			<UnitClassType>UNITCLASS_SKY_FORTRESS</UnitClassType>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitType/>
+		</Row>
+        <Row>
+			<UnitClassType>UNITCLASS_SKY_FORTRESS</UnitClassType>
+			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+			<UnitType/>
+		</Row>
+        <Row>
+			<UnitClassType>UNITCLASS_LAND_IRONCLAD</UnitClassType>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<UnitType/>
+		</Row>
+        <Row>
+			<UnitClassType>UNITCLASS_LAND_IRONCLAD</UnitClassType>
+			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+			<UnitType/>
+		</Row>
+	</Civilization_UnitClassOverrides>
+
+	<IconTextureAtlases>
+		<Row>
+			<Atlas>EXPANSION_SCEN_UNIT_ATLAS</Atlas>
+			<IconSize>32</IconSize>
+			<Filename>ExpScen_UnitPortraits32.dds</Filename>
+			<IconsPerRow>5</IconsPerRow>
+			<IconsPerColumn>2</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>EXPANSION_SCEN_UNIT_ATLAS</Atlas>
+			<IconSize>45</IconSize>
+			<Filename>ExpScen_UnitPortraits45.dds</Filename>
+			<IconsPerRow>5</IconsPerRow>
+			<IconsPerColumn>2</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>EXPANSION_SCEN_UNIT_ATLAS</Atlas>
+			<IconSize>64</IconSize>
+			<Filename>ExpScen_UnitPortraits64.dds</Filename>
+			<IconsPerRow>5</IconsPerRow>
+			<IconsPerColumn>2</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>EXPANSION_SCEN_UNIT_ATLAS</Atlas>
+			<IconSize>80</IconSize>
+			<Filename>ExpScen_UnitPortraits80.dds</Filename>
+			<IconsPerRow>5</IconsPerRow>
+			<IconsPerColumn>2</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>EXPANSION_SCEN_UNIT_ATLAS</Atlas>
+			<IconSize>128</IconSize>
+			<Filename>ExpScen_UnitPortraits128.dds</Filename>
+			<IconsPerRow>5</IconsPerRow>
+			<IconsPerColumn>2</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>EXPANSION_SCEN_UNIT_ATLAS</Atlas>
+			<IconSize>256</IconSize>
+			<Filename>ExpScen_UnitPortraits256.dds</Filename>
+			<IconsPerRow>5</IconsPerRow>
+			<IconsPerColumn>2</IconsPerColumn>
+		</Row>
+
+		<Row>
+			<Atlas>EXPANSION_SCEN_UNIT_FLAG_ATLAS</Atlas>
+			<IconSize>32</IconSize>
+			<Filename>ExpScen_UnitFlagAtlasWhite32.dds</Filename>
+			<IconsPerRow>3</IconsPerRow>
+			<IconsPerColumn>3</IconsPerColumn>
+		</Row>
+        
+        <Row>
+			<Atlas>JFD_EXPLORATION_UNIT_ATLAS</Atlas>
+			<IconSize>256</IconSize>
+			<Filename>JFD_ExplorationUnits_256.dds</Filename>
+			<IconsPerRow>4</IconsPerRow>
+			<IconsPerColumn>2</IconsPerColumn>
+		</Row>
+        <Row>
+			<Atlas>JFD_EXPLORATION_UNIT_ATLAS</Atlas>
+			<IconSize>128</IconSize>
+			<Filename>JFD_ExplorationUnits_128.dds</Filename>
+			<IconsPerRow>4</IconsPerRow>
+			<IconsPerColumn>2</IconsPerColumn>
+		</Row>
+        <Row>
+			<Atlas>JFD_EXPLORATION_UNIT_ATLAS</Atlas>
+			<IconSize>80</IconSize>
+			<Filename>JFD_ExplorationUnits_80.dds</Filename>
+			<IconsPerRow>4</IconsPerRow>
+			<IconsPerColumn>2</IconsPerColumn>
+		</Row>
+        <Row>
+			<Atlas>JFD_EXPLORATION_UNIT_ATLAS</Atlas>
+			<IconSize>64</IconSize>
+			<Filename>JFD_ExplorationUnits_64.dds</Filename>
+			<IconsPerRow>4</IconsPerRow>
+			<IconsPerColumn>2</IconsPerColumn>
+		</Row>
+        <Row>
+			<Atlas>JFD_EXPLORATION_UNIT_ATLAS</Atlas>
+			<IconSize>45</IconSize>
+			<Filename>JFD_ExplorationUnits_45.dds</Filename>
+			<IconsPerRow>4</IconsPerRow>
+			<IconsPerColumn>2</IconsPerColumn>
+		</Row>
+	</IconTextureAtlases>
+    
+    
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UNIT_EXPLORERX">
+			<Text>Explorer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_EXPLORERX_STRATEGY">
+			<Text>The explorer is the upgrade of the Scout unit when Metal Casting is discovered. Weak unit but ignores terrain cost and has a very good visibility range.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_EXPLORERX">
+			<Text>Unit which specialises in exploring and recon. Ignore terrain cost, but is the weakest unit of his era.</Text>
+		</Row>
+        <Row Tag="TXT_KEY_EXPLORERX_PEDIA">
+			<Text>Exploration is the act of searching or traveling around a terrain (including space, see space exploration) for the purpose of discovery of resources or information. Exploration occurs in all non-sessile animal species, including humans. In human history, its peak is arguably seen during the Age of Discovery for Europe's contact with the rest of the world, and major explorations after the Age of Discovery for scientific exploration in the modern era.</Text>
+		</Row>
+        
+        <Row Tag="TXT_KEY_UNIT_ADVENTURER">
+			<Text>Adventurer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ADVENTURER_STRATEGY">
+			<Text>The adventurer is the upgrade of the explorer unit when Chemistry is discovered. Compared to the Explorer he has one extra movement and higher combat values.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_ADVENTURER">
+			<Text>Unit which specialises in exploring and recon. Ignore terrain cost and has more movement points, but is the weakest unit of his era.</Text>
+		</Row>
+        <Row Tag="TXT_KEY_ADVENTURER_PEDIA">
+			<Text>Although the coasts of Africa had been explored for three centuries, it was not until the early 19th Century AD that the European powers began a concerted effort to explore the hinterlands of the continent. Beginning from coastal trading posts, missions and colonial settlements, Western explorers pushed inland in small expeditions seeking legendary wonders, "lost" native civilizations, and scientific knowledge. Some, like David Livingston, were medical missionaries; some, like Pietro di Brazza, sought adventure; and others, such as MacGregor Laird, were merchants seeking new opportunities for profit. Whatever their motivations, the European explorers figure prominently in the history of Africa.</Text>
+		</Row>
+        
+        
+        <Row Tag="TXT_KEY_UNIT_AIRSHIP_CUS">
+			<Text>Airship</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_AIRSHIP_CUS_STRATEGY">
+			<Text>The airship is an hovering unit that is sligthly weaker than other industrial era units, but receives a hefty combat bonus when figthing ironclads or tanks. It can move over all terrain type without penalty but receives damage when ending its turn on a mountain and must embark to cross oceans. It requires and consumes 1 Coal when produced. They also strike fear into nearby enemy units, giving them all a negative combat modifier. You can upgrade your adventurer to airship, but keep in mind that an airship is hovering, so land promotions could get useless.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_AIRSHIP_CUS">
+			<Text>Industrial Era unit wich specialized in exploring, figthing ironclads and tanks and is unaffected by terrain movement restrictions or bonus defense. It cannot capture cities. You can upgrade your adventurer to airship.</Text>
+		</Row>
+        
+        
+        <Row Tag="TXT_KEY_UNIT_LAND_IRONCLAD_CUS">
+			<Text>Ironclad</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_LAND_IRONCLAD_CUS_STRATEGY">
+			<Text>The ironclad is the first tank-type unit to appear in the game, it has a stronger combat strength than other land units but is weak against Airships and Anti-tank units. It requires and consume 1 Coal and 1 Iron when produced. They also strike fear into nearby enemy units, giving them all a negative combat modifier.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_LAND_IRONCLAD_CUS">
+			<Text>Industrial Era unit wich is good against all other land units but weak against Airships and Anti-tank units.</Text>
+		</Row>
+        
+        
+        <Row Tag="TXT_KEY_UNIT_SKY_FORTRESS_CUS">
+			<Text>Sky Fortress</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_SKY_FORTRESS_CUS_STRATEGY">
+			<Text>The Sky Fortress is the most advanced type of airship unit, and houses significant firepower against tanks, but it is still more a scout, can not capture cities and it is vulnerable to enemy fighters and Anti-Air Guns. It can move over all terrain type without penalty but receives damage when ending its turn on a mountain and must embark to cross oceans.. It requires and consumes 1 Coal and 1 Aluminium They also strike fear into nearby enemy units, giving them all a negative combat modifier.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_SKY_FORTRESS_CUS_HELP">
+			<Text>Most advanced airship unit. Powerful attacks against ironclads and tanks, but vulnerable to fighters and strikes fear into nearby enemy units.</Text>
+		</Row>
+
+        
+		<Row Tag="TXT_KEY_PROMOTION_INFERNAL_MACHINES">
+			<Text>Infernal Machines</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_INFERNAL_MACHINES_HELP">
+			<Text>Enemy units receive -10% [ICON_STRENGTH] Combat Strength and 1 Range when adjacent to any unit with this promotion.</Text>
+		</Row>
+        
+        <Row Tag="TXT_KEY_PROMOTION_BETTER_EMBARKTION">
+			<Text>Boat</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_BETTER_EMBARKTION_HELP">
+			<Text>At sea this unit has 3 visibility range, +1 movement and a 50% better defense.</Text>
+		</Row>
+        
+	</Language_en_US>
+    
+    <Language_de_DE>
+		<Row Tag="TXT_KEY_UNIT_EXPLORERX">
+			<Text>Entdecker</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_EXPLORERX_STRATEGY">
+			<Text>Der Entdecker ist die Aufwertung vom Späher, nachdem Metallguss erforscht wurde. Er ist eine relativ schwache Einheit, die aber Geländekosten ignoriert und hohe Sichtweite besitzt.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_EXPLORERX">
+			<Text>Eine Einheit spezialisiert aufs Erkunden und Spähen, Aufwertung vom Späher. Ignoriert Geländekosten und hat hohe Sichtweite, aber ist eine relativ schwache Einheit.</Text>
+		</Row>
+        <Row Tag="TXT_KEY_EXPLORERX_PEDIA">
+			<Text>Exploration is the act of searching or traveling around a terrain (including space, see space exploration) for the purpose of discovery of resources or information. Exploration occurs in all non-sessile animal species, including humans. In human history, its peak is arguably seen during the Age of Discovery for Europe's contact with the rest of the world, and major explorations after the Age of Discovery for scientific exploration in the modern era.</Text>
+		</Row>
+        
+        <Row Tag="TXT_KEY_UNIT_ADVENTURER">
+			<Text>Abenteurer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_ADVENTURER_STRATEGY">
+			<Text>Der Abenteurer ist die Aufwertung vom Entdecker, nachdem Chemie erforscht wurde. Abgesehen von einem zusätzlichen Bewegungspunkt, ist sie etwas stärker als der Entdecker.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_ADVENTURER">
+			<Text>Eine Einheit spezialisiert aufs Erkunden und Spähen, Aufwertung vom Entdecker. Ignoriert Geländekosten, hat erhöhte Bewegungspunkte und hohe Sichtweite, aber ist eine relativ schwache Einheit.</Text>
+		</Row>
+        <Row Tag="TXT_KEY_ADVENTURER_PEDIA">
+			<Text>Although the coasts of Africa had been explored for three centuries, it was not until the early 19th Century AD that the European powers began a concerted effort to explore the hinterlands of the continent. Beginning from coastal trading posts, missions and colonial settlements, Western explorers pushed inland in small expeditions seeking legendary wonders, "lost" native civilizations, and scientific knowledge. Some, like David Livingston, were medical missionaries; some, like Pietro di Brazza, sought adventure; and others, such as MacGregor Laird, were merchants seeking new opportunities for profit. Whatever their motivations, the European explorers figure prominently in the history of Africa.</Text>
+		</Row>
+        
+        
+        <Row Tag="TXT_KEY_UNIT_AIRSHIP_CUS">
+			<Text>Luftschiff</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_AIRSHIP_CUS_STRATEGY">
+			<Text>Das Luftschiff ist eine schwebende Einheit, leicht schwächer als andere Einheiten des Industriezeitalters, aber besitzt einen großen Kampfbonus gegen Ironclads und Panzer. Es bewegt sich über jedes Terrain ohne Abzüge, aber bekommt Schaden, wenn es die Runde auf einem Berg beendet. Außerdem muss es zur Überquerung von Ozean eingeschifft werden. Es benötigt und 1 Kohle wenn produziert. Luftschiffe verbreiten wegen ihrer Neuartigkeit außerdem Furcht unter nahen feindlichen Einheiten, wodurch deren Kampfstärke reduziert wird. Der Abentuerer kann zum Luftschiff aufgewertet werden, beachte jedoch dass ein Luftschiff schwebt, Geländebeförderungen also wirkungslos werden können.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_AIRSHIP_CUS">
+			<Text>Industriezeitalter Einheit, spezialisiert aufs Erkunden und bekämpfen von Ironclads und Panzern. Sie ignoriert Geländekosten, aber auch deren Verteidigungsboni. Das Luftschiff kann keine Städte einnehmen. Der Abenteurer kann zum Luftschiff aufgewertet werden.</Text>
+		</Row>
+        
+        
+        <Row Tag="TXT_KEY_UNIT_LAND_IRONCLAD_CUS">
+			<Text>Ironclad</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_LAND_IRONCLAD_CUS_STRATEGY">
+			<Text>Der Ironclad ist das erste panzerartige Gefährt und hat höhere Kampfstärke als jede andere Landeinheit zu dieser Zeit, hat aber eine Schwäche gegenüber Luftschiffen und anderen Anit-Panzer Einheiten. Der Ironclad benötigt 1 Kohle und 1 Eisen wenn er produziert wird. Er verbreitet außerdem Furcht unter nahen feindlichen Einheiten, wodurch deren Kampfstärke reduziert wird.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_LAND_IRONCLAD_CUS">
+			<Text>Industriezeitalter Einheit, die besser als alle anderne Landeinheiten ihrer Zeit ist, aber eine Schwäche gegenüber Luftschiffen und anderen Anit-Panzer Einheiten hat. Verbreitet Furcht.</Text>
+		</Row>
+        
+        
+        <Row Tag="TXT_KEY_UNIT_SKY_FORTRESS_CUS">
+			<Text>Himmelsfestung</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_SKY_FORTRESS_CUS_STRATEGY">
+			<Text>Die Himmelsfestung ist die Aufwertung zum Luftschiff und beherbergt gewaltige Feuerkraft gegen Panzer, bleibt aber dennoch in erster Linie Kundschafter, kann keine Städte einnehmen und ist verwundbar gegen Flieger und Flak. Außerdem muss sie zur Überquerung von Ozean eingeschifft werden und benötigt 1 Kohle und 1 Aluminium wenn produziert. Sie verbreiten außerdem Furcht unter nahen feindlichen Einheiten, wodurch deren Kampfstärke reduziert wird.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_SKY_FORTRESS_CUS_HELP">
+			<Text>Aufwertung zum Luftschiff. Kräftige Angriffe gegen Ironclads und Panzer, aber sie ist verwundbar gegen Flieger und Flak und verbreitet Furcht unter nahen Feinden.</Text>
+		</Row>
+
+        
+		<Row Tag="TXT_KEY_PROMOTION_INFERNAL_MACHINES">
+			<Text>Höllenmaschinen</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_INFERNAL_MACHINES_HELP">
+			<Text>Feinde erhalten -10% [ICON_STRENGTH] Kampfstärke und 1 Reichweite nahe der Einheit mit dieser Beförderung.</Text>
+		</Row>
+        
+        
+        <Row Tag="TXT_KEY_PROMOTION_BETTER_EMBARKTION">
+			<Text>Transportboot</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_BETTER_EMBARKTION_HELP">
+			<Text>Auf See hat hat diese Einheit 3 Sichtweite, +1 Bewegung und 50% bessere Verteidigung.</Text>
+		</Row>
+        
+	</Language_de_DE>
+    
+</GameData>

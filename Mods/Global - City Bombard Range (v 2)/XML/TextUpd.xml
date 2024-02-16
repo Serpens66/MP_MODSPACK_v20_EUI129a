@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+	<Language_en_US>
+		
+        <!-- Text changes from Global City Bomardment -->
+        <Replace Tag="TXT_KEY_TECH_AGRICULTURE_HELP"> 
+			<Text>
+				Allows Workers to construct [COLOR_POSITIVE_TEXT]Farms[ENDCOLOR], vital for increasing the [ICON_FOOD] [COLOR_POSITIVE_TEXT]Food[ENDCOLOR] output of map tiles. Towns attack range: 1.
+			</Text>
+		</Replace>
+        <Replace Tag="TXT_KEY_TECH_DYNAMITE_HELP"> 
+			<Text>
+				Allows you to build the [COLOR_POSITIVE_TEXT]Artillery[ENDCOLOR], a deadly siege unit capable of shooting further than any previous ranged unit. Towns attack range: 3 and indirect fire.
+			</Text>
+		</Replace>
+        <Replace Tag="TXT_KEY_TECH_GUNPOWDER_HELP"> 
+			<Text>
+				Allows you to build the [COLOR_POSITIVE_TEXT]Musketman[ENDCOLOR], the first unit in the game which wields firearms. Towns attack range: 2 and indirect fire.
+			</Text>
+		</Replace>
+        <Replace Tag="TXT_KEY_TECH_MATHEMATICS_HELP"> 
+			<Text>
+				Allows you to build the [COLOR_POSITIVE_TEXT]Catapult[ENDCOLOR], a powerful siege weapon. Also allows you to build the [COLOR_POSITIVE_TEXT]Courthouse[ENDCOLOR], a building which reduces the [ICON_HAPPINESS_4] Unhappiness from [ICON_OCCUPIED] Occupied Cities. Towns attack range: 2.
+			</Text>
+		</Replace>
+
+	</Language_en_US>
+    
+    <Language_de_DE>
+  
+        <!-- Text changes from Global City Bomardment -->
+        <Replace Tag="TXT_KEY_TECH_AGRICULTURE_HELP"> 
+			<Text>
+				Ermöglicht Bautrupps die Errichtung von [COLOR_POSITIVE_TEXT]Bauernhöfen[ENDCOLOR], die wichtig sind, um den Ertrag von [ICON_FOOD] [COLOR_POSITIVE_TEXT]Nahrung[ENDCOLOR] auf Geländefeldern zu erhöhen. Stadtangriffsreichweite: 1.
+			</Text>
+		</Replace>
+        <Replace Tag="TXT_KEY_TECH_DYNAMITE_HELP"> 
+			<Text>
+				Ermöglicht die Ausbildung von [COLOR_POSITIVE_TEXT]Artillerien[ENDCOLOR], einer effektiven Belagerungseinheit mit größerer Schussweite als alle vorherigen Fernwaffen-Einheiten. Stadtangriffsreichweite 3 und indirektes Feuer.
+			</Text>
+		</Replace>
+        <Replace Tag="TXT_KEY_TECH_GUNPOWDER_HELP"> 
+			<Text>
+				Ermöglicht die Ausbildung von [COLOR_POSITIVE_TEXT]Musketieren[ENDCOLOR], der ersten Einheit im Spiel, die Feuerwaffen verwendet. Stadtangriffsreichweite 2 und indirektes Feuer.
+			</Text>
+		</Replace>
+        <Replace Tag="TXT_KEY_TECH_MATHEMATICS_HELP"> 
+			<Text>
+				Ermöglicht die Konstruktion des [COLOR_POSITIVE_TEXT]Katapults[ENDCOLOR], einer mächtigen Belagerungswaffe. Ermöglicht zudem die Errichtung des [COLOR_POSITIVE_TEXT]Gerichtsgebäudes[ENDCOLOR], das die [ICON_HAPPINESS_4] Unzufriedenheit [ICON_OCCUPIED] besetzter Städte verringert. Stadtangriffsreichweite: 2.
+			</Text>
+		</Replace>
+		
+	</Language_de_DE>
+    
+</GameData>
+

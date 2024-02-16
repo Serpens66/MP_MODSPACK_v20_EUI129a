@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="7f80db44-cd76-493b-9f45-6cb3ee2dfccd" version="27">
+  <Properties>
+    <Name>RED - Just Ethnic Diversity</Name>
+    <Stability>Beta</Stability>
+    <Teaser>BETA.  Unofficial modmod.  Reverts R.E.D. Modpack (v 27) to vanilla scale.  ACTIVATE R.E.D. FIRST!</Teaser>
+    <Description>Just Ethnic Diversity modmod for R.E.D. Modpack
+for Civilization V (vanilla) and Civilization V: Gods + Kings
+
+Unofficial modmod.  Reverts R.E.D. Modpack (v 27) to vanilla scale.  ACTIVATE R.E.D. FIRST!
+
+Cannot be activated at the same time as R.E.D. Xtreme, Single Unit Graphics, Reduced Unit Graphics, or Fewer Unit Graphics.</Description>
+    <Authors>Nutty.</Authors>
+    <SpecialThanks>Gedemon, and all the unit makers (esp. danrell, bernie14, JTitan, Patum333)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.civfanatics.com/showthread.php?t=449070</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="8670da15-d435-44ea-9758-7438cb321411" minversion="17" maxversion="999" title="R.E.D. Modpack" />
+  </Dependencies>
+  <References>
+    <Mod id="01127f62-3896-4897-b169-ecab445786cd" minversion="0" maxversion="999" title="Unofficial Patch and Vanilla Enhanced" />
+    <Mod id="abaa043a-f851-4c61-bd18-52d480862cd0" minversion="0" maxversion="999" title="City State Diplomacy Mod" />
+    <Mod id="d0bc4a46-8a69-46b5-917a-8de842f82ed9" minversion="0" maxversion="999" title="City States UU" />
+    <Mod id="6b326f24-940e-4fce-bfbf-e12a0bb4d09e" minversion="0" maxversion="999" title="Mechanized Infantry with soldiers, Resized" />
+    <Mod id="f78d7560-ecf0-4f48-9a5c-f2fb4b6ca22a" minversion="0" maxversion="999" title="Mechanized Infantry with soldiers" />
+    <Mod id="ffc5f55f-1cf2-4263-bfde-a339c477b9a6" minversion="0" maxversion="999" title="R.E.D. HotFix" />
+    <Mod id="01127f62-3896-4897-b169-ecab445786cd" minversion="0" maxversion="999" title="Civ V Unofficial Patch v2.3.2 (GK)" />
+  </References>
+  <Blocks>
+    <Mod id="4a60955e-7dc2-40bc-895e-2e1dd7d46651" minversion="0" maxversion="999" title="Single Unit Graphics" />
+    <Mod id="b3ae4a21-6f9f-47aa-b4e0-34ede1fda0ab" minversion="0" maxversion="999" title="R.E.D. Xtreme" />
+    <Mod id="de77c612-15a0-4580-92fd-535b525df700" minversion="0" maxversion="999" title="Few Unit Graphics" />
+  </Blocks>
+  <Files>
+    <File md5="74B55B3C96723A68EEDEA8B083D50DBC" import="0">copy to assets/civ5artdefines_viseffects.xml</File>
+    <File md5="9BC471A90F2104FA8A3B1D93E6AE111B" import="0">SQL/JEDREDCompatibility.sql</File>
+    <File md5="28EE2C2FFF473CAE20DDDE0BF02CB6D3" import="0">SQL/JEDCompatibility.sql</File>
+    <File md5="2671E9AC5143030E965786FD87035A42" import="0">SQL/JustEthnicDiversity.sql</File>
+    <File md5="2F31C94BAA7E4AED87B89D207BE293B3" import="1">XML/unitformations.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>SQL/JustEthnicDiversity.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/JEDREDCompatibility.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/JEDCompatibility.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

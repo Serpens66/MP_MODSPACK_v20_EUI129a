@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 4/10/2013 6:53:13 AM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_WONDER_RACE">
+			<Text>Wonder Race!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_RACE_TIP">
+			<Text>You are competing with another player {1_wonder}</Text>
+		</Row>
+	</Language_en_US>  
+    
+    <Language_de_DE>
+		<Row Tag="TXT_KEY_WONDER_RACE">
+			<Text>Wunder Wettlauf!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WONDER_RACE_TIP">
+			<Text>Mindestens eine weitere Zivilisation baut dieses Wunder: {1_wonder}</Text>
+		</Row>
+	</Language_de_DE> 
+</GameData>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 7/13/2012 11:12:12 PM -->
+<GameData>
+	<Language_en_US>
+		<!--
+        <Update>
+			<Where Tag="TXT_KEY_TECH_TRAPPING_HELP" />
+			<Set Text="Allows your Workers to construct [COLOR_POSITIVE_TEXT]Camps[ENDCOLOR] on sources of [ICON_RES_DEER] Deer, [ICON_RES_IVORY] Ivory, [ICON_RES_BISON] Bison and [ICON_RES_FUR] Fur." />
+		</Update> -->
+        <Update>
+			<Where Tag="TXT_KEY_BUILDING_GRANARY_HELP" />
+			<Set Text="Each source of [ICON_RES_WHEAT] Wheat [ICON_RES_BANANA] Bananas [ICON_RES_DEER] Deer and [ICON_RES_BISON] Bison worked by this City produce +1 [ICON_FOOD] Food." />
+		</Update>
+	</Language_en_US>
+    <Language_de_DE>
+		<!--
+        <Update>
+			<Where Tag="TXT_KEY_TECH_TRAPPING_HELP" />
+			<Set Text="Ermöglicht Bautrupps auf [ICON_RES_DEER] Wild-, [ICON_RES_IVORY] Elfenbein- [ICON_RES_FUR] Pelz-Ressourcen und [ICON_RES_BISON] Bison [COLOR_POSITIVE_TEXT]Lager[ENDCOLOR] zu errichten. Ermöglicht Bautrupps außerdem [COLOR_POSITIVE_TEXT]Handelsposten[ENDCOLOR] zu errichten, welche den [ICON_GOLD] Goldertrag von Geländefeldern steigern." />
+		</Update> -->
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_GRANARY_HELP" />
+			<Set Text="Jede von dieser Stadt genutzte Quelle von [ICON_RES_WHEAT] Weizen, [ICON_RES_BANANA] Bananen [ICON_RES_DEER] Wild und [ICON_RES_BISON] Bison produziert +1 [ICON_FOOD] Nahrung." />
+		</Update> 
+	</Language_de_DE>
+	<Building_ResourceYieldChanges>
+		<Row>
+			<BuildingType>BUILDING_GRANARY</BuildingType>
+			<ResourceType>RESOURCE_BISON</ResourceType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_ResourceYieldChanges>
+</GameData>

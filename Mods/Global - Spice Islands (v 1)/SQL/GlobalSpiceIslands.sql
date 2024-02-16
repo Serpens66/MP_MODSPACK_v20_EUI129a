@@ -1,0 +1,1 @@
+INSERT OR REPLACE INTO CustomModOptions(Name, Value) VALUES('EVENTS_AREA_RESOURCES', 1);  

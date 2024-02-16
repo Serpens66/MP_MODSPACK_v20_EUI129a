@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="bc011532-8fa9-4ce5-a344-04ba138d9682" version="6">
+  <Properties>
+    <Name>Policy - Reveal Capitals</Name>
+    <Teaser>Patronage and Commerce reveal Capitals</Teaser>
+    <Description>Patronage and Commerce reveal Capitals
+
+Adopting the Patronage policy track reveals the locations of the City States.  You will still have to trek to each location to meet the City State, but at least you will know where they are.
+
+Adopting Commerce likewise reveals the location of all the Capitals.</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.2kgames.com/showthread.php?108271-MOD-Policy-Reveal-Capitals</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+    <PediaCategory>POLICIES</PediaCategory>
+    <PediaAtlas>POLICY_ATLAS</PediaAtlas>
+    <PediaIndex>36</PediaIndex>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="65FAF776AAF65B0C4EFE7832B37DA6AE" import="0">LUA/PolicyRevealCapitals.lua</File>
+    <File md5="107A8C1A5446CC4178054D9B42A6C0E2" import="0">XML/PolicyRevealCapitals.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/PolicyRevealCapitals.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="LUA/PolicyRevealCapitals.lua">
+      <Name>PolicyRevealCapitals</Name>
+      <Description>PolicyRevealCapitals</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

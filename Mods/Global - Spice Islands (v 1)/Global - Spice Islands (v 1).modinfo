@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="0670efc6-7d20-470a-9ee5-183b484052c9" version="1">
+  <Properties>
+    <Name>Global - Spice Islands</Name>
+    <Teaser>Indonesia's bonus luxuries appear around the city (and not under it)</Teaser>
+    <Description>Changes Indonesia's trait such that the bonus luxuries appear around the city as workable resources.  One resouce should appear within the initial 6 workable tiles of the city and is automatically improved by a plantation.  The other resource will be outside the initial city limits and can be acquired, improved and worked as a normal resource.
+
+As a consequence, only cities founded on islands of 10 tiles or more can qualify for the bonus resources.
+
+As normal resources, the plantations can be pillaged and the tiles can be flipped to other cities.  In addition, if captured, the original city can be razed and the resources will remain.</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Dlc id="6DA07636-4123-4018-B643-6575B4EC336B" minversion="0" maxversion="999" />
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="20" maxversion="999" title="DLL - Various Mod Components" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="D1A6AB2FB528B9E75B09D5239CA4E07B" import="1">ART/SV_Cloves.dds</File>
+    <File md5="55B0C4AA5733DA19D1044730FE9C4B47" import="1">ART/SV_Nutmeg.dds</File>
+    <File md5="CD57DCE6D2652F21C9F52EF4DE69E9D8" import="1">ART/SV_Pepper.dds</File>
+    <File md5="0E63DE91A52418696701D05F59FE359A" import="0">LUA/GlobalSpiceIslands.lua</File>
+    <File md5="1A3C9892BE0230ABBDE0F2BB7BD7F75A" import="1">LUA/PlotIterators.lua</File>
+    <File md5="D05A81C94A5BA5FE49ACC1D4534C955B" import="0">SQL/GlobalSpiceIslands.sql</File>
+    <File md5="0F830987DDDB661CE74549F218767218" import="0">XML/GlobalSpiceIslands.xml</File>
+    <File md5="FBF278CA4ABC7D7A2EDB91CA606720FA" import="0">XML/GlobalSpiceIslandsArt.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>SQL/GlobalSpiceIslands.sql</UpdateDatabase>
+      <UpdateDatabase>XML/GlobalSpiceIslands.xml</UpdateDatabase>
+      <UpdateDatabase>XML/GlobalSpiceIslandsArt.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="LUA/GlobalSpiceIslands.lua">
+      <Name>GlobalSpiceIslands</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

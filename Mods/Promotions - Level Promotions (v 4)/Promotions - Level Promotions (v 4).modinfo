@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="bdc541c0-c129-41b5-85cd-c8a9e7869104" version="4">
+  <Properties>
+    <Name>Promotions - Level Promotions</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>If a promotion is chosable or not, depends now on the level of the unit and not longer on the promotions chosen before.</Teaser>
+    <Description>If a promotion is chosable or not, depends now on the level of the unit and not longer on the promotions chosen before.
+
+E.g. March is now avaible at level 5, regardless of the promotions chosen before.
+But there are exceptions: E.g. Shock 3 is only choosable, after Shock 1 and 2 is choosen.
+Serp v4: the unlocker promotions are now assigned in my DLL instead of lua code.
+This mod is based on Bloublous "Promotion Expansion".</Description>
+    <Authors>Serpens66</Authors>
+    <SpecialThanks>Bloublou for Promotion Expansion</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="DLL - Various Mod Components" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="9F9302EAA284AED4B6C95AD6C0C09AE7" import="0">Promotions - Level Promotions.xml</File>
+    <File md5="50B8A225C378542055BEA16828D01234" import="0">Promotions - Level Promotions.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Promotions - Level Promotions.xml</UpdateDatabase>
+      <UpdateDatabase>Promotions - Level Promotions.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints />
+</Mod>

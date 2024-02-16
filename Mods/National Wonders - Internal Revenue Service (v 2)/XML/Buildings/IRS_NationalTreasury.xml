@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_NATIONAL_TREASURY_IRS</Type>
+			<DefaultBuilding>BUILDING_NATIONAL_TREASURY_IRS</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_NATIONAL_TREASURY_IRS</Description>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
+	</BuildingClasses>
+    <!-- provide extra votes for everyone, this way voting power of city states is slightly reduced in total  -->
+	<Buildings>
+		<Row>
+			<Type>BUILDING_NATIONAL_TREASURY_IRS</Type>
+			<BuildingClass>BUILDINGCLASS_NATIONAL_TREASURY_IRS</BuildingClass>
+			<Cost>250</Cost>
+			<PrereqTech>TECH_ECONOMICS</PrereqTech>
+			<Help>TXT_KEY_BUILDING_NATIONAL_TREASURY_IRS_HELP</Help>
+			<Description>TXT_KEY_BUILDING_NATIONAL_TREASURY_IRS</Description>
+			<Civilopedia>TXT_KEY_BUILDING_NATIONAL_TREASURY_IRS_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_NATIONAL_TREASURY_IRS_STRATEGY</Strategy>			
+			<NukeImmune>true</NukeImmune>
+			<NumCityCostMod>30</NumCityCostMod>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<MinAreaSize>-1</MinAreaSize>
+			<NeverCapture>true</NeverCapture>
+			<IconAtlas>NEW_BLDG_ATLAS_DLC</IconAtlas>
+			<PortraitIndex>1</PortraitIndex>
+            <ExtraLeagueVotes>2</ExtraLeagueVotes>
+		</Row>
+	</Buildings>
+    
+    <Civilization_BuildingClassOverrides>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_NATIONAL_TREASURY_IRS</BuildingClassType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_NATIONAL_TREASURY_IRS</BuildingClassType>
+		</Row>
+	</Civilization_BuildingClassOverrides>
+    
+	<Building_ClassesNeededInCity>
+		<Row>
+			<BuildingType>BUILDING_NATIONAL_TREASURY_IRS</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_BANK</BuildingClassType>
+		</Row>
+	</Building_ClassesNeededInCity>
+	<Building_PrereqBuildingClasses>
+		<Row>
+			<BuildingType>BUILDING_NATIONAL_TREASURY_IRS</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_BANK</BuildingClassType>
+			<NumBuildingNeeded>-1</NumBuildingNeeded>
+		</Row>
+	</Building_PrereqBuildingClasses>
+	<Building_YieldChangesPerPop>
+		<Row> 
+			<BuildingType>BUILDING_NATIONAL_TREASURY_IRS</BuildingType> 
+			<YieldType>YIELD_GOLD</YieldType> 
+			<Yield>50</Yield> 
+		</Row>
+	</Building_YieldChangesPerPop>
+    <Building_YieldModifiers>
+		<Row>
+			<BuildingType>BUILDING_NATIONAL_TREASURY_IRS</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>10</Yield>
+		</Row>
+	</Building_YieldModifiers>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_NATIONAL_TREASURY_IRS</BuildingType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_NATIONAL_TREASURY_IRS</BuildingType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>25</Flavor>
+		</Row>
+	</Building_Flavors>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_BUILDING_NATIONAL_TREASURY_IRS">
+			<Text>National Treasury</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_NATIONAL_TREASURY_IRS_HELP">
+			<Text>Must have built a Bank in all Cities. Provides 2 extra votes in world congress and increases a city's [ICON_GOLD] Gold output by 10% and provides +1[ICON_GOLD] Gold per 2 citizen in this city.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_NATIONAL_TREASURY_IRS_STRATEGY">
+			<Text>Provides 2 extra votes in world congress and increases a city's [ICON_GOLD] Gold output by 10% and provides +1[ICON_GOLD] Gold per 2 citizen in this city. A civilization must have a Bank in all cities before it can construct a National Treasury.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_NATIONAL_TREASURY_IRS_PEDIA">
+			<Text>A National Treasury houses a civilization's wealth, gold, priceless items, and jewels, all under secure lock and key. Records show that some of the first treasuries were constructed by the ancient Greeks, who attached these buildings to temples in order to house all manner of gifts to the gods. Now a National Treasury is usually administered by a branch of government, and usually isn't attached to some religious building or other. The treasury branch not only keeps an eye on a civilization's accumulated wealth, but also governs other financial matters for the nation, like the fine tradition of taxation.</Text>
+		</Row>
+	</Language_en_US>
+    
+    <Language_de_DE>
+		<Row Tag="TXT_KEY_BUILDING_NATIONAL_TREASURY_IRS">
+			<Text>Nationale Schatzkammer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_NATIONAL_TREASURY_IRS_HELP">
+			<Text>Benötigt eine Bank in allen Städten. Bietet 2 extra Stimmen im Weltkongress, erhöht die [ICON_GOLD] Gold Einnahmen dieser Stadt um 10% und bietet +1[ICON_GOLD] Gold pro 2 Bürger dieser Stadt.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_NATIONAL_TREASURY_IRS_STRATEGY">
+			<Text>Bietet 2 extra Stimmen im Weltkongress, erhöht die [ICON_GOLD] Gold Einnahmen dieser Stadt um 10% und bietet +1[ICON_GOLD] Gold pro 2 Bürger dieser Stadt. Benötigt eine Bank in allen Städten.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_NATIONAL_TREASURY_IRS_PEDIA">
+			<Text>A National Treasury houses a civilization's wealth, gold, priceless items, and jewels, all under secure lock and key. Records show that some of the first treasuries were constructed by the ancient Greeks, who attached these buildings to temples in order to house all manner of gifts to the gods. Now a National Treasury is usually administered by a branch of government, and usually isn't attached to some religious building or other. The treasury branch not only keeps an eye on a civilization's accumulated wealth, but also governs other financial matters for the nation, like the fine tradition of taxation.</Text>
+		</Row>
+	</Language_de_DE>
+</GameData>

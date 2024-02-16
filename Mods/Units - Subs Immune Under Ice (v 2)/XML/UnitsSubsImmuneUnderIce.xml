@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<CustomModOptions>
+		<Update>
+			<Where Name="GLOBAL_SUBS_UNDER_ICE_IMMUNITY"/>
+			<Set Value="1"/>
+		</Update>
+	</CustomModOptions>
+</GameData>

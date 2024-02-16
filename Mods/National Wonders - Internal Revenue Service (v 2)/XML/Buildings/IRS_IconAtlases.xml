@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<IconTextureAtlases>
+		<Row>
+			<Atlas>IRS_ATLAS</Atlas>
+			<IconSize>256</IconSize>
+			<Filename>IRSIconAtlas256.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>IRS_ATLAS</Atlas>
+			<IconSize>128</IconSize>
+			<Filename>IRSIconAtlas128.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>IRS_ATLAS</Atlas>
+			<IconSize>80</IconSize>
+			<Filename>IRSIconAtlas80.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>IRS_ATLAS</Atlas>
+			<IconSize>64</IconSize>
+			<Filename>IRSIconAtlas64.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>IRS_ATLAS</Atlas>
+			<IconSize>45</IconSize>
+			<Filename>IRSIconAtlas45.dds</Filename>
+			<IconsPerRow>1</IconsPerRow>
+			<IconsPerColumn>1</IconsPerColumn>
+		</Row>
+	</IconTextureAtlases>
+</GameData>

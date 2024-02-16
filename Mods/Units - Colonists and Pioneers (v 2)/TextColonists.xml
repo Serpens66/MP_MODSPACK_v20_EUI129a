@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 7/19/2014 3:39:08 AM -->
+<GameData>
+	
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UNIT_PIONEER">
+			<Text>Pioneer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PIONEER_STRATEGY">
+			<Text>
+				Use this unit to construct new cities midgame. Cities built by Pioneers earn free buildings and start with 3 [ICON_CITIZEN] Citizens. Pioneers turn into a Worker unit after founding a city. It cannot defend itself, so accompany it with a combat unit.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_PIONEER_TEXT">
+			<Text>
+				Pioneers drive civilization. While most are satisfied with the status quo, happy just to survive, in every culture there are a few hardy individuals willing to strike out on their own, to risk everything in the hope of finding a better life for themselves and their children. In the midevil and renaissance eras, Pioneers of the most powerful counties spread across the globe, claiming the goods of the world for their own. In the future they may lead the way to the moon, Mars, and even beyond.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_PIONEER">
+			<Text>
+				Founds new Cities with advanced infrastructure and additional population and territory. [NEWLINE]Turns into a worker after founding a city.[NEWLINE][ICON_FOOD] Growth of the City is stopped while this Unit is being built.
+			</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_UNIT_COLONIST">
+			<Text>Colonist</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_COLONIST_STRATEGY">
+			<Text>
+				Use this unit to construct new cities lategame. Cities built by Colonists earn more free buildings then cities built by Pioneers and start with 5 [ICON_CITIZEN] Citizens. Colonists turn into a Worker unit after founding a city. It cannot defend itself, so accompany it with a combat unit.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_COLONIST_TEXT">
+			<Text>
+				Colonists drive civilization. While most are satisfied with the status quo, happy just to survive, in every culture there are a few hardy individuals willing to strike out on their own, to risk everything in the hope of finding a better life for themselves and their children. In the past, brave colonists have led humanity out of Africa (and back into it!) and into Europe, Asia, the Pacific, and the Americas. In the future they may lead the way to the moon, Mars, and even beyond.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_COLONIST">
+			<Text>
+				Founds new Cities with very advanced infrastructure and additional population and territory. [NEWLINE]Turns into a worker after founding a city.[NEWLINE][NEWLINE][ICON_FOOD] Growth of the City is stopped while this Unit is being built.
+			</Text>
+		</Row>   
+	</Language_en_US>
+    
+    	<Language_de_DE>
+		<Row Tag="TXT_KEY_UNIT_PIONEER">
+			<Text>Pionier</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_PIONEER_STRATEGY">
+			<Text>
+				Nutze diese Einheit um im mittleren Spielverlauf neue Städte zu gründen. Städte die von Pionieren gegründet werden, bekommen kostenfreie Gebäude und beginnen mit 3 [ICON_CITIZEN] Bürgern. Außerdem wird der Pionier nach dem gründen zu einem Bautrupp. Wie der Siedler sollte er vor Feinden geschützt werden.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_PIONEER_TEXT">
+			<Text>
+				Pioneers drive civilization. While most are satisfied with the status quo, happy just to survive, in every culture there are a few hardy individuals willing to strike out on their own, to risk everything in the hope of finding a better life for themselves and their children. In the midevil and renaissance eras, Pioneers of the most powerful counties spread across the globe, claiming the goods of the world for their own. In the future they may lead the way to the moon, Mars, and even beyond.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_PIONEER">
+			<Text>
+				Gründet neue Städte mit fortgeschrittener Infrastruktur, zusätzlicher Bevökerung und Territorium. [NEWLINE]Wird nach dem Gründen zu einem Bautrupp.[NEWLINE][ICON_FOOD] Das Wachstum der Stadt wird während der Produktion eines Pioniers gestoppt.
+			</Text>
+		</Row>
+
+
+
+		<Row Tag="TXT_KEY_UNIT_COLONIST">
+			<Text>Kolonist</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_COLONIST_STRATEGY">
+			<Text>
+				Nutze diese Einheit um im späten Spielverlauf Städte zu gründen. Städte die von Kolonisten gegründet werden, erhalten noch mehr kostenlose Gebäude und beginnen mit 5 [ICON_CITIZEN] Bürgern. Nach dem Gründen wird der Kolonist zu einem Bautrupp. Auch der Kolonist sollte gut vor Feinden geschützt werden.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_COLONIST_TEXT">
+			<Text>
+				Colonists drive civilization. While most are satisfied with the status quo, happy just to survive, in every culture there are a few hardy individuals willing to strike out on their own, to risk everything in the hope of finding a better life for themselves and their children. In the past, brave colonists have led humanity out of Africa (and back into it!) and into Europe, Asia, the Pacific, and the Americas. In the future they may lead the way to the moon, Mars, and even beyond.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_COLONIST">
+			<Text>
+				Gründet neue Städte mit sehr fortgeschrittener Infrastruktur, zusätzlicher Bevökerung und Territorium. [NEWLINE]Wird nach dem Gründen zu einem Bautrupp.[NEWLINE][NEWLINE][ICON_FOOD] Das Wachstum der Stadt wird während der Produktion eines Kolonists gestoppt.
+			</Text>
+		</Row>   
+	</Language_de_DE>
+    
+
+</GameData>

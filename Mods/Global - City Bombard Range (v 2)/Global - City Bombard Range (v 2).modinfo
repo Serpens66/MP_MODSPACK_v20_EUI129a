@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="67721091-c296-4ab7-a1da-e9edbf97d779" version="2">
+  <Properties>
+    <Name>Global - City Bombard Range</Name>
+    <Teaser>Changes the bombard range of cities based on known techs</Teaser>
+    <Description>The bombard range of cities is a function of the tech known by the owning player
+
+Agriculture: Range 1, no indirect fire (throwing rocks over the wall)
+Mathematics: Range 2, no indirect fire (using catapults to hurl boulders)
+Gunpowder: Range 2, indirect fire (using mortars to lob projectiles)
+Dynamite: Range 3, indirect fire (artillery firing shells)</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="1" maxversion="999" title="DLL - Various Mod Components" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="1700089AA68E01821C09BBDFC6192D86" import="0">LUA/GlobalCityBombardRange.lua</File>
+    <File md5="8BBC3BE481F875D39E2B2020D4BA6C47" import="0">SQL/GlobalCityBombardRange.sql</File>
+    <File md5="82296A4E608025433D1476F2EE6521CB" import="1">UI/InGame/Bombardment.lua</File>
+    <File md5="7A26E789208C82D1A5B5AAB051C7C465" import="0">XML/TextUpd.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>SQL/GlobalCityBombardRange.sql</UpdateDatabase>
+      <UpdateDatabase>XML/TextUpd.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="LUA/GlobalCityBombardRange.lua">
+      <Name>Global City Bombar Range</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

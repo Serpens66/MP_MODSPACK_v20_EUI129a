@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/5/2012 5:36:51 AM -->
+<GameData>
+    
+    <!-- to receeive the playcanbuild event from dll -->
+    <!-- -- modpack v20: disabled EVENTS_PLOTS because is is by far too often fired, causing lag sometimes. Instead I implemented RequiresHills and RequiresAdjacentCity into the DLL so it can be used in improvements xml -->
+    <!-- <CustomModOptions> -->
+		<!-- <Update> -->
+			<!-- <Where Name="EVENTS_PLOT"/> -->
+			<!-- <Set Value="1"/>  -->
+		<!-- </Update> -->
+	<!-- </CustomModOptions> -->
+    
+    
+    <!--Updates worker unit to use additional tile improvements-->
+	<Unit_Builds>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_RANCH</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_HUNTING_LODGE</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_ENHANCED_MINE</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_FAIR_TRADE_PLANTATION</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_SKI_RESORT</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_RESEARCH_STATION</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_BEACH_RESORT</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_ENHANCED_QUARRY</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_SAWMILL</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_SUBURB</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_TRADING_ESTATE</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WORKBOAT</UnitType>
+			<BuildType>BUILD_NUCLEAR_TEST_SITE</BuildType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_WORKBOAT</UnitType>
+			<BuildType>BUILD_LUXURY_RESORT</BuildType>
+		</Row>
+        <Row>
+			<UnitType>UNIT_WORKER</UnitType>
+			<BuildType>BUILD_FARMLAND_ESTATE</BuildType>
+		</Row>
+	</Unit_Builds>
+</GameData>

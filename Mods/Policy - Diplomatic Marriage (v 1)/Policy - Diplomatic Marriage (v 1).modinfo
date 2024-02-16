@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="469f6ff2-91ed-4a79-a4ec-774f991a57dc" version="1">
+  <Properties>
+    <Name>Policy - Diplomatic Marriage</Name>
+    <Teaser>Changes the Cultural Diplomacy policy to include the option to annex City States by diplomatic marriage</Teaser>
+    <Description>Changes the Cultural Diplomacy policy to include the option to annex City States by diplomatic marriage</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="77" maxversion="999" title="DLL - Various Mod Components" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="B76E8071D523EC9FE067C2C809C44DE7" import="0">SQL/PolicyDiplomaticMarriage.sql</File>
+    <File md5="EA24B04E2CFA622F5E9B04796445FD4D" import="0">XML/PolicyDiplomaticMarriage.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/PolicyDiplomaticMarriage.xml</UpdateDatabase>
+      <UpdateDatabase>SQL/PolicyDiplomaticMarriage.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

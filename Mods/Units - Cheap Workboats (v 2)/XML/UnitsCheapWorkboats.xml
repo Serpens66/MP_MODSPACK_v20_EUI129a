@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Units>
+    <Update>
+      <Where Type="UNIT_WORKBOAT"/>
+      <Set Cost="15"/>
+    </Update>
+  </Units>
+</GameData>

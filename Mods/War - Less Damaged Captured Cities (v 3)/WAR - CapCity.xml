@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 7/14/2012 5:40:09 AM -->
+<GameData>
+	
+	<Defines>	
+		
+		<Update>
+			<Set Value="75" />
+			<Where Name="CITY_CAPTURE_POPULATION_PERCENT" />
+		</Update>
+		
+	</Defines>
+
+	<Buildings>
+		
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_FLOATING_GARDENS" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_LONGHOUSE" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_PAPER_MAKER" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_WAT" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_SEAPORT" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_WATERMILL" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_WINDMILL" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_HYDRO_PLANT" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_SOLAR_PLANT" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_OBSERVATORY" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_GARDEN" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_LIGHTHOUSE" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_HARBOR" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_MILITARY_BASE" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_GRANARY" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_HOSPITAL" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_MEDICAL_LAB" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_WORKSHOP" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_FACTORY" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_NUCLEAR_PLANT" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_SPACESHIP_FACTORY" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_LIBRARY" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_UNIVERSITY" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_PUBLIC_SCHOOL" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_LABORATORY" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_AQUEDUCT" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_STONE_WORKS" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_BAZAAR" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_SATRAPS_COURT" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_MARKET" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_BANK" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_STOCK_EXCHANGE" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_MUD_PYRAMID_MOSQUE" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_BURIAL_TOMB" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_CIRCUS" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_FORGE" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_MONASTERY" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_COLOSSEUM" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_THEATRE" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_STADIUM" />
+		</Update>
+		<Update>
+			<Set ConquestProb="80" />
+			<Where Type="BUILDING_TEMPLE" />
+		</Update>
+		
+	</Buildings>
+
+</GameData>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="72e3495c-054e-4a15-9c49-70e2ca197621" version="7">
+  <Properties>
+    <Name>Global - City Working Distance</Name>
+    <Teaser>Permits cities to work more tiles (serps version)</Teaser>
+    <Description>Changes the maximum working distance of a city from 3 to a max of 5 -> Tech CivilService and Tech Railroad. (so a city can possibly work all tiles that can be claimed)</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="1" maxversion="999" title="DLL - Various Mod Components" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="A0973B554CBD67811634032C5B502B2A" import="0">XML/GlobalCityWorkingDistance.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/GlobalCityWorkingDistance.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="e1d12b5a-d26e-4026-840f-0c1a2f3cd700" version="5">
+  <Properties>
+    <Name>NaturalWonders - Equality</Name>
+    <Teaser>(serp version) Changes Natural Wonders such that the combined yield is 8</Teaser>
+    <Description>Changes Natural Wonders such that the combined Happiness, Food, Gold, Scrience, Productuon, Culture and Faith yield is eight
+
+Summary
+  Fountain: -2 happiness
+  Potosi: -2 gold
+  Mesa: +3 science
+  Geyser: +3 science
+  El Dorado: +3 gold
+  Crater: +3 culture
+  Volcano: +3 gold
+
+(The Reef is only 6 yield, but as it comes as a pair ...)</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+    <PediaCategory>TERRAIN</PediaCategory>
+    <PediaAtlas>NW_ATLAS</PediaAtlas>
+    <PediaIndex>1</PediaIndex>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="4A19A964219D65693BFE6C9E1609DEF8" import="0">SQL/NaturalWondersEquality.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>SQL/NaturalWondersEquality.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

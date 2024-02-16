@@ -1,0 +1,374 @@
+﻿<GameData>
+    <!-- with some changes made by Serp Multiplayer Modpack -->
+	
+    <CustomModOptions>
+        <Update>
+            <Where Name="PROMOTIONS_IMPROVEMENT_BONUS" />
+            <Set Value="1"/>  
+		</Update>
+        <!-- <Update> -->
+            <!-- <Where Name="EVENTS_PLAYER_TURN" /> -->
+            <!-- <Set Value="1"/>   -->
+		<!-- </Update> -->
+        <Update>
+            <Where Name="EVENTS_BARBARIANS" />
+            <Set Value="1"/>  
+		</Update>
+    </CustomModOptions>
+    
+    <Defines>
+        <!-- 
+		<Replace Name="BARBARIAN_CITY_ATTACK_MODIFIER">
+			<Value>-5</Value> 
+		</Replace>
+		
+        <Replace Name="BARBARIAN_CAMP_FIRST_TURN_PERCENT_OF_TARGET_TO_ADD">
+			<Value>40</Value>
+		</Replace>
+		<Replace Name="BARBARIAN_TECH_PERCENT">
+			<Value>85</Value>
+		</Replace> 
+        <Replace Name="BARBARIAN_CAMP_ODDS_OF_NEW_CAMP_SPAWNING">
+			<Value>1</Value>
+		</Replace>
+        -->
+        <Replace Name="MAX_BARBARIANS_FROM_CAMP_NEARBY">
+			<Value>4</Value> <!-- original value "2" -->
+        </Replace>
+        <!-- <Replace Name="MAX_BARBARIANS_FROM_CAMP_NEARBY_RANGE"> -->
+			<!-- <Value>4</Value> <!-- original value "4" --> -->
+		<!-- </Replace> -->
+        
+        
+        <Replace Name="BARBARIAN_EXTRA_RAGING_UNIT_SPAWN_CHANCE">
+			<Value>15</Value> <!-- original value "10" -->
+        </Replace>
+
+        
+        
+        <Replace Name="BARBARIAN_CAMP_MINIMUM_DISTANCE_ANOTHER_CAMP">
+			<Value>6</Value> <!-- original value "7" -->
+		</Replace> 
+		<Replace Name="BARBARIAN_MAX_XP_VALUE">
+			<Value>60</Value>
+		</Replace>
+        <!-- <Replace Name="BARBARIAN_CAMP_MINIMUM_DISTANCE_CAPITAL"> -->
+			<!-- <Value>5</Value> <!-- original value "4", for some reason this reults in a distance of 2 ingame?! --> -->
+		<!-- </Replace> -->
+        <!-- a small chance the barbarian will do a desperate attack -->
+        <Replace Name="AI_TACTICAL_BARBARIAN_PRIORITY_DESPERATE_ATTACK">
+            <Value>2</Value>
+        </Replace>
+	
+    </Defines>
+    <!-- Finishing Honor gives additional combat bonus against barbarian -->
+    <Policies>
+        <Update>
+            <Where Type="POLICY_WARRIOR_CODE" />
+            <Set BarbarianCombatBonus="5"/>  
+		</Update>
+        <Update>
+            <Where Type="POLICY_DISCIPLINE" />
+            <Set BarbarianCombatBonus="5"/>  
+		</Update>
+        <Update>
+            <Where Type="POLICY_MILITARY_TRADITION" />
+            <Set BarbarianCombatBonus="10"/>  
+		</Update>
+        <Update>
+            <Where Type="POLICY_MILITARY_CASTE" />
+            <Set BarbarianCombatBonus="10"/>  
+		</Update>
+        <Update>
+            <Where Type="POLICY_PROFESSIONAL_ARMY" />
+            <Set BarbarianCombatBonus="15"/>  
+		</Update>
+        <Update>
+            <Where Type="POLICY_HONOR_FINISHER" />
+            <Set BarbarianCombatBonus="20"/>  
+		</Update>
+    </Policies>
+    
+    <Worlds>
+		<!-- original value "13" -->
+		<Update>
+			<Where Type="WORLDSIZE_DUEL" />
+			<Set FogTilesPerBarbarianCamp="10" />
+		</Update>
+		<!-- original value "18" -->
+		<Update>
+			<Where Type="WORLDSIZE_TINY" />
+			<Set FogTilesPerBarbarianCamp="15" />
+		</Update>
+		<!-- original value "23" -->
+		<Update>
+			<Where Type="WORLDSIZE_SMALL" />
+			<Set FogTilesPerBarbarianCamp="20" />
+		</Update>
+		<!-- original value "27" -->
+		<Update>
+			<Where Type="WORLDSIZE_STANDARD" />
+			<Set FogTilesPerBarbarianCamp="24" />
+		</Update>
+		<!-- original value "30" -->
+		<Update>
+			<Where Type="WORLDSIZE_LARGE" />
+			<Set FogTilesPerBarbarianCamp="27" />
+		</Update>
+		<!-- original value "35" -->
+		<Update>
+			<Where Type="WORLDSIZE_HUGE" />
+			<Set FogTilesPerBarbarianCamp="30" />
+		</Update>
+	</Worlds>
+
+    <!-- barbarian camps give defense in BarbarianGeneral.xml -->
+    
+    <!-- promotion "IgnoreTerrainCost" disabled, but added HPHealedIfDestroyEnemy -->
+	<UnitPromotions>
+        
+		
+		<InsertOrAbort>
+			<Type>PROMOTION_HORDE_GENERAL</Type>
+			<Description>TXT_KEY_PROMOTION_HORDE_GENERAL</Description>
+			<Help>TXT_KEY_PROMOTION_HORDE_GENERAL_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<PortraitIndex>3</PortraitIndex>
+			<IconAtlas>EXPANSION_PROMOTION_ATLAS</IconAtlas>
+            
+            <GreatGeneral>true</GreatGeneral> <!-- gives 15% to near units -->
+			<NearbyEnemyCombatMod>-20</NearbyEnemyCombatMod>
+			<NearbyEnemyCombatRange>2</NearbyEnemyCombatRange>
+			
+			<PediaType>PEDIA_SHARED</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_BRIGAND</PediaEntry>
+		</InsertOrAbort>
+		
+		
+		<InsertOrAbort>
+			<Type>PROMOTION_BRIGAND</Type>
+			<Description>TXT_KEY_PROMOTION_BRIGAND</Description>
+			<Help>TXT_KEY_PROMOTION_BRIGAND_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<PortraitIndex>3</PortraitIndex>
+			<IconAtlas>EXPANSION_PROMOTION_ATLAS</IconAtlas>
+
+            <GreatGeneralCombatModifier>10</GreatGeneralCombatModifier> <!-- if on same plot as great general -->
+			<CombatPercent>10</CombatPercent>
+            <HPHealedIfDestroyEnemy>5</HPHealedIfDestroyEnemy>
+			<HealIfDestroyExcludesBarbarians>false</HealIfDestroyExcludesBarbarians>
+            <NearbyImprovementCombatBonus>15</NearbyImprovementCombatBonus> 
+			<NearbyImprovementBonusRange>2</NearbyImprovementBonusRange> 
+			<CombatBonusImprovement>IMPROVEMENT_BARBARIAN_CAMP</CombatBonusImprovement>
+			
+			<PediaType>PEDIA_SHARED</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_BRIGAND</PediaEntry>
+		</InsertOrAbort>
+		
+		<InsertOrAbort>
+			<Type>PROMOTION_PIRATE</Type>
+			<Description>TXT_KEY_PROMOTION_PIRATE</Description>
+			<Help>TXT_KEY_PROMOTION_PIRATE_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<PortraitIndex>3</PortraitIndex>
+			<IconAtlas>EXPANSION_PROMOTION_ATLAS</IconAtlas>
+            
+            <GreatGeneralCombatModifier>15</GreatGeneralCombatModifier> <!-- if on same plot as great general -->
+			<AllowsEmbarkation>true</AllowsEmbarkation>
+			<EmbarkedAllWater>true</EmbarkedAllWater>
+			<MovesChange>1</MovesChange>
+            <ExtraNavalMovement>2</ExtraNavalMovement>
+			<CombatPercent>15</CombatPercent>
+			<Amphib>true</Amphib>
+			<River>true</River>
+            <HPHealedIfDestroyEnemy>10</HPHealedIfDestroyEnemy>
+			<HealIfDestroyExcludesBarbarians>false</HealIfDestroyExcludesBarbarians>
+            <NearbyImprovementCombatBonus>20</NearbyImprovementCombatBonus> 
+			<NearbyImprovementBonusRange>2</NearbyImprovementBonusRange> 
+			<CombatBonusImprovement>IMPROVEMENT_BARBARIAN_CAMP</CombatBonusImprovement>
+
+			<PediaType>PEDIA_SHARED</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_PIRATE</PediaEntry>
+		</InsertOrAbort>
+
+		<InsertOrAbort>
+			<Type>PROMOTION_REBEL</Type>
+			<Description>TXT_KEY_PROMOTION_REBEL</Description>
+			<Help>TXT_KEY_PROMOTION_REBEL_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<PortraitIndex>3</PortraitIndex>
+			<IconAtlas>EXPANSION_PROMOTION_ATLAS</IconAtlas>
+            
+            <GreatGeneralCombatModifier>20</GreatGeneralCombatModifier> <!-- if on same plot as great general -->
+            <MovesChange>1</MovesChange>
+			<AllowsEmbarkation>true</AllowsEmbarkation>
+			<EmbarkedAllWater>true</EmbarkedAllWater>
+			<ExtraNavalMovement>2</ExtraNavalMovement>
+			<CaptureDefeatedEnemy>true</CaptureDefeatedEnemy>
+			<FreePillageMoves>1</FreePillageMoves>
+			<CombatPercent>20</CombatPercent>
+			<VisibilityChange>1</VisibilityChange>
+            <HPHealedIfDestroyEnemy>15</HPHealedIfDestroyEnemy>
+			<HealIfDestroyExcludesBarbarians>false</HealIfDestroyExcludesBarbarians>
+            <NearbyImprovementCombatBonus>25</NearbyImprovementCombatBonus> 
+			<NearbyImprovementBonusRange>2</NearbyImprovementBonusRange> 
+			<CombatBonusImprovement>IMPROVEMENT_BARBARIAN_CAMP</CombatBonusImprovement>
+			
+			
+			<PediaType>PEDIA_SHARED</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_REBEL</PediaEntry>
+		</InsertOrAbort>
+
+		<InsertOrAbort>
+			<Type>PROMOTION_TERRORIST</Type>
+			<Description>TXT_KEY_PROMOTION_TERRORIST</Description>
+			<Help>TXT_KEY_PROMOTION_TERRORIST_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<PortraitIndex>3</PortraitIndex>
+			<IconAtlas>EXPANSION_PROMOTION_ATLAS</IconAtlas>
+            
+            <GreatGeneralCombatModifier>25</GreatGeneralCombatModifier> <!-- if on same plot as great general -->
+			<AllowsEmbarkation>true</AllowsEmbarkation>
+			<EmbarkedAllWater>true</EmbarkedAllWater>
+			<ExtraNavalMovement>2</ExtraNavalMovement>
+			<IgnoreZOC>true</IgnoreZOC>
+			<FreePillageMoves>1</FreePillageMoves>
+			<CaptureDefeatedEnemy>true</CaptureDefeatedEnemy>
+			<CityAttack>50</CityAttack>
+			<CombatPercent>30</CombatPercent>
+			<MovesChange>2</MovesChange>
+			<VisibilityChange>1</VisibilityChange>
+            <HPHealedIfDestroyEnemy>20</HPHealedIfDestroyEnemy>
+			<HealIfDestroyExcludesBarbarians>false</HealIfDestroyExcludesBarbarians>
+            <NearbyImprovementCombatBonus>30</NearbyImprovementCombatBonus> 
+			<NearbyImprovementBonusRange>2</NearbyImprovementBonusRange> 
+			<CombatBonusImprovement>IMPROVEMENT_BARBARIAN_CAMP</CombatBonusImprovement>
+
+			<PediaType>PEDIA_SHARED</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_TERRORIST</PediaEntry>
+		</InsertOrAbort>
+        
+	</UnitPromotions> 
+    
+	<UnitPromotions_UnitCombatMods>
+		<InsertOrAbort>
+			<PromotionType>PROMOTION_PIRATE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+			<Modifier>50</Modifier>
+		</InsertOrAbort>
+		<InsertOrAbort>
+			<PromotionType>PROMOTION_PIRATE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+			<Modifier>50</Modifier>
+		</InsertOrAbort>
+		<InsertOrAbort>
+			<PromotionType>PROMOTION_PIRATE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
+			<Modifier>50</Modifier>
+		</InsertOrAbort>
+		<InsertOrAbort>
+			<PromotionType>PROMOTION_PIRATE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_CARRIER</UnitCombatType>
+			<Modifier>50</Modifier>
+		</InsertOrAbort>
+    </UnitPromotions_UnitCombatMods>  
+      
+	<Language_en_US>
+		<Row Tag="TXT_KEY_PROMOTION_HORDE_GENERAL">
+			<Text>Horde General</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HORDE_GENERAL_HELP">
+			<Text>Allows the barbarian unit its stacked upon to heal. Reduces combat strength of nearby enemy units.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_BRIGAND">
+			<Text>Banditry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_BRIGAND_HELP">
+			<Text>[COLOR_NEGATIVE_TEXT]Banditry:[ENDCOLOR] This unit gets additional combat strength and heals when it kills an enemy.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_PIRATE">
+			<Text>Piracy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PIRATE_HELP">
+			<Text>[COLOR_NEGATIVE_TEXT]Banditry:[ENDCOLOR] This unit gets additional combat strength and heals when it kills an enemy.[NEWLINE][COLOR_NEGATIVE_TEXT]Piracy:[ENDCOLOR] This unit has enhanced naval capabilities and +1 movement.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_REBEL">
+			<Text>Revolution</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_REBEL_HELP">
+			<Text>[COLOR_NEGATIVE_TEXT]Banditry:[ENDCOLOR] This unit gets additional combat strength and heals when it kills an enemy.[NEWLINE][COLOR_NEGATIVE_TEXT]Piracy:[ENDCOLOR] This unit has enhanced naval capabilities and +1 movement.[NEWLINE][COLOR_NEGATIVE_TEXT]Revolution:[ENDCOLOR] This unit may capture defeated units and make them join their side and receives extra movement when pillaging.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_TERRORIST">
+			<Text>Terrorism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_TERRORIST_HELP">
+            <Text>[COLOR_NEGATIVE_TEXT]Banditry:[ENDCOLOR] This unit gets additional combat strength and heals when it kills an enemy.[NEWLINE][COLOR_NEGATIVE_TEXT]Piracy:[ENDCOLOR] This unit has enhanced naval capabilities and +1 movement.[NEWLINE][COLOR_NEGATIVE_TEXT]Revolution:[ENDCOLOR] This unit may capture defeated units and make them join their side and receives extra movement when pillaging.[NEWLINE][COLOR_NEGATIVE_TEXT]Terrorism:[ENDCOLOR] This unit receives  +1 movement and extra movement when pillaging, and increased combat strength against Cities. It also ignores the Zone of Control.</Text>
+		</Row>
+        
+	</Language_en_US>
+    
+    <Language_de_DE>
+		<Row Tag="TXT_KEY_PROMOTION_HORDE_GENERAL">
+			<Text>Horde General</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HORDE_GENERAL_HELP">
+			<Text>Erlaubt es einer Barbareneinheit auf demselben Feld sich zu heilen. Verringert zudem die Kampfstärke von in der Nähe befindlichen feindlichen Einheiten.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_BRIGAND">
+			<Text>Banditentum</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_BRIGAND_HELP">
+			<Text>[COLOR_NEGATIVE_TEXT]Banditentum:[ENDCOLOR] Diese Einheit hat erhöhte Kampfstärke und heilt, wenn sie eine Einheit tötet.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_PIRATE">
+			<Text>Piraterie</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PIRATE_HELP">
+			<Text>[COLOR_NEGATIVE_TEXT]Banditentum:[ENDCOLOR] Diese Einheit hat erhöhte Kampfstärke und heilt, wenn sie eine Einheit tötet.[NEWLINE][COLOR_NEGATIVE_TEXT]Piraterie:[ENDCOLOR] Diese Einheit hat verbesserte Marine-Fähigkeiten und +1 Bewegung.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_REBEL">
+			<Text>Revolution</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_REBEL_HELP">
+			<Text>[COLOR_NEGATIVE_TEXT]Banditentum:[ENDCOLOR] Diese Einheit hat erhöhte Kampfstärke und heilt, wenn sie eine Einheit tötet.[NEWLINE][COLOR_NEGATIVE_TEXT]Piraterie:[ENDCOLOR] Diese Einheit hat verbesserte Marine-Fähigkeiten und +1 Bewegung.[NEWLINE][COLOR_NEGATIVE_TEXT]Revolution:[ENDCOLOR] Diese Einheit kann besiegte Einheiten konvertieren und erhält extra Bewegungspunkte nach Plünderung.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_TERRORIST">
+			<Text>Terrorismus</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_TERRORIST_HELP">
+			<Text>[COLOR_NEGATIVE_TEXT]Banditentum:[ENDCOLOR] Diese Einheit hat erhöhte Kampfstärke und heilt, wenn sie eine Einheit tötet.[NEWLINE][COLOR_NEGATIVE_TEXT]Piraterie:[ENDCOLOR] Diese Einheit hat verbesserte Marine-Fähigkeiten und +1 Bewegung.[NEWLINE][COLOR_NEGATIVE_TEXT]Revolution:[ENDCOLOR] Diese Einheit kann besiegte Einheiten konvertieren und erhält extra Bewegungspunkte nach Plünderung.[NEWLINE][COLOR_NEGATIVE_TEXT]Terrorismus:[ENDCOLOR] Diese Einheit erhält + 1 Bewegung und extra Bewegungspunkte nach Plünderung und hat erhöhte Kampfstärke gegen Städte. Sie kann außerdem auch neben feindlichen Einheiten ihre Bewegungspunkte voll nutzen.</Text>
+		</Row>
+
+	</Language_de_DE>
+    <!-- deactivated
+	<UnitPromotions_Features>
+		<Row>
+			<PromotionType>PROMOTION_REBEL</PromotionType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<DoubleMove>true</DoubleMove>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_REBEL</PromotionType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<DoubleMove>true</DoubleMove>
+		</Row>
+	</UnitPromotions_Features> -->
+</GameData>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/19/2012 1:57:00 PM -->
+<GameData>
+	<Improvements>
+		<Row>
+			<Type>IMPROVEMENT_ENHANCED_QUARRY</Type>
+			<Description>TXT_KEY_IMPROVEMENT_ENHANCED_QUARRY</Description>
+			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_ENHANCED_QUARRY_TEXT</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_QUARRY</ArtDefineTag>
+            <!-- <NoTwoAdjacent>true</NoTwoAdjacent> -->
+			<PillageGold>75</PillageGold>
+			<PortraitIndex>31</PortraitIndex>
+			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+		</Row>
+	</Improvements>
+	<Improvement_ResourceTypes>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_QUARRY</ImprovementType>
+			<ResourceType>RESOURCE_STONE</ResourceType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_QUARRY</ImprovementType>
+			<ResourceType>RESOURCE_MARBLE</ResourceType>
+		</Row>
+	</Improvement_ResourceTypes>
+	<Improvement_ResourceType_Yields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_QUARRY</ImprovementType>
+			<ResourceType>RESOURCE_STONE</ResourceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_QUARRY</ImprovementType>
+			<ResourceType>RESOURCE_MARBLE</ResourceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_ResourceType_Yields>
+	<Improvement_Yields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_QUARRY</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Improvement_Yields>
+	<Improvement_TechYieldChanges>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_QUARRY</ImprovementType>
+			<TechType>TECH_CHEMISTRY</TechType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+        <Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_QUARRY</ImprovementType>
+			<TechType>TECH_BALLISTICS</TechType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_TechYieldChanges>
+    
+    
+    <Policy_ImprovementYieldChanges>
+        <Row>
+			<PolicyType>POLICY_FIVE_YEAR_PLAN</PolicyType>
+			<ImprovementType>IMPROVEMENT_ENHANCED_QUARRY</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+    </Policy_ImprovementYieldChanges>
+    
+</GameData>

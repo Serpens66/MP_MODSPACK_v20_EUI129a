@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/5/2012 5:26:53 AM -->
+<GameData>
+	<Builds>
+		<Row>
+			<Type>BUILD_ENHANCED_MINE</Type>
+			<PrereqTech>TECH_DYNAMITE</PrereqTech>
+			<Time>1300</Time>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<Description>TXT_KEY_BUILD_ENHANCED_MINE</Description>
+            <Help>TXT_KEY_BUILD_ENHANCED_MINE_HELP</Help>
+			<EntityEvent>ENTITY_EVENT_MINE</EntityEvent>
+			<OrderPriority>95</OrderPriority>
+			<IconIndex>22</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+	</Builds>
+	<BuildFeatures>
+		<Row>
+			<BuildType>BUILD_ENHANCED_MINE</BuildType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<Time>700</Time>
+			<Production>25</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_ENHANCED_MINE</BuildType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<PrereqTech>TECH_MINING</PrereqTech>
+			<Time>400</Time>
+			<Production>25</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_ENHANCED_MINE</BuildType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
+			<Time>600</Time>
+			<Remove>true</Remove>
+		</Row>
+	</BuildFeatures>
+</GameData>

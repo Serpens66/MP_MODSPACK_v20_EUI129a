@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="78D8DCED-81AE-7C39-8809-37D253C3614C" version="1">
+  <Properties>
+    <Name>Any Pantheon</Name>
+    <Teaser>Lets you choose also already picked pantheons.</Teaser>
+    <Description>Requires my own version of whowards dll, or the community patch dll! Lets you choose also already picked pantheons.</Description>
+    <!-- (gilt automatisch fuer alle. nehmen wir, weils im multiplayer simultan passieren kann, dass mehrere denselben nehmen, was sonst zu bugs fuehrt) -->
+    <Authors>Serp</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <!-- <Dependencies> -->
+    <!-- <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="DLL - Various Mod Components" /> -->
+  <!-- </Dependencies> -->
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="F6AD9C90F04716AACBD52947B1718277" import="0">AnyPantheon.xml</File>
+    <File md5="A359C8059B3C463F243FEF24482109A3" import="0">Lua/ChoosePantheonPopup.lua</File>
+    <File md5="B97E8262ED75502942A0E7AABFE88495" import="0">LUA/ChooseReligionPopup.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>AnyPantheon.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/Randomize_Traits.lua">
+      <Name>ChoosePantheonPopup</Name>
+      <Description>ChoosePantheonPopup</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/ExplorerGoodyBonus.lua">
+      <Name>ChooseReligionPopup</Name>
+      <Description>ChooseReligionPopup</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

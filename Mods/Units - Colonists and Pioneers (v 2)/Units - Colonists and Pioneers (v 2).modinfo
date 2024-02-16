@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="6abe18bc-a09b-4d7d-8eef-adb3bee3f38a" version="2">
+  <Properties>
+    <Name>Units - Colonists and Pioneers </Name>
+    <Stability>Alpha</Stability>
+    <Teaser>Adds the advanced settler units, the Pioneer and the Colonist, to the game.small bug fixed by Serp.</Teaser>
+    <Description>Adds the Pioneer and the Colonist: Midgame and lategame settlers that founds cities with additional population, territory and buildings. turn into a workers upon founding a city.</Description>
+    <Authors>OrgadEyal</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="3DB911E8DF36D7AE7628BA65F9A77826" import="0">ColonistXML.xml</File>
+    <File md5="8E98BBBD57FA76E98319D8928E3B50D8" import="0">ColonistLua.lua</File>
+    <File md5="C1C211EFD495CB07A7B5BE54CF84B0A9" import="0">TextColonists.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>ColonistXML.xml</UpdateDatabase>
+      <UpdateDatabase>TextColonists.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="ColonistLua.lua">
+      <Name>Colonists</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

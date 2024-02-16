@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    
+    <!-- LUA_AI_DEAL_FETCHINFO is unique to Serp custom dll. for community patch you will need MOD_BALANCE_CORE, but this is most likely enabled by default -->
+    
+    
+    <Language_en_US>
+		<!-- Regular Deal Details - Lua .. yes the string name was mixed up -->
+        <Replace Tag="TXT_KEY_DIPLO_TRADE_VALUE_STR_PEACE">
+			<Text>Deal Value for Them: {1_Num}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_TRADE_VALUE_STR_PEACE_IMPOSSIBLE">
+			<Text>Deal Value for Them: Impossible!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_TRADE_VALUE_STR_PEACE_EMBARGO">
+			<Text>SANCTIONED BY WORLD CONGRESS</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_TRADE_VALUE_STR_PEACE_EMBARGO_TT">
+			<Text>You cannot make deals during peacetime with this Civilization until the Sanction is lifted.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_TRADE_VALUE_STR_PEACE_ACCEPTABLE">
+			<Text>Deal Value for Them: Acceptable</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_TRADE_VALUE_STR_PEACE_TT">
+			<Text>AI's current valuation of the trade items in this Deal. If the value here is 'Impossible' or too negative, the AI will refuse to accept the Deal.</Text>
+		</Replace>
+        
+        <!-- Peace Out Details - Lua .. yes the string name was mixed up -->
+		<Replace Tag="TXT_KEY_DIPLO_TRADE_VALUE_STR">
+			<Text>Peace Deal Value: {1_Num}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_TRADE_VALUE_STR_IMPOSSIBLE">
+			<Text>Peace Deal Value: Impossible!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_TRADE_VALUE_STR_ACCEPTABLE">
+			<Text>Peace Deal Value: Acceptable</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_TRADE_MAX_STR">
+			<Text>Max Value: {1_Num}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_TRADE_VALUE_STR_TT">
+			<Text>Current trade value of items in Peace Deal for AI. If the value here is 'Impossible,' that means the AI refuses to trade one or more of the items in the Peace Deal.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_TRADE_MAX_STR_TT">
+			<Text>Maximum trade value of items in Peace Deal with AI. If the value to the left of this exceeds this number, the AI will refuse the deal.</Text>
+		</Replace>
+	</Language_en_US>
+    
+	<Language_de_DE>
+		<!-- Regular Deal Details - Lua .. yes the string name was mixed up -->
+        <Replace Tag="TXT_KEY_DIPLO_TRADE_VALUE_STR_PEACE">
+			<Text>Handelswert für sie: {1_Num}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_TRADE_VALUE_STR_PEACE_IMPOSSIBLE">
+			<Text>Handelswert für sie: Unmöglich!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_TRADE_VALUE_STR_PEACE_EMBARGO">
+			<Text>SANKTIONIERT VOM WELTKONGRESS</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_TRADE_VALUE_STR_PEACE_EMBARGO_TT">
+			<Text>Ihr könnte keinen Handel zu Friedenszeit mit dieser Zivilisation machen, bis die Sanktionen aufgehoben wurden.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_TRADE_VALUE_STR_PEACE_ACCEPTABLE">
+			<Text>Handelswert für sie: Akzeptabel</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_TRADE_VALUE_STR_PEACE_TT">
+			<Text>Die aktuelle Bewertung der KI der Handelsgüter dieses Handels. Wenn der Wert 'Unmöglich' oder zu negativ ist, wird die KI den Handel nicht akzeptieren.</Text>
+		</Replace>
+        
+        <!-- Peace Out Details - Lua .. yes the string name was mixed up -->
+		<Replace Tag="TXT_KEY_DIPLO_TRADE_VALUE_STR">
+			<Text>Friedensabkommen Wert: {1_Num}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_TRADE_VALUE_STR_IMPOSSIBLE">
+			<Text>Friedensabkommen Wert: Unmöglich!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_TRADE_VALUE_STR_ACCEPTABLE">
+			<Text>Friedensabkommen Wert: Akzeptabel</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_TRADE_MAX_STR">
+			<Text>Maximaler Wert: {1_Num}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_TRADE_VALUE_STR_TT">
+			<Text>Aktueller Handelswert der KI der Handelsgüter für ein Friedensabkommen. Wenn der Wert 'Unmöglich' ist, heißt das, dass die KI eines oder mehrere der Handelsgüter nicht handeln will.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_DIPLO_TRADE_MAX_STR_TT">
+			<Text>Maximaler Handelswert der Güter bei Friedensabkommen mit der KI. Wenn der Wert auf der Linken diese Zahl übersteigt, wird die KI nicht auf den Handel eingehen.</Text>
+		</Replace>
+	</Language_de_DE>
+    
+    
+
+    
+</GameData>

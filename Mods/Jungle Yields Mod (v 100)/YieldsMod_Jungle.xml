@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GameData>
+    <!-- -1 University changes! and deactivated some things. So basically this mod only makes building lumbermills posibble and gives the production boost.-->
+    
+	<!-- Similar to forests, makes it easier to apply consistent yields by removing additivity. 
+		 Also, though very minor and unimportant, growth rate is set equal to forests as well so all things are equal.   deactivated
+	<Features>
+		<Update>
+			<Where Type="FEATURE_JUNGLE"/>
+			<Set YieldNotAdditive="true" Growth="8"/>
+		</Update>
+	</Features> -->
+
+	<!-- Sets jungle equal to forests, 1F 1P. ... deactivated
+	<Feature_YieldChanges>
+		<Update>
+			<Where FeatureType="FEATURE_JUNGLE" YieldType="YIELD_PRODUCTION"/>
+			<Set Yield="1"/>
+		</Update>
+	</Feature_YieldChanges> -->
+    
+    <Building_FeatureYieldChanges>
+		<Update>
+			<Where BuildingType="BUILDING_UNIVERSITY" FeatureType="FEATURE_JUNGLE" YieldType="YIELD_SCIENCE"/>
+			<Set Yield="1"/>
+		</Update>
+        <Update>
+			<Where BuildingType="BUILDING_WAT" FeatureType="FEATURE_JUNGLE" YieldType="YIELD_SCIENCE"/>
+			<Set Yield="1"/>
+		</Update>
+	</Building_FeatureYieldChanges>
+    
+	<!-- Gives jungle a chop bonus equal to forest and an equal completion time. -->
+	<BuildFeatures>
+		<Update>
+			<Where FeatureType="FEATURE_JUNGLE" Remove="true"/>
+			<Set Production="20"/>
+		</Update>
+		<Update>
+			<Where FeatureType="FEATURE_JUNGLE" Time="700"/>
+			<Set Time="400"/>
+		</Update>
+	</BuildFeatures>
+
+	<!-- Allows lumbermills on jungle so that they can be improved.  Gives the player more options with them. -->
+	<Improvement_ValidFeatures>
+		<Row>
+			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+		</Row>
+	</Improvement_ValidFeatures>
+
+	<!-- Updated text to reflect changes. -->
+	<Language_en_US>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_FEATURES_JUNGLE_TEXT"/>
+			<Set Text="Dark, forbidding, and deadly to the uninitiated, jungles are a rich source of food and materials to those with the skill and knowledge to live within them. Military units situated in jungles receive a significant defensive bonus."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_IMPROVEMENTS_LUMBERMILL_TEXT"/>
+			<Set Text="A lumbermill allows you to improve the production output of forest and jungle tiles."/>
+		</Update>
+	</Language_en_US>
+    
+    <Language_de_DE>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_FEATURES_JUNGLE_TEXT"/>
+			<Set Text="Dschungel können dunkel, bedrohlich und für unerfahrene Eindringlinge sogar tödlich sein, doch sie sind auch eine wichtige Nahrungs- und Produktions-quelle für alle, die über die Fähigkeiten und das Wissen verfügen, um darin zu überleben. Dschungel bieten jedoch nur wenige Materialien und eine wachsende Zivilisation könnte versucht sein, dort Minen zu bauen oder sie zu Ackerland umzuwandeln. Militäreinheiten, die sich im Dschungel befinden, erhalten aber einen erheblichen Verteidigungsbonus."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_IMPROVEMENTS_LUMBERMILL_TEXT"/>
+			<Set Text="Mit einem Sägewerk ist es möglich, die Produktion von Wald- und Dschungel-Geländefeldern zu erhöhen."/>
+		</Update>
+	</Language_de_DE>
+
+	<!--	
+	Note: 
+	Within AssignStartingPlots.lua, the fertility rating modification for jungles is -1. (MeasureStartPlacementFertilityOfPlot)  
+	It should be fine as is, but for a more comprehensive and accurate modification, I believe the
+	value should be +0 instead (equal to forests).  I didn't include the modified LUA function here to maintain the
+	modularity of this mod component, but keep this in mind if this code is being added to a larger project.
+	-->
+
+</GameData>

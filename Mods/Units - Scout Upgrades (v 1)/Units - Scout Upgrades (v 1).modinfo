@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="705d2254-692e-43fa-a502-dec5ed7ecb94" version="1">
+  <Properties>
+    <Name>Units - Scout Upgrades</Name>
+    <Teaser>This mod introduces new recon units and ironclad.</Teaser>
+    <Description>This mod introduces new recon units and ironclad. Since Sky Fortress can hover over ocean, I also made the helicopter be able to over over ocean. I (Serp) misused the mod Units - Scout to Explorer to make this mod. So they have same ID.</Description>
+    <Authors>Serp,Bloublou,JFD,whoward</Authors>
+    <SpecialThanks>Firaxis Steampunk Scenario</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Dlc id="6DA07636-4123-4018-B643-6575B4EC336B" minversion="0" maxversion="999" />
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="1" maxversion="999" title="DLL - Various Mod Components" />
+  </Dependencies>
+  <References>
+    <Mod id="4f184876-e029-4aad-98a4-10e5334ce52e" minversion="0" maxversion="999" title="Promotions - Terrain Crossing" />
+    <Mod id="2890f440-93a7-4227-ab6f-5c5c1ba175cf" minversion="1" maxversion="999" title="Global - XP For Scouting" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="BFA24C2399EE99BA10D3E6270ED1C50A" import="1">Art/sv_explorer_mod.dds</File>
+    <File md5="9C8638BADBD089629D5CADAB63CE8B44" import="0">Scout_Upgrades.xml</File>
+    <File md5="F52E79FDB597E5455B11536DB2817E62" import="0">SQL/UnitsSteampunkAirships.sql</File>
+    <File md5="FDFE6AD2F502DCC0355E4720B4BC7E9F" import="0">SQL/UnitsSteampunkAirshipsDLL.sql</File>
+    <File md5="480B2BC2DF69254A5F26102F62B460DD" import="1">Art/Graphics/Explorer/conquistador_musketman.dds</File>
+    <File md5="163CDF867415B69FD0EAB1A1216A7171" import="1">Art/Graphics/Explorer/conquistador_musketman_2.dds</File>
+    <File md5="279FC1F7C6615687E0368FF0A59A37CF" import="1">Art/Graphics/Explorer/conquistador_musketman_3.dds</File>
+    <File md5="75303B1580E2345C41C513245A61AA9B" import="1">Art/Graphics/Explorer/conquistador_musketman_gloss.dds</File>
+    <File md5="615B602250AD9F31C83E54401FAB425E" import="1">Art/Graphics/Explorer/conquistador_musket_1.fxsxml</File>
+    <File md5="8607CAE5DE8BC741AE849DB5F1E4C9BE" import="1">Art/Graphics/Explorer/conquistador_musket_1.gr2</File>
+    <File md5="DE3E68D7ECC88C45BA3DDE93769B13BE" import="1">Art/Graphics/Explorer/conquistador_musket_2.fxsxml</File>
+    <File md5="A9F73A8EB3E133ECC88E2E98D54E53FA" import="1">Art/Graphics/Explorer/conquistador_musket_2.gr2</File>
+    <File md5="2291E5B3992C4DD72FFD9AA5137040CC" import="1">Art/Graphics/Explorer/conquistador_musket_3.fxsxml</File>
+    <File md5="8B2BB0700175C72889F6322CF65221F5" import="1">Art/Graphics/Explorer/conquistador_musket_3.gr2</File>
+    <File md5="86601C5390F5E00A678F427508E43364" import="1">Art/Graphics/Explorer/conquistador_musket_4.fxsxml</File>
+    <File md5="7AA7FA7158633FCB58A19B1E13B90C1D" import="1">Art/Graphics/Explorer/conquistador_musket_4.gr2</File>
+    <File md5="BFA24C2399EE99BA10D3E6270ED1C50A" import="1">Art/Graphics/Explorer/sv_GreatRecon.dds</File>
+    <File md5="52BDBC96727632F885DB00A874EF38FD" import="1">Art/Graphics/Explorer/Thumbs.db</File>
+    <File md5="4E619175C0B48768A94533CAC7D6396B" import="1">Art/Graphics/Explorer/vet_conquistador_musketman.dds</File>
+    <File md5="03F466FBFA068FD4D33950CF16CF0C46" import="1">Art/Graphics/Explorer/vet_conquistador_musketman_gloss.dds</File>
+    <File md5="32D52C9CE868E4C128373EA26B841BC2" import="1">Art/IconAtlas/JFD_ExplorationUnits_128.dds</File>
+    <File md5="8A9C6EE639C8E26825FC513015B12AE2" import="1">Art/IconAtlas/JFD_ExplorationUnits_256.dds</File>
+    <File md5="BA64B4C527F394D8385FCCB2DE71CADD" import="1">Art/IconAtlas/JFD_ExplorationUnits_32.dds</File>
+    <File md5="4385C8B5362B497EB67F1F7BEAE5343A" import="1">Art/IconAtlas/JFD_ExplorationUnits_45.dds</File>
+    <File md5="013CF397B201EB83220508889B89D5F6" import="1">Art/IconAtlas/JFD_ExplorationUnits_64.dds</File>
+    <File md5="7EE4BE01DEBD3C7CDDCFA3988BB9FC26" import="1">Art/IconAtlas/JFD_ExplorationUnits_80.dds</File>
+    <File md5="30B28FCD573F26DC51DFBE554C2D25B1" import="0">SQL/Exploration_ArtDefines.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Scout_Upgrades.xml</UpdateDatabase>
+      <UpdateDatabase>SQL/UnitsSteampunkAirshipsDLL.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/UnitsSteampunkAirships.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/Exploration_ArtDefines.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

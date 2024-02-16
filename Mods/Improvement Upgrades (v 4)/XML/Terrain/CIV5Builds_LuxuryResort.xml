@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 5/2/2013 3:35:49 AM -->
+<GameData>
+	<!--Luxury Resort-->
+	<Builds>
+		<Row>
+			<Type>BUILD_LUXURY_RESORT</Type>
+			<PrereqTech>TECH_ARCHITECTURE</PrereqTech>
+			<ImprovementType>IMPROVEMENT_LUXURY_RESORT</ImprovementType>
+			<Description>TXT_KEY_BUILD_LUXURY_RESORT</Description>
+			<Help>TXT_KEY_BUILD_LUXURY_RESORT_HELP</Help>
+			<Kill>true</Kill>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<OrderPriority>98</OrderPriority>
+			<IconIndex>34</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+	</Builds>
+	<BuildFeatures>
+		<Row>
+
+			<BuildType>BUILD_LUXURY_RESORT</BuildType>
+			<FeatureType>FEATURE_ATOLL</FeatureType>
+
+		</Row>
+	</BuildFeatures>
+</GameData>

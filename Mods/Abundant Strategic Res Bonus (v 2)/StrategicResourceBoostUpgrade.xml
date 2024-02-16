@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 5/27/2013 9:58:38 AM -->
+<GameData>
+	<CustomModOptions>
+		<Update>
+			<Where Name="POSITIVE_STRAT_COMBAT"/>
+			<Set Value="1"/>
+		</Update>
+    </CustomModOptions>
+</GameData>

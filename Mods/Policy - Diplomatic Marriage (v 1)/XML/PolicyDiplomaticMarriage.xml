@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<CustomModOptions>
+		<Update>
+			<Where Name="TRAITS_OTHER_PREREQS"/>
+			<Set Value="1"/>
+		</Update>
+	</CustomModOptions>
+	
+	<Traits>
+		<Row>
+			<Type>TRAIT_ANNEX_CITY_STATE_VIA_POLICY</Type>
+			<Description>TXT_KEY_TRAIT_ANNEX_CITY_STATE</Description>
+			<ShortDescription>TXT_KEY_TRAIT_ANNEX_CITY_STATE_SHORT</ShortDescription>
+			<AbleToAnnexCityStates>true</AbleToAnnexCityStates>
+			<!-- This is the magic bit.  All leaders start with this trait (see the SQL)
+			     but it is only enabled when/if they adopt POLICY_CULTURAL_DIPLOMACY -->
+			<PrereqPolicy>POLICY_CULTURAL_DIPLOMACY</PrereqPolicy>
+		</Row>
+	</Traits>
+	
+	<Language_en_US>
+		<Replace Tag="TXT_KEY_POLICY_CULTURAL_DIPLOMACY_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Cultural Diplomacy[ENDCOLOR][NEWLINE]Quantity of Resources gifted by City-States increased by 100%. [ICON_HAPPINESS_1] Happiness from gifted Luxuries increased by 50%. City States may be annexed by marriage</Text>
+		</Replace>
+	</Language_en_US>
+    
+    <Language_de_DE>
+		<Replace Tag="TXT_KEY_POLICY_CULTURAL_DIPLOMACY_HELP"> 
+			<Text>
+				[COLOR_POSITIVE_TEXT]Völkerverständigung[ENDCOLOR][NEWLINE]Die Anzahl der von Stadtstaaten verschenkten Ressourcen wird um 100% erhöht. Die [ICON_HAPPINESS_1] Zufriedenheit durch geschenkte Luxusgüter erhöht sich um 50%. Verbündete Stadtstaaten können mit Gold annektiert oder zur Marionette gemacht werden.
+			</Text>
+		</Replace>
+	</Language_de_DE>
+    
+</GameData>

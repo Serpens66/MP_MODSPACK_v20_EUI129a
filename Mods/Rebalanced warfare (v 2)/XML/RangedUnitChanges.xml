@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gives industrial and later ranged units 2 range and reduced strength -->
+<GameData>
+	<Units>
+    
+		<Update>
+			<Set Range="2"/>
+			<Where Type="UNIT_GATLINGGUN"/>
+		</Update>
+		<Update>
+			<Set Combat="20"/>
+			<Where Type="UNIT_GATLINGGUN"/>
+		</Update>
+        <Update>
+			<Set RangedCombat="20"/>
+			<Where Type="UNIT_GATLINGGUN"/>
+		</Update>
+
+		<Update>
+			<Set Range="2"/>
+			<Where Type="UNIT_MACHINE_GUN"/>
+		</Update>
+		<Update>
+			<Set Combat="45"/>
+			<Where Type="UNIT_MACHINE_GUN"/>
+		</Update>
+		<Update>
+			<Set RangedCombat="45"/>
+			<Where Type="UNIT_MACHINE_GUN"/>
+		</Update>
+        
+		<Update>
+			<Set Range="2"/>
+			<Where Type="UNIT_BAZOOKA"/>
+		</Update>
+		<Update>
+			<Set Combat="60"/>
+			<Where Type="UNIT_BAZOOKA"/>
+		</Update>
+        <Update>
+			<Set RangedCombat="60"/>
+			<Where Type="UNIT_BAZOOKA"/>
+		</Update>
+
+	</Units>
+</GameData>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 5/28/2015 11:08:26 PM -->
+<GameData>
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_SUPERSETTLER</Type>
+			<Description>TXT_KEY_UNIT_SETTLER</Description>
+			<DefaultUnit>UNIT_SUPERSETTLER</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Row>
+			<Class>UNITCLASS_SUPERSETTLER</Class>
+			<Type>UNIT_SUPERSETTLER</Type>
+			<Moves>5</Moves>
+			<Capture>UNITCLASS_WORKER</Capture>
+			<HurryCostModifier>20</HurryCostModifier>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_SETTLE</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_SETTLER</Description>
+			<Civilopedia>TXT_KEY_CIV5_ANTIQUITY_SETTLER_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_SETTLER_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_HELP_SETTLER</Help>
+			<Food>true</Food>
+			<Found>true</Found>
+			<CombatLimit>0</CombatLimit>
+			<UnitArtInfo>ART_DEF_UNIT__SETTLER</UnitArtInfo>
+			<UnitArtInfoCulturalVariation>true</UnitArtInfoCulturalVariation>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>UNIT_ATLAS_1</IconAtlas>
+			<PrereqTech>TECH_FUTURE_TECH</PrereqTech>
+		</Row>
+
+	</Units>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_SUPERSETTLER</UnitType>
+			<PromotionType>PROMOTION_IGNORE_TERRAIN_COST</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SUPERSETTLER</UnitType>
+			<PromotionType>PROMOTION_EXTRA_SIGHT_II</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Civilization_FreeUnits>
+		<Update>
+			<Set UnitClassType="UNITCLASS_SUPERSETTLER"/>
+			<Where UnitClassType="UNITCLASS_SETTLER"/>
+		</Update>
+	</Civilization_FreeUnits>
+
+</GameData>

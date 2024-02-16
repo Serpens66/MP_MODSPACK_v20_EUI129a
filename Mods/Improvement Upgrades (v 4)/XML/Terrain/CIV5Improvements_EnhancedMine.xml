@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/5/2012 5:39:38 AM -->
+<GameData>
+	<Improvements>
+		<Row>
+			<Type>IMPROVEMENT_ENHANCED_MINE</Type>
+			<Description>TXT_KEY_IMPROVEMENT_ENHANCED_MINE</Description>
+			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_ENHANCED_MINE_TEXT</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_MINE</ArtDefineTag>
+			<HillsMakesValid>true</HillsMakesValid>
+            <!-- <NoTwoAdjacent>true</NoTwoAdjacent> -->
+			<PillageGold>70</PillageGold>
+			<PortraitIndex>26</PortraitIndex>
+			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+		</Row>
+	</Improvements>
+	<Improvement_ValidTerrains>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<TerrainType>TERRAIN_HILL</TerrainType>
+		</Row>
+	</Improvement_ValidTerrains>
+	
+	<Improvement_ResourceTypes>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+			<DiscoveryRand>900</DiscoveryRand>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<ResourceType>RESOURCE_COAL</ResourceType>
+			<DiscoveryRand>1025</DiscoveryRand>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
+			<DiscoveryRand>955</DiscoveryRand>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<ResourceType>RESOURCE_URANIUM</ResourceType>
+			<DiscoveryRand>1150</DiscoveryRand>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<ResourceType>RESOURCE_GEMS</ResourceType>
+			<DiscoveryRand>850</DiscoveryRand>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<ResourceType>RESOURCE_GOLD</ResourceType>
+			<DiscoveryRand>900</DiscoveryRand>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<ResourceType>RESOURCE_SILVER</ResourceType>
+			<DiscoveryRand>900</DiscoveryRand>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<ResourceType>RESOURCE_SALT</ResourceType>
+			<DiscoveryRand>800</DiscoveryRand>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<ResourceType>RESOURCE_COPPER</ResourceType>
+			<DiscoveryRand>830</DiscoveryRand>
+		</Row>
+        <Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<ResourceType>RESOURCE_JADE</ResourceType>
+			<DiscoveryRand>830</DiscoveryRand>
+		</Row>
+        <Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<ResourceType>RESOURCE_AMBER</ResourceType>
+			<DiscoveryRand>830</DiscoveryRand>
+		</Row>
+        <Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<ResourceType>RESOURCE_LAPIS</ResourceType>
+			<DiscoveryRand>830</DiscoveryRand>
+		</Row>
+        
+        <!-- add very small discovery percentage also to normal mines -->
+        <Update>
+			<Where ImprovementType="IMPROVEMENT_MINE" ResourceType="RESOURCE_IRON"/>
+			<Set DiscoveryRand="8000"/>
+		</Update>
+        <Update>
+			<Where ImprovementType="IMPROVEMENT_MINE" ResourceType="RESOURCE_COAL"/>
+			<Set DiscoveryRand="9250"/>
+		</Update>
+        <Update>
+			<Where ImprovementType="IMPROVEMENT_MINE" ResourceType="RESOURCE_ALUMINUM"/>
+			<Set DiscoveryRand="8550"/>
+		</Update>
+        <Update>
+			<Where ImprovementType="IMPROVEMENT_MINE" ResourceType="RESOURCE_URANIUM"/>
+			<Set DiscoveryRand="10500"/>
+		</Update>
+        <Update>
+			<Where ImprovementType="IMPROVEMENT_MINE" ResourceType="RESOURCE_GEMS"/>
+			<Set DiscoveryRand="7500"/>
+		</Update>
+        <Update>
+			<Where ImprovementType="IMPROVEMENT_MINE" ResourceType="RESOURCE_GOLD"/>
+			<Set DiscoveryRand="8000"/>
+		</Update>
+        <Update>
+			<Where ImprovementType="IMPROVEMENT_MINE" ResourceType="RESOURCE_SILVER"/>
+			<Set DiscoveryRand="8000"/>
+		</Update>
+        <Update>
+			<Where ImprovementType="IMPROVEMENT_MINE" ResourceType="RESOURCE_SALT"/>
+			<Set DiscoveryRand="7000"/>
+		</Update><Update>
+			<Where ImprovementType="IMPROVEMENT_MINE" ResourceType="RESOURCE_COPPER"/>
+			<Set DiscoveryRand="7300"/>
+		</Update>
+        <Update>
+			<Where ImprovementType="IMPROVEMENT_MINE" ResourceType="RESOURCE_JADE"/>
+			<Set DiscoveryRand="7300"/>
+		</Update>
+        <Update>
+			<Where ImprovementType="IMPROVEMENT_MINE" ResourceType="RESOURCE_AMBER"/>
+			<Set DiscoveryRand="7300"/>
+		</Update>
+        <Update>
+			<Where ImprovementType="IMPROVEMENT_MINE" ResourceType="RESOURCE_LAPIS"/>
+			<Set DiscoveryRand="7300"/>
+		</Update>        
+	</Improvement_ResourceTypes>
+
+	<Improvement_ResourceType_Yields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<ResourceType>RESOURCE_COAL</ResourceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<ResourceType>RESOURCE_URANIUM</ResourceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<ResourceType>RESOURCE_SALT</ResourceType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_ResourceType_Yields>
+	<Improvement_Yields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Improvement_Yields>
+	<Improvement_TechYieldChanges>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<TechType>TECH_CHEMISTRY</TechType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+        <Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<TechType>TECH_BALLISTICS</TechType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_TechYieldChanges>
+    
+    <Policy_ImprovementYieldChanges>
+        <Row>
+			<PolicyType>POLICY_FIVE_YEAR_PLAN</PolicyType>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+    </Policy_ImprovementYieldChanges>
+    
+</GameData>

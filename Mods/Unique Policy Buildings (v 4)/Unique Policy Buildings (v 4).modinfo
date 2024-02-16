@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="81f3ebfb-c689-4e6b-bc72-f4bac7a4e88c" version="4">
+  <Properties>
+    <Name>Unique Policy Buildings</Name>
+    <Teaser>This mod adds a unique building unlocked by each policy tree.</Teaser>
+    <Description>This mod adds a unique building unlocked by each policy tree. Each building is unlocked by the policy opener.
+
+The new buildings are below.
+----------------------------------------------
+
+Public Baths
++1 Food
++10% Food
++1 Culture per 4 Citizens
+Requires Tradition and Engineering
+
+Town Council
++1 Culture
++1 Production
+-10% Gold and Culture cost of acquiring new tiles
+Requires Liberty and Philosophy
+
+Stronghold
++15 XP for Land Units 
++1 Production from Iron
++5 City Defence
++50 City HP
++1 Engineer slot
+Requires Honor and Iron Working
+
+Parochial School
++2 Science
++2 Faith
++1 Scientist slot
+Requires Piety and Civil Service
+
+Chancery
++2% Production from each City-State trade route
++1 Gold for each Trade Route target and recipient
+Requires Patronage and Civil Service
+
+Memorial
++3 Culture
++2 Tourism with Architecture
++1 Happiness
++1 Artist slot
+Requires Aesthetics and Architecture
+
+Depot
++3 Production
++25% Trade Route length
++1 Gold from each Strategic Resource worked by this city
+Requires Commerce and Steam Power
+
+Botanical Gardens
++1 Science
++1 Culture 
++1 Food
++1 Production
+Requires Exploration and Scientific Theory
+
+Patent Office
++3 Science
++1 Gold per 4 Citizens
++1 Scientist slot
+Requires Rationalism and Industrialization</Description>
+    <Authors>thecrazyscotsman</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="74" maxversion="999" title="DLL - Various Mod Components" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="5178BE6697B9C90DBF7B17CF1665CD36" import="1">Art/Policy_IconAtlas128.dds</File>
+    <File md5="EA4FE89D7627E40CF26F7CBCB7EF6ABD" import="1">Art/Policy_IconAtlas256.dds</File>
+    <File md5="0637CF446D51702596599AE1017C6A21" import="1">Art/Policy_IconAtlas45.dds</File>
+    <File md5="9FC236B74F32DC646859C7590F7258C2" import="1">Art/Policy_IconAtlas64.dds</File>
+    <File md5="1D24A0F0F9E15A9C16FC730B508C4DFA" import="1">Art/Policy_IconAtlas80.dds</File>
+    <File md5="93CEDA0891971F0FEB2D64E76B3C3E6E" import="0">XML/Policy_Buildings.xml</File>
+    <File md5="93CEDA0891971F0FEB2D64E76B3C3E61" import="0">SQL/Policy_Buildings.sql</File>
+    <File md5="93CEDA0891971F0FEB2D64E76B3C3E61" import="0">InfluenceBoost.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/Policy_Buildings.xml</UpdateDatabase>
+      <UpdateDatabase>SQL/Policy_Buildings.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="InfluenceBoost.lua">
+      <Name>InfluenceBoost</Name>
+      <Description>InfluenceBoost</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

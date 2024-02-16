@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="72faea6d-0c72-4f10-bf0d-c6240f11afa0" version="2">
+  <Properties>
+    <Name>Terrain - Poor Tiles Tweak</Name>
+    <Teaser>This mod gives unlock some worker improvements for poor or useless terrains like snow and desert and give snow hills production</Teaser>
+    <Description>This mod gives unlock some worker improvements for poor or useless terrains like snow and desert and give snow hills production[NEWLINE]Serp: removed base yields from desert/snow</Description>
+    <Authors>Bloublou</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="C7F1F5632A99BFB87B70B4911F926487" import="0">PTT - Terrains.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>PTT - Terrains.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

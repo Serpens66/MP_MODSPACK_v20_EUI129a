@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="44a1244d-5b92-455d-b75f-6d8889da295a" version="1">
+  <Properties>
+    <Name>More Gamespeeds</Name>
+    <Teaser>New Gamespeeds with longer research time.</Teaser>
+    <Description>Adds new gamespeed settings: -Standard with Epic research times- and -Epic with Marathon research times-.
+    Wealth and Research city projects are researched at mining/writing (converts 35% of production).
+    Increase the science bonus for techs that are already researched by other civs from up to 30 to up to 40%.
+    If the stockpile process mod ist active, 95% (instead 80) is converted and up to 60 (instead of 30) production can be saved.
+    </Description>
+    <Authors>Serp</Authors>
+    <SpecialThanks></SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>3</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="22735D20F21B016B757FA556A8C29A52" import="0">Gamespeeds.xml</File>
+    <File md5="22735D20F21B016B757FA556A8C29A52" import="0">Gamespeeds.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Gamespeeds.xml</UpdateDatabase>
+      <UpdateDatabase>Gamespeeds.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

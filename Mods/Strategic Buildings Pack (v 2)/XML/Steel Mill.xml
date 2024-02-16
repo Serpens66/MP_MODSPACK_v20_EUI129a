@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 2/23/2014 3:34:47 PM -->
+<!-- Steel Mill: +4 Production, +2 Production from Iron, requires 2 Iron. Also updates the Ironworks to require 1 Iron.-->
+<GameData>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_STEELMILL</Type>
+			<DefaultBuilding>BUILDING_STEELMILL</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_STEELMILL</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_STEELMILL</Type>
+			<BuildingClass>BUILDINGCLASS_STEELMILL</BuildingClass>
+			<Cost>360</Cost>
+			<GoldMaintenance>2</GoldMaintenance>
+			<PrereqTech>TECH_STEAM_POWER</PrereqTech>
+			<Description>TXT_KEY_BUILDING_STEELMILL</Description>
+			<Civilopedia>TXT_KEY_BUILDING_STEELMILL_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_STEELMILL_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_STEELMILL_HELP</Help>
+			<MinAreaSize>-1</MinAreaSize>
+			<ConquestProb>66</ConquestProb>
+			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<SpecialistCount>1</SpecialistCount>
+			<HurryCostModifier>25</HurryCostModifier>
+			<IconAtlas>MOD_ICON_ATLAS</IconAtlas>
+			<PortraitIndex>13</PortraitIndex>
+		</Row>
+	</Buildings>
+	<Building_ResourceQuantityRequirements>
+		<Row>
+			<BuildingType>BUILDING_STEELMILL</BuildingType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+			<Cost>3</Cost>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_IRONWORKS</BuildingType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+			<Cost>2</Cost>
+		</Row>
+	</Building_ResourceQuantityRequirements>
+    
+    <!-- also make tanks and bomber require iron -->
+    <Unit_ResourceQuantityRequirements>
+        <Row>
+			<UnitType>UNIT_TANK</UnitType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+            <Cost>1</Cost>
+		</Row>
+        <Row>
+			<UnitType>UNIT_GERMAN_PANZER</UnitType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+            <Cost>1</Cost>
+		</Row>
+        <Row>
+			<UnitType>UNIT_WWI_TANK</UnitType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+            <Cost>1</Cost>
+		</Row>
+        <Row>
+			<UnitType>UNIT_WWI_BOMBER</UnitType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+            <Cost>1</Cost>
+		</Row>
+        <Row>
+			<UnitType>UNIT_AMERICAN_B17</UnitType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+            <Cost>1</Cost>
+		</Row>
+        <Row>
+			<UnitType>UNIT_BOMBER</UnitType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+            <Cost>1</Cost>
+		</Row>
+	</Unit_ResourceQuantityRequirements>
+     
+    <!-- revert no late game trading from AI  -->
+    <Resources>
+        <Update>
+			<Where Type="RESOURCE_IRON"/>
+			<Set AIStopTradingEra="NULL"/>
+		</Update>
+        <Update>
+			<Where Type="RESOURCE_HORSE"/>
+			<Set AIStopTradingEra="NULL"/>
+		</Update>
+    </Resources>
+    
+    
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_STEELMILL</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>4</Yield>
+		</Row>
+	</Building_YieldChanges>
+	<Building_ResourceYieldChanges>
+		<Row>
+			<BuildingType>BUILDING_STEELMILL</BuildingType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_IRONWORKS</BuildingType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_ResourceYieldChanges>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_STEELMILL</BuildingType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>40</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_STEELMILL</BuildingType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>4</Flavor>
+		</Row>
+	</Building_Flavors>
+	<Language_en_US>
+		<!-- Description Tags-->
+		<Row Tag="TXT_KEY_BUILDING_STEELMILL">
+			<Text>Steel Mill</Text>
+		</Row>
+		<!-- Help Tags-->
+		<Row Tag="TXT_KEY_BUILDING_STEELMILL_HELP">
+			<Text>+4 [ICON_PRODUCTION] Production and +2 [ICON_PRODUCTION] Production from [ICON_RES_IRON] Iron resources worked by this city.[NEWLINE][NEWLINE]Requires 3 [ICON_RES_IRON] Iron.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_IRONWORKS_HELP"/>
+			<Set>
+				<Text>+8 [ICON_PRODUCTION]Production. +1 [ICON_PRODUCTION] from Iron resources worked by this city.[NEWLINE][NEWLINE]Requires 2 Iron, and must have built a Workshop in all Cities. The cost goes up the more cities there are in the empire.</Text>
+			</Set>
+		</Update>
+		<!-- Quote Tags, use for Wonders
+		<Row Tag="TXT_KEY_BUILDING_EXAMPLE_QUOTE">
+			<Text></Text>
+		</Row>
+		-->
+		<!-- Strategy Tags-->
+		<Row Tag="TXT_KEY_BUILDING_STEELMILL_STRATEGY">
+			<Text>The Steel Mill provides a signification production boost, especially in cities that mine Iron.</Text>
+		</Row>
+		<!-- Pedia Tags-->
+		<Row Tag="TXT_KEY_BUILDING_STEELMILL_PEDIA">
+			<Text>
+				A steel mill or steelworks is an industrial plant for the manufacture of steel.[NEWLINE][NEWLINE]Steel is an alloy of iron and carbon. It is produced in a two-stage process. First, iron ore is reduced or smelted with coke and limestone in a blast furnace, producing molten iron which is either cast into pig iron or carried to the next stage as molten iron. In the second stage, known as steelmaking, impurities such as sulfur, phosphorus, and excess carbon are removed and alloying elements such as manganese, nickel, chromium and vanadium are added to produce the exact steel required. Steel mills then turn molten steel into blooms, ingots, slabs and sheet through casting, hot rolling and cold rolling.[NEWLINE][NEWLINE]--Wikipedia</Text>
+		</Row>
+	</Language_en_US>
+    
+    <Language_de_DE>
+		<!-- Description Tags-->
+		<Row Tag="TXT_KEY_BUILDING_STEELMILL">
+			<Text>Stahlwerk</Text>
+		</Row>
+		<!-- Help Tags-->
+		<Row Tag="TXT_KEY_BUILDING_STEELMILL_HELP">
+			<Text>Benötigt 3 [ICON_RES_IRON] Eisen! Alle Quellen von [ICON_RES_IRON] Eisen, die von dieser Stadt bearbeitet werden, generieren +2 [ICON_PRODUCTION] Produktion.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_IRONWORKS_HELP"/>
+			<Set>
+				<Text>Benötigt 2 [ICON_RES_IRON] Eisen! [NEWLINE][NEWLINE]Alle Quellen von [ICON_RES_IRON] Eisen, die von dieser Stadt bearbeitet werden, generieren +1 [ICON_PRODUCTION] Produktion. Benötigt Werkstatt in allen Städten. Je mehr Städte ein Reich hat, desto höher sind die Kosten.</Text>
+			</Set>
+		</Update>
+
+		<!-- Strategy Tags-->
+		<Row Tag="TXT_KEY_BUILDING_STEELMILL_STRATEGY">
+			<Text>Das Stahlwerk erhöht die Produktion einer Stadt, besonders wenn dort Eisenquellen bearbeitet werden.</Text>
+		</Row>
+		<!-- Pedia Tags-->
+		<Row Tag="TXT_KEY_BUILDING_STEELMILL_PEDIA">
+			<Text>
+				A steel mill or steelworks is an industrial plant for the manufacture of steel.[NEWLINE][NEWLINE]Steel is an alloy of iron and carbon. It is produced in a two-stage process. First, iron ore is reduced or smelted with coke and limestone in a blast furnace, producing molten iron which is either cast into pig iron or carried to the next stage as molten iron. In the second stage, known as steelmaking, impurities such as sulfur, phosphorus, and excess carbon are removed and alloying elements such as manganese, nickel, chromium and vanadium are added to produce the exact steel required. Steel mills then turn molten steel into blooms, ingots, slabs and sheet through casting, hot rolling and cold rolling.[NEWLINE][NEWLINE]--Wikipedia</Text>
+		</Row>
+	</Language_de_DE>
+</GameData>

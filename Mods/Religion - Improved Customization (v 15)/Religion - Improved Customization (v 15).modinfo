@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="0fe65d15-fc91-4a8d-b3a7-a33090c13008" version="15">
+  <Properties>
+    <Name>Religion - Improved Customization</Name>
+    <Teaser>Allow any civilization to choose a bonus belief when you found a new Religion.</Teaser>
+    <Description>Allow any civilization to choose a bonus belief to give you more choices when you found a new Religion. (Just like the Byzantine)</Description>
+    <Authors>Bloublou</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="9B64A604ED9672981818AB5CADBEA7D4" import="0">REL - ToolTip.xml</File>
+    <File md5="6C162F5F9A685C0E6269EFB65F77C75D" import="0">REL - Traits.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>REL - Traits.xml</UpdateDatabase>
+      <UpdateDatabase>REL - ToolTip.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

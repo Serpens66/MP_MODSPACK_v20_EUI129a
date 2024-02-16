@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/3/2014 2:03:20 PM -->
+<GameData>
+	
+	<Language_en_US>
+
+		<Row Tag="TXT_KEY_TEST_DIALOG_BUTTON_OK">
+			<Text>OK</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TEST_DIALOG_BUTTON_OK_TT">
+			<Text>Left click to dismiss the popup</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_TRAITS_TITLE">
+			<Text>Leader Traits</Text>
+		</Row>
+        <Row Tag="TXT_KEY_LEADER_TRAITS_TITLE_YOU">
+			<Text>Leader Traits </Text>
+		</Row>
+        
+		
+        
+		<Row Tag="TXT_KEY_AGGRESSIVE_TRAIT">
+			<Text>[ICON_WAR][COLOR_POSITIVE_TEXT]Aggressive[ENDCOLOR]</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_AGGRESSIVE_TRAIT_HELP">
+			<Text>
+				[ICON_WAR][COLOR_POSITIVE_TEXT]Aggressive:[ENDCOLOR] 15% (of strength) [ICON_GOLDEN_AGE] golden age points for kills with melee units.[NEWLINE]+5% [ICON_PRODUCTION] Production when building infantry (Melee,Archer,Gun).[NEWLINE]+50% [ICON_PRODUCTION] Production when building barracks and armory.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CHARISMATIC_TRAIT">
+			<Text>[ICON_HAPPINESS_1][COLOR_POSITIVE_TEXT]Charismatic [ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CHARISMATIC_TRAIT_HELP">
+			<Text>
+				[ICON_HAPPINESS_1][COLOR_POSITIVE_TEXT]Charismatic :[ENDCOLOR] +2 [ICON_HAPPINESS_1] Happiness in the capital.[NEWLINE]+1 [ICON_HAPPINESS_1] Happiness in every city.[NEWLINE]Get 10% of excessing Happiness as [ICON_CULTURE] Culture and +1% [ICON_RESEARCH] Science as long as people are happy.[NEWLINE]+50% [ICON_PRODUCTION] Production when building colosseum und circus.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CREATIVE_TRAIT">
+			<Text>[ICON_CULTURE][COLOR_POSITIVE_TEXT]Creative[ENDCOLOR]</Text>
+		</Row>
+			
+		<Row Tag="TXT_KEY_CREATIVE_TRAIT_HELP">
+			<Text>
+				[ICON_CULTURE][COLOR_POSITIVE_TEXT]Creative:[ENDCOLOR] +1 [ICON_CULTURE] Culture for every 4th citizen in the capital.[NEWLINE]+10% for generation of Great [ICON_GREAT_ARTIST] Artist, [ICON_GREAT_WRITER] Writer and [ICON_GREAT_MUSICAN] Musican.[NEWLINE][ICON_GOLDEN_AGE] Golden Ages taking 5% longer.[NEWLINE]+20% [ICON_PRODUCTION] Production when building their guilds.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DIPLOMATIC_TRAIT">
+			<Text>[ICON_INFLUENCE][COLOR_POSITIVE_TEXT]Diplomatic[ENDCOLOR]</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_DIPLOMATIC_TRAIT_HELP">
+			<Text>
+				[ICON_INFLUENCE][COLOR_POSITIVE_TEXT]Diplomatic:[ENDCOLOR] +10% more [ICON_INFLUENCE] Influence with gold- and +5 more with unit gifts at city states.[NEWLINE][ICON_SPY] Spies have a 7% higher chance to: steal a technology, manipulate an election at a citystate and catch spies from enemies.[NEWLINE]Spies from enemies steal technologies 7% slower from you.[NEWLINE]+60% [ICON_PRODUCTION] Production when building constabulary und police station.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TALL_TRAIT">
+			<Text>[ICON_CITIZEN][COLOR_POSITIVE_TEXT]Tall[ENDCOLOR]</Text>
+		</Row>
+				
+		<Row Tag="TXT_KEY_TALL_TRAIT_HELP">
+			<Text>
+				[ICON_CITIZEN][COLOR_POSITIVE_TEXT]Tall:[ENDCOLOR] 20% less [ICON_HAPPINESS_4] Unhappiness from the total number of [ICON_CITIZEN] citizen.[NEWLINE]+1 [ICON_FOOD] Food from granaries.[NEWLINE]+50% [ICON_PRODUCTION] Production when building aqueducts and workshops.</Text>
+        </Row>
+        
+        <Row Tag="TXT_KEY_WIDE_TRAIT">
+			<Text>[ICON_CONNECTED][COLOR_POSITIVE_TEXT]Wide[ENDCOLOR]</Text>
+		</Row>
+        
+        <Row Tag="TXT_KEY_WIDE_TRAIT_HELP">
+			<Text>
+				[ICON_CONNECTED][COLOR_POSITIVE_TEXT]Wide:[ENDCOLOR] 20% less [ICON_HAPPINESS_4] Unhappiness from the total number cities.[NEWLINE]+5% [ICON_PRODUCTION] Production when building settlers in the capital.[NEWLINE]+50% [ICON_PRODUCTION] Production when building granaries and stone works.</Text>
+        </Row>
+
+		<Row Tag="TXT_KEY_FINANCIAL_TRAIT">
+			<Text>[ICON_GOLD][COLOR_POSITIVE_TEXT]Financial[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_FINANCIAL_TRAIT_HELP">
+			<Text>
+				[ICON_GOLD][COLOR_POSITIVE_TEXT]Financial:[ENDCOLOR] +1 [ICON_GOLD] Gold for every 3rd citizen in the capital.[NEWLINE]+25% more [ICON_GOLD] Gold from [ICON_CONNECTED] city connections.[NEWLINE]+1 [ICON_GOLD] Gold from markets and banks.[NEWLINE]+50% [ICON_PRODUCTION] Production when building markets and banks.
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_IMPERIALISTIC_TRAIT">
+			<Text>[ICON_CITY_STATE][COLOR_POSITIVE_TEXT]Imperialistic[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_IMPERIALISTIC_TRAIT_HELP">
+			<Text>
+				[ICON_CITY_STATE][COLOR_POSITIVE_TEXT]Imperialistic:[ENDCOLOR] 25% for generation of Great [ICON_GREAT_GENERAL] General and [ICON_GREAT_ADMIRAL] Admiral.[NEWLINE]-15% [ICON_INVEST] Military Upkeep.[NEWLINE]+5% [ICON_PRODUCTION] Production when building siege units.[NEWLINE]+1 [ICON_HAPPINESS_1] Happiness from Gerichtsgebäuden.[NEWLINE]+100% [ICON_PRODUCTION] Production when building courthouse.
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_INDUSTRIOUS_TRAIT">
+			<Text>[ICON_PRODUCTION][COLOR_POSITIVE_TEXT]Industrious[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_INDUSTRIOUS_TRAIT_HELP">
+			<Text>
+				[ICON_PRODUCTION][COLOR_POSITIVE_TEXT]Industrious:[ENDCOLOR] +1 [ICON_PRODUCTION] Production for every 4th citizen in the capital.[NEWLINE]+5% [ICON_PRODUCTION] Production when building [ICON_CAPITAL] World Wonders.[NEWLINE]+50% [ICON_PRODUCTION] Production when building windmills und forges.
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_INVENTIVE_TRAIT">
+			<Text>[ICON_RESEARCH][COLOR_POSITIVE_TEXT]Inventive[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_INVENTIVE_TRAIT_HELP">
+			<Text>
+				[ICON_RESEARCH][COLOR_POSITIVE_TEXT]Inventive:[ENDCOLOR] +1 [ICON_RESEARCH] Science for every 4th citizen in the capital.[NEWLINE]+1 [ICON_RESEARCH] Science libraries and universities.[NEWLINE]+50% [ICON_PRODUCTION] Production when building libraries and universities.
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_MERCANTILE_TRAIT">
+			<Text>[ICON_INTERNATIONAL_TRADE][COLOR_POSITIVE_TEXT]Mercantile[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_MERCANTILE_TRAIT_HELP">
+			<Text>
+				[ICON_INTERNATIONAL_TRADE][COLOR_POSITIVE_TEXT]Mercantile:[ENDCOLOR] +1 [ICON_GOLD] Gold for every 3rd citizen in the capital.[NEWLINE]+25% [ICON_FOOD] Food / [ICON_PRODUCTION] Production from national [ICON_INTERNATIONAL_TRADE] traderoutes.[NEWLINE]+1 [ICON_GOLD] Gold from international [ICON_INTERNATIONAL_TRADE] traderoutes.[NEWLINE]+50% [ICON_PRODUCTION] Production when building caravansary and harbour.
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PHILOSOPHICAL_TRAIT">
+			<Text>[ICON_GREAT_PEOPLE][COLOR_POSITIVE_TEXT]Philosophical[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PHILOSOPHICAL_TRAIT_HELP">
+			<Text>
+				[ICON_GREAT_PEOPLE][COLOR_POSITIVE_TEXT]Philosophical:[ENDCOLOR] +1 [ICON_CULTURE] Culture for every 4th citizen in the capital.[NEWLINE]+5% for generation of all [ICON_GREAT_PEOPLE] Great People.[NEWLINE]+1 [ICON_CULTURE] Culture per [ICON_CAPITAL] world wonder.[NEWLINE]+35% [ICON_PRODUCTION] Production when building onuments, amphitheatres and gardens.
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROTECTIVE_TRAIT">
+			<Text>[ICON_STRENGTH][COLOR_POSITIVE_TEXT]Protective[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROTECTIVE_TRAIT_HELP">
+			<Text>
+				[ICON_STRENGTH][COLOR_POSITIVE_TEXT]Protective:[ENDCOLOR] +50% city attack strength.[NEWLINE]+15% attack strength from units in friendly territory.[NEWLINE]+60% [ICON_PRODUCTION] Production when building walls and castles.
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_SEAFARING_TRAIT">
+			<Text>[ICON_GREAT_ADMIRAL][COLOR_POSITIVE_TEXT]Seafaring[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_SEAFARING_TRAIT_HELP">
+			<Text>
+				[ICON_GREAT_ADMIRAL][COLOR_POSITIVE_TEXT]Seafaring:[ENDCOLOR] +1 [ICON_FOOD] Food from [ICON_PRODUCTION] Production in coastal cities.[NEWLINE]+1 [ICON_MOVES] movement for naval units, +1 sight and +10% defense for embarked units.[NEWLINE]+5% [ICON_PRODUCTION] Production when building combat naval units.[NEWLINE]+50% [ICON_PRODUCTION] Production when building lighthouse and seaport.
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_SPIRITUAL_TRAIT">
+			<Text>[ICON_PEACE][COLOR_POSITIVE_TEXT]Spiritual[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_SPIRITUAL_TRAIT_HELP">
+			<Text>
+				[ICON_PEACE][COLOR_POSITIVE_TEXT]Spiritual:[ENDCOLOR] +1 [ICON_FAITH] Faith for every 3rd citizen in the capital.[NEWLINE]+1 [ICON_FAITH] Faith from temples.[NEWLINE]Can choose any belief for a [ICON_RELIGION] religion, even if already another religion has it.[NEWLINE]+50% [ICON_PRODUCTION] Production when building shrines and temples.
+			</Text>
+		</Row>
+        
+        <Row Tag="TXT_KEY_EXPLORER_TRAIT">
+			<Text>[ICON_GREAT_EXPLORER][COLOR_POSITIVE_TEXT]Explorer[ENDCOLOR]</Text>
+		</Row>
+        <Row Tag="TXT_KEY_EXPLORER_TRAIT_HELP">
+			<Text>
+				[ICON_GREAT_EXPLORER][COLOR_POSITIVE_TEXT]Explorer:[ENDCOLOR] Starts with a free scouting unit.[NEWLINE]Scouting units have +1 [ICON_MOVES] movement.[NEWLINE]All units getting additional boni from goody huts.[NEWLINE]+50% [ICON_PRODUCTION] Production when building stable and mint.
+			</Text>
+		</Row>
+        
+        
+        <Row Tag="TXT_KEY_LEADERS_WITH_THIS_TRAIT">
+			<Text>[NEWLINE][COLOR_NEGATIVE_TEXT]Leaders:[ENDCOLOR] {1_Leaderlist}</Text>
+		</Row>
+
+	</Language_en_US>
+    
+    
+    
+    
+    
+    
+    <Language_de_DE>
+
+		<Row Tag="TXT_KEY_TEST_DIALOG_BUTTON_OK">
+			<Text>OK</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TEST_DIALOG_BUTTON_OK_TT">
+			<Text>Linksklick um das Popup zu verlassen</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_TRAITS_TITLE">
+			<Text>Anführer Eigenschaften</Text>
+		</Row>
+        <Row Tag="TXT_KEY_LEADER_TRAITS_TITLE_YOU">
+			<Text>Anführer Eigenschaften </Text>
+		</Row>
+		
+		
+		<Row Tag="TXT_KEY_AGGRESSIVE_TRAIT">
+			<Text>[ICON_WAR][COLOR_POSITIVE_TEXT]Aggressiv[ENDCOLOR]</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_AGGRESSIVE_TRAIT_HELP">
+			<Text>
+				[ICON_WAR][COLOR_POSITIVE_TEXT]Aggressiv:[ENDCOLOR] 15% (der Kampfstärke) [ICON_GOLDEN_AGE] Goldene Zeitalter Punkte von Kills mit Nahkämpfern.[NEWLINE]+5% [ICON_PRODUCTION] Produktion beim Bau von Infanterie (Melee,Archer,Gun).[NEWLINE]+50% [ICON_PRODUCTION] Produktion beim Bau von Kaserne und Waffenkammer.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CHARISMATIC_TRAIT">
+			<Text>[ICON_HAPPINESS_1][COLOR_POSITIVE_TEXT]Charismatisch[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CHARISMATIC_TRAIT_HELP">
+			<Text>
+				[ICON_HAPPINESS_1][COLOR_POSITIVE_TEXT]Charismatisch:[ENDCOLOR] +2 [ICON_HAPPINESS_1] Zufriedenheit in der Hauptstadt.[NEWLINE]+1 [ICON_HAPPINESS_1] Zufriedenheit in jeder Stadt.[NEWLINE]Bekommt 10% des Überschusses an Zufriedenheit als [ICON_CULTURE] Kultur und +1% [ICON_RESEARCH] Wissenschaft solange das Volk zufrieden ist.[NEWLINE]+50% [ICON_PRODUCTION] Produktion beim Bau von Kolosseum und Zirkus.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_CREATIVE_TRAIT">
+			<Text>[ICON_CULTURE][COLOR_POSITIVE_TEXT]Kreativ[ENDCOLOR]</Text>
+		</Row>
+			
+		<Row Tag="TXT_KEY_CREATIVE_TRAIT_HELP">
+			<Text>
+				[ICON_CULTURE][COLOR_POSITIVE_TEXT]Kreativ:[ENDCOLOR] +1 [ICON_CULTURE] Kultur pro 4 Einwohner der Hauptstadt.[NEWLINE]+10% auf Generierung von Großer [ICON_GREAT_ARTIST] Künstler, [ICON_GREAT_WRITER] Schriftsteller und [ICON_GREAT_MUSICAN] Musiker.[NEWLINE][ICON_GOLDEN_AGE] Goldene Zeitalter dauern 5% länger.[NEWLINE]+20% [ICON_PRODUCTION] Produktion beim Bau von Künstler-,Musiker- und Schriftstellergilden.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DIPLOMATIC_TRAIT">
+			<Text>[ICON_INFLUENCE][COLOR_POSITIVE_TEXT]Diplomatisch[ENDCOLOR]</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_DIPLOMATIC_TRAIT_HELP">
+			<Text>
+				[ICON_INFLUENCE][COLOR_POSITIVE_TEXT]Diplomatisch:[ENDCOLOR] +10% mehr [ICON_INFLUENCE] Einfluss durch Gold- und +5 mehr durch Einheitengeschenke bei Stadtstaaten.[NEWLINE][ICON_SPY] Spione haben +7% höhere Chance eine Technologie zu stehlen, eine Wahl im Stadtstaat zu manipulieren und feindliche Spione zu erwischen.[NEWLINE]Feindliche Spione stehlen Technologien 7% langsamer.[NEWLINE]+60% [ICON_PRODUCTION] Produktion beim Bau von Gendarmerie und Polizeiwache.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TALL_TRAIT">
+			<Text>[ICON_CITIZEN][COLOR_POSITIVE_TEXT]Groß[ENDCOLOR]</Text>
+		</Row>
+				
+		<Row Tag="TXT_KEY_TALL_TRAIT_HELP">
+			<Text>
+				[ICON_CITIZEN][COLOR_POSITIVE_TEXT]Groß:[ENDCOLOR] [ICON_HAPPINESS_4] Unzufriedenheit durch Gesamtzahl der [ICON_CITIZEN] Bürger 20% weniger.[NEWLINE]+1 [ICON_FOOD] Nahrung von Kornspeichern.[NEWLINE]+50% [ICON_PRODUCTION] Produktion beim Bau von Aquedukten und Werkstätten.</Text>
+        </Row>
+        
+        <Row Tag="TXT_KEY_WIDE_TRAIT">
+			<Text>[ICON_CONNECTED][COLOR_POSITIVE_TEXT]Breit[ENDCOLOR]</Text>
+		</Row>
+        
+        <Row Tag="TXT_KEY_WIDE_TRAIT_HELP">
+			<Text>
+				[ICON_CONNECTED][COLOR_POSITIVE_TEXT]Breit:[ENDCOLOR] [ICON_HAPPINESS_4] Unzufriedenheit durch Anzahl der Städte 20% weniger.[NEWLINE]+5% [ICON_PRODUCTION] auf den Bau von Siedlern in der Hauptstadt.[NEWLINE]+50% [ICON_PRODUCTION] Produktion beim Bau von Kornspeicher und Steinwerke.</Text>
+        </Row>
+
+		<Row Tag="TXT_KEY_FINANCIAL_TRAIT">
+			<Text>[ICON_GOLD][COLOR_POSITIVE_TEXT]Finanziell[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_FINANCIAL_TRAIT_HELP">
+			<Text>
+				[ICON_GOLD][COLOR_POSITIVE_TEXT]Finanziell:[ENDCOLOR] +1 [ICON_GOLD] Gold pro 3 Einwohner der Hauptstadt.[NEWLINE]+25% mehr [ICON_GOLD] Gold durch [ICON_CONNECTED] Stadtverbindungen.[NEWLINE]+1 [ICON_GOLD] Gold von Märkten und Banken.[NEWLINE]+50% [ICON_PRODUCTION] Produktion beim Bau von Märkte und Banken.
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_IMPERIALISTIC_TRAIT">
+			<Text>[ICON_CITY_STATE][COLOR_POSITIVE_TEXT]Imperialistisch[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_IMPERIALISTIC_TRAIT_HELP">
+			<Text>
+				[ICON_CITY_STATE][COLOR_POSITIVE_TEXT]Imperialistisch:[ENDCOLOR] 25% auf Generierung von Großen [ICON_GREAT_GENERAL] General und [ICON_GREAT_ADMIRAL] Admiral.[NEWLINE]-15% Einheiten [ICON_INVEST] Unterhalt.[NEWLINE]+5% [ICON_PRODUCTION] Produktion auf den Bau von Belagerungswaffen.[NEWLINE]+1 [ICON_HAPPINESS_1] Zufriedenheit von Gerichtsgebäuden.[NEWLINE]+100% [ICON_PRODUCTION] Produktion beim Bau von Gerichtsgebäude.
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_INDUSTRIOUS_TRAIT">
+			<Text>[ICON_PRODUCTION][COLOR_POSITIVE_TEXT]Industriell[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_INDUSTRIOUS_TRAIT_HELP">
+			<Text>
+				[ICON_PRODUCTION][COLOR_POSITIVE_TEXT]Industriell:[ENDCOLOR] +1 [ICON_PRODUCTION] Produktion pro 4 Einwohner der Hauptstadt.[NEWLINE]+5% [ICON_PRODUCTION] Produktion auf den Bau von [ICON_CAPITAL] Wundern.[NEWLINE]+50% [ICON_PRODUCTION] Produktion beim Bau von Windmühlen und Schmieden.
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_INVENTIVE_TRAIT">
+			<Text>[ICON_RESEARCH][COLOR_POSITIVE_TEXT]Erfinderisch[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_INVENTIVE_TRAIT_HELP">
+			<Text>
+				[ICON_RESEARCH][COLOR_POSITIVE_TEXT]Erfinderisch:[ENDCOLOR] +1 [ICON_RESEARCH] Wissenschaft pro 4 Einwohner der Hauptstadt.[NEWLINE]+1 [ICON_RESEARCH] Wissenschaft von Bibliotheken und Universitäten.[NEWLINE]+50% [ICON_PRODUCTION] Produktion beim Bau von Bibliotheken und Universitäten.
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_MERCANTILE_TRAIT">
+			<Text>[ICON_INTERNATIONAL_TRADE][COLOR_POSITIVE_TEXT]Kaufmännisch[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_MERCANTILE_TRAIT_HELP">
+			<Text>
+				[ICON_INTERNATIONAL_TRADE][COLOR_POSITIVE_TEXT]Kaufmännisch:[ENDCOLOR] +1 [ICON_GOLD] Gold pro 3 Einwohner der Hauptstadt.[NEWLINE]+25% [ICON_FOOD] Nahrung / [ICON_PRODUCTION] Produktion durch nationale [ICON_INTERNATIONAL_TRADE] Handelsrouten.[NEWLINE]+1 [ICON_GOLD] Gold durch internationale [ICON_INTERNATIONAL_TRADE] Handelsrouten.[NEWLINE]+50% [ICON_PRODUCTION] Produktion beim Bau von Karawanenhof und Hafen.
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PHILOSOPHICAL_TRAIT">
+			<Text>[ICON_GREAT_PEOPLE][COLOR_POSITIVE_TEXT]Philosophisch[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PHILOSOPHICAL_TRAIT_HELP">
+			<Text>
+				[ICON_GREAT_PEOPLE][COLOR_POSITIVE_TEXT]Philosophisch:[ENDCOLOR] +1 [ICON_CULTURE] Kultur pro 4 Einwohner der Hauptstadt.[NEWLINE]+5% auf die Generierung aller [ICON_GREAT_PEOPLE] Großen Persönlichkeiten.[NEWLINE]+1 [ICON_CULTURE] Kultur pro [ICON_CAPITAL] Weltwunder.[NEWLINE]+35% [ICON_PRODUCTION] Produktion beim Bau von Monumente, Amphitheater und Gärten.
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROTECTIVE_TRAIT">
+			<Text>[ICON_STRENGTH][COLOR_POSITIVE_TEXT]Protektionistisch[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROTECTIVE_TRAIT_HELP">
+			<Text>
+				[ICON_STRENGTH][COLOR_POSITIVE_TEXT]Protektionistisch:[ENDCOLOR] +50% Stadt-Fernkampfstärke.[NEWLINE]+15% Kampfstärke von Einheiten in freundlichem Territorium.[NEWLINE]+60% [ICON_PRODUCTION] Produktion beim Bau von Stadtmauern und Burgen.
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_SEAFARING_TRAIT">
+			<Text>[ICON_GREAT_ADMIRAL][COLOR_POSITIVE_TEXT]Seefahrt[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_SEAFARING_TRAIT_HELP">
+			<Text>
+				[ICON_GREAT_ADMIRAL][COLOR_POSITIVE_TEXT]Seefahrt:[ENDCOLOR] +1 [ICON_FOOD] Nahrung und [ICON_PRODUCTION] Produktion in Küstenstädten.[NEWLINE]+1 [ICON_MOVES] Bewegung für Schiffe, +1 Sicht und +10% Verteidigung für gewasserte Kampfeinheiten.[NEWLINE]+5% [ICON_PRODUCTION] Produktion auf den Bau von Kampf-Schiffen.[NEWLINE]+50% [ICON_PRODUCTION] Produktion beim Bau von Leuchtturm und Seehafen.
+			</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_SPIRITUAL_TRAIT">
+			<Text>[ICON_PEACE][COLOR_POSITIVE_TEXT]Spirituell[ENDCOLOR]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_SPIRITUAL_TRAIT_HELP">
+			<Text>
+				[ICON_PEACE][COLOR_POSITIVE_TEXT]Spirituell:[ENDCOLOR] +1 [ICON_FAITH] Glaube pro 3 Einwohner der Hauptstadt.[NEWLINE]+1 [ICON_FAITH] Glauben in Tempeln.[NEWLINE]Kann jeden Glaubenssatz einer [ICON_RELIGION] Religion wählen, auch wenn eine andere Religion diesen bereits hat.[NEWLINE]+50% [ICON_PRODUCTION] Produktion beim Bau von Schreine und Tempel.
+			</Text>
+		</Row>
+        
+        <Row Tag="TXT_KEY_EXPLORER_TRAIT">
+			<Text>[ICON_GREAT_EXPLORER][COLOR_POSITIVE_TEXT]Kundschafter[ENDCOLOR]</Text>
+		</Row>
+        <Row Tag="TXT_KEY_EXPLORER_TRAIT_HELP">
+			<Text>
+				[ICON_GREAT_EXPLORER][COLOR_POSITIVE_TEXT]Kundschafter:[ENDCOLOR] Beginnt mit einem kostenlosen Späher.[NEWLINE]Späher haben +1 [ICON_MOVES] Bewegung.[NEWLINE]Alle Einheiten finden einen zusätzlich Bonus in Ruinen.[NEWLINE]+50% [ICON_PRODUCTION] Produktion beim Bau von Stall und Münzanstalt.
+			</Text>
+		</Row>
+        
+        
+        <Row Tag="TXT_KEY_LEADERS_WITH_THIS_TRAIT">
+			<Text>[NEWLINE][COLOR_NEGATIVE_TEXT]Anführer:[ENDCOLOR] {1_Leaderlist}</Text>
+		</Row>
+
+	</Language_de_DE>
+    
+    
+    
+    
+	
+</GameData>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/5/2012 5:23:47 AM -->
+<GameData>
+	<Language_en_US>
+		
+		<!--Notifications-->
+        <Row Tag="TXT_KEY_NOTIFICATION_ENHANCED_MINE_DISCOVERY_TITLE">
+			<Text>You have gained access to a resource!</Text>
+		</Row>
+        <Row Tag="TXT_KEY_NOTIFICATION_ENHANCED_MINE_DISCOVERY_LOST_TITLE">
+			<Text>You have lost access to a resource!</Text>
+		</Row>
+        
+		<Row Tag="TXT_KEY_NOTIFICATION_ENHANCED_MINE_DISCOVERY">
+			<Text>You have gained access to a source of [COLOR_POSITIVE_TEXT]{1_ResourceName:textkey}[/COLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_ENHANCED_MINE_DISCOVERY_LOST">
+			<Text>You have lost access to a source of [COLOR_WARNING_TEXT]{1_ResourceName:textkey}[/COLOR]</Text>
+		</Row>
+		
+		<!--Improvements-->
+		
+		<Row Tag="TXT_KEY_IMPROVEMENT_RANCH">
+			<Text>Ranch</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_HUNTING_LODGE">
+			<Text>Hunting Lodge</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_ENHANCED_MINE">
+			<Text>Enhanced Mine</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FAIR_TRADE_PLANTATION">
+			<Text>Fair Trade Plantation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_SKI_RESORT">
+			<Text>Ski Resort</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_RESEARCH_STATION">
+			<Text>Research Station</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_BEACH_RESORT">
+			<Text>Beach Resort</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_LUXURY_RESORT">
+			<Text>Luxury Resort</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_NUCLEAR_TESTING">
+			<Text>Nuclear Test Site</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_ENHANCED_QUARRY">
+			<Text>Enhanced Quarry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_SAWMILL">
+			<Text>Saw Mill</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_SUBURB">
+			<Text>Suburb</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_TRADING_ESTATE">
+			<Text>Trading Company</Text>
+		</Row>
+        <Row Tag="TXT_KEY_IMPROVEMENT_FARMLAND_ESTATE">
+			<Text>Farmland Estate</Text>
+		</Row>
+
+		
+		<!--Builds-->
+		
+		<Row Tag="TXT_KEY_BUILD_RANCH">
+			<Text>Ranch</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_ENHANCED_MINE">
+			<Text>Construct an [LINK=IMPROVEMENT_ENHANCED_MINE]Enhanced Mine[\LINK]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_HUNTING_LODGE">
+			<Text>Hunting Lodge</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FAIR_TRADE_PLANTATION">
+			<Text>Fair Trade Plantation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_SKI_RESORT">
+			<Text>Ski Resort</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_RESEARCH_STATION">
+			<Text>Research Station</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_BEACH_RESORT">
+			<Text>Beach Resort</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_NUCLEAR_TESTING">
+			<Text>Nuclear Test Site</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_ENHANCED_QUARRY">
+			<Text>Enhanced Quarry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_SAWMILL">
+			<Text>Saw Mill</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_SUBURB">
+			<Text>Suburb</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_TRADING_ESTATE">
+			<Text>Trading Company</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_LUXURY_RESORT">
+			<Text>Luxury Resort</Text>
+		</Row>
+        <Row Tag="TXT_KEY_BUILD_FARMLAND_ESTATE">
+			<Text>Farmland Estate</Text>
+		</Row>
+        
+        <!--Build Help-->
+		
+		<Row Tag="TXT_KEY_BUILD_ENHANCED_MINE_HELP">
+			<Text>Greater [ICON_PRODUCTION] Production output, plus [COLOR_POSITIVE_TEXT]possibility of discovering a resource[/COLOR] each turn the mine exist, if there is no ressource yet!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_ENHANCED_QUARRY_HELP">
+			<Text>Greater [ICON_PRODUCTION] Production output</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_SAWMILL_HELP">
+			<Text>Increased [ICON_PRODUCTION] Production especially from forested river tiles[NEWLINE]Forest is not removed</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_SUBURB_HELP">
+			<Text>Excellent output if build next to a city! Costs 25 Gold when building! (depending on difficulty and speed)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_RANCH_HELP">
+			<Text>Will provide excellent [ICON_FOOD] Food and [ICON_PRODUCTION] Production yields</Text>
+		</Row>
+        <Row Tag="TXT_KEY_BUILD_TRADING_ESTATE_HELP">
+        	<Text>Trading Company provides more [ICON_GOLD] Gold than trading posts, but can only be built next to Luxuries.</Text>
+		</Row>
+        <Row Tag="TXT_KEY_BUILD_FARMLAND_ESTATE_HELP">
+        	<Text>Farmland Estates provides more [ICON_FOOD] food than farms. </Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_HUNTING_LODGE_HELP">
+			<Text>Hunting Lodges are specialized on collecting trophies Ivory, Fur, Truffles and food from Bison and Deer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FAIR_TRADE_PLANTATION_HELP">
+			<Text>Improves plantations further to include a gold and food bonus.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_SKI_RESORT_HELP">
+			<Text>Ski Resorts may be built on snow hill tiles to provide additional [ICON_GOLD] Gold and [ICON_CULTURE] Culture. An adjacent mountain adds +2 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_RESEARCH_STATION_HELP">
+			<Text>[COLOR_WARNING_TEXT]Requires flat snow terrain.[/COLOR]Makes use of flat snow terrain and provides [ICON_RESEARCH]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_BEACH_RESORT_HELP">
+			<Text>[COLOR_WARNING_TEXT]Requires flat desert coastal terrain.[/COLOR][NEWLINE]Make use of flat coastal desert terrain, for additional [ICON_GOLD] Gold and [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_NUCLEAR_TESTING_HELP">
+			<Text>Nuclear Test Sites can be established on Atolls with [COLOR_WARNING_TEXT]Workboats[/COLOR] to gain additional [ICON_RESEARCH] Science.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_LUXURY_RESORT_HELP">
+			<Text>Luxury Resorts provide substancial [ICON_GOLD] Gold, but can only be built on Atolls.</Text>
+		</Row>
+        
+	</Language_en_US>
+    
+    <Language_de_DE>
+		
+		<!--Notifications-->
+		<Row Tag="TXT_KEY_NOTIFICATION_ENHANCED_MINE_DISCOVERY">
+			<Text>Ihr habt eine Quelle von [COLOR_POSITIVE_TEXT]{1_ResourceName:textkey}[/COLOR] erschlossen!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_ENHANCED_MINE_DISCOVERY_LOST">
+			<Text>Ihr habt den Zugang zu einer Quelle von [COLOR_WARNING_TEXT]{1_ResourceName:textkey}[/COLOR] verloren!</Text>
+		</Row>
+        
+        <Row Tag="TXT_KEY_NOTIFICATION_ENHANCED_MINE_DISCOVERY_TITLE">
+			<Text>Ihr habt eine neue Ressource erschlossen!</Text>
+		</Row>
+        <Row Tag="TXT_KEY_NOTIFICATION_ENHANCED_MINE_DISCOVERY_LOST_TITLE">
+			<Text>Ihr habt den Zugang zu einer Ressource verloren!</Text>
+		</Row>
+		
+		<!--Improvements-->
+		
+		<Row Tag="TXT_KEY_IMPROVEMENT_RANCH">
+			<Text>Ranch</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_HUNTING_LODGE">
+			<Text>Hunting Lodge</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_ENHANCED_MINE">
+			<Text>Enhanced Mine</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_FAIR_TRADE_PLANTATION">
+			<Text>Fair Trade Plantation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_SKI_RESORT">
+			<Text>Ski Resort</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_RESEARCH_STATION">
+			<Text>Research Station</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_BEACH_RESORT">
+			<Text>Beach Resort</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_LUXURY_RESORT">
+			<Text>Luxury Resort</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_NUCLEAR_TESTING">
+			<Text>Nuclear Test Site</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_ENHANCED_QUARRY">
+			<Text>Enhanced Quarry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_SAWMILL">
+			<Text>Saw Mill</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_SUBURB">
+			<Text>Suburb</Text>
+		</Row>
+		<Row Tag="TXT_KEY_IMPROVEMENT_TRADING_ESTATE">
+			<Text>Trading Company</Text>
+		</Row>
+        <Row Tag="TXT_KEY_IMPROVEMENT_FARMLAND_ESTATE">
+			<Text>Farmland Estate</Text>
+		</Row>
+		
+		<!--Builds-->
+		
+		<Row Tag="TXT_KEY_BUILD_RANCH">
+			<Text>Ranch</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_ENHANCED_MINE">
+			<Text>Enhanced Mine</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_HUNTING_LODGE">
+			<Text>Hunting Lodge</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FAIR_TRADE_PLANTATION">
+			<Text>Fair Trade Plantation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_SKI_RESORT">
+			<Text>Ski Resort</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_RESEARCH_STATION">
+			<Text>Research Station</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_BEACH_RESORT">
+			<Text>Beach Resort</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_NUCLEAR_TESTING">
+			<Text>Nuclear Test Site</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_ENHANCED_QUARRY">
+			<Text>Enhanced Quarry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_SAWMILL">
+			<Text>Saw Mill</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_SUBURB">
+			<Text>Suburb</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_TRADING_ESTATE">
+			<Text>Trading Company</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_LUXURY_RESORT">
+			<Text>Luxury Resort</Text>
+		</Row>
+        <Row Tag="TXT_KEY_BUILD_FARMLAND_ESTATE">
+			<Text>Farmland Estate</Text>
+		</Row>
+
+        
+        <!--Build Help-->
+		
+		<Row Tag="TXT_KEY_BUILD_ENHANCED_MINE_HELP">
+			<Text>Höherer Produktionsoutput und jede Runde die[COLOR_POSITIVE_TEXT]Chance eine Ressource[/COLOR]zu finden, wenn noch keine auf dem Feld vorhanden ist!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_ENHANCED_QUARRY_HELP">
+			<Text>Höherer Produktionsoutput.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_SAWMILL_HELP">
+			<Text>Höhere Produktion besonders von bewaldeten Flussfeldern[NEWLINE]Der Wald bleibt erhalten.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_SUBURB_HELP">
+			<Text>Liefert besonders gute Erträge, wenn neben Städten gebaut! Kostet 25 [ICON_GOLD] Gold beim Bau! (difficulty und speed beeinflussen die Kosten)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_RANCH_HELP">
+			<Text>Liefert excellente Nahrungs und Produktions Erträge.</Text>
+		</Row>
+        <Row Tag="TXT_KEY_BUILD_TRADING_ESTATE_HELP">
+        	<Text>Trading Company liefert mehr Gold als ein Handelsposten, aber kann nur neben Luxusgütern errichtet werden.</Text>
+		</Row>
+        <Row Tag="TXT_KEY_BUILD_FARMLAND_ESTATE_HELP">
+        	<Text>Farmland Estates liefert mehr Nahrung als Bauernhöfe.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_HUNTING_LODGE_HELP">
+			<Text>Hunting Lodges sind auf die Trophäenjagd Elfenbein, Felle und Trüffel, sowie Nahrungsjagd von Bison und Wild spezialisiert.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_FAIR_TRADE_PLANTATION_HELP">
+			<Text>Verbesserte Plantage, welche zusätzliches Gold und Nahrung einbringt.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_SKI_RESORT_HELP">
+			<Text>Ski Resorts sollten auf Schneehügeln gebaut werden und liefern Gold und Kultur. Wenn sich ein Berg daneben befindet, liefert es nochmal zusätzliches Gold und Kultur!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_RESEARCH_STATION_HELP">
+			<Text>Nur auf flachen Schneefeldern baubar und liefert Wissen.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_BEACH_RESORT_HELP">
+			<Text>Nur an Wüstenfeldern an der Küste baubar und liefert Gold und Kultur.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_NUCLEAR_TESTING_HELP">
+			<Text>Nuclear Test Site kann mit einem Arbeitsboot auf einem Atoll errichtet werde und liefert Wissenschaft. Dafür muss aber auf die anderen Erträge verzichtet werden.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILD_LUXURY_RESORT_HELP">
+			<Text>Luxury Resorts können mit Arbeitsbooten auf Atollen errichtet werden und liefern einen hohen Goldoutput.</Text>
+		</Row>
+        
+	</Language_de_DE>
+</GameData>

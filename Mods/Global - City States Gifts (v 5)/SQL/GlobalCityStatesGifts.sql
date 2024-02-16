@@ -1,0 +1,4 @@
+UPDATE CustomModOptions SET Value=1 WHERE Name='GLOBAL_CS_GIFTS';  
+UPDATE CustomModOptions SET Value=1 WHERE Name='GLOBAL_CS_GIFT_SHIPS';  
+
+UPDATE CustomModOptions SET Value=1 WHERE Name='GLOBAL_CS_GIFTS_LOCAL_XP';  

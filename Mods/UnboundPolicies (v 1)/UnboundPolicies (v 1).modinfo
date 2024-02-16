@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="85A4DDFB-11EA-7B64-1266-19D293F0146C" version="1">
+  <Properties>
+    <Name>UnboundPolicies</Name>
+    <Teaser>No requirements for policies except for the opener.</Teaser>
+    <Description>Choose any policy of a branch, if you have the opener.</Description>
+    <Authors>Serp</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="2EFFAAC9FBD462E13747230C8EE3C2F6" import="0">UnboundPolicies.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>UnboundPolicies.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

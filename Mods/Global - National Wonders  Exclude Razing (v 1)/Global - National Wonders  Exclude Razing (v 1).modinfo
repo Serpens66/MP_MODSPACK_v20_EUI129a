@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="eba7d61d-b6ea-428c-bd36-c5fcb2f68981" version="1">
+  <Properties>
+    <Name>Global - National Wonders  Exclude Razing</Name>
+    <Teaser>National Wonders (NW) requiring a building in every city exclude those being razed (in addition to excluding puppets)</Teaser>
+    <Description>National Wonders (NW) requiring a building in every city exclude those being razed (in addition to excluding puppets)</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="62" maxversion="999" title="DLL - Various Mod Components" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="5476CBB4D06C97FC086FAA12D9CC6F69" import="0">XML/GlobalNationalWonders ExcludeRazing.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/GlobalNationalWonders ExcludeRazing.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

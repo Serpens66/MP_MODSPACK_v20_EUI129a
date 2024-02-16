@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/15/2012 10:07:55 AM -->
+<GameData>
+
+	<Builds>
+
+		<Row>
+			<Type>BUILD_NUCLEAR_TEST_SITE</Type>
+			<PrereqTech>TECH_ATOMIC_THEORY</PrereqTech>
+			<ImprovementType>IMPROVEMENT_NUCLEAR_TESTING</ImprovementType>
+			<Description>TXT_KEY_BUILD_NUCLEAR_TESTING</Description>
+			<Help>TXT_KEY_BUILD_NUCLEAR_TESTING_HELP</Help>
+			<Kill>true</Kill>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<OrderPriority>98</OrderPriority>
+			<IconIndex>34</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+		
+	</Builds>
+
+	<BuildFeatures>
+		<Row>
+			
+			<BuildType>BUILD_NUCLEAR_TEST_SITE</BuildType>
+			<FeatureType>FEATURE_ATOLL</FeatureType>
+						
+		</Row>
+	</BuildFeatures>
+	
+</GameData>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	
+    <CustomModOptions>
+      <Update>
+        <Where Name="EVENTS_MINORS_GIFTS"/>
+        <Set Value="1"/>
+      </Update>
+    </CustomModOptions>
+    
+    <Defines>
+		<!-- These are the values for the first team to meet a neutral CS, -->
+		<!-- multipliers for friendly and hostile city states are below -->
+		<!-- Irrational city states roll to see if they are friendly, neutral or hostile towards the meeting player -->
+		<Row Name="MINOR_CIV_FIRST_CONTACT_BONUS_FRIENDSHIP" Value="12"/>
+		<Row Name="MINOR_CIV_FIRST_CONTACT_BONUS_CULTURE" Value="8"/>
+		<Row Name="MINOR_CIV_FIRST_CONTACT_BONUS_FAITH" Value="8"/>
+		<Row Name="MINOR_CIV_FIRST_CONTACT_BONUS_GOLD" Value="30"/>
+		<!-- Only the team leader gets these bonuses -->
+		<Row Name="MINOR_CIV_FIRST_CONTACT_BONUS_FOOD" Value="8"/>
+		<Row Name="MINOR_CIV_FIRST_CONTACT_BONUS_UNIT" Value="30"/> <!-- This is a percentage -->
+		<Row Name="MINOR_CIV_FIRST_CONTACT_XP_PER_ERA" Value="5"/>
+		<Row Name="MINOR_CIV_FIRST_CONTACT_XP_RANDOM" Value="10"/>
+
+		<!-- Multiplier and Divisor for the team leader (usually the player meeting the CS), we can only store ints so *2 is 2/1  -->
+		<Row Name="MINOR_CIV_FIRST_CONTACT_PLAYER_MULTIPLIER" Value="2"/>
+		<Row Name="MINOR_CIV_FIRST_CONTACT_PLAYER_DIVISOR" Value="1"/>
+		<!-- Multiplier and Divisor for the subsequent teams meeting the CS, we can only store ints so *0.5 is 1/2  -->
+		<Row Name="MINOR_CIV_FIRST_CONTACT_SUBSEQUENT_TEAM_MULTIPLIER" Value="1"/>
+		<Row Name="MINOR_CIV_FIRST_CONTACT_SUBSEQUENT_TEAM_DIVISOR" Value="2"/>
+		<!-- Multiplier and Divisor for friendly city states bonuses, we can only store ints so *1.5 is 3/2 -->
+		<Row Name="MINOR_CIV_FIRST_CONTACT_FRIENDLY_BONUS_MULTIPLIER" Value="3"/>
+		<Row Name="MINOR_CIV_FIRST_CONTACT_FRIENDLY_BONUS_DIVISOR" Value="2"/>
+		<!-- Multiplier and Divisor for friendly city states unit percentage, we can only store ints so *2 is 2/1 -->
+		<Row Name="MINOR_CIV_FIRST_CONTACT_FRIENDLY_UNIT_MULTIPLIER" Value="2"/>
+		<Row Name="MINOR_CIV_FIRST_CONTACT_FRIENDLY_UNIT_DIVISOR" Value="1"/>
+		<!-- Multiplier and Divisor for hostile city states bonuses, we can only store ints so *0.5 is 1/2 -->
+		<Row Name="MINOR_CIV_FIRST_CONTACT_HOSTILE_BONUS_MULTIPLIER" Value="1"/>
+		<Row Name="MINOR_CIV_FIRST_CONTACT_HOSTILE_BONUS_DIVISOR" Value="2"/>
+		<!-- Multiplier and Divisor for hostile city states unit percentage, we can only store ints so *0 is 0/1 -->
+		<Row Name="MINOR_CIV_FIRST_CONTACT_HOSTILE_UNIT_MULTIPLIER" Value="0"/>
+		<Row Name="MINOR_CIV_FIRST_CONTACT_HOSTILE_UNIT_DIVISOR" Value="1"/>
+	</Defines>
+
+	<Language_en_US>
+		<Update>
+			<Where Tag="TXT_KEY_CITY_STATE_PERSONALITY_IRRATIONAL"/>
+			<Set Gender="neuter:an"/>
+		</Update>
+
+		<Row Tag="TXT_KEY_POP_CSTATE_PROTECTED_BY">
+			<Text>Protected By:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POP_CSTATE_PROTECTED_BY_TT">
+			<Text>These players have pledged to protect this City State.  Attacking this City State and/or gifting gold/units may incur the wrath of these players.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_CULTURE"> 
+			<Text>
+				They share their knowledge of artistic merit: [COLOR_POSITIVE_TEXT]+{1_NumCulture} [ICON_CULTURE] Culture, +{3_NumFriendship} friendship[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FAITH"> 
+			<Text>
+				They share their knowledge of religious rituals: [COLOR_POSITIVE_TEXT]+{1_NumFaith} [ICON_PEACE] Faith, +{3_NumFriendship} friendship[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FOOD"> 
+			<Text>
+				They provide you with a gift of: [COLOR_POSITIVE_TEXT]+{1_NumFood} [ICON_FOOD] Food, +{3_NumFriendship} friendship[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP"> 
+			<Text>
+				Unfortunately they have nothing to offer you, but: [COLOR_POSITIVE_TEXT]+{1_NumFriendship} friendship[ENDCOLOR].
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_GOLD"> 
+			<Text>
+				They provide you with a golden gift of: [COLOR_POSITIVE_TEXT]{1_NumGold} [ICON_GOLD] Gold, +{3_NumFriendship} friendship[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_NOTHING"> 
+			<Text>
+				Unfortunately they have nothing to offer you.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_UNIT"> 
+			<Text>
+				[COLOR_WARNING_TEXT]THIS SHOULD NEVER HAPPEN![ENDCOLOR] - MINOR_CIV_CONTACT_BONUS_UNIT
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_UNKNOWN"> 
+			<Text>
+				[COLOR_WARNING_TEXT]THIS SHOULD NEVER HAPPEN![ENDCOLOR] - MINOR_CIV_CONTACT_BONUS_UNKNOWN
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_CULTURE"> 
+			<Text>
+				They give you their treasured art: [COLOR_POSITIVE_TEXT]+{1_NumCulture} [ICON_CULTURE] Culture, +{3_NumFriendship} friendship[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_FAITH"> 
+			<Text>
+				They give you their treasured religious idols: [COLOR_POSITIVE_TEXT]+{1_NumFaith} [ICON_PEACE] Faith, +{3_NumFriendship} friendship[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_FOOD"> 
+			<Text>
+				They throw a banquet in your honour: [COLOR_POSITIVE_TEXT]+{1_NumFood} [ICON_FOOD] Food, +{3_NumFriendship} friendship[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_GOLD"> 
+			<Text>
+				They shower you with gold: [COLOR_POSITIVE_TEXT]+{1_NumGold} [ICON_GOLD] Gold, +{3_NumFriendship} friendship[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_UNIT"> 
+			<Text>
+				They gift you the unit: [COLOR_POSITIVE_TEXT]{1_UnitName}, +{3_NumFriendship} friendship[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_UNKNOWN"> 
+			<Text>
+				[COLOR_WARNING_TEXT]THIS SHOULD NEVER HAPPEN![ENDCOLOR] - MINOR_CIV_FIRST_CONTACT_BONUS_UNKNOWN
+			</Text>
+		</Row>
+        
+        <Update>
+			<Where Tag="TXT_KEY_CITY_STATE_MEETING"/>
+			<Set>
+				<Text>You have met the City-State of {1_CivName:textkey}.[NEWLINE]{2_GiftString}</Text> <!-- same like original but deleted some NEWLINE commands and no "speakagain" -->
+			</Set>
+		</Update> 
+        
+	</Language_en_US>
+    
+    <Language_de_DE>
+		<Update>
+			<Where Tag="TXT_KEY_CITY_STATE_PERSONALITY_IRRATIONAL"/>
+			<Set Gender="neuter:an"/>
+		</Update>
+
+		<Row Tag="TXT_KEY_POP_CSTATE_PROTECTED_BY">
+			<Text>Beschützt von:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POP_CSTATE_PROTECTED_BY_TT">
+			<Text>Diese Spieler haben geschworen diesen Stadtstaat zu beschützen. Ein Angriff auf diesen Stadtstaat und/oder Gold- bzw. Einheitengeschenke werden diese Spieler möglicherweise erzürnen.</Text>
+		</Row>
+        
+		<!-- should not be too long, otherwise partly not displayed! -->
+        <Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_CULTURE"> 
+			<Text>
+				Sie teilen mit Euch ihr Wissen über die Kunst: [COLOR_POSITIVE_TEXT]+{1_NumCulture} [ICON_CULTURE] Kultur, +{3_NumFriendship} Gunst[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FAITH"> 
+			<Text>
+				Sie teilen mit Euch ihr Wissen über religiöse Rituale: [COLOR_POSITIVE_TEXT]+{1_NumFaith} [ICON_PEACE] Glaube, +{3_NumFriendship} Gunst[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FOOD"> 
+			<Text>
+				Sie laden Euch zum Essen ein: [COLOR_POSITIVE_TEXT]+{1_NumFood} [ICON_FOOD] Food, +{3_NumFriendship} Gunst[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_FRIENDSHIP"> 
+			<Text>
+				Leider haben sie keine Geschenke für Euch, aber: [COLOR_POSITIVE_TEXT]+{1_NumFriendship} Gunst[ENDCOLOR].
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_GOLD"> 
+			<Text>
+				Sie machen Euch ein Goldgeschenk: [COLOR_POSITIVE_TEXT]+{1_NumGold} [ICON_GOLD] Gold, +{3_NumFriendship} Gunst[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_NOTHING"> 
+			<Text>
+				Leider haben sie keine Geschenke für Euch.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_UNIT"> 
+			<Text>
+				[COLOR_WARNING_TEXT]THIS SHOULD NEVER HAPPEN![ENDCOLOR] - MINOR_CIV_CONTACT_BONUS_UNIT
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_CONTACT_BONUS_UNKNOWN"> 
+			<Text>
+				[COLOR_WARNING_TEXT]THIS SHOULD NEVER HAPPEN![ENDCOLOR] - MINOR_CIV_CONTACT_BONUS_UNKNOWN
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_CULTURE"> 
+			<Text>
+				Sie schenken Euch ihre geschätze Kunst: [COLOR_POSITIVE_TEXT]+{1_NumCulture} [ICON_CULTURE] Kultur, +{3_NumFriendship} Gunst[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_FAITH"> 
+			<Text>
+				Sie verkünden Euch ihre geheiligten religiösen Glaubenssätze: [COLOR_POSITIVE_TEXT]+{1_NumFaith} [ICON_PEACE] Glaube, +{3_NumFriendship} Gunst[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_FOOD"> 
+			<Text>
+				Sie veranstalten Euch zu Ehren ein großes Festessen: [COLOR_POSITIVE_TEXT]+{1_NumFood} [ICON_FOOD] Nahrung, +{3_NumFriendship} Gunst[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_GOLD"> 
+			<Text>
+				Sie überhäufen Euch mit Gold: [COLOR_POSITIVE_TEXT]+{1_NumGold} [ICON_GOLD] Gold, +{3_NumFriendship} Gunst[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_UNIT"> 
+			<Text>
+				Sie schenken Euch die Einheit: [COLOR_POSITIVE_TEXT]{1_UnitName}, +{3_NumFriendship} Gunst[ENDCOLOR]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_FIRST_CONTACT_BONUS_UNKNOWN"> 
+			<Text>
+				[COLOR_WARNING_TEXT]THIS SHOULD NEVER HAPPEN![ENDCOLOR] - MINOR_CIV_FIRST_CONTACT_BONUS_UNKNOWN
+			</Text>
+		</Row>
+
+        
+        <Update>
+			<Where Tag="TXT_KEY_CITY_STATE_MEETING"/>
+			<Set>
+				<Text>Ihr habt den Stadtstaat {1_CivName:textkey} getroffen.[NEWLINE]{2_GiftString}</Text> <!-- same like original but deleted some NEWLINE commands and no "speakagain" -->
+			</Set>
+		</Update> 
+            
+	</Language_de_DE>
+    
+</GameData>

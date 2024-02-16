@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 7/22/2014 10:11:54 PM -->
+<GameData>
+    
+    <CustomModOptions>
+		<Update>
+			<Where Name="BUGFIX_DUMMY_POLICIES"/>
+			<Set Value="1"/>
+		</Update>
+        
+        <Update>
+			<Where Name="TRAITS_ANY_BELIEF"/>
+			<Set Value="1"/>
+		</Update>
+        <Update>
+			<Where Name="TRAITS_OTHER_PREREQS"/>
+			<Set Value="1"/>
+		</Update>
+        <Update>
+			<Where Name="EVENTS_GOODY_CHOICE"/>
+			<Set Value="1"/>
+		</Update>
+	</CustomModOptions>
+    
+    <Traits>
+		<Row>
+			<Type>TRAIT_MOD_CHOOSE_ANY_BELIEF_X</Type>
+			<Description>TXT_KEY_POLICY_SPIRITUAL_X</Description>
+			<ShortDescription>TXT_KEY_POLICY_SPIRITUAL_X</ShortDescription>
+			<AnyBelief>true</AnyBelief>
+			<PrereqPolicy>POLICY_SPIRITUAL_X</PrereqPolicy>
+		</Row>
+        
+        <Row>
+			<Type>TRAIT_MOD_UNIQUE_LUXURY_X</Type> <!-- aka TRAIT_MOD_TALL_X, unique luxury did not work well -->
+			<Description>TXT_KEY_POLICY_TALL_X</Description>
+			<ShortDescription>TXT_KEY_POLICY_TALL_X</ShortDescription>
+            <PopulationUnhappinessModifier>-20</PopulationUnhappinessModifier>
+			<PrereqPolicy>POLICY_TALL_X</PrereqPolicy>
+		</Row>
+        
+        <Row>
+			<Type>TRAIT_MOD_WIDE_X</Type>
+			<Description>TXT_KEY_POLICY_WIDE_X</Description>
+			<ShortDescription>TXT_KEY_POLICY_WIDE_X</ShortDescription>
+            <CityUnhappinessModifier>-20</CityUnhappinessModifier>
+			<PrereqPolicy>POLICY_WIDE_X</PrereqPolicy>
+		</Row>
+	</Traits>
+    
+    
+	<Policies>
+		<Row>
+			<Type>POLICY_AGGRESSIVE_X</Type>
+			<Description>TXT_KEY_POLICY_AGGRESSIVE_X</Description>
+			<Civilopedia>TXT_KEY_POLICY_AGGRESSIVE_X</Civilopedia>
+			<Help>TXT_KEY_POLICY_AGGRESSIVE_X</Help>
+			<PortraitIndex>24</PortraitIndex>
+			<IconAtlas>POLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+            <Dummy>1</Dummy>
+		</Row>
+		<Row>
+			<Type>POLICY_CHARISMATIC_X</Type>
+			<Description>TXT_KEY_POLICY_CHARISMATIC_X</Description>
+			<Civilopedia>TXT_KEY_POLICY_CHARISMATIC_X</Civilopedia>
+			<Help>TXT_KEY_POLICY_CHARISMATIC_X</Help>
+			<ExtraHappiness>2</ExtraHappiness>
+            <ExtraHappinessPerCity>1</ExtraHappinessPerCity>
+            <HappinessToCulture>10</HappinessToCulture> 
+			<HappinessToScience>1</HappinessToScience> 
+			<PortraitIndex>24</PortraitIndex>
+			<IconAtlas>POLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+            <Dummy>1</Dummy>
+		</Row>
+		<Row>
+			<Type>POLICY_CREATIVE_X</Type>
+			<Description>TXT_KEY_POLICY_CREATIVE_X</Description>
+			<Civilopedia>TXT_KEY_POLICY_CREATIVE_X</Civilopedia>
+			<Help>TXT_KEY_POLICY_CREATIVE_X</Help>
+			<PortraitIndex>24</PortraitIndex>
+			<IconAtlas>POLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+            <GreatWriterRateModifier>10</GreatWriterRateModifier> 
+			<GreatArtistRateModifier>10</GreatArtistRateModifier> 
+			<GreatMusicianRateModifier>10</GreatMusicianRateModifier>
+            <GoldenAgeDurationMod>5</GoldenAgeDurationMod>
+            <Dummy>1</Dummy>
+		</Row>
+		<Row>
+			<Type>POLICY_DIPLOMATIC_X</Type>
+			<Description>TXT_KEY_POLICY_DIPLOMATIC_X</Description>
+			<Civilopedia>TXT_KEY_POLICY_DIPLOMATIC_X</Civilopedia>
+			<Help>TXT_KEY_POLICY_DIPLOMATIC_X</Help>
+			<MilitaryUnitGiftExtraInfluence>5</MilitaryUnitGiftExtraInfluence>
+			<MinorGoldFriendshipMod>100</MinorGoldFriendshipMod>
+            <StealTechSlowerModifier>7</StealTechSlowerModifier>
+            <StealTechFasterModifier>7</StealTechFasterModifier>
+            <CatchSpiesModifier>7</CatchSpiesModifier>
+            <RiggingElectionModifier>7</RiggingElectionModifier>
+			<PortraitIndex>24</PortraitIndex>
+			<IconAtlas>POLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+            <Dummy>1</Dummy>
+		</Row>
+		<Row>
+			<Type>POLICY_TALL_X</Type>
+			<Description>TXT_KEY_POLICY_TALL_X</Description>
+			<Civilopedia>TXT_KEY_POLICY_TALL_X</Civilopedia>
+			<Help>TXT_KEY_POLICY_TALL_X</Help>
+			<PortraitIndex>24</PortraitIndex>
+			<IconAtlas>POLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+            <Dummy>1</Dummy>
+		</Row>
+        <Row>
+			<Type>POLICY_WIDE_X</Type>
+			<Description>TXT_KEY_POLICY_WIDE_X</Description>
+			<Civilopedia>TXT_KEY_POLICY_WIDE_X</Civilopedia>
+			<Help>TXT_KEY_POLICY_WIDE_X</Help>
+			<CapitalSettlerProductionModifier>5</CapitalSettlerProductionModifier>
+			<PortraitIndex>24</PortraitIndex>
+			<IconAtlas>POLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+            <Dummy>1</Dummy>
+		</Row>
+		<Row>
+			<Type>POLICY_FINANCIAL_X</Type>
+			<Description>TXT_KEY_POLICY_FINANCIAL_X</Description>
+			<Civilopedia>TXT_KEY_POLICY_FINANCIAL_X</Civilopedia>
+			<Help>TXT_KEY_POLICY_FINANCIAL_X</Help>
+			<CityConnectionTradeRouteGoldModifier>25</CityConnectionTradeRouteGoldModifier>
+			<PortraitIndex>24</PortraitIndex>
+			<IconAtlas>POLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+            <Dummy>1</Dummy>
+		</Row>
+		<Row>
+			<Type>POLICY_IMPERIALISTIC_X</Type>
+			<Description>TXT_KEY_POLICY_IMPERIALISTIC_X</Description>
+			<Civilopedia>TXT_KEY_POLICY_IMPERIALISTIC_X</Civilopedia>
+			<Help>TXT_KEY_POLICY_IMPERIALISTIC_X</Help>
+            <UnitGoldMaintenanceMod>-15</UnitGoldMaintenanceMod>
+			<GreatGeneralRateModifier>25</GreatGeneralRateModifier>
+			<GreatAdmiralRateModifier>25</GreatAdmiralRateModifier>
+			<PortraitIndex>24</PortraitIndex>
+			<IconAtlas>POLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+            <Dummy>1</Dummy>
+		</Row>
+		<Row>
+			<Type>POLICY_INDUSTRIOUS_X</Type>
+			<Description>TXT_KEY_POLICY_INDUSTRIOUS_X</Description>
+			<Civilopedia>TXT_KEY_POLICY_INDUSTRIOUS_X</Civilopedia>
+			<Help>TXT_KEY_POLICY_INDUSTRIOUS_X</Help>
+			<WonderProductionModifier>5</WonderProductionModifier>
+			<PortraitIndex>24</PortraitIndex>
+			<IconAtlas>POLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+            <Dummy>1</Dummy>
+		</Row>
+		<Row>
+			<Type>POLICY_INVENTIVE_X</Type>
+			<Description>TXT_KEY_POLICY_INVENTIVE_X</Description>
+			<Civilopedia>TXT_KEY_POLICY_INVENTIVE_X</Civilopedia>
+			<Help>TXT_KEY_POLICY_INVENTIVE_X</Help>
+			<PortraitIndex>24</PortraitIndex>
+			<IconAtlas>POLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+            <Dummy>1</Dummy>
+		</Row>
+		<Row>
+			<Type>POLICY_MERCANTILE_X</Type>
+			<Description>TXT_KEY_POLICY_MERCANTILE_X</Description>
+			<Civilopedia>TXT_KEY_POLICY_MERCANTILE_X</Civilopedia>
+			<Help>TXT_KEY_POLICY_MERCANTILE_X</Help>
+            <InternalTradeRouteYieldModifier>25</InternalTradeRouteYieldModifier>
+			<PortraitIndex>24</PortraitIndex>
+			<IconAtlas>POLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+            <LandTradeRouteGoldChange>100</LandTradeRouteGoldChange>
+            <SeaTradeRouteGoldChange>100</SeaTradeRouteGoldChange>
+            <Dummy>1</Dummy>
+		</Row>
+		<Row>
+			<Type>POLICY_PHILOSOPHICAL_X</Type>
+			<Description>TXT_KEY_POLICY_PHILOSOPHICAL_X</Description>
+			<Civilopedia>TXT_KEY_POLICY_PHILOSOPHICAL_X</Civilopedia>
+			<Help>TXT_KEY_POLICY_PHILOSOPHICAL_X</Help>
+			<GreatPeopleRateModifier>5</GreatPeopleRateModifier>
+			<PortraitIndex>24</PortraitIndex>
+			<IconAtlas>POLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+            <CulturePerWonder>1</CulturePerWonder>
+            <Dummy>1</Dummy>
+		</Row>
+		<Row>
+			<Type>POLICY_PROTECTIVE_X</Type>
+			<Description>TXT_KEY_POLICY_PROTECTIVE_X</Description>
+			<Civilopedia>TXT_KEY_POLICY_PROTECTIVE_X</Civilopedia>
+			<Help>TXT_KEY_POLICY_PROTECTIVE_X</Help>
+			<GarrisonedCityRangeStrikeModifier>50</GarrisonedCityRangeStrikeModifier>
+			<PortraitIndex>24</PortraitIndex>
+			<IconAtlas>POLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+            <Dummy>1</Dummy>
+		</Row>
+		<Row>
+			<Type>POLICY_SEAFARING_X</Type>
+			<Description>TXT_KEY_POLICY_SEAFARING_X</Description>
+			<Civilopedia>TXT_KEY_POLICY_SEAFARING_X</Civilopedia>
+			<Help>TXT_KEY_POLICY_SEAFARING_X</Help>
+			<PortraitIndex>24</PortraitIndex>
+			<IconAtlas>POLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+            <Dummy>1</Dummy>
+		</Row>
+		<Row>
+			<Type>POLICY_SPIRITUAL_X</Type>
+			<Description>TXT_KEY_POLICY_SPIRITUAL_X</Description>
+			<Civilopedia>TXT_KEY_POLICY_SPIRITUAL_X</Civilopedia>
+			<Help>TXT_KEY_POLICY_SPIRITUAL_X</Help>
+			<PortraitIndex>24</PortraitIndex>
+			<IconAtlas>POLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+            <Dummy>1</Dummy>
+		</Row>
+        <Row>
+			<Type>POLICY_EXPLORER_X</Type>
+			<Description>TXT_KEY_POLICY_EXPLORER_X</Description>
+			<Civilopedia>TXT_KEY_POLICY_EXPLORER_X</Civilopedia>
+			<Help>TXT_KEY_POLICY_EXPLORER_X</Help>
+			<PortraitIndex>24</PortraitIndex>
+			<IconAtlas>POLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+            <Dummy>1</Dummy>
+		</Row>
+	</Policies>
+    
+    
+    <Policy_CoastalCityYieldChanges>
+		<Row> 
+			<PolicyType>POLICY_SEAFARING_X</PolicyType> 
+			<YieldType>YIELD_PRODUCTION</YieldType> 
+			<Yield>1</Yield> 
+		</Row>
+        <Row> 
+			<PolicyType>POLICY_SEAFARING_X</PolicyType> 
+			<YieldType>YIELD_FOOD</YieldType> 
+			<Yield>1</Yield> 
+		</Row>
+    </Policy_CoastalCityYieldChanges>
+    
+    <Policy_CapitalYieldPerPopChanges>
+        <Row> 
+			<PolicyType>POLICY_CREATIVE_X</PolicyType> 
+			<YieldType>YIELD_CULTURE</YieldType> 
+			<Yield>25</Yield> 
+		</Row>
+        <Row> 
+			<PolicyType>POLICY_FINANCIAL_X</PolicyType> 
+			<YieldType>YIELD_GOLD</YieldType> 
+			<Yield>34</Yield> 
+		</Row>
+        <Row> 
+			<PolicyType>POLICY_MERCANTILE_X</PolicyType> 
+			<YieldType>YIELD_GOLD</YieldType> 
+			<Yield>34</Yield> 
+		</Row>
+        <Row> 
+			<PolicyType>POLICY_INDUSTRIOUS_X</PolicyType> 
+			<YieldType>YIELD_PRODUCTION</YieldType> 
+			<Yield>25</Yield> 
+		</Row>
+        <Row> 
+			<PolicyType>POLICY_INVENTIVE_X</PolicyType> 
+			<YieldType>YIELD_SCIENCE</YieldType> 
+			<Yield>25</Yield> 
+		</Row>
+        <Row> 
+			<PolicyType>POLICY_PHILOSOPHICAL_X</PolicyType> 
+			<YieldType>YIELD_CULTURE</YieldType> 
+			<Yield>25</Yield> 
+		</Row>
+        <Row> 
+			<PolicyType>POLICY_SPIRITUAL_X</PolicyType> 
+			<YieldType>YIELD_FAITH</YieldType> 
+			<Yield>34</Yield> 
+		</Row>
+    </Policy_CapitalYieldPerPopChanges>
+    
+	<Policy_BuildingClassProductionModifiers>
+		<Row>
+			<PolicyType>POLICY_AGGRESSIVE_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_BARRACKS</BuildingClassType>
+			<ProductionModifier>65</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_AGGRESSIVE_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_ARMORY</BuildingClassType>
+			<ProductionModifier>65</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_CHARISMATIC_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_COLOSSEUM</BuildingClassType>
+			<ProductionModifier>50</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_CHARISMATIC_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CIRCUS</BuildingClassType>
+			<ProductionModifier>50</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_CREATIVE_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_ARTISTS_GUILD</BuildingClassType>
+			<ProductionModifier>20</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_CREATIVE_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MUSICIANS_GUILD</BuildingClassType>
+			<ProductionModifier>20</ProductionModifier>
+		</Row>
+        <Row>
+			<PolicyType>POLICY_CREATIVE_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_WRITERS_GUILD</BuildingClassType>
+			<ProductionModifier>20</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_DIPLOMATIC_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CONSTABLE</BuildingClassType>
+			<ProductionModifier>60</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_DIPLOMATIC_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_POLICE_STATION</BuildingClassType>
+			<ProductionModifier>60</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_TALL_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_AQUEDUCT</BuildingClassType>
+			<ProductionModifier>50</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_TALL_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_WORKSHOP</BuildingClassType>
+			<ProductionModifier>50</ProductionModifier>
+		</Row>
+        <Row>
+			<PolicyType>POLICY_WIDE_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_STONE_WORKS</BuildingClassType>
+			<ProductionModifier>50</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_WIDE_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
+			<ProductionModifier>50</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_FINANCIAL_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
+			<ProductionModifier>50</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_FINANCIAL_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_BANK</BuildingClassType>
+			<ProductionModifier>50</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_IMPERIALISTIC_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
+			<ProductionModifier>100</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_INDUSTRIOUS_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FORGE</BuildingClassType>
+			<ProductionModifier>50</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_INDUSTRIOUS_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_WINDMILL</BuildingClassType>
+			<ProductionModifier>50</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_INVENTIVE_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_LIBRARY</BuildingClassType>
+			<ProductionModifier>50</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_INVENTIVE_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
+			<ProductionModifier>50</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MERCANTILE_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CARAVANSARY</BuildingClassType>
+			<ProductionModifier>50</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MERCANTILE_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
+			<ProductionModifier>50</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_PHILOSOPHICAL_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_AMPHITHEATER</BuildingClassType>
+			<ProductionModifier>35</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_PHILOSOPHICAL_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_GARDEN</BuildingClassType>
+			<ProductionModifier>35</ProductionModifier>
+		</Row>
+        <Row>
+			<PolicyType>POLICY_PHILOSOPHICAL_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
+			<ProductionModifier>35</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_PROTECTIVE_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_WALLS</BuildingClassType>
+			<ProductionModifier>60</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_PROTECTIVE_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
+			<ProductionModifier>60</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_SEAFARING_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_LIGHTHOUSE</BuildingClassType>
+			<ProductionModifier>50</ProductionModifier>
+		</Row>
+        <Row>
+			<PolicyType>POLICY_SEAFARING_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_SEAPORT</BuildingClassType>
+			<ProductionModifier>50</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_SPIRITUAL_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_SHRINE</BuildingClassType>
+			<ProductionModifier>50</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_SPIRITUAL_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<ProductionModifier>50</ProductionModifier>
+		</Row>
+        <Row>
+			<PolicyType>POLICY_EXPLORER_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
+			<ProductionModifier>50</ProductionModifier>
+		</Row>
+        <Row>
+			<PolicyType>POLICY_EXPLORER_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MINT</BuildingClassType>
+			<ProductionModifier>50</ProductionModifier>
+		</Row>
+	</Policy_BuildingClassProductionModifiers>
+
+
+
+
+	<Policy_UnitCombatProductionModifiers>
+		<Row>
+			<PolicyType>POLICY_AGGRESSIVE_X</PolicyType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+			<ProductionModifier>5</ProductionModifier>
+		</Row>
+        <Row>
+			<PolicyType>POLICY_AGGRESSIVE_X</PolicyType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+			<ProductionModifier>5</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_AGGRESSIVE_X</PolicyType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+			<ProductionModifier>5</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_IMPERIALISTIC_X</PolicyType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+			<ProductionModifier>5</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_SEAFARING_X</PolicyType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+			<ProductionModifier>5</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_SEAFARING_X</PolicyType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+			<ProductionModifier>5</ProductionModifier>
+		</Row>
+        <Row>
+			<PolicyType>POLICY_SEAFARING_X</PolicyType>
+			<UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
+			<ProductionModifier>5</ProductionModifier>
+		</Row>
+	</Policy_UnitCombatProductionModifiers>
+
+	<Buildings>
+		<!-- make guilds 30% more expensive, just because they are too cheap, since there are no required buildings -->
+        <Update>
+			<Where Type="BUILDING_MUSICIANS_GUILD"/>
+			<Set Cost="260"/>
+		</Update>
+        <Update>
+			<Where Type="BUILDING_ARTISTS_GUILD"/>
+			<Set Cost="195"/>
+		</Update>
+        <Update>
+			<Where Type="BUILDING_WRITERS_GUILD"/>
+			<Set Cost="130"/>
+		</Update>
+	</Buildings>
+
+
+
+	<Policy_BuildingClassYieldChanges>
+		<Row>
+			<PolicyType>POLICY_FINANCIAL_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_FINANCIAL_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_BANK</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+        
+        <Row>
+			<PolicyType>POLICY_INVENTIVE_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_LIBRARY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_INVENTIVE_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+        
+        <Row>
+			<PolicyType>POLICY_SPIRITUAL_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+        
+        <Row>
+			<PolicyType>POLICY_TALL_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>1</YieldChange>
+		</Row>
+	</Policy_BuildingClassYieldChanges>
+	
+
+	<Policy_BuildingClassHappiness>
+		<Row>
+			<PolicyType>POLICY_IMPERIALISTIC_X</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+	</Policy_BuildingClassHappiness>
+
+
+
+    <!-- every unit that can get the promotion, will get it -->
+	<Policy_FreePromotions>
+		<Row>
+			<PolicyType>POLICY_PROTECTIVE_X</PolicyType>
+			<PromotionType>PROMOTION_PROTECTIVE_X</PromotionType>
+		</Row>
+        <Row>
+			<PolicyType>POLICY_EXPLORER_X</PolicyType>
+			<PromotionType>PROMOTION_TRAIT_EXPLORER_X</PromotionType>
+		</Row>
+        <Row>
+			<PolicyType>POLICY_SEAFARING_X</PolicyType>
+			<PromotionType>PROMOTION_SEAFARING_X</PromotionType>
+		</Row>
+        <Row>
+			<PolicyType>POLICY_AGGRESSIVE_X</PolicyType>
+			<PromotionType>PROMOTION_GOLDENAGEKILLS_X</PromotionType>
+		</Row>
+	</Policy_FreePromotions>
+
+    <!-- does not work, cause it checks for capital, do it in lua instead -->
+    <!-- <Policy_FreeUnitClasses> -->
+		<!-- <Row>  -->
+			<!-- <PolicyType>POLICY_EXPLORER_X</PolicyType>  -->
+			<!-- <UnitClassType>UNITCLASS_SCOUT</UnitClassType>  -->
+			<!-- <Count>1</Count>  -->
+		<!-- </Row> -->
+	<!-- </Policy_FreeUnitClasses>  -->
+	
+    
+	<UnitPromotions>
+        <Row>
+			<Type>PROMOTION_GOLDENAGEKILLS_X</Type>
+			<Description>TXT_KEY_PROMOTION_GOLDENAGEKILLS_X</Description>
+			<Help>TXT_KEY_PROMOTION_GOLDENAGEKILLS_X_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>2</PortraitIndex>
+			<IconAtlas>EXPANSION2_PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_GOLDENAGEKILLS_X_HELP</PediaEntry>
+			<CannotBeChosen>true</CannotBeChosen>
+			<GoldenAgeValueFromKills>15</GoldenAgeValueFromKills>
+		</Row>
+        
+        <Row>
+			<Type>PROMOTION_PROTECTIVE_X</Type>
+			<Description>TXT_KEY_PROMOTION_PROTECTIVE_X</Description>
+			<Help>TXT_KEY_PROMOTION_PROTECTIVE_X_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>10</PortraitIndex>
+			<IconAtlas>EXPANSION2_PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_PROTECTIVE_X_HELP</PediaEntry>
+			<CannotBeChosen>true</CannotBeChosen>
+			<FriendlyLandsModifier>15</FriendlyLandsModifier>
+		</Row>
+		<Row>
+			<Type>PROMOTION_SEAFARING_X</Type>
+			<Description>TXT_KEY_PROMOTION_SEAFARING_X</Description>
+			<Help>TXT_KEY_PROMOTION_SEAFARING_X_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>10</PortraitIndex>
+			<IconAtlas>EXPANSION2_PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_SEAFARING_X_HELP</PediaEntry>
+			<CannotBeChosen>true</CannotBeChosen>
+			<ExtraNavalMovement>1</ExtraNavalMovement>
+			<EmbarkExtraVisibility>2</EmbarkExtraVisibility>
+            <EmbarkDefenseModifier>10</EmbarkDefenseModifier>
+		</Row>
+        
+		<Row>
+			<Type>PROMOTION_TRAIT_EXPLORER_X</Type>
+			<Description>TXT_KEY_PROMOTION_TRAIT_EXPLORER_X</Description>
+			<Help>TXT_KEY_PROMOTION_TRAIT_EXPLORER_X_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>10</PortraitIndex>
+			<IconAtlas>EXPANSION2_PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_TRAIT_EXPLORER_X_HELP</PediaEntry>
+			<CannotBeChosen>true</CannotBeChosen>
+			<MovesChange>1</MovesChange>
+            <!-- <VisibilityChange>1</VisibilityChange> may be too powerful, since we also get XP in ruins and from scouting (scout XP mod)-->
+		</Row>
+        
+	</UnitPromotions>
+    
+
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_TRAIT_EXPLORER_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+        
+        <Row>
+			<PromotionType>PROMOTION_GOLDENAGEKILLS_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GOLDENAGEKILLS_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GOLDENAGEKILLS_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GOLDENAGEKILLS_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GOLDENAGEKILLS_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GOLDENAGEKILLS_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+
+        
+        <Row>
+			<PromotionType>PROMOTION_PROTECTIVE_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PROTECTIVE_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PROTECTIVE_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PROTECTIVE_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PROTECTIVE_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PROTECTIVE_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PROTECTIVE_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PROTECTIVE_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PROTECTIVE_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PROTECTIVE_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PROTECTIVE_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
+		</Row>
+        
+		<Row>
+			<PromotionType>PROMOTION_SEAFARING_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SEAFARING_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+        <Row>
+			<PromotionType>PROMOTION_SEAFARING_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
+		</Row>
+        <Row>
+			<PromotionType>PROMOTION_SEAFARING_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SEAFARING_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SEAFARING_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SEAFARING_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SEAFARING_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SEAFARING_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SEAFARING_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SEAFARING_X</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+
+	<Language_en_US>
+
+		<Row Tag="TXT_KEY_POLICY_AGGRESSIVE_X">
+			<Text>[ICON_WAR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_CHARISMATIC_X">
+			<Text>[ICON_HAPPINESS_1]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_CREATIVE_X">
+			<Text>[ICON_CULTURE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_DIPLOMATIC_X">
+			<Text>[ICON_INFLUENCE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_TALL_X">
+			<Text>[ICON_CITIZEN]</Text>
+		</Row>
+        <Row Tag="TXT_KEY_POLICY_WIDE_X">
+			<Text>[ICON_CONNECTED]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_FINANCIAL_X">
+			<Text>[ICON_GOLD]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_IMPERIALISTIC_X">
+			<Text>[ICON_CITY_STATE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_INDUSTRIOUS_X">
+			<Text>[ICON_PRODUCTION]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_INVENTIVE_X">
+			<Text>[ICON_RESEARCH]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_MERCANTILE_X">
+			<Text>[ICON_INTERNATIONAL_TRADE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_PHILOSOPHICAL_X">
+			<Text>[ICON_GREAT_PEOPLE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_PROTECTIVE_X">
+			<Text>[ICON_STRENGTH]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_SEAFARING_X">
+			<Text>[ICON_GREAT_ADMIRAL]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_SPIRITUAL_X">
+			<Text>[ICON_PEACE]</Text>
+		</Row>
+        <Row Tag="TXT_KEY_POLICY_EXPLORER_X">
+			<Text>[ICON_GREAT_EXPLORER]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_PROTECTIVE_X">
+			<Text>Protective Bonus</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PROTECTIVE_X_HELP">
+			<Text>+15[ICON_STRENGTH] Combat Strength when fighting in friendly territory.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SEAFARING_X">
+			<Text>Seafaring</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SEAFARING_X_HELP">
+			<Text>+1 Movement for all ships and +1 Sight and +10% defense for embarked combatunits</Text>
+		</Row>
+        
+        <Row Tag="TXT_KEY_PROMOTION_TRAIT_EXPLORER_X">
+			<Text>Explorer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_TRAIT_EXPLORER_X_HELP">
+			<Text>+1 Movement</Text>
+		</Row>
+        
+        <Row Tag="TXT_KEY_PROMOTION_GOLDENAGEKILLS_X">
+			<Text>GoldAge</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GOLDENAGEKILLS_X_HELP">
+			<Text>Every Kills yields 15% golden age points.</Text>
+		</Row>
+        
+        <Row Tag="TXT_KEY_EXPLORERGOODY_TITLE">
+			<Text>[COLOR_POSITIVE_TEXT]Goody Hut Bonus![ENDCOLOR]</Text>
+		</Row>
+        <Row Tag="TXT_KEY_EXPLORERGOODY_CITYTILE">
+			<Text>Your unit found material for claiming new [ICON_CITY_STATE] Land in {1_cityname}!</Text>
+		</Row>
+        <Row Tag="TXT_KEY_EXPLORERGOODY_GOLD">
+			<Text>Your unit found {1_Num} [ICON_GOLD] Gold in the ruins!</Text>
+		</Row>
+        <Row Tag="TXT_KEY_EXPLORERGOODY_CULTURE">
+			<Text>Your unit found {1_Num} [ICON_CULTURE] Culture in the ruins!</Text>
+		</Row>
+        <Row Tag="TXT_KEY_EXPLORERGOODY_FAITH">
+			<Text>Your unit found {1_Num} [ICON_FAITH] Faith in the ruins!</Text>
+		</Row>
+        <Row Tag="TXT_KEY_EXPLORERGOODY_GOLDAGE">
+			<Text>Your unit found {1_Num} [ICON_GOLDEN_AGE] Golden Age Points in the ruins!</Text>
+		</Row>
+        <Row Tag="TXT_KEY_EXPLORERGOODY_PRODBOOST">
+			<Text>Your unit found {1_Num} [ICON_PRODUCTION] Production for {2_cityname} in the ruins!</Text>
+		</Row>
+        <Row Tag="TXT_KEY_EXPLORERGOODY_FOODBOOST">
+			<Text>Your unit found {1_Num} [ICON_FOOD] Food for {2_cityname} in the ruins!</Text>
+		</Row>
+        <Row Tag="TXT_KEY_EXPLORERGOODY_XP">
+			<Text>Your unit found ... nothing [ICON_FLOWER] in the ruins, but got {1_Num} Experience.</Text>
+		</Row>
+        
+	</Language_en_US>
+    
+    <Language_de_DE>
+        <Row Tag="TXT_KEY_POLICY_AGGRESSIVE_X">
+			<Text>[ICON_WAR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_CHARISMATIC_X">
+			<Text>[ICON_HAPPINESS_1]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_CREATIVE_X">
+			<Text>[ICON_CULTURE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_DIPLOMATIC_X">
+			<Text>[ICON_INFLUENCE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_TALL_X">
+			<Text>[ICON_CITIZEN]</Text>
+		</Row>
+        <Row Tag="TXT_KEY_POLICY_WIDE_X">
+			<Text>[ICON_CONNECTED]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_FINANCIAL_X">
+			<Text>[ICON_GOLD]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_IMPERIALISTIC_X">
+			<Text>[ICON_CITY_STATE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_INDUSTRIOUS_X">
+			<Text>[ICON_PRODUCTION]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_INVENTIVE_X">
+			<Text>[ICON_RESEARCH]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_MERCANTILE_X">
+			<Text>[ICON_INTERNATIONAL_TRADE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_PHILOSOPHICAL_X">
+			<Text>[ICON_GREAT_PEOPLE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_PROTECTIVE_X">
+			<Text>[ICON_STRENGTH]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_SEAFARING_X">
+			<Text>[ICON_GREAT_ADMIRAL]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_SPIRITUAL_X">
+			<Text>[ICON_PEACE]</Text>
+		</Row>
+        <Row Tag="TXT_KEY_POLICY_EXPLORER_X">
+			<Text>[ICON_GREAT_EXPLORER]</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_PROTECTIVE_X">
+			<Text>Protektionistisch</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PROTECTIVE_X_HELP">
+			<Text>+15[ICON_STRENGTH] Kampfstärke in freundlich gesinntem Territorium.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SEAFARING_X">
+			<Text>Seefahrt</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SEAFARING_X_HELP">
+			<Text>+1 Bewegung für Schiffe, +1 Sicht und +10% Verteidigung für gewasserte Kampfeinheiten</Text>
+		</Row>
+        
+        <Row Tag="TXT_KEY_PROMOTION_TRAIT_EXPLORER_X">
+			<Text>Kundschafter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_TRAIT_EXPLORER_X_HELP">
+			<Text>+1 Bewegung</Text>
+		</Row>
+        
+        <Row Tag="TXT_KEY_PROMOTION_GOLDENAGEKILLS_X">
+			<Text>GoldZeit</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GOLDENAGEKILLS_X_HELP">
+			<Text>Besiegte Gegner bringen 15% Goldene Zeitalter Punkte.</Text>
+		</Row>
+        
+        <Row Tag="TXT_KEY_EXPLORERGOODY_TITLE">
+			<Text>[COLOR_POSITIVE_TEXT]Ruinenfund![ENDCOLOR]</Text>
+		</Row>
+        <Row Tag="TXT_KEY_EXPLORERGOODY_CITYTILE">
+			<Text>Eure Einheit fand Material um neues [ICON_CITY_STATE] [COLOR_POSITIVE_TEXT]Land[ENDCOLOR] in {1_cityname} zu erschließen!</Text>
+		</Row>
+        <Row Tag="TXT_KEY_EXPLORERGOODY_GOLD">
+			<Text>Eure Einheit fand [COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] [ICON_GOLD] Gold in der Ruine!</Text>
+		</Row>
+        <Row Tag="TXT_KEY_EXPLORERGOODY_CULTURE">
+			<Text>Eure Einheit fand [COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] [ICON_CULTURE] Kultur in der Ruine!</Text>
+		</Row>
+        <Row Tag="TXT_KEY_EXPLORERGOODY_FAITH">
+			<Text>Eure Einheit fand [COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] [ICON_FAITH] Glaube in der Ruine!</Text>
+		</Row>
+        <Row Tag="TXT_KEY_EXPLORERGOODY_GOLDAGE">
+			<Text>Eure Einheit fand [COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] [ICON_GOLDEN_AGE] Anzeichen für bessere Zeiten in der Ruine!</Text>
+		</Row>
+        <Row Tag="TXT_KEY_EXPLORERGOODY_PRODBOOST">
+			<Text>Eure Einheit fand [COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] Werkzeuge um die aktuelle [ICON_PRODUCTION] Produktion Eurer Stadt {2_cityname} zu beschleunigen in der Ruine!</Text>
+		</Row>
+        <Row Tag="TXT_KEY_EXPLORERGOODY_FOODBOOST">
+			<Text>Eure Einheit fand [COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] [ICON_FOOD] Nahrung um die Bevölkerung Eurer Stadt {2_cityname} zu ernähren in der Ruine!</Text>
+		</Row>
+        <Row Tag="TXT_KEY_EXPLORERGOODY_XP">
+			<Text>Eure Einheit fand ... nichts [ICON_FLOWER] in der Ruine, aber ist um [COLOR_POSITIVE_TEXT]{1_Num}[ENDCOLOR] Erfahrung reicher.</Text>
+		</Row>
+    </Language_de_DE>
+    
+</GameData>

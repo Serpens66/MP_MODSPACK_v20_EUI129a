@@ -1,0 +1,391 @@
+<GameData>
+
+    <!-- Serp: Tags from new AA promos from arabic numbers to latin numbers. (letter I) -> ranklist from flagromotions mod works. also deactivated PromotionPrereq changes  -> compatible to promotions level mod -->
+
+	<CustomModOptions>
+		<Update>
+			<Where Name="GLOBAL_PROMOTION_CLASSES"/>
+			<Set Value="1"/>
+		</Update>
+	</CustomModOptions>
+
+	<UnitCombatInfos>
+		<Row>
+			<Type>UNITCOMBAT_AA</Type>
+			<Description>TXT_KEY_UNITCOMBAT_AA</Description>
+		</Row>
+	</UnitCombatInfos>
+
+	<Unit_FreePromotions>
+		<!-- Drop the base interception chance for AA Guns from 100% to 40% -->
+		<Delete UnitType="UNIT_ANTI_AIRCRAFT_GUN" PromotionType="PROMOTION_INTERCEPTION_IV"/>
+		<Row>
+			<UnitType>UNIT_ANTI_AIRCRAFT_GUN</UnitType>
+			<PromotionType>PROMOTION_INTERCEPTION_II</PromotionType>
+		</Row>
+
+		<!-- Drop the base interception chance for SAMs from 100% to 40% -->
+		<Delete UnitType="UNIT_MOBILE_SAM" PromotionType="PROMOTION_INTERCEPTION_IV"/>
+		<Row>
+			<UnitType>UNIT_MOBILE_SAM</UnitType>
+			<PromotionType>PROMOTION_INTERCEPTION_II</PromotionType>
+		</Row>
+
+		<Delete UnitType="UNIT_ANTI_AIRCRAFT_GUN" PromotionType="PROMOTION_ANTI_AIR"/>
+		<Delete UnitType="UNIT_MOBILE_SAM" PromotionType="PROMOTION_ANTI_AIR"/>
+	</Unit_FreePromotions>
+
+	<Units>
+		<Update>
+			<Where Type="UNIT_ANTI_AIRCRAFT_GUN"/>
+			<Set PromotionClass="UNITCOMBAT_AA"/>
+		</Update>
+		<Update>
+			<Where Type="UNIT_MOBILE_SAM"/>
+			<Set PromotionClass="UNITCOMBAT_AA"/>
+		</Update>
+	</Units>
+
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_AA_INTERCEPT_I</Type>
+			<Description>TXT_KEY_PROMOTION_AA_INTERCEPT_I</Description>
+			<Help>TXT_KEY_PROMOTION_AA_INTERCEPT_I_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<InterceptChanceChange>20</InterceptChanceChange>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_AIR</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_AA_INTERCEPT_I</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_AA_INTERCEPT_II</Type>
+			<Description>TXT_KEY_PROMOTION_AA_INTERCEPT_II</Description>
+			<Help>TXT_KEY_PROMOTION_AA_INTERCEPT_II_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROMOTION_AA_INTERCEPT_I</PromotionPrereqOr1>
+			<OrderPriority>1</OrderPriority>
+			<InterceptChanceChange>20</InterceptChanceChange>
+			<PortraitIndex>1</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_AIR</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_AA_INTERCEPT_II</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_AA_INTERCEPT_III</Type>
+			<Description>TXT_KEY_PROMOTION_AA_INTERCEPT_III</Description>
+			<Help>TXT_KEY_PROMOTION_AA_INTERCEPT_III_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROMOTION_AA_INTERCEPT_II</PromotionPrereqOr1>
+			<OrderPriority>1</OrderPriority>
+			<InterceptChanceChange>20</InterceptChanceChange>
+			<PortraitIndex>2</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_AIR</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_AA_INTERCEPT_III</PediaEntry>
+		</Row>
+
+		<Row>
+			<Type>PROMOTION_AA_FLACK_I</Type>
+			<Description>TXT_KEY_PROMOTION_AA_FLACK_I</Description>
+			<Help>TXT_KEY_PROMOTION_AA_FLACK_I_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>10</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_AIR</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_AA_FLACK_I</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_AA_FLACK_II</Type>
+			<Description>TXT_KEY_PROMOTION_AA_FLACK_II</Description>
+			<Help>TXT_KEY_PROMOTION_AA_FLACK_II_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROMOTION_AA_FLACK_I</PromotionPrereqOr1>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>11</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_AIR</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_AA_FLACK_II</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_AA_FLACK_III</Type>
+			<Description>TXT_KEY_PROMOTION_AA_FLACK_III</Description>
+			<Help>TXT_KEY_PROMOTION_AA_FLACK_III_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROMOTION_AA_FLACK_II</PromotionPrereqOr1>
+			<OrderPriority>1</OrderPriority>
+			<PortraitIndex>12</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_AIR</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_AA_FLACK_III</PediaEntry>
+		</Row>
+
+		<Row>
+			<Type>PROMOTION_AA_RAPID_FIRE</Type>
+			<Description>TXT_KEY_PROMOTION_AA_RAPID_FIRE</Description>
+			<Help>TXT_KEY_PROMOTION_AA_RAPID_FIRE_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROMOTION_AA_INTERCEPT_III</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROMOTION_AA_FLACK_III</PromotionPrereqOr2>
+			<OrderPriority>6</OrderPriority>
+			<NumInterceptionChange>1</NumInterceptionChange>
+			<PortraitIndex>47</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_AIR</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_AA_RAPID_FIRE</PediaEntry>
+		</Row>
+        
+        <!-- don't change this, because we have Promotion Level system! 
+		<Update>
+			<Where Type="PROMOTION_COVER_1"/>
+			<Set PromotionPrereqOr5="PROMOTION_AA_INTERCEPT_I" PromotionPrereqOr6="PROMOTION_AA_FLACK_I"/>
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_MEDIC"/>
+			<Set PromotionPrereqOr5="PROMOTION_AA_INTERCEPT_II" PromotionPrereqOr6="PROMOTION_AA_FLACK_II"/>
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_MARCH"/>
+			<Set PromotionPrereqOr5="PROMOTION_AA_INTERCEPT_III" PromotionPrereqOr6="PROMOTION_AA_FLACK_III"/>
+		</Update>   -->
+        
+	</UnitPromotions>
+
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_AA_FLACK_I</PromotionType>
+			<UnitCombatType>UNITCOMBAT_FIGHTER</UnitCombatType>
+			<Modifier>50</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AA_FLACK_I</PromotionType>
+			<UnitCombatType>UNITCOMBAT_BOMBER</UnitCombatType>
+			<Modifier>50</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AA_FLACK_I</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+			<Modifier>50</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AA_FLACK_II</PromotionType>
+			<UnitCombatType>UNITCOMBAT_FIGHTER</UnitCombatType>
+			<Modifier>50</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AA_FLACK_II</PromotionType>
+			<UnitCombatType>UNITCOMBAT_BOMBER</UnitCombatType>
+			<Modifier>50</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AA_FLACK_II</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+			<Modifier>50</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AA_FLACK_III</PromotionType>
+			<UnitCombatType>UNITCOMBAT_FIGHTER</UnitCombatType>
+			<Modifier>50</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AA_FLACK_III</PromotionType>
+			<UnitCombatType>UNITCOMBAT_BOMBER</UnitCombatType>
+			<Modifier>50</Modifier>
+		</Row>
+	</UnitPromotions_UnitCombatMods>
+
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_AA_INTERCEPT_I</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AA_INTERCEPT_II</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AA_INTERCEPT_III</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AA_FLACK_I</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AA_FLACK_II</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AA_FLACK_III</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+
+		<Row>
+			<PromotionType>PROMOTION_MEDIC</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MEDIC_II</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_COVER_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_COVER_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MARCH</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AA_RAPID_FIRE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+
+		<Row>
+			<PromotionType>PROMOTION_EMBARKATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DEFENSIVE_EMBARKATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ALLWATER_EMBARKATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_INSTA_HEAL</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MORALE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ADJACENT_BONUS</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_HIMEJI_CASTLE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_NATIONALISM</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FASTER_HEAL</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_UNITCOMBAT_AA">
+			<Text>Anti-Aircraft Units</Text>
+			<Plurality>2</Plurality>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_AA_INTERCEPT_I">
+			<Text>AA Intercept I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AA_INTERCEPT_I_HELP">
+			<Text>+20% Interception against air units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AA_INTERCEPT_II">
+			<Text>AA Intercept II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AA_INTERCEPT_II_HELP">
+			<Text>+20% Interception against air units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AA_INTERCEPT_III">
+			<Text>AA Intercept III</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AA_INTERCEPT_III_HELP">
+			<Text>+20% Interception against air units.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_AA_FLACK_I">
+			<Text>AA Flack I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AA_FLACK_I_HELP">
+			<Text>+50% [ICON_STRENGTH] Combat Damage against air and helicopter units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AA_FLACK_II">
+			<Text>AA Flack II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AA_FLACK_II_HELP">
+			<Text>+50% [ICON_STRENGTH] Combat Damage against air and helicopter units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AA_FLACK_III">
+			<Text>AA Flack III</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AA_FLACK_III_HELP">
+			<Text>+50% [ICON_STRENGTH] Combat Damage against air units.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_AA_RAPID_FIRE">
+			<Text>AA Rapid Fire</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AA_RAPID_FIRE_HELP">
+			<Text>1 extra [COLOR_POSITIVE_TEXT]Interception[ENDCOLOR] may be made per turn.</Text>
+		</Row>
+	</Language_en_US>
+    
+    <Language_de_DE>
+		<Row Tag="TXT_KEY_UNITCOMBAT_AA">
+			<Text>Flugabwehr-Einheiten</Text>
+			<Plurality>2</Plurality>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_AA_INTERCEPT_I">
+			<Text>AA Abfangen I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AA_INTERCEPT_I_HELP">
+			<Text>+20% Abfangen gegen feindliche Flug Einheiten.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AA_INTERCEPT_II">
+			<Text>AA Abfangen II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AA_INTERCEPT_II_HELP">
+			<Text>+20% Abfangen gegen feindliche Flug Einheiten.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AA_INTERCEPT_III">
+			<Text>AA Abfangen III</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AA_INTERCEPT_III_HELP">
+			<Text>+20% Abfangen gegen feindliche Flug Einheiten.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_AA_FLACK_I">
+			<Text>AA Flack I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AA_FLACK_I_HELP">
+			<Text>+50% [ICON_STRENGTH] Kampfstärke gegen Flug- und Helikopter- Einheiten.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AA_FLACK_II">
+			<Text>AA Flack II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AA_FLACK_II_HELP">
+			<Text>+50% [ICON_STRENGTH] Kampfstärke gegen Flug- und Helikopter- Einheiten.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AA_FLACK_III">
+			<Text>AA Flack III</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AA_FLACK_III_HELP">
+			<Text>+50% [ICON_STRENGTH] Kampfstärke gegen Flugeinheiten.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_AA_RAPID_FIRE">
+			<Text>AA Schnellfeuer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AA_RAPID_FIRE_HELP">
+			<Text>1 extra [COLOR_POSITIVE_TEXT]Abfangen[ENDCOLOR] pro Runde möglich.</Text>
+		</Row>
+	</Language_de_DE>
+</GameData>

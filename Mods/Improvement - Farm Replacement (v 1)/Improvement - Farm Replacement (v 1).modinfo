@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="18d7c770-a13a-4563-9e52-cb81b7d75537" version="1">
+  <Properties>
+    <Name>Improvement - Farm Replacement</Name>
+    <Teaser>Replacement Farm to avoid the CTD issue with reloading the Landmark System</Teaser>
+    <Description>Setting Reload Landmark System to true on any mod will cause a crash to desktop (CTD) if any player replaces a Farm with any other improvement (eg a mine when minerals are revealed later in the game)
+
+This is due to a bug in the FARM layout handler.
+
+This mod replaces the layout handler used for Farms with RANDOM and adds new, non-era specific, graphics for farms.</Description>
+    <Authors>William Howard</Authors>
+    <SpecialThanks>Horem et al (http://forums.civfanatics.com/showthread.php?t=473505)</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="63FE892C0A3A36213814107541176C89" import="1">ART/Barley/barley_diff.dds</File>
+    <File md5="90A1835F24421B2568B264282E182895" import="1">ART/Barley/barley_sref.dds</File>
+    <File md5="2EEC248E1D46F5CFEA2280686B4AE877" import="1">ART/Barley/crop_ground_barley_d.dds</File>
+    <File md5="9285C31AB78D5892FFB82652F3C6D09C" import="1">ART/Barley/crop_ground_barley_h.dds</File>
+    <File md5="577EF72CBF5DE34C59A79AE2805AF0C0" import="1">ART/Barley/fx_triggers_pl_plantation_mid_barley.ftsxml</File>
+    <File md5="E589AFA76838B94CA7D6A35EF9FAC3E1" import="1">ART/Barley/hb_plantation_mid_barley.fxsxml</File>
+    <File md5="C01C1A856BBCA8FA2249B4F8503A5903" import="1">ART/Barley/hb_plantation_mid_barley.gr2</File>
+    <File md5="DA2AA289147C1559B17ED500F209E8DD" import="1">ART/Barley/plantation_mid_barley.fxsxml</File>
+    <File md5="FCF370096E93AD8FE5DB29C10E7487FA" import="1">ART/Barley/plantation_mid_barley.gr2</File>
+    <File md5="AE0A8A8F9EC824DCADD18B927555B152" import="1">ART/Barley/pl_barley_diff.dds</File>
+    <File md5="12B50210148B09CD7611E159AA34EF6A" import="1">ART/Barley/pl_crop_ground_barley_d.dds</File>
+    <File md5="EA42A42F2CEE0EAA64C9FAAFC5B14EDC" import="1">ART/Barley/pl_plantation_mid_barley.fxsxml</File>
+    <File md5="AF3DCB8EF33ED75C7A029FC4F9E50672" import="1">ART/Barley/pl_plantation_mid_barley.gr2</File>
+    <File md5="BDB3CCB15B5E98D6660CAE9E58D78D1E" import="1">ART/Corn/plantation_mid_corn.fxsxml</File>
+    <File md5="D608CA534A1AA20B31C982B847A31F91" import="1">ART/Corn/plantation_mid_corn.gr2</File>
+    <File md5="CB2FEFC733D2E4EA1325B978FA56E9B2" import="1">ART/Corn/resource_corn_diff.dds</File>
+    <File md5="C8D92A47936A0B2B7E5947FE8F02058D" import="1">ART/Corn/resource_corn_sref.dds</File>
+    <File md5="577EF72CBF5DE34C59A79AE2805AF0C0" import="1">ART/Mango/fx_triggers_pl_plantation_mid_mango.ftsxml</File>
+    <File md5="D2608A70847DCA918B356CD82B801471" import="1">ART/Mango/mango_diff.dds</File>
+    <File md5="B27A2B6D05261F9AC58DCB266F5EBBFF" import="1">ART/Mango/mango_sref.dds</File>
+    <File md5="940456EC8B0BC747773B03945F029B0F" import="1">ART/Mango/plantation_mid_mango.fxsxml</File>
+    <File md5="953AD375F7D6F1DF92F3EF5891D50B3D" import="1">ART/Mango/plantation_mid_mango.gr2</File>
+    <File md5="96D2464E1B6FE8636F2E498C8175F897" import="1">ART/Mango/pl_mango_diff.dds</File>
+    <File md5="C03CAD88A4F452AA0B5C2A5250921CC1" import="1">ART/Mango/pl_plantation_mid_mango.fxsxml</File>
+    <File md5="8E8952A63F8A4BC34B997F9C11F061F7" import="1">ART/Mango/pl_plantation_mid_mango.gr2</File>
+    <File md5="8E3B04BBC98E39DE0AF00FA01D5AA7EA" import="1">ART/Tobacco/crop_ground_tobacco_d.dds</File>
+    <File md5="9285C31AB78D5892FFB82652F3C6D09C" import="1">ART/Tobacco/crop_ground_tobacco_h.dds</File>
+    <File md5="04AEF196387A5425CDC944A8CD9B1B4F" import="1">ART/Tobacco/hb_plantation_mid_tobacco.fxsxml</File>
+    <File md5="FF19793B18BFC0B449C79A5AF329E67A" import="1">ART/Tobacco/hb_plantation_mid_tobacco.gr2</File>
+    <File md5="C2559BB675AFA33316EC146E42003697" import="1">ART/Tobacco/plantation_mid_tobacco.fxsxml</File>
+    <File md5="522E2671C81C52B1A84B70FDC344390A" import="1">ART/Tobacco/plantation_mid_tobacco.gr2</File>
+    <File md5="F80EAC029E70CC48BC97617DDF1262B9" import="1">ART/Tobacco/tobacco_diff.dds</File>
+    <File md5="56177E4DAC7F49305B0E756AF4CC70D1" import="1">ART/Tobacco/tobacco_sref.dds</File>
+    <File md5="3DE093F3491406AD2E94CA031364D72D" import="0">SQL/ImprovementFarmReplacement.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>SQL/ImprovementFarmReplacement.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

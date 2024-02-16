@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gives some siege units range 3 and the indirect fire promotion ... no ind fire promotion, instead of that, 
+i added in promotions level mod a new ind fire promotion only avaible for siege units at level 3 instead of level 5 -->
+<GameData>
+	<Units>
+		<Update>
+			<Set Range="2"/>
+			<Where Type="UNIT_CATAPULT"/>
+		</Update>
+
+		<Update>
+			<Set Range="3"/>
+			<Where Type="UNIT_TREBUCHET"/>
+		</Update>
+
+		<Update>
+			<Set Range="3"/>
+			<Where Type="UNIT_CANNON"/>
+		</Update>
+		
+		<Update>
+			<Set Range="3"/>
+			<Where Type="UNIT_KOREAN_HWACHA"/>
+		</Update>
+
+	</Units>
+<!--
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_CATAPULT</UnitType>
+			<PromotionType>PROMOTION_INDIRECT_FIRE</PromotionType>
+		</Row>
+
+		<Row>
+			<UnitType>UNIT_TREBUCHET</UnitType>
+			<PromotionType>PROMOTION_INDIRECT_FIRE</PromotionType>
+		</Row>
+
+		<Row>
+			<UnitType>UNIT_CANNON</UnitType>
+			<PromotionType>PROMOTION_INDIRECT_FIRE</PromotionType>
+		</Row>
+
+		<Row>
+			<UnitType>UNIT_KOREAN_HWACHA</UnitType>
+			<PromotionType>PROMOTION_INDIRECT_FIRE</PromotionType>
+		</Row>
+	</Unit_FreePromotions> -->
+</GameData>

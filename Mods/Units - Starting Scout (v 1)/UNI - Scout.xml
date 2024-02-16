@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 7/13/2012 8:50:14 PM -->
+<GameData>
+	<Eras>
+		<Update>
+			<Set StartingDefenseUnits="0" />
+			<Where Type="ERA_ANCIENT" />
+		</Update>
+		<Update>
+			<Set StartingExploreUnits="1" />
+			<Where Type="ERA_ANCIENT" />
+		</Update>
+	</Eras>
+</GameData>

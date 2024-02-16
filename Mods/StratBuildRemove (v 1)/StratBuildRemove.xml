@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    
+    <Language_en_US>
+		<Row Tag="TXT_KEY_STRATBUILD_TITLE">
+			<Text>[COLOR_NEGATIVE_TEXT]Out of resources![ENDCOLOR]</Text>
+		</Row>
+        <Row Tag="TXT_KEY_STRATBUILD_DESCR">
+			<Text>Your building [COLOR_NEGATIVE_TEXT]{1_BuildingName:textkey}[ENDCOLOR] in your city {2_CityName:textkey} went out of resource [COLOR_NEGATIVE_TEXT]{3_ResourceName:textkey}[ENDCOLOR]![NEWLINE]It was removed from your city, but you can build it for free again as soon as you have {3_ResourceName:textkey} again.</Text>
+		</Row>
+	</Language_en_US>
+    
+    <Language_de_DE>
+		<Row Tag="TXT_KEY_STRATBUILD_TITLE">
+			<Text>[COLOR_NEGATIVE_TEXT]Keine Ressourcen mehr![ENDCOLOR]</Text>
+		</Row>
+        <Row Tag="TXT_KEY_STRATBUILD_DESCR">
+			<Text>Euer Gebäude [COLOR_NEGATIVE_TEXT]{1_BuildingName:textkey}[ENDCOLOR] in Eurer Stadt {2_CityName:textkey} hat kein [COLOR_NEGATIVE_TEXT]{3_ResourceName:textkey}[ENDCOLOR] mehr![NEWLINE]Es wurde aus Eurer Stadt entfernt, aber Ihr könnt es kostenlos erneut bauen, sobald Ihr wieder {3_ResourceName:textkey} habt.</Text>
+		</Row>
+	</Language_de_DE>
+    
+</GameData>

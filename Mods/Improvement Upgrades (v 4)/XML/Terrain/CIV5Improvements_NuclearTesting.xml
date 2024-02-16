@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/15/2012 10:08:20 AM -->
+<GameData>
+	<Improvements>
+		<Row>
+			<Type>IMPROVEMENT_NUCLEAR_TESTING</Type>
+			<Description>TXT_KEY_IMPROVEMENT_NUCLEAR_TESTING</Description>
+			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_NUCLEAR_TESTING_TEXT</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_FISHING_BOATS</ArtDefineTag>
+			<Water>true</Water>
+			<RequiresFeature>true</RequiresFeature>
+			<PillageGold>10</PillageGold>
+			<DestroyedWhenPillaged>true</DestroyedWhenPillaged>
+			<PortraitIndex>5</PortraitIndex>
+			<IconAtlas>RESOURCE_ATLAS</IconAtlas>
+		</Row>
+	</Improvements>
+	<Improvement_ValidFeatures>
+		<Row>
+			<ImprovementType>IMPROVEMENT_NUCLEAR_TESTING</ImprovementType>
+			<FeatureType>FEATURE_ATOLL</FeatureType>
+		</Row>
+	</Improvement_ValidFeatures>
+	<Improvement_Yields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_NUCLEAR_TESTING</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>5</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_NUCLEAR_TESTING</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>-2</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_NUCLEAR_TESTING</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>-1</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_NUCLEAR_TESTING</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>-1</Yield>
+		</Row>
+	</Improvement_Yields>
+	<Improvement_TechYieldChanges>
+		<Row>
+			<ImprovementType>IMPROVEMENT_NUCLEAR_TESTING</ImprovementType>
+			<TechType>TECH_NUCLEAR_FISSION</TechType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Improvement_TechYieldChanges>
+</GameData>

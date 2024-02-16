@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="166f91ed-2546-45ee-a03a-d63b9a75132b" version="6">
+  <Properties>
+    <Name>Maps - Random Goody Huts</Name>
+    <Teaser>Generate random goody huts on fixed maps (ie .Civ5map files, not map scripts)</Teaser>
+    <Description>Generate random goody huts on fixed maps (ie .Civ5map files, not map scripts)</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.2kgames.com/showthread.php?107969-MOD-Maps-Random-Goody-Huts</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+    <PediaCategory>MAPS</PediaCategory>
+    <PediaAtlas>UNIT_ATLAS_2</PediaAtlas>
+    <PediaIndex>47</PediaIndex>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="F4E5D9E1AE2591610854637948DACE5B" import="0">LUA/MapsRandomGoodyHuts.lua</File>
+  </Files>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="LUA/MapsRandomGoodyHuts.lua">
+      <Name>MapsRandomGoodyHuts</Name>
+      <Description>MapsRandomGoodyHuts</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

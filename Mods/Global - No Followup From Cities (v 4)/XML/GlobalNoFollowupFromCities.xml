@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<CustomModOptions>
+		<Update>
+			<Where Name="GLOBAL_NO_FOLLOWUP"/>
+			<Set Value="1"/>
+		</Update>
+		<Update>
+			<Where Name="GLOBAL_NO_FOLLOWUP_FROM_CITIES"/>
+			<Set Value="1"/>
+		</Update>
+		<Update>
+			<Where Name="GLOBAL_CAPTURE_AFTER_ATTACKING"/>
+			<Set Value="1"/>
+		</Update>
+		<Update>
+			<Where Name="BUGFIX_CITY_STACKING"/>
+			<Set Value="1"/>
+		</Update>
+	</CustomModOptions>
+	
+	<Improvements>
+		<Update>
+			<Where Type="IMPROVEMENT_CITADEL"/>
+			<Set NoFollowup="1"/>
+		</Update>
+		<Update>
+			<Where Type="IMPROVEMENT_FORT"/>
+			<Set NoFollowup="1"/>
+		</Update>
+		<Update>
+			<Where Type="IMPROVEMENT_KASBAH"/>
+			<Set NoFollowup="1"/>
+		</Update>
+		<Update>
+			<Where Type="IMPROVEMENT_FEITORIA"/>
+			<Set NoFollowup="1"/>
+		</Update>
+		<Update>
+			<Where Type="IMPROVEMENT_CHATEAU"/>
+			<Set NoFollowup="1"/>
+		</Update>
+        <Update>
+			<Where Type="IMPROVEMENT_BARBARIAN_CAMP"/>
+			<Set NoFollowup="1"/>
+		</Update>
+	</Improvements>
+</GameData>

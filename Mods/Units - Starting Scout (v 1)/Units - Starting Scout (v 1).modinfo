@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="00a28291-c503-4edf-8d76-0da4f86669d2" version="1">
+  <Properties>
+    <Name>Units - Starting Scout</Name>
+    <Teaser>Simple mod that replace the starting Warrior with a scout instead (including AI players)</Teaser>
+    <Description>Simple mod that replace the starting Warrior with a scout instead (including AI players)</Description>
+    <Authors>Bloublou</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="ED7887C6F81816A51063F79E82E51A04" import="0">UNI - Scout.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>UNI - Scout.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

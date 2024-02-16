@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/5/2012 5:28:52 AM -->
+<GameData>
+	<!--Research Station Build-->
+	<Builds>
+		<Row>
+			<Type>BUILD_RESEARCH_STATION</Type>
+			<PrereqTech>TECH_EDUCATION</PrereqTech>
+			<Time>900</Time>
+			<ImprovementType>IMPROVEMENT_RESEARCH_STATION</ImprovementType>
+			<Description>TXT_KEY_BUILD_RESEARCH_STATION</Description>
+            <Help>TXT_KEY_BUILD_RESEARCH_STATION_HELP</Help>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<OrderPriority>98</OrderPriority>
+			<IconIndex>23</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+	</Builds>
+</GameData>

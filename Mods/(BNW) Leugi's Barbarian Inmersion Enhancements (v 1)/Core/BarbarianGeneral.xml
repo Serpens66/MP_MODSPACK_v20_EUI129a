@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 11/13/2014 2:51:36 PM -->
+<GameData>
+
+	<Improvements>
+        <!-- barbarian camps give defense -->
+        <Update>
+			<Where Type="IMPROVEMENT_BARBARIAN_CAMP" />
+			<Set DefenseModifier="10" />
+		</Update>
+	</Improvements>
+
+	<Units>
+
+		<Row>
+			<Class>UNITCLASS_GREAT_GENERAL</Class>
+			<Type>UNIT_BARBARIAN_GENERAL</Type>
+			<Cost>-1</Cost>
+			<Moves>2</Moves> <!-- is needed, otherwise they wont go into camp -->
+			<CivilianAttackPriority>CIVILIAN_ATTACK_PRIORITY_HIGH</CivilianAttackPriority>
+			<Special>SPECIALUNIT_PEOPLE</Special>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_GENERAL</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_GREAT_GENERAL</Description>
+			<Civilopedia>TXT_KEY_CIV5_GREATGENERALS_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_GREAT_GENERAL_STRATEGY</Strategy>
+			<AdvancedStartCost>-1</AdvancedStartCost>
+			<WorkRate>1</WorkRate>
+			<CombatLimit>0</CombatLimit>
+			<DontShowYields>true</DontShowYields>
+			<UnitArtInfo>ART_DEF_UNIT_GENERAL</UnitArtInfo>
+			<UnitArtInfoEraVariation>true</UnitArtInfoEraVariation>
+			<UnitFlagIconOffset>90</UnitFlagIconOffset>
+			<SpecialCargo>SPECIALUNIT_FIGHTER</SpecialCargo>
+			<DomainCargo>DOMAIN_AIR</DomainCargo>
+			<IconAtlas>UNIT_ATLAS_2</IconAtlas>
+			<PortraitIndex>48</PortraitIndex>
+			<MoveRate>GREAT_PERSON</MoveRate>
+		</Row>
+	</Units>
+
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_GENERAL</UnitType>
+			<UnitAIType>UNITAI_GENERAL</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_GENERAL</UnitType>
+			<PromotionType>PROMOTION_CARGO_II</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BARBARIAN_GENERAL</UnitType>
+			<PromotionType>PROMOTION_HORDE_GENERAL</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+</GameData>

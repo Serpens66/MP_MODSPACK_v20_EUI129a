@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/5/2012 5:23:22 AM -->
+<GameData>
+	<Language_en_US>
+		<!--Improvements-->
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_RANCH_TEXT">
+			<Text>Ranches specialise in the farming of Cattle, Horses and Sheep.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_ENHANCED_MINE_TEXT">
+			<Text>Replace standard mines to increace production and adds science research.[NEWLINE][NEWLINE]Possibility of discovering a resource.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_FAIR_TRADE_PLANTATION_TEXT">
+			<Text>Improves plantations further.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_HUNTING_LODGE_TEXT">
+			<Text>Hunting Lodges provide additional [ICON_GOLD] Gold and [ICON_FOOD] Food</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_SKI_RESORT_TEXT">
+			<Text>Ski Resorts may be built on snow hill tiles to provide additional [ICON_GOLD] Gold and [ICON_CULTURE] Culture. An adjacent mountain adds +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_RESEARCH_STATION_TEXT">
+			<Text>[NEWLINE][ICON_RESEARCH] +2[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]Requires flat snow terrain.[/COLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_BEACH_RESORT_TEXT">
+			<Text>[NEWLINE][ICON_GOLD] +1[NEWLINE][ICON_CULTURE] +2[NEWLINE][ICON_FOOD] +1[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]Requires flat desert coastal terrain.[/COLOR][NEWLINE][NEWLINE]Make use of flat coastal desert terrain, with no resources, for additional gold and culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_NUCLEAR_TESTING_TEXT">
+			<Text>Nuclear Test Sites can be established on Atolls with [COLOR_WARNING_TEXT]Workboats[/COLOR] to gain additional [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]Gains an additional +2 [ICON_RESEARCH] with [COLOR_POSITIVE_TEXT]Nuclear Fission[/COLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_ENHANCED_QUARRY_TEXT">
+			<Text>Enhanced Quarries provide additional [ICON_PRODUCTION] production output over the standard quarry, as well as +1 [ICON_RESEARCH] science.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_SAWMILL_TEXT">
+			<Text>Sawmills are an alternative to Lumbermills, with slightly better yield output and +2 additional output next to rivers.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_SUBURB_TEXT">
+			<Text>Suburbs are smaller populated areas around a city. [NEWLINE][NEWLINE] Must be build next to a city and provides +1[ICON_GOLD][NEWLINE][NEWLINE]Depending on the environment, it also adds +1 [ICON_GOLD] if coastal, +1 [ICON_FOOD] if fresh water, +1 [ICON_PRODUCTION] if on hill, +1 [ICON_CULTURE] if next to mountain.[NEWLINE][NEWLINE] Provides better Science + Culture yields as tech research advances. [NEWLINE][NEWLINE]Units fighting in Suburbs gain a 10% defence bonus.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_TRADING_ESTATE_TEXT">
+			<Text>Trading Company provides more [ICON_GOLD] Gold than trading posts, but can only be built next to Luxuries.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_LUXURY_RESORT_TEXT">
+			<Text>Luxury Resorts provide substancial [ICON_GOLD] Gold, but can only be built on Atolls.</Text>
+		</Row>
+        <Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_FARMLAND_ESTATE_TEXT">
+			<Text>Farmland Estates produce more [ICON_FOOD] Food than farms.</Text>
+		</Row>
+
+        <Replace Tag="TXT_KEY_POLICY_FREE_THOUGHT_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Free Thought[ENDCOLOR][NEWLINE]+1 [ICON_RESEARCH] Science from every Trading Post / Trading Company and +17% [ICON_RESEARCH] Science from Universities.</Text>
+        </Replace>
+        
+	</Language_en_US>
+    
+    <Language_de_DE>
+		<!--Improvements-->
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_RANCH_TEXT">
+			<Text>Ranches specialise in the farming of Cattle, Horses and Sheep.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_ENHANCED_MINE_TEXT">
+			<Text>Replace standard mines to increace production and adds science research.[NEWLINE][NEWLINE]Possibility of discovering a resource.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_FAIR_TRADE_PLANTATION_TEXT">
+			<Text>Improves plantations further.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_HUNTING_LODGE_TEXT">
+			<Text>Hunting Lodges provide additional [ICON_GOLD] Gold and [ICON_FOOD] Food.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_SKI_RESORT_TEXT">
+			<Text>Ski Resorts may be built on snow hill tiles to provide additional [ICON_GOLD] Gold and [ICON_CULTURE] Culture. An adjacent mountain adds +1 [ICON_GOLD] Gold and +1 [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_RESEARCH_STATION_TEXT">
+			<Text>[NEWLINE][ICON_RESEARCH] +2[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]Requires flat snow terrain.[/COLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_BEACH_RESORT_TEXT">
+			<Text>[NEWLINE][ICON_GOLD] +1[NEWLINE][ICON_CULTURE] +2[NEWLINE][ICON_FOOD] +1[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]Requires flat desert coastal terrain.[/COLOR][NEWLINE][NEWLINE]Make use of flat coastal desert terrain, with no resources, for additional gold and culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_NUCLEAR_TESTING_TEXT">
+			<Text>Nuclear Test Sites can be established on Atolls with [COLOR_WARNING_TEXT]Workboats[/COLOR] to gain additional [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]Gains an additional +2 [ICON_RESEARCH] with [COLOR_POSITIVE_TEXT]Nuclear Fission[/COLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_ENHANCED_QUARRY_TEXT">
+			<Text>Enhanced Quarries provide additional [ICON_PRODUCTION] production output over the standard quarry, as well as +1 [ICON_RESEARCH] science.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_SAWMILL_TEXT">
+			<Text>Sawmills are an alternative to Lumbermills, with slightly better yield output and +2 additional output next to rivers.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_SUBURB_TEXT">
+			<Text>Suburbs are smaller populated areas around a city. [NEWLINE][NEWLINE] Must be build next to a city and provides +1 [ICON_GOLD][NEWLINE][NEWLINE]Depending on the environment, it also adds +1 [ICON_GOLD] if coastal, +1 [ICON_FOOD] if fresh water, +1 [ICON_PRODUCTION] if on hill, +1 [ICON_CULTURE] if next to mountain.[NEWLINE][NEWLINE] Provides better Science + Culture yields as tech research advances. [NEWLINE][NEWLINE]Units fighting in Suburbs gain a 10% defence bonus.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_TRADING_ESTATE_TEXT">
+			<Text>Trading Company provides more [ICON_GOLD] Gold than trading posts, but can only be built next to Luxuries.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_LUXURY_RESORT_TEXT">
+			<Text>Luxury Resorts provide substancial [ICON_GOLD] Gold, but can only be built on Atolls.</Text>
+		</Row>
+        <Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_FARMLAND_ESTATE_TEXT">
+			<Text>Farmland Estates produce more [ICON_FOOD] Food than farms.</Text>
+		</Row>
+
+        <Replace Tag="TXT_KEY_POLICY_FREE_THOUGHT_HELP">
+            <Text>[COLOR_POSITIVE_TEXT]Freidenkertum[ENDCOLOR][NEWLINE]+1 [ICON_RESEARCH] Wissenschaft pro Handelsposten bzw. Trading Company und +17% [ICON_RESEARCH] Wissenschaft von Universitäten.</Text>
+        </Replace>
+        
+	</Language_de_DE>
+    
+    
+</GameData>

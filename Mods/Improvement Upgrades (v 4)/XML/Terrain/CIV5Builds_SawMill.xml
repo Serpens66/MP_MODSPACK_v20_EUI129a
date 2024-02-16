@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/22/2012 8:48:38 PM -->
+<GameData>
+	<Builds>
+		<Row>
+			<Type>BUILD_SAWMILL</Type>
+			<PrereqTech>TECH_RIFLING</PrereqTech>
+			<Time>1200</Time>
+			<ImprovementType>IMPROVEMENT_SAWMILL</ImprovementType>
+			<Description>TXT_KEY_BUILD_SAWMILL</Description>
+            <Help>TXT_KEY_BUILD_SAWMILL_HELP</Help>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<OrderPriority>97</OrderPriority>
+			<IconIndex>28</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+	</Builds>    
+</GameData>

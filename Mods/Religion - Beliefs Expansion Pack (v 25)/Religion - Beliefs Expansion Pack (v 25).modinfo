@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="f688de89-ba40-438a-b0e4-5740e21d536e" version="25">
+  <Properties>
+    <Name>Religion - Beliefs Expansion Pack</Name>
+    <Teaser>(improved by Serp) [COLOR_GREEN](BNW)[ENDCOLOR] This mod largely expand the pantheon/beliefs choice for more customization when founding religions.</Teaser>
+    <Description>This mod largely expand the pantheon/beliefs choice for more customization when founding your religion.
+[NEW_LINE]
+[COLOR_GREEN]This mod now requires Brave New World Expansion, go to mod page for the older G&amp;K version[ENDCOLOR]</Description>
+    <Authors>BlouBlou</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+        <Mod id="4c756864-da74-4831-abc1-329b1150b9b4" minversion="0" maxversion="999" title="Improvement Upgrades" />  <!-- for correct load order, this also is depend on more luxury, but only add one here, because game only considers one in load order -->
+    </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="F5F07CEEB453C93322776D49655ADF1E" import="0">BELIEFS - Data.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>BELIEFS - Data.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

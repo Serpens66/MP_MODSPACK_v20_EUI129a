@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="0a3cb765-6d49-499a-bc87-b646b72eaa53" version="2">
+  <Properties>
+    <Name>Ressource - Mint Include Copper</Name>
+    <Teaser>This mod add Copper to the mint's benefits and requirement.</Teaser>
+    <Description>This mod add Copper to the mint's benefits and requirement.</Description>
+    <Authors>Bloublou</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="67FAF997184E7844339AF33BE16DFD3D" import="0">COP - mint.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>COP - mint.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

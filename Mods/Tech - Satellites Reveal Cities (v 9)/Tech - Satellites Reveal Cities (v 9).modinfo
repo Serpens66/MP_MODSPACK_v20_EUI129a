@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="722c1da4-2075-432c-b1de-26c7f9e61a26" version="9">
+  <Properties>
+    <Name>Tech - Satellites Reveal Cities</Name>
+    <Teaser>Satellites reveal cities, making them targetable without line of sight</Teaser>
+    <Description>Serp: Made multiplayer compatible and less laggy. Satellites reveal cities, making them targetable without line of sight.
+
+Satellites (or any tech with the MapVisible option) keeps cities highlighted every turn, making them targetable by bombers, missiles, artillery, etc, even if there is no direct line of sight from a unit.
+
+Building the Keyhole Project also reveals the 6 tiles immediately adjacent to cities.</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.2kgames.com/showthread.php?107589-MOD-Tech-Satellites-Reveal-Cities</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+    <PediaCategory>TECHS</PediaCategory>
+    <PediaAtlas>KEYHOLE_ICON_ATLAS</PediaAtlas>
+    <PediaIndex>0</PediaIndex>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="921CAE6A43AE187E5899C8105BF5FC84" import="1">ART/KeyHole128.dds</File>
+    <File md5="821FB93D90704791722B83A9FCCD4F56" import="1">ART/KeyHole256.dds</File>
+    <File md5="1519AC2F98AF4E72F1542AB616416EAA" import="1">ART/KeyHole45.dds</File>
+    <File md5="280D7A882E7567475C70BA5F762C192A" import="1">ART/KeyHole64.dds</File>
+    <File md5="EB0C47D2FD6FDF21A8753906A1386067" import="1">ART/KeyHole80.dds</File>
+    <File md5="C8C6002CA22DC22F44430020A53599C7" import="1">ART/KeyholeProject.dds</File>
+    <File md5="B621DBE59079376E8CC459456098C068" import="0">LUA/TechSatellitesRevealCities.lua</File>
+    <File md5="B58A5A863B4F0E55D797A8E39B3FF236" import="0">XML/TechSatellitesRevealCities.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/TechSatellitesRevealCities.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="LUA/TechSatellitesRevealCities.lua">
+      <Name>Tech - Satellites Reveal Cities</Name>
+      <Description>Satellites reveal cities, making them targetable without line of sight</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_IRS</Type>
+			<DefaultBuilding>BUILDING_IRS</DefaultBuilding>
+			<Description>TXT_KEY_IRS</Description>
+			<MaxPlayerInstances>1</MaxPlayerInstances>
+		</Row>
+	</BuildingClasses>
+    <!-- provide extra votes for everyone, this way voting power of city states is slightly reduced in total  -->
+	<Buildings>
+		<Row>
+			<Type>BUILDING_IRS</Type>
+			<BuildingClass>BUILDINGCLASS_IRS</BuildingClass>
+			<Cost>400</Cost>
+			<PrereqTech>TECH_STEAM_POWER</PrereqTech>
+			<Help>TXT_KEY_BUILDING_IRS_HELP</Help>
+			<Description>TXT_KEY_BUILDING_IRS</Description>
+			<UnhappinessModifier>-2</UnhappinessModifier>
+			<NukeImmune>true</NukeImmune>
+			<NumCityCostMod>20</NumCityCostMod>
+			<MinAreaSize>-1</MinAreaSize>
+			<NeverCapture>true</NeverCapture>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<IconAtlas>IRS_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+            <ExtraLeagueVotes>4</ExtraLeagueVotes>
+		</Row>
+	</Buildings>
+    
+    <Civilization_BuildingClassOverrides>
+		<Row>
+			<CivilizationType>CIVILIZATION_BARBARIAN</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_IRS</BuildingClassType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_MINOR</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_IRS</BuildingClassType>
+		</Row>
+	</Civilization_BuildingClassOverrides>
+    
+	<Building_YieldChanges>		
+		<Row>
+			<BuildingType>BUILDING_IRS</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_YieldChanges>
+	<Building_Flavors>		
+		<Row>
+			<BuildingType>BUILDING_IRS</BuildingType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_IRS</BuildingType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>40</Flavor>
+		</Row>
+	</Building_Flavors>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_BUILDING_IRS">
+			<Text>International Relation Service</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_IRS_HELP">
+			<Text>Provides 4 extra votes in world congress, +1[ICON_CULTURE] culture and -2% [ICON_HAPPINESS_4] Unhappiness from [ICON_CITIZEN] Citizens in non-occupied Cities.</Text>
+		</Row>
+	</Language_en_US>
+    
+    <Language_de_DE>
+		<Row Tag="TXT_KEY_BUILDING_IRS">
+			<Text>Internationale Beziehungen</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_IRS_HELP">
+			<Text>Bietet 4 extra Stimmen im Weltkongress, +1[ICON_CULTURE] Kultur und -2% [ICON_HAPPINESS_4] Unzufriedenheit durch [ICON_CITIZEN] Bürger in nicht besetzten Städten.</Text>
+		</Row>
+	</Language_de_DE>
+</GameData>

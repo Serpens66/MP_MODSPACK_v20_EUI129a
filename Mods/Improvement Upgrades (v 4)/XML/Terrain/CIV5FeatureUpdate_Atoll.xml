@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/15/2012 10:16:30 AM -->
+<GameData>
+
+	<Features>
+		
+		<Update>
+
+			<Set NoImprovement="false"/>
+			<Where Type="FEATURE_ATOLL"/>
+			
+		</Update>
+	
+	</Features>
+
+</GameData>

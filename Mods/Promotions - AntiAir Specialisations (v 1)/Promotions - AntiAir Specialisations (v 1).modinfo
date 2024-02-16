@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="a6e2d8b9-4675-4409-aa06-b9a9469d3cef" version="1">
+  <Properties>
+    <Name>Promotions - AntiAir Specialisations</Name>
+    <Teaser>Replaces Drill and Shock promotions for AA units with Interception and Flack</Teaser>
+    <Description>Replaces the land-attack Drill and Shock promotions for AA units with air-attack Interception and Flack promotions.
+
+AA Guns and Mobile SAM units start with a 40% interception chance
+
+Interception 1: +20% interception (total 60%)
+Interception 2: +20% interception (total 80%)
+Interception 3: +20% interception (total 100%)
+
+Flack 1: +50% damage (total 150% of base)
+Flack 2: +50% damage (total 200% of base)
+Flack 3: +50% damage (total 250% of base)</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="1" maxversion="999" title="DLL - Various Mod Components" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="8E236BAD74AD45A3732A9A49BA5F1E0D" import="0">XML/PromotionsAntiAirSpecialisations.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/PromotionsAntiAirSpecialisations.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

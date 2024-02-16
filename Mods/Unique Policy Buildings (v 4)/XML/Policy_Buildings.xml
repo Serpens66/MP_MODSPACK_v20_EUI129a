@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 3/4/2014 8:29:52 AM -->
+<!-- slightly changed by serp multiplayer modpack, disabled the policy description changes -->
+<GameData>
+
+    <CustomModOptions>
+		<Update>
+			<Where Name="EVENTS_CITY"/> <!-- to give the citiy state influence boost in lua -->
+			<Set Value="1"/>
+		</Update>
+	</CustomModOptions>
+    
+    
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_TCS_PUBLIC_BATHS</Type>
+			<DefaultBuilding>BUILDING_TCS_PUBLIC_BATHS</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_TCS_PUBLIC_BATHS</Description>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_TCS_TOWN_COUNCIL</Type>
+			<DefaultBuilding>BUILDING_TCS_TOWN_COUNCIL</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_TCS_TOWN_COUNCIL</Description>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_TCS_STRONGHOLD</Type>
+			<DefaultBuilding>BUILDING_TCS_STRONGHOLD</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_TCS_STRONGHOLD</Description>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_TCS_PAROCHIAL_SCHOOL</Type>
+			<DefaultBuilding>BUILDING_TCS_PAROCHIAL_SCHOOL</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_TCS_PAROCHIAL_SCHOOL</Description>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_TCS_CHANCERY</Type>
+			<DefaultBuilding>BUILDING_TCS_CHANCERY</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_TCS_CHANCERY</Description>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_TCS_MEMORIAL</Type>
+			<DefaultBuilding>BUILDING_TCS_MEMORIAL</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_TCS_MEMORIAL</Description>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_TCS_DEPOT</Type>
+			<DefaultBuilding>BUILDING_TCS_DEPOT</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_TCS_DEPOT</Description>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_TCS_BOTANICAL_GARDENS</Type>
+			<DefaultBuilding>BUILDING_TCS_BOTANICAL_GARDENS</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_TCS_BOTANICAL_GARDENS</Description>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_TCS_PATENT_OFFICE</Type>
+			<DefaultBuilding>BUILDING_TCS_PATENT_OFFICE</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_TCS_PATENT_OFFICE</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_TCS_PUBLIC_BATHS</Type>
+			<BuildingClass>BUILDINGCLASS_TCS_PUBLIC_BATHS</BuildingClass>
+			<Cost>110</Cost>
+			<GoldMaintenance>1</GoldMaintenance>
+			<PrereqTech>TECH_MATHEMATICS</PrereqTech>
+			<PolicyBranchType>POLICY_BRANCH_TRADITION</PolicyBranchType>
+			<Description>TXT_KEY_BUILDING_TCS_PUBLIC_BATHS</Description>
+			<Help>TXT_KEY_BUILDING_TCS_PUBLIC_BATHS_HELP</Help>
+			<MinAreaSize>-1</MinAreaSize>
+			<NukeImmune>true</NukeImmune>
+            <Happiness>1</Happiness>
+			<NeverCapture>true</NeverCapture>
+			<HurryCostModifier>25</HurryCostModifier>
+			<IconAtlas>POLICY_ICONATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+            <NumCityCostMod>10</NumCityCostMod>
+		</Row>
+		<Row>
+			<Type>BUILDING_TCS_TOWN_COUNCIL</Type>
+			<BuildingClass>BUILDINGCLASS_TCS_TOWN_COUNCIL</BuildingClass>
+			<Cost>100</Cost>
+			<GoldMaintenance>1</GoldMaintenance>
+			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
+			<PolicyBranchType>POLICY_BRANCH_LIBERTY</PolicyBranchType>
+			<Description>TXT_KEY_BUILDING_TCS_TOWN_COUNCIL</Description>
+			<Help>TXT_KEY_BUILDING_TCS_TOWN_COUNCIL_HELP</Help>
+			<MinAreaSize>-1</MinAreaSize>
+			<PlotCultureCostModifier>-10</PlotCultureCostModifier>
+			<PlotBuyCostModifier>-10</PlotBuyCostModifier>
+			<Happiness>1</Happiness>
+            <WorkerSpeedModifier>5</WorkerSpeedModifier>
+			<NukeImmune>true</NukeImmune>
+			<NeverCapture>true</NeverCapture>
+			<HurryCostModifier>25</HurryCostModifier>
+			<IconAtlas>POLICY_ICONATLAS</IconAtlas>
+			<PortraitIndex>1</PortraitIndex>
+            <NumCityCostMod>10</NumCityCostMod>
+		</Row>
+		<Row>
+			<Type>BUILDING_TCS_STRONGHOLD</Type>
+			<BuildingClass>BUILDINGCLASS_TCS_STRONGHOLD</BuildingClass>
+			<Cost>120</Cost>
+			<GoldMaintenance>1</GoldMaintenance>
+			<PrereqTech>TECH_ENGINEERING</PrereqTech>
+			<PolicyBranchType>POLICY_BRANCH_HONOR</PolicyBranchType>
+			<Description>TXT_KEY_BUILDING_TCS_STRONGHOLD</Description>
+			<Help>TXT_KEY_BUILDING_TCS_STRONGHOLD_HELP</Help>
+			<MinAreaSize>-1</MinAreaSize>
+			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<SpecialistCount>1</SpecialistCount>
+			<Defense>750</Defense>
+			<ExtraCityHitPoints>100</ExtraCityHitPoints>
+			<NukeImmune>true</NukeImmune>
+			<NeverCapture>true</NeverCapture>
+			<HurryCostModifier>25</HurryCostModifier>
+			<IconAtlas>POLICY_ICONATLAS</IconAtlas>
+			<PortraitIndex>2</PortraitIndex>
+            <NumCityCostMod>10</NumCityCostMod>
+		</Row>
+		<Row>
+			<Type>BUILDING_TCS_PAROCHIAL_SCHOOL</Type>
+			<BuildingClass>BUILDINGCLASS_TCS_PAROCHIAL_SCHOOL</BuildingClass>
+			<Cost>120</Cost>
+			<GoldMaintenance>1</GoldMaintenance>
+			<PrereqTech>TECH_THEOLOGY</PrereqTech>
+			<PolicyBranchType>POLICY_BRANCH_PIETY</PolicyBranchType>
+			<Description>TXT_KEY_BUILDING_TCS_PAROCHIAL_SCHOOL</Description>
+			<Help>TXT_KEY_BUILDING_TCS_PAROCHIAL_SCHOOL_HELP</Help>
+			<MinAreaSize>-1</MinAreaSize>
+			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<SpecialistCount>1</SpecialistCount>
+			<NukeImmune>true</NukeImmune>
+			<NeverCapture>true</NeverCapture>
+			<HurryCostModifier>25</HurryCostModifier>
+			<IconAtlas>POLICY_ICONATLAS</IconAtlas>
+			<PortraitIndex>3</PortraitIndex>
+            <NumCityCostMod>10</NumCityCostMod>
+		</Row>
+		<Row>
+			<Type>BUILDING_TCS_CHANCERY</Type>
+			<BuildingClass>BUILDINGCLASS_TCS_CHANCERY</BuildingClass>
+			<Cost>120</Cost>
+			<GoldMaintenance>1</GoldMaintenance>
+			<PrereqTech>TECH_CIVIL_SERVICE</PrereqTech>
+			<PolicyBranchType>POLICY_BRANCH_PATRONAGE</PolicyBranchType>
+			<Description>TXT_KEY_BUILDING_TCS_CHANCERY</Description>
+			<Help>TXT_KEY_BUILDING_TCS_CHANCERY_HELP</Help>
+			<MinAreaSize>-1</MinAreaSize>
+			<CityStateTradeRouteProductionModifier>2</CityStateTradeRouteProductionModifier>
+            <!-- <MinorFriendshipChange>50</MinorFriendshipChange> do this in lua instead, to make sure it is only given once per city, even if sold and rebuild--> 
+			<NukeImmune>true</NukeImmune>
+			<NeverCapture>true</NeverCapture>
+			<HurryCostModifier>25</HurryCostModifier>
+			<IconAtlas>POLICY_ICONATLAS</IconAtlas>
+			<PortraitIndex>4</PortraitIndex>
+            <NumCityCostMod>10</NumCityCostMod>
+		</Row>
+		<Row>
+			<Type>BUILDING_TCS_MEMORIAL</Type>
+			<BuildingClass>BUILDINGCLASS_TCS_MEMORIAL</BuildingClass>
+			<Cost>250</Cost>
+			<GoldMaintenance>1</GoldMaintenance>
+			<PrereqTech>TECH_ACOUSTICS</PrereqTech>
+			<PolicyBranchType>POLICY_BRANCH_AESTHETICS</PolicyBranchType>
+			<Description>TXT_KEY_BUILDING_TCS_MEMORIAL</Description>
+			<Help>TXT_KEY_BUILDING_TCS_MEMORIAL_HELP</Help>
+			<MinAreaSize>-1</MinAreaSize>
+			<EnhancedYieldTech>TECH_ARCHITECTURE</EnhancedYieldTech>
+			<TechEnhancedTourism>2</TechEnhancedTourism>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<SpecialistCount>1</SpecialistCount>
+			<Happiness>1</Happiness>
+			<NukeImmune>true</NukeImmune>
+			<NeverCapture>true</NeverCapture>
+			<HurryCostModifier>25</HurryCostModifier>
+			<IconAtlas>POLICY_ICONATLAS</IconAtlas>
+			<PortraitIndex>5</PortraitIndex>
+            <NumCityCostMod>10</NumCityCostMod>
+		</Row>
+		<Row>
+			<Type>BUILDING_TCS_DEPOT</Type>
+			<BuildingClass>BUILDINGCLASS_TCS_DEPOT</BuildingClass>
+			<Cost>250</Cost>
+			<GoldMaintenance>1</GoldMaintenance>
+			<PrereqTech>TECH_BANKING</PrereqTech>
+			<PolicyBranchType>POLICY_BRANCH_COMMERCE</PolicyBranchType>
+			<Description>TXT_KEY_BUILDING_TCS_DEPOT</Description>
+			<Help>TXT_KEY_BUILDING_TCS_DEPOT_HELP</Help>
+			<MinAreaSize>-1</MinAreaSize>
+			<TradeRouteSeaDistanceModifier>15</TradeRouteSeaDistanceModifier>
+			<TradeRouteLandDistanceModifier>35</TradeRouteLandDistanceModifier>
+			<NukeImmune>true</NukeImmune>
+			<NeverCapture>true</NeverCapture>
+			<HurryCostModifier>25</HurryCostModifier>
+			<IconAtlas>POLICY_ICONATLAS</IconAtlas>
+			<PortraitIndex>6</PortraitIndex>
+            <NumCityCostMod>10</NumCityCostMod>
+		</Row>
+		<Row>
+			<Type>BUILDING_TCS_BOTANICAL_GARDENS</Type>
+			<BuildingClass>BUILDINGCLASS_TCS_BOTANICAL_GARDENS</BuildingClass>
+			<Cost>300</Cost>
+			<GoldMaintenance>1</GoldMaintenance>
+			<PrereqTech>TECH_ASTRONOMY</PrereqTech>
+			<PolicyBranchType>POLICY_BRANCH_EXPLORATION</PolicyBranchType>
+			<Description>TXT_KEY_BUILDING_TCS_BOTANICAL_GARDENS</Description>
+			<Help>TXT_KEY_BUILDING_TCS_BOTANICAL_GARDENS_HELP</Help>
+            <TradeRouteSeaDistanceModifier>35</TradeRouteSeaDistanceModifier>
+			<TradeRouteLandDistanceModifier>15</TradeRouteLandDistanceModifier>
+            <Happiness>1</Happiness>
+			<MinAreaSize>-1</MinAreaSize>
+			<NukeImmune>true</NukeImmune>
+			<NeverCapture>true</NeverCapture>
+			<HurryCostModifier>25</HurryCostModifier>
+			<IconAtlas>POLICY_ICONATLAS</IconAtlas>
+			<PortraitIndex>7</PortraitIndex>
+            <NumCityCostMod>15</NumCityCostMod>
+		</Row>
+		<Row>
+			<Type>BUILDING_TCS_PATENT_OFFICE</Type>
+			<BuildingClass>BUILDINGCLASS_TCS_PATENT_OFFICE</BuildingClass>
+			<Cost>300</Cost>
+			<GoldMaintenance>1</GoldMaintenance>
+			<PrereqTech>TECH_PRINTING_PRESS</PrereqTech>
+			<PolicyBranchType>POLICY_BRANCH_RATIONALISM</PolicyBranchType>
+			<Description>TXT_KEY_BUILDING_TCS_PATENT_OFFICE</Description>
+			<Help>TXT_KEY_BUILDING_TCS_PATENT_OFFICE_HELP</Help>
+			<MinAreaSize>-1</MinAreaSize>
+			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<GreatPeopleRateChange>1</GreatPeopleRateChange>
+			<NukeImmune>true</NukeImmune>
+			<NeverCapture>true</NeverCapture>
+			<HurryCostModifier>25</HurryCostModifier>
+			<IconAtlas>POLICY_ICONATLAS</IconAtlas>
+			<PortraitIndex>8</PortraitIndex>
+            <NumCityCostMod>15</NumCityCostMod>
+		</Row>
+	</Buildings>
+    
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_TCS_PUBLIC_BATHS</BuildingType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_PAROCHIAL_SCHOOL</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_PAROCHIAL_SCHOOL</BuildingType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>3</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_MEMORIAL</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>3</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_DEPOT</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>3</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_BOTANICAL_GARDENS</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_BOTANICAL_GARDENS</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_BOTANICAL_GARDENS</BuildingType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_BOTANICAL_GARDENS</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_PATENT_OFFICE</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>3</Yield>
+		</Row>
+	</Building_YieldChanges>
+	<Building_YieldChangesPerPop>
+		<Row>
+			<BuildingType>BUILDING_TCS_PATENT_OFFICE</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>25</Yield>
+		</Row>
+        <Row>
+			<BuildingType>BUILDING_TCS_PUBLIC_BATHS</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType> <!-- does work with whowards dll, the total amount in town is increased, but no tooltip shown why/how -->
+			<Yield>25</Yield>
+		</Row>
+	</Building_YieldChangesPerPop>
+	<Building_YieldModifiers>
+		<Row>
+			<BuildingType>BUILDING_TCS_PUBLIC_BATHS</BuildingType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>10</Yield>
+		</Row>
+	</Building_YieldModifiers>
+	<Building_ResourceYieldChanges>
+		<Row>
+			<BuildingType>BUILDING_TCS_STRONGHOLD</BuildingType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_DEPOT</BuildingType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_DEPOT</BuildingType>
+			<ResourceType>RESOURCE_HORSE</ResourceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_DEPOT</BuildingType>
+			<ResourceType>RESOURCE_COAL</ResourceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_DEPOT</BuildingType>
+			<ResourceType>RESOURCE_OIL</ResourceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_DEPOT</BuildingType>
+			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_DEPOT</BuildingType>
+			<ResourceType>RESOURCE_URANIUM</ResourceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_ResourceYieldChanges>
+	<Building_DomainFreeExperiences>
+		<Row>
+			<BuildingType>BUILDING_TCS_STRONGHOLD</BuildingType>
+			<DomainType>DOMAIN_LAND</DomainType>
+			<Experience>15</Experience>
+		</Row>
+	</Building_DomainFreeExperiences>
+	<Building_Flavors>
+		<!-- Public Baths-->
+		<Row>
+			<BuildingType>BUILDING_TCS_PUBLIC_BATHS</BuildingType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_PUBLIC_BATHS</BuildingType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<!-- Town Council-->
+		<Row>
+			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_TOWN_COUNCIL</BuildingType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<!-- TCS_STRONGHOLD-->
+		<Row>
+			<BuildingType>BUILDING_TCS_STRONGHOLD</BuildingType>
+			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_STRONGHOLD</BuildingType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_STRONGHOLD</BuildingType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_STRONGHOLD</BuildingType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<!-- Parochial School-->
+		<Row>
+			<BuildingType>BUILDING_TCS_PAROCHIAL_SCHOOL</BuildingType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_PAROCHIAL_SCHOOL</BuildingType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+		<!-- TCS_CHANCERY-->
+		<Row>
+			<BuildingType>BUILDING_TCS_CHANCERY</BuildingType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_CHANCERY</BuildingType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<!-- TCS_MEMORIAL-->
+		<Row>
+			<BuildingType>BUILDING_TCS_MEMORIAL</BuildingType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<!-- TCS_DEPOT-->
+		<Row>
+			<BuildingType>BUILDING_TCS_DEPOT</BuildingType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_DEPOT</BuildingType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<!-- Botanical Gardens-->
+		<Row>
+			<BuildingType>BUILDING_TCS_BOTANICAL_GARDENS</BuildingType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_BOTANICAL_GARDENS</BuildingType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_BOTANICAL_GARDENS</BuildingType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_BOTANICAL_GARDENS</BuildingType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<!-- Patent Office-->
+		<Row>
+			<BuildingType>BUILDING_TCS_PATENT_OFFICE</BuildingType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_TCS_PATENT_OFFICE</BuildingType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Building_Flavors>
+	<Language_en_US>
+		<!-- Description Tags -->
+		<Row Tag="TXT_KEY_BUILDING_TCS_PUBLIC_BATHS">
+			<Text>Public Baths</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_TOWN_COUNCIL">
+			<Text>Town Council</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_STRONGHOLD">
+			<Text>Stronghold</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_PAROCHIAL_SCHOOL">
+			<Text>Parochial School</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_CHANCERY">
+			<Text>Chancery</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_MEMORIAL">
+			<Text>Memorial</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_DEPOT">
+			<Text>Depot</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_BOTANICAL_GARDENS">
+			<Text>Botanical Gardens</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_PATENT_OFFICE">
+			<Text>Patent Office</Text>
+		</Row>
+		<!-- Help Tags -->
+		<Row Tag="TXT_KEY_BUILDING_TCS_PUBLIC_BATHS_HELP">
+			<Text>+1 [ICON_FOOD] Food. +10% [ICON_FOOD] Food and +1 [ICON_HAPPINESS_1] Happiness. +1 [ICON_CULTURE] Culture for every 4 Citizens.[NEWLINE][NEWLINE]Requires Tradition.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_TOWN_COUNCIL_HELP">
+			<Text>+1 [ICON_CULTURE] Culture and [ICON_PRODUCTION] Production. -10% Gold and Culture cost of acquiring new tiles. +1 [ICON_HAPPINESS_1] Happiness and +5% worker speed. [NEWLINE][NEWLINE]Requires Liberty.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_STRONGHOLD_HELP">
+			<Text>+15 XP for Land Units. +1 [ICON_PRODUCTION] Production from [ICON_RES_IRON] Iron. Provides 7.5 Defense and +100 Hitpoints for the city.[NEWLINE][NEWLINE]Requires Honor.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_PAROCHIAL_SCHOOL_HELP">
+			<Text>+1 [ICON_RESEARCH] Science and +3 [ICON_PEACE] Faith.[NEWLINE][NEWLINE]Requires Piety.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_CHANCERY_HELP">
+			<Text>+2% [ICON_PRODUCTION] Production from each City-State [ICON_INTERNATIONAL_TRADE] trade route. +15 one time boost to [ICON_INFLUENCE] Influence to all city states.[NEWLINE][NEWLINE]Requires Patronage.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_MEMORIAL_HELP">
+			<Text>+3 [ICON_CULTURE] Culture. +2 [ICON_TOURISM] Tourism with Architecture.[NEWLINE][NEWLINE]Requires Aesthetics.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_DEPOT_HELP">
+			<Text>+3 [ICON_PRODUCTION] Production. +35%/15% land/sea Trade Route length. +1 [ICON_GOLD] Gold from each Strategic Resource worked by this city.[NEWLINE][NEWLINE]Requires Commerce.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_BOTANICAL_GARDENS_HELP">
+			<Text> +35%/15% sea/land Trade Route length. +1 [ICON_RESEARCH] Science, [ICON_CULTURE] Culture, [ICON_FOOD] Food, and [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Requires Exploration.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_PATENT_OFFICE_HELP">
+			<Text>+3 [ICON_RESEARCH] Science. +1 [ICON_GOLD] Gold for every 4 Citizens.[NEWLINE][NEWLINE]Requires Rationalism.</Text>
+		</Row>
+		<!-- Policy Text deactivated. is easier with other mods that changes theses textes.
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_TRADITION_HELP"/>
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Tradition[ENDCOLOR] is best for small empires.[NEWLINE][NEWLINE]Adopting Tradition greatly increases the rate of border expansion in cities and also grants 3 [ICON_CULTURE] Culture in the [ICON_CAPITAL] Capital. Unlocks building Public Baths and the Hanging Gardens.[NEWLINE][NEWLINE]Adopting all Policies in the Tradition tree will grant +15% [ICON_FOOD] Growth and a free Aqueduct in your first 4 cities. It also allows the purchase of Great Engineers with [ICON_PEACE] Faith starting in the Industrial Era.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_LIBERTY_HELP"/>
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Liberty[ENDCOLOR] is best for civilizations which desire rapid expansion.[NEWLINE][NEWLINE]Adopting Liberty will provide 1 [ICON_CULTURE] Culture in every city. Unlocks building Town Council and the Pyramids.[NEWLINE][NEWLINE]Adopting all policies in the Liberty tree will grant a free Great Person of your choice near the [ICON_CAPITAL] Capital.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_HONOR_HELP"/>
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Honor[ENDCOLOR] improves the effectiveness of one's army in a variety of ways.[NEWLINE][NEWLINE]Adopting Honor gives a +33% combat bonus VS Barbarians, and notifications will be provided when new Barbarian Encampments spawn in revealed territory. Gain [ICON_CULTURE] Culture for the empire from each barbarian killed. Unlocks building TCS_STRONGHOLDs and the Statue of Zeus.[NEWLINE][NEWLINE]Adopting all policies in the Honor tree will grant [ICON_GOLD] Gold for each enemy unit killed. It also allows the purchase of Great Generals with [ICON_PEACE] Faith starting in the Industrial Era.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_PIETY_HELP"/>
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Piety[ENDCOLOR] increases the [ICON_PEACE] Faith of empires.[NEWLINE][NEWLINE]Adopting Piety allows you to build Shrines and Temples in half the usual time. Unlocks building Parochial Schools and the Great Mosque of Djenne.[NEWLINE][NEWLINE]Adopting all Policies in the Piety tree causes a Great Prophet to appear and Holy Sites provide +3 [ICON_CULTURE] Culture.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_PATRONAGE_HELP"/>
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Patronage[ENDCOLOR] enhances the benefits of City-State friendship.[NEWLINE][NEWLINE]Adopting Patronage will cause [ICON_INFLUENCE] Influence with City-States to degrade 25% slower than normal. Unlocks building Chanceries and the Forbidden Palace.[NEWLINE][NEWLINE]Adopting all policies in the Patronage tree will cause allied City-States to occasionally gift you [ICON_GREAT_PEOPLE] Great People.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_AESTHETICS_HELP"/>
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Aesthetics[ENDCOLOR] improves the civilization's ability to generate [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]Adopting Aesthetics allows you to earn Great Writers, Artists, and Musicians 25% faster. Unlocks building Monuments and the Uffizi.[NEWLINE][NEWLINE]Adopting all policies doubles the theming bonus you receive from Museums and Wonders. It also allows the purchase of Great Writers, Artists, or Musicians with [ICON_PEACE] Faith starting in the Industrial Era.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_COMMERCE_HELP"/>
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Commerce[ENDCOLOR] provides bonuses to empires focused on [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Adopting Commerce will boost [ICON_GOLD] Gold output in [ICON_CAPITAL] Capital City by 25%. Unlocks building TCS_DEPOTs and Big Ben.[NEWLINE][NEWLINE]Adopting all Policies in the Commerce tree will grant +1 [ICON_GOLD] Gold from every Trading Post. It also allows the purchase of Great Merchants with [ICON_PEACE] Faith starting in the Industrial Era.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_EXPLORATION_HELP"/>
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Exploration[ENDCOLOR] enhances your abilties to spread your empire over the seas.[NEWLINE][NEWLINE]Adopting Exploration gives +1 [ICON_MOVES] Movement for Naval units and +1 Sight for Naval combat units. Unlocks building Botanical Gardens and the Louvre.[NEWLINE][NEWLINE]Adopting all policies allows you to see Hidden Antiquity Sites. It also allows the purchase of Great Admirals with [ICON_PEACE] Faith starting in the Industrial Era.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_RATIONALISM_HELP"/>
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Rationalism[ENDCOLOR] improves the ability to use and generate [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]Adopting Rationalism will grant +10% [ICON_RESEARCH] Science while the empire is [ICON_HAPPINESS_1] Happy. Unlocks building Patent Offices and the Porcelain Tower.[NEWLINE][NEWLINE]Adopting all Policies in the Rationalism tree will grant a free Technology. It also allows the purchase of Great Scientists with [ICON_PEACE] Faith starting in the Industrial Era.</Text>
+			</Set>
+		</Update> -->
+	</Language_en_US>
+    
+    <Language_de_DE>
+		<!-- Description Tags -->
+		<Row Tag="TXT_KEY_BUILDING_TCS_PUBLIC_BATHS">
+			<Text>Öffentliche Bäder</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_TOWN_COUNCIL">
+			<Text>Stadtrat</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_STRONGHOLD">
+			<Text>Stützpunkt</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_PAROCHIAL_SCHOOL">
+			<Text>Konfessionsschule</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_CHANCERY">
+			<Text>Kanzlei</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_MEMORIAL">
+			<Text>Gedenkstätte</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_DEPOT">
+			<Text>Zentralverwaltung</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_BOTANICAL_GARDENS">
+			<Text>Botanischer Garten</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_PATENT_OFFICE">
+			<Text>Patentamt</Text>
+		</Row>
+		<!-- Help Tags -->
+		<Row Tag="TXT_KEY_BUILDING_TCS_PUBLIC_BATHS_HELP">
+			<Text>+1 [ICON_FOOD] Nahrung. +10% [ICON_FOOD]Nahrung und +1 [ICON_HAPPINESS_1] Zufriedenheit. +1 [ICON_CULTURE] Kultur für jeden 4ten Bürger.[NEWLINE][NEWLINE]Benötigt Tradition.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_TOWN_COUNCIL_HELP">
+			<Text>+1 [ICON_CULTURE] Kultur und [ICON_PRODUCTION] Produktion. -10% Gold- und Kulturkosten für die Einnahme von neuen Geländefeldern. +1 [ICON_HAPPINESS_1] Zufriedenheit und +5% Bautrupp Baugeschwindigkeit.[NEWLINE][NEWLINE]Benötigt Unabhängigkeit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_STRONGHOLD_HELP">
+			<Text>+15 EP für Landeinheiten. +1 [ICON_PRODUCTION] Produktion von [ICON_RES_IRON] Eisen. Bietet 7.5 Verteidigung und +100 Trefferpunkte für die Stadt.[NEWLINE][NEWLINE]Benötigt Ehre.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_PAROCHIAL_SCHOOL_HELP">
+			<Text>+1 [ICON_RESEARCH] Wissenschaft und +3 [ICON_PEACE] Glauben.[NEWLINE][NEWLINE]Benötigt Frömmigkeit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_CHANCERY_HELP">
+			<Text>+2% [ICON_PRODUCTION] Produktion durch jede [ICON_INTERNATIONAL_TRADE] Handelsroute zu einem Stadtstaat. +15 einmal-Bonus auf den [ICON_INFLUENCE] Einfluss bei allen Stadtstaaten.[NEWLINE][NEWLINE]Benötigt Patronat.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_MEMORIAL_HELP">
+			<Text>+3 [ICON_CULTURE] Kultur. +2 [ICON_TOURISM] Tourismus mit Architektur.[NEWLINE][NEWLINE]Benötigt Ästhetik.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_DEPOT_HELP">
+			<Text>+3 [ICON_PRODUCTION] Produktion. +35%/15% Land/See Handelsroutenlänge. +1 [ICON_GOLD] Gold von jeder bewirtschafteten strategischen Ressource dieser Stadt.[NEWLINE][NEWLINE]Benötigt Wirtschaft.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_BOTANICAL_GARDENS_HELP">
+			<Text>+35%/15% See/Land Handelsroutenlänge. +1 [ICON_RESEARCH] Wissenschaft, [ICON_CULTURE] Kultur, [ICON_FOOD] Nahrung, und [ICON_PRODUCTION] Produktion.[NEWLINE][NEWLINE]Benötigt Erkundung.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_TCS_PATENT_OFFICE_HELP">
+			<Text>+3 [ICON_RESEARCH] Wissenschaft. +1 [ICON_GOLD] Gold für jeden 4ten Bürger.[NEWLINE][NEWLINE]Benötigt Rationalismus.</Text>
+		</Row>
+		<!-- Policy Text 
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_TRADITION_HELP"/>
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Tradition[ENDCOLOR] is best for small empires.[NEWLINE][NEWLINE]Adopting Tradition greatly increases the rate of border expansion in cities and also grants 3 [ICON_CULTURE] Culture in the [ICON_CAPITAL] Capital. Unlocks building Public Baths and the Hanging Gardens.[NEWLINE][NEWLINE]Adopting all Policies in the Tradition tree will grant +15% [ICON_FOOD] Growth and a free Aqueduct in your first 4 cities. It also allows the purchase of Great Engineers with [ICON_PEACE] Faith starting in the Industrial Era.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_LIBERTY_HELP"/>
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Liberty[ENDCOLOR] is best for civilizations which desire rapid expansion.[NEWLINE][NEWLINE]Adopting Liberty will provide 1 [ICON_CULTURE] Culture in every city. Unlocks building Town Council and the Pyramids.[NEWLINE][NEWLINE]Adopting all policies in the Liberty tree will grant a free Great Person of your choice near the [ICON_CAPITAL] Capital.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_HONOR_HELP"/>
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Honor[ENDCOLOR] improves the effectiveness of one's army in a variety of ways.[NEWLINE][NEWLINE]Adopting Honor gives a +33% combat bonus VS Barbarians, and notifications will be provided when new Barbarian Encampments spawn in revealed territory. Gain [ICON_CULTURE] Culture for the empire from each barbarian killed. Unlocks building TCS_STRONGHOLDs and the Statue of Zeus.[NEWLINE][NEWLINE]Adopting all policies in the Honor tree will grant [ICON_GOLD] Gold for each enemy unit killed. It also allows the purchase of Great Generals with [ICON_PEACE] Faith starting in the Industrial Era.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_PIETY_HELP"/>
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Piety[ENDCOLOR] increases the [ICON_PEACE] Faith of empires.[NEWLINE][NEWLINE]Adopting Piety allows you to build Shrines and Temples in half the usual time. Unlocks building Parochial Schools and the Great Mosque of Djenne.[NEWLINE][NEWLINE]Adopting all Policies in the Piety tree causes a Great Prophet to appear and Holy Sites provide +3 [ICON_CULTURE] Culture.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_PATRONAGE_HELP"/>
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Patronage[ENDCOLOR] enhances the benefits of City-State friendship.[NEWLINE][NEWLINE]Adopting Patronage will cause [ICON_INFLUENCE] Influence with City-States to degrade 25% slower than normal. Unlocks building Chanceries and the Forbidden Palace.[NEWLINE][NEWLINE]Adopting all policies in the Patronage tree will cause allied City-States to occasionally gift you [ICON_GREAT_PEOPLE] Great People.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_AESTHETICS_HELP"/>
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Aesthetics[ENDCOLOR] improves the civilization's ability to generate [ICON_CULTURE] Culture.[NEWLINE][NEWLINE]Adopting Aesthetics allows you to earn Great Writers, Artists, and Musicians 25% faster. Unlocks building Monuments and the Uffizi.[NEWLINE][NEWLINE]Adopting all policies doubles the theming bonus you receive from Museums and Wonders. It also allows the purchase of Great Writers, Artists, or Musicians with [ICON_PEACE] Faith starting in the Industrial Era.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_COMMERCE_HELP"/>
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Commerce[ENDCOLOR] provides bonuses to empires focused on [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Adopting Commerce will boost [ICON_GOLD] Gold output in [ICON_CAPITAL] Capital City by 25%. Unlocks building TCS_DEPOTs and Big Ben.[NEWLINE][NEWLINE]Adopting all Policies in the Commerce tree will grant +1 [ICON_GOLD] Gold from every Trading Post. It also allows the purchase of Great Merchants with [ICON_PEACE] Faith starting in the Industrial Era.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_EXPLORATION_HELP"/>
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Exploration[ENDCOLOR] enhances your abilties to spread your empire over the seas.[NEWLINE][NEWLINE]Adopting Exploration gives +1 [ICON_MOVES] Movement for Naval units and +1 Sight for Naval combat units. Unlocks building Botanical Gardens and the Louvre.[NEWLINE][NEWLINE]Adopting all policies allows you to see Hidden Antiquity Sites. It also allows the purchase of Great Admirals with [ICON_PEACE] Faith starting in the Industrial Era.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_RATIONALISM_HELP"/>
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Rationalism[ENDCOLOR] improves the ability to use and generate [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]Adopting Rationalism will grant +10% [ICON_RESEARCH] Science while the empire is [ICON_HAPPINESS_1] Happy. Unlocks building Patent Offices and the Porcelain Tower.[NEWLINE][NEWLINE]Adopting all Policies in the Rationalism tree will grant a free Technology. It also allows the purchase of Great Scientists with [ICON_PEACE] Faith starting in the Industrial Era.</Text>
+			</Set>
+		</Update>-->
+	</Language_de_DE>
+    
+	<IconTextureAtlases>
+		<Row>
+			<Atlas>POLICY_ICONATLAS</Atlas>
+			<IconSize>256</IconSize>
+			<Filename>POLICY_ICONATLAS256.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>POLICY_ICONATLAS</Atlas>
+			<IconSize>128</IconSize>
+			<Filename>POLICY_ICONATLAS128.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>POLICY_ICONATLAS</Atlas>
+			<IconSize>80</IconSize>
+			<Filename>POLICY_ICONATLAS80.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>POLICY_ICONATLAS</Atlas>
+			<IconSize>64</IconSize>
+			<Filename>POLICY_ICONATLAS64.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+		<Row>
+			<Atlas>POLICY_ICONATLAS</Atlas>
+			<IconSize>45</IconSize>
+			<Filename>POLICY_ICONATLAS45.dds</Filename>
+			<IconsPerRow>8</IconsPerRow>
+			<IconsPerColumn>8</IconsPerColumn>
+		</Row>
+	</IconTextureAtlases>
+</GameData>

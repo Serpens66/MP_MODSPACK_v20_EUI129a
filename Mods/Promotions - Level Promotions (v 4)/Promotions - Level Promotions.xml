@@ -1,0 +1,2134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Based on Promotion Expansion. Added promotion Nuke Immune. changed some values. Added german translation. Added PromotionPrereqOr7="NULL" +8 +9 . 
+Range and indirect fire promotion at unlocker4.
+Made Unlockers not chosable. They are now assigned to every unit at level up in .lua file. (v4 in DLL instead)
+Added new pseudo promotions. So e.g siege and archer units can receive March at level 4, while other units get it level 5. -->
+
+<!-- PROM_UNLOCK_LVL_5 does not exist, but is still sometimes as Or2 added, to make EUI 1.29 categorize it differntly, so the level promotion is properly shown in the flags -->
+
+<GameData>
+    <!-- Needs whowards DLL v74 or CP DLL with this event! -->
+    <!-- v4 is instead all done in DLL, no need for this event anymore -->
+    <CustomModOptions>
+        <!-- <Update> -->
+			<!-- <Where Name="EVENTS_UNIT_UPGRADES"/> -->
+			<!-- <Set Value="1"/> -->
+		<!-- </Update> -->
+        <Update>
+			<Where Name="LEVEL_PROMOTIONS"/>
+			<Set Value="1"/>
+		</Update>
+    </CustomModOptions>
+    
+    <!-- will be written into Defines (with value ID) at runtime and is used in DLL to give these unlocker promotions -->
+    <PostDefines>
+		<Row Name="PROM_UNLOCK_LVL_2">
+			<Key>PROM_UNLOCK_LVL_2</Key>
+			<Table>UnitPromotions</Table>
+		</Row>
+		<Row Name="PROM_UNLOCK_LVL_3">
+			<Key>PROM_UNLOCK_LVL_3</Key>
+			<Table>UnitPromotions</Table>
+		</Row>
+        <Row Name="PROM_UNLOCK_LVL_4">
+			<Key>PROM_UNLOCK_LVL_4</Key>
+			<Table>UnitPromotions</Table>
+		</Row>
+	</PostDefines>
+    
+	<UnitPromotions>
+
+		<!--ICON and TOOLTIP ADJUSTMENT-->
+		<Update>
+			<Set PortraitIndex="30" />
+			<Where Type="PROMOTION_BLITZ" />
+		</Update>
+
+		<Update>
+			<Set PortraitIndex="51" />
+			<Where Type="PROMOTION_INDIRECT_FIRE" />
+		</Update>
+
+		<!--UNLOCK & EXP-->
+		<Row>
+			<Type>PROM_UNLOCK_LVL_2</Type>
+			<Description>TXT_KEY_PROM_UNLOCK_LVL_2</Description>
+			<Help>TXT_KEY_PROM_UNLOCK_LVL_2_H</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>0</OrderPriority>
+            <CannotBeChosen>true</CannotBeChosen>
+			<ExperiencePercent>10</ExperiencePercent>
+			<AttackMod>2</AttackMod>
+			<DefenseMod>2</DefenseMod>
+			<PortraitIndex>9</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTE</PediaType>
+			<PediaEntry>TXT_KEY_PROM_UNLOCK_LVL_2_H</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROM_UNLOCK_LVL_3</Type>
+			<Description>TXT_KEY_PROM_UNLOCK_LVL_3</Description>
+			<Help>TXT_KEY_PROM_UNLOCK_LVL_3_H</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>0</OrderPriority>
+            <CannotBeChosen>true</CannotBeChosen>
+			<ExperiencePercent>20</ExperiencePercent>
+			<AttackMod>5</AttackMod>
+			<DefenseMod>5</DefenseMod>
+			<PortraitIndex>9</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTE</PediaType>
+			<PediaEntry>TXT_KEY_PROM_UNLOCK_LVL_3_H</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROM_UNLOCK_LVL_4</Type>
+			<Description>TXT_KEY_PROM_UNLOCK_LVL_4</Description>
+			<Help>TXT_KEY_PROM_UNLOCK_LVL_4_H</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>0</OrderPriority>
+            <CannotBeChosen>true</CannotBeChosen>
+			<ExperiencePercent>30</ExperiencePercent>
+			<AttackMod>10</AttackMod>
+			<DefenseMod>10</DefenseMod>
+			<PortraitIndex>9</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTE</PediaType>
+			<PediaEntry>TXT_KEY_PROM_UNLOCK_LVL_4_H</PediaEntry>
+		
+        </Row>
+
+        <!-- Game Promotions which should have different levels for different units -->
+        <Row>
+			<Type>PROMOTION_INDIRECT_FIRE_SIEGE</Type>
+			<Description>TXT_KEY_PROMOTION_INDIRECT_FIRE</Description>
+			<Help>TXT_KEY_PROMOTION_INDIRECT_FIRE_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_2</PromotionPrereqOr1>
+            <PromotionPrereqOr2>PROM_UNLOCK_LVL_3</PromotionPrereqOr2>
+            <PromotionPrereqOr3>PROM_UNLOCK_LVL_4</PromotionPrereqOr3>
+			<OrderPriority>7</OrderPriority>
+			<RangeAttackIgnoreLOS>true</RangeAttackIgnoreLOS>
+			<PortraitIndex>51</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SHARED</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_INDIRECT_FIRE</PediaEntry>
+		</Row>
+        
+        <Row>
+			<Type>PROMOTION_INDIRECT_FIRE_NAVAL</Type>
+			<Description>TXT_KEY_PROMOTION_INDIRECT_FIRE</Description>
+			<Help>TXT_KEY_PROMOTION_INDIRECT_FIRE_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_3</PromotionPrereqOr1>
+            <PromotionPrereqOr2>PROM_UNLOCK_LVL_4</PromotionPrereqOr2>
+			<OrderPriority>7</OrderPriority>
+			<RangeAttackIgnoreLOS>true</RangeAttackIgnoreLOS>
+			<PortraitIndex>51</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SHARED</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_INDIRECT_FIRE</PediaEntry>
+		</Row>
+        
+        <Row>
+			<Type>PROMOTION_MEDIC_SCOUT</Type>
+			<Description>TXT_KEY_PROMOTION_MEDIC</Description>
+			<Help>TXT_KEY_PROMOTION_MEDIC_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_3</PromotionPrereqOr1>
+            <PromotionPrereqOr2>PROM_UNLOCK_LVL_4</PromotionPrereqOr2>
+			<OrderPriority>3</OrderPriority>
+			<AdjacentTileHealChange>5</AdjacentTileHealChange>
+			<PortraitIndex>32</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_HEAL</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_MEDIC</PediaEntry>
+		</Row>
+        
+        <Row>
+			<Type>PROMOTION_MARCH_RANGEUNIT</Type>
+			<Description>TXT_KEY_PROMOTION_MARCH</Description>
+			<Help>TXT_KEY_PROMOTION_MARCH_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_3</PromotionPrereqOr1>
+            <PromotionPrereqOr2>PROM_UNLOCK_LVL_4</PromotionPrereqOr2>
+			<OrderPriority>7</OrderPriority>
+			<AlwaysHeal>true</AlwaysHeal>
+			<PortraitIndex>31</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_HEAL</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_MARCH</PediaEntry>
+		</Row>
+        
+        <Row>
+			<Type>PROMOTION_RANGE_NAVAL</Type>
+			<Description>TXT_KEY_PROMOTION_RANGE</Description>
+			<Help>TXT_KEY_PROMOTION_RANGE_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_3</PromotionPrereqOr1>
+            <PromotionPrereqOr2>PROM_UNLOCK_LVL_4</PromotionPrereqOr2>
+			<OrderPriority>7</OrderPriority>
+			<RangeChange>1</RangeChange>
+			<PortraitIndex>34</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_RANGED</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_RANGE</PediaEntry>
+		</Row>
+        
+        <Row>
+			<Type>PROMOTION_MOBILITY_OTHER</Type>
+			<Description>TXT_KEY_PROMOTION_MOBILITY</Description>
+			<Help>TXT_KEY_PROMOTION_MOBILITY_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_2</PromotionPrereqOr1>
+            <PromotionPrereqOr2>PROM_UNLOCK_LVL_3</PromotionPrereqOr2>
+            <PromotionPrereqOr3>PROM_UNLOCK_LVL_4</PromotionPrereqOr3>
+			<OrderPriority>7</OrderPriority>
+			<MovesChange>1</MovesChange>
+			<PortraitIndex>33</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_RANGED</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_MOBILITY</PediaEntry>
+		</Row>
+        <Row>
+			<Type>PROMOTION_WOODSMAN_SCOUT</Type>
+			<Description>TXT_KEY_PROMOTION_WOODSMAN</Description>
+			<Help>TXT_KEY_PROMOTION_WOODSMAN_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_2</PromotionPrereqOr1>
+            <PromotionPrereqOr2>PROM_UNLOCK_LVL_3</PromotionPrereqOr2>
+            <PromotionPrereqOr3>PROM_UNLOCK_LVL_4</PromotionPrereqOr3>
+			<OrderPriority>7</OrderPriority>
+			<PortraitIndex>56</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_WOODSMAN</PediaEntry>
+		</Row>
+        
+		<!--ADDITIONAL CUSTOM PROMOTION-->
+        
+        <Row>
+			<Type>PROMOTION_NUKE_IMMUNE</Type>
+			<Description>TXT_KEY_PROMOTION_NUKE_IMMUNE_HELP</Description>
+			<Help>TXT_KEY_PROMOTION_NUKE_IMMUNE</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>22</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_NUKE_IMMUNE</PediaEntry>
+			<NukeImmune>true</NukeImmune>
+			<TechPrereq>TECH_SATELLITES</TechPrereq>
+            <PromotionPrereqOr1>PROM_UNLOCK_LVL_4</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROM_UNLOCK_LVL_5</PromotionPrereqOr2>
+			<OrderPriority>7</OrderPriority>
+		</Row>  
+        
+		<Row>
+			<Type>PROMOTION_REPUTATION</Type>
+			<Description>TXT_KEY_PROMOTION_REPUTATION</Description>
+			<Help>TXT_KEY_PROMOTION_REPUTATION_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_2</PromotionPrereqOr1>
+            <PromotionPrereqOr2>PROM_UNLOCK_LVL_3</PromotionPrereqOr2>
+            <PromotionPrereqOr3>PROM_UNLOCK_LVL_4</PromotionPrereqOr3>
+			<OrderPriority>4</OrderPriority>
+			<NearbyEnemyCombatMod>-10</NearbyEnemyCombatMod>
+			<NearbyEnemyCombatRange>1</NearbyEnemyCombatRange>
+			<PortraitIndex>37</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_REPUTATION_HELP</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_FOREIGN_M</Type>
+			<Description>TXT_KEY_PROMOTION_FOREIGN</Description>
+			<Help>TXT_KEY_PROMOTION_FOREIGN_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_2</PromotionPrereqOr1>
+            <PromotionPrereqOr2>PROM_UNLOCK_LVL_3</PromotionPrereqOr2>
+            <PromotionPrereqOr3>PROM_UNLOCK_LVL_4</PromotionPrereqOr3>
+			<OrderPriority>7</OrderPriority>
+			<OutsideFriendlyLandsModifier>20</OutsideFriendlyLandsModifier>
+			<PortraitIndex>35</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_FOREIGN</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_FRIEND_M</Type>
+			<Description>TXT_KEY_PROMOTION_FRIEND</Description>
+			<Help>TXT_KEY_PROMOTION_FRIEND_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_2</PromotionPrereqOr1>
+            <PromotionPrereqOr2>PROM_UNLOCK_LVL_3</PromotionPrereqOr2>
+            <PromotionPrereqOr3>PROM_UNLOCK_LVL_4</PromotionPrereqOr3>
+			<OrderPriority>7</OrderPriority>
+			<FriendlyLandsModifier>22</FriendlyLandsModifier>
+			<PortraitIndex>22</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_FRIEND</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_GUARD_M</Type>
+			<Description>TXT_KEY_PROMOTION_GUARD</Description>
+			<Help>TXT_KEY_PROMOTION_GUARD_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_2</PromotionPrereqOr1>
+            <PromotionPrereqOr2>PROM_UNLOCK_LVL_3</PromotionPrereqOr2>
+            <PromotionPrereqOr3>PROM_UNLOCK_LVL_4</PromotionPrereqOr3>
+			<OrderPriority>7</OrderPriority>
+			<CapitalDefenseModifier>50</CapitalDefenseModifier>
+			<CapitalDefenseFalloff>-10</CapitalDefenseFalloff>
+			<PortraitIndex>23</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_GUARD</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_PHEAL_M</Type>
+			<Description>TXT_KEY_PROMOTION_PHEAL</Description>
+			<Help>TXT_KEY_PROMOTION_PHEAL_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_3</PromotionPrereqOr1>
+            <PromotionPrereqOr2>PROM_UNLOCK_LVL_4</PromotionPrereqOr2>
+			<OrderPriority>7</OrderPriority>
+			<HPHealedIfDestroyEnemy>25</HPHealedIfDestroyEnemy>
+			<HealIfDestroyExcludesBarbarians>false</HealIfDestroyExcludesBarbarians>
+			<PortraitIndex>8</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_PHEAL</PediaEntry>
+		</Row>
+        <!-- to heavy
+		<Row>
+			<Type>PROMOTION_BRIBE_M</Type>
+			<Description>TXT_KEY_PROMOTION_BRIBE</Description>
+			<Help>TXT_KEY_PROMOTION_BRIBE_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_4</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROM_UNLOCK_LVL_5</PromotionPrereqOr2>
+			<OrderPriority>7</OrderPriority>
+			<CaptureDefeatedEnemy>true</CaptureDefeatedEnemy>
+			<PortraitIndex>2</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_BRIBE</PediaEntry>
+		</Row>
+        -->
+		<Row>
+			<Type>PROMOTION_GEN_M</Type>
+			<Description>TXT_KEY_PROMOTION_GEN</Description>
+			<Help>TXT_KEY_PROMOTION_GEN_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_3</PromotionPrereqOr1>
+            <PromotionPrereqOr2>PROM_UNLOCK_LVL_4</PromotionPrereqOr2>
+			<OrderPriority>7</OrderPriority>
+			<GreatGeneralModifier>50</GreatGeneralModifier>
+			<PortraitIndex>18</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_GEN</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_PILL_M</Type>
+			<Description>TXT_KEY_PROMOTION_PILL</Description>
+			<Help>TXT_KEY_PROMOTION_PILL_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_3</PromotionPrereqOr1>
+            <PromotionPrereqOr2>PROM_UNLOCK_LVL_4</PromotionPrereqOr2>
+			<OrderPriority>7</OrderPriority>
+			<FreePillageMoves>true</FreePillageMoves>
+			<PortraitIndex>12</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_PILL</PediaEntry>
+		</Row>
+		<!--<Row>
+			<Type>PROMOTION_IND</Type>
+			<Description>TXT_KEY_PROMOTION_IND</Description>
+			<Help>TXT_KEY_PROMOTION_IND_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_3</PromotionPrereqOr1>
+            <PromotionPrereqOr2>PROM_UNLOCK_LVL_4</PromotionPrereqOr2>
+			<OrderPriority>2</OrderPriority>
+			<RangedSupportFire>true</RangedSupportFire>
+			<PortraitIndex>46</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_IND</PediaEntry>
+		</Row>-->
+		<Row>
+			<Type>PROMOTION_ESC</Type>
+			<Description>TXT_KEY_PROMOTION_ESC</Description>
+			<Help>TXT_KEY_PROMOTION_ESC_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_4</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROM_UNLOCK_LVL_5</PromotionPrereqOr2>
+			<OrderPriority>4</OrderPriority>
+			<ExtraWithdrawal>20</ExtraWithdrawal>
+			<PortraitIndex>21</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_ESC_HELP</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_CITY_GOLD</Type>
+			<Description>TXT_KEY_PROMOTION_CITY_GOLD</Description>
+			<Help>TXT_KEY_PROMOTION_CITY_GOLD_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_2</PromotionPrereqOr1>
+            <PromotionPrereqOr3>PROM_UNLOCK_LVL_4</PromotionPrereqOr3>
+            <PromotionPrereqOr2>PROM_UNLOCK_LVL_3</PromotionPrereqOr2>
+			<OrderPriority>4</OrderPriority>
+			<CityAttack>15</CityAttack>
+			<CityAttackPlunderModifier>100</CityAttackPlunderModifier>
+			<PortraitIndex>42</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_ESC_HELP</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_EFLANK</Type>
+			<Description>TXT_KEY_PROMOTION_EFLANK</Description>
+			<Help>TXT_KEY_PROMOTION_EFLANK_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_3</PromotionPrereqOr1>
+            <PromotionPrereqOr2>PROM_UNLOCK_LVL_4</PromotionPrereqOr2>
+			<OrderPriority>4</OrderPriority>
+			<FlankAttackModifier>100</FlankAttackModifier>
+			<PortraitIndex>25</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_EFLANK_HELP</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_EROUTE</Type>
+			<Description>TXT_KEY_PROMOTION_EROUTE</Description>
+			<Help>TXT_KEY_PROMOTION_EROUTE_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_2</PromotionPrereqOr1>
+            <PromotionPrereqOr3>PROM_UNLOCK_LVL_4</PromotionPrereqOr3>
+            <PromotionPrereqOr2>PROM_UNLOCK_LVL_3</PromotionPrereqOr2>
+			<OrderPriority>4</OrderPriority>
+			<EnemyRoute>true</EnemyRoute>
+			<PortraitIndex>16</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_EROUTE_HELP</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_SABOTAGE</Type>
+			<Description>TXT_KEY_PROMOTION_SABOTAGE</Description>
+			<Help>TXT_KEY_PROMOTION_SABOTAGE_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_2</PromotionPrereqOr1>
+            <PromotionPrereqOr3>PROM_UNLOCK_LVL_4</PromotionPrereqOr3>
+            <PromotionPrereqOr2>PROM_UNLOCK_LVL_3</PromotionPrereqOr2>
+			<OrderPriority>4</OrderPriority>
+			<PortraitIndex>17</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_SABOTAGE_HELP</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_MOUNTAIN</Type>
+			<Description>TXT_KEY_PROMOTION_MOUNTAIN</Description>
+			<Help>TXT_KEY_PROMOTION_MOUNTAIN_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_3</PromotionPrereqOr1>
+            <PromotionPrereqOr2>PROM_UNLOCK_LVL_4</PromotionPrereqOr2>
+			<OrderPriority>4</OrderPriority>
+			<HillsDoubleMove>true</HillsDoubleMove>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_MOUNTAIN_HELP</PediaEntry>
+		</Row>
+        
+        <Row>
+			<Type>PROMOTION_MOUNTAIN_SCOUT</Type>
+			<Description>TXT_KEY_PROMOTION_MOUNTAIN</Description>
+			<Help>TXT_KEY_PROMOTION_MOUNTAIN_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_2</PromotionPrereqOr1>
+            <PromotionPrereqOr3>PROM_UNLOCK_LVL_4</PromotionPrereqOr3>
+            <PromotionPrereqOr2>PROM_UNLOCK_LVL_3</PromotionPrereqOr2>
+			<OrderPriority>4</OrderPriority>
+			<HillsDoubleMove>true</HillsDoubleMove>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_MOUNTAIN_HELP</PediaEntry>
+		</Row>
+        
+        <Row>
+			<Type>PROMOTION_SIEGE_200</Type>
+			<Description>TXT_KEY_PROMOTION_CITY_SIEGE</Description>
+			<Help>TXT_KEY_PROMOTION_CITY_SIEGE_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROM_UNLOCK_LVL_3</PromotionPrereqOr1>
+            <PromotionPrereqOr2>PROM_UNLOCK_LVL_4</PromotionPrereqOr2>
+			<OrderPriority>4</OrderPriority>
+			<CityAttack>200</CityAttack> 
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTE</PediaType>
+			<PediaEntry>TXT_KEY_PEDIA_PROMOTION_CITY_SIEGE</PediaEntry>
+		</Row>
+
+		
+		<!--Attach Vanilla Promotion: UNITCOMBAT_MOUNTED-->
+		<!--Attach Vanilla Promotion: UNITCOMBAT_MELEE-->
+		<!--Attach Vanilla Promotion: UNITCOMBAT_GUN-->
+		<!--Attach Vanilla Promotion: UNITCOMBAT_RECON-->
+		<Update>
+			<Set PromotionPrereqOr1="PROM_UNLOCK_LVL_2" PromotionPrereqOr2="PROM_UNLOCK_LVL_3" PromotionPrereqOr3="PROM_UNLOCK_LVL_4" PromotionPrereqOr4="NULL" PromotionPrereqOr5="NULL" PromotionPrereqOr6="NULL" PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL"  />
+			<Where TYPE="PROMOTION_MEDIC"/>
+		</Update>
+		<Update>
+			<Set PromotionPrereqOr1="PROM_UNLOCK_LVL_2" PromotionPrereqOr2="PROM_UNLOCK_LVL_3" PromotionPrereqOr3="PROM_UNLOCK_LVL_4" PromotionPrereqOr4="NULL" PromotionPrereqOr5="NULL" PromotionPrereqOr6="NULL" PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL"  />
+			<Where TYPE="PROMOTION_AMPHIBIOUS"/>
+		</Update>
+		<Update>
+			<Set PromotionPrereqOr1="PROM_UNLOCK_LVL_2" PromotionPrereqOr2="PROM_UNLOCK_LVL_3" PromotionPrereqOr3="PROM_UNLOCK_LVL_4" PromotionPrereqOr4="NULL" PromotionPrereqOr5="NULL" PromotionPrereqOr6="NULL" PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL"  />
+			<Where TYPE="PROMOTION_COVER_1"/>
+		</Update>
+		<Update>
+			<Set PromotionPrereqOr1="PROM_UNLOCK_LVL_3" PromotionPrereqOr2="PROM_UNLOCK_LVL_4" PromotionPrereqOr3="NULL" PromotionPrereqOr4="NULL" PromotionPrereqOr5="NULL" PromotionPrereqOr6="NULL" PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL"  />
+			<Where TYPE="PROMOTION_SIEGE"/>
+		</Update>
+		<Update>
+			<Set PromotionPrereqOr1="PROM_UNLOCK_LVL_3" PromotionPrereqOr2="PROM_UNLOCK_LVL_4" PromotionPrereqOr3="NULL" PromotionPrereqOr4="NULL" PromotionPrereqOr5="NULL" PromotionPrereqOr6="NULL" PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL"  />
+			<Where TYPE="PROMOTION_FORMATION_1"/>
+		</Update>
+		<Update>
+			<Set PromotionPrereqOr1="PROM_UNLOCK_LVL_2" PromotionPrereqOr2="PROM_UNLOCK_LVL_3" PromotionPrereqOr3="PROM_UNLOCK_LVL_4" PromotionPrereqOr4="NULL" PromotionPrereqOr5="NULL" PromotionPrereqOr6="NULL" PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL"  />
+			<Where TYPE="PROMOTION_SENTRY"/>
+		</Update>
+		<Update>
+			<Set PromotionPrereqOr1="PROM_UNLOCK_LVL_3" PromotionPrereqOr2="PROM_UNLOCK_LVL_4" PromotionPrereqOr3="NULL" PromotionPrereqOr4="NULL" PromotionPrereqOr5="NULL" PromotionPrereqOr6="NULL" PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL"  />
+			<Where TYPE="PROMOTION_AMBUSH_1"/>
+		</Update>
+		<Update>
+			<Set PromotionPrereqOr1="PROM_UNLOCK_LVL_3" PromotionPrereqOr2="PROM_UNLOCK_LVL_4" PromotionPrereqOr3="NULL" PromotionPrereqOr4="NULL" PromotionPrereqOr5="NULL" PromotionPrereqOr6="NULL" PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL" />
+			<Where TYPE="PROMOTION_CHARGE"/>
+		</Update>
+		<Update>
+			<Set PromotionPrereqOr1="PROM_UNLOCK_LVL_4" PromotionPrereqOr2="PROM_UNLOCK_LVL_5" PromotionPrereqOr3="NULL" PromotionPrereqOr4="NULL" PromotionPrereqOr5="NULL" PromotionPrereqOr6="NULL" PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL" />
+			<Where TYPE="PROMOTION_MARCH"/>
+		</Update>
+		<Update>
+			<Set PromotionPrereqOr1="PROM_UNLOCK_LVL_4" PromotionPrereqOr2="PROM_UNLOCK_LVL_5" PromotionPrereqOr3="NULL" PromotionPrereqOr4="NULL" PromotionPrereqOr5="NULL" PromotionPrereqOr6="NULL" PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL" />
+			<Where TYPE="PROMOTION_BLITZ"/>
+		</Update>
+		<Update>
+			<Set PromotionPrereqOr1="PROM_UNLOCK_LVL_3" PromotionPrereqOr2="PROM_UNLOCK_LVL_4" PromotionPrereqOr3="NULL" PromotionPrereqOr4="NULL" PromotionPrereqOr5="NULL" PromotionPrereqOr6="NULL" PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL" />
+			<Where TYPE="PROMOTION_WOODSMAN"/>
+		</Update>
+		<Update>
+			<Set PromotionPrereqOr1="PROM_UNLOCK_LVL_4" PromotionPrereqOr2="PROM_UNLOCK_LVL_5" PromotionPrereqOr3="NULL" PromotionPrereqOr4="NULL" PromotionPrereqOr5="NULL" PromotionPrereqOr6="NULL" PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL"/>
+			<Where TYPE="PROMOTION_MOBILITY"/>
+		</Update>
+
+		<!--Attach Vanilla Promotion: UNITCOMBAT_ARCHER-->
+		<Update>
+			<Set PromotionPrereqOr1="PROM_UNLOCK_LVL_4" PromotionPrereqOr2="PROM_UNLOCK_LVL_5" PromotionPrereqOr3="NULL" PromotionPrereqOr4="NULL" PromotionPrereqOr5="NULL" PromotionPrereqOr6="NULL" PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL" />
+			<Where TYPE="PROMOTION_LOGISTICS"/>
+		</Update>
+		<Update>
+			<Set PromotionPrereqOr1="PROM_UNLOCK_LVL_4" PromotionPrereqOr2="PROM_UNLOCK_LVL_5" PromotionPrereqOr3="NULL" PromotionPrereqOr4="NULL" PromotionPrereqOr5="NULL" PromotionPrereqOr6="NULL" PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL" />
+			<Where TYPE="PROMOTION_RANGE"/>
+		</Update>
+		<Update>
+			<Set PromotionPrereqOr1="PROM_UNLOCK_LVL_4" PromotionPrereqOr2="PROM_UNLOCK_LVL_5" PromotionPrereqOr3="NULL" PromotionPrereqOr4="NULL" PromotionPrereqOr5="NULL" PromotionPrereqOr6="NULL" PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL"/>
+			<Where TYPE="PROMOTION_INDIRECT_FIRE"/>
+		</Update>
+
+		<!--Attach Vanilla Promotion: UNITCOMBAT_SIEGE-->
+		<Update>
+			<Set PromotionPrereqOr1="PROM_UNLOCK_LVL_2" PromotionPrereqOr2="PROM_UNLOCK_LVL_3" PromotionPrereqOr3="PROM_UNLOCK_LVL_4" PromotionPrereqOr4="NULL" PromotionPrereqOr5="NULL" PromotionPrereqOr6="NULL" PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL"/>
+			<Where TYPE="PROMOTION_VOLLEY"/>
+		</Update>
+
+		<!--Attach Vanilla Promotion: UNITCOMBAT_ARMOR-->
+		<Update>
+			<Set PromotionPrereqOr1="PROM_UNLOCK_LVL_4" PromotionPrereqOr2="PROM_UNLOCK_LVL_5" PromotionPrereqOr3="NULL" PromotionPrereqOr4="NULL" PromotionPrereqOr5="NULL" PromotionPrereqOr6="NULL" PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL"/>
+			<Where TYPE="PROMOTION_REPAIR"/>
+		</Update>
+
+		<!--Attach Vanilla Promotion: UNITCOMBAT_NAVALMELEE-->
+		<!--Attach Vanilla Promotion: UNITCOMBAT_NAVALRANGED-->
+		<Update>
+			<Set PromotionPrereqOr1="PROM_UNLOCK_LVL_3" PromotionPrereqOr2="PROM_UNLOCK_LVL_4" PromotionPrereqOr3="NULL" PromotionPrereqOr4="NULL" PromotionPrereqOr5="NULL" PromotionPrereqOr6="NULL" PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL" />
+			<Where TYPE="PROMOTION_SUPPLY"/>
+		</Update>
+
+		
+		<Update>
+			<Set PromotionPrereqOr1="PROM_UNLOCK_LVL_3" PromotionPrereqOr2="PROM_UNLOCK_LVL_4" PromotionPrereqOr3="NULL" PromotionPrereqOr4="NULL" PromotionPrereqOr5="NULL" PromotionPrereqOr6="NULL" PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL"/>
+			<Where TYPE="PROMOTION_HELI_REPAIR"/>
+		</Update>
+
+		<!--BNW-->
+        <!--
+		<Update>
+			<Set PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL" />
+			<Where PromotionPrereqOr7="PROMOTION_WOLFPACK_1"/>
+		</Update>
+		<Update>
+			<Set PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL" />
+			<Where PromotionPrereqOr7="PROMOTION_ARMOR_PLATING_2"/>
+		</Update>
+		<Update>
+			<Set PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL" />
+			<Where PromotionPrereqOr7="PROMOTION_WOLFPACK_3"/>
+		</Update>-->
+        
+        
+        <!-- Promotions from TerrainCrossing Mod, is now done in sql with triggers to make sure it is done in the right order
+		<Update>
+			<Set PromotionPrereqOr1="PROM_UNLOCK_LVL_4" PromotionPrereqOr2="PROM_UNLOCK_LVL_5" PromotionPrereqOr3="NULL" PromotionPrereqOr4="NULL" PromotionPrereqOr5="NULL" PromotionPrereqOr6="NULL" PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL"/>
+			<Where TYPE="PROMOTION_CAN_CROSS_MOUNTAINS"/>
+		</Update>
+        
+        <Update>
+			<Set PromotionPrereqOr1="PROM_UNLOCK_LVL_2" PromotionPrereqOr2="PROM_UNLOCK_LVL_3" PromotionPrereqOr3="PROM_UNLOCK_LVL_4" PromotionPrereqOr4="NULL" PromotionPrereqOr5="NULL" PromotionPrereqOr6="NULL" PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL"/>
+			<Where TYPE="PROMOTION_CAN_CROSS_MOUNTAINS_SCOUT"/>
+		</Update>
+        
+        <Update>
+			<Set PromotionPrereqOr1="PROM_UNLOCK_LVL_2" PromotionPrereqOr2="PROM_UNLOCK_LVL_" PromotionPrereqOr3="PROM_UNLOCK_LVL_" PromotionPrereqOr4="NULL" PromotionPrereqOr5="NULL" PromotionPrereqOr6="NULL" PromotionPrereqOr7="NULL" PromotionPrereqOr8="NULL" PromotionPrereqOr9="NULL"/>
+			<Where TYPE="PROMOTION_ICEBREAKER"/>
+		</Update> 
+        -->
+        
+        
+        
+	</UnitPromotions>
+
+	<UnitPromotions_UnitCombats>
+
+		<!--UNITCOMBAT_MELEE: UNLOCK & EXP-->
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		
+		<!--UNITCOMBAT_ARCHER: UNLOCK & EXP-->
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+
+		<!--UNITCOMBAT_MOUNTED: UNLOCK & EXP-->
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+
+		<!--UNITCOMBAT_SIEGE: UNLOCK & EXP-->
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+
+		<!--UNITCOMBAT_ARMOR: UNLOCK & EXP-->
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+
+		<!--UNITCOMBAT_NAVALRANGED: UNLOCK & EXP-->
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+
+		<!--UNITCOMBAT_SUBMARINE: UNLOCK & EXP-->
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
+		</Row>
+		
+		<!--UNITCOMBAT_NAVALMELEE: UNLOCK & EXP-->
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+
+		<!--UNITCOMBAT_CARRIER: UNLOCK & EXP-->
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_CARRIER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_CARRIER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_CARRIER</UnitCombatType>
+		</Row>
+
+		<!--UNITCOMBAT_FIGHTER: UNLOCK & EXP
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_FIGHTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_FIGHTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_FIGHTER</UnitCombatType>
+		</Row>
+
+		UNITCOMBAT_BOMBER: UNLOCK & EXP
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_BOMBER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_BOMBER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_BOMBER</UnitCombatType>
+		</Row>-->
+
+		<!--UNITCOMBAT_HELICOPTER: UNLOCK & EXP-->
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+
+		<!--UNITCOMBAT_GUN: UNLOCK & EXP-->
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+
+		<!--UNITCOMBAT_RECON: UNLOCK & EXP-->
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+        
+        <!--UNITCOMBAT_ANTIAIR (for AntiAirSpecialisations-Mod): UNLOCK & EXP-->
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROM_UNLOCK_LVL_4</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+        <!-- additional promotions for AA-Units when using the AntiAirSpecialisations-Mod -->
+		
+		<Row>
+			<PromotionType>PROMOTION_FOREIGN_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FRIEND_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GUARD_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ESC</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_EROUTE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SENTRY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MOBILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_AA</UnitCombatType>
+		</Row>
+
+		<!--INTER CLASS VANILLA INCLUDE-->
+		<Row>
+			<PromotionType>PROMOTION_CHARGE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MOBILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SENTRY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CHARGE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MOBILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SENTRY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MOBILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SENTRY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		
+		<Row>
+			<PromotionType>PROMOTION_INDIRECT_FIRE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+        
+		<Row>
+			<PromotionType>PROMOTION_RANGE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
+		</Row>
+		
+		<Row>
+			<PromotionType>PROMOTION_SENTRY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CHARGE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MOBILITY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SENTRY</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CHARGE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+
+
+        <!-- Update promotions which are different for units -->
+
+        <Row> 
+			<PromotionType>PROMOTION_INDIRECT_FIRE_SIEGE</PromotionType> 
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType> 
+		</Row>
+        <Row>
+			<PromotionType>PROMOTION_INDIRECT_FIRE_NAVAL</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+        <Row> 
+			<PromotionType>PROMOTION_MEDIC_SCOUT</PromotionType> 
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType> 
+		</Row>
+        <Row>
+			<PromotionType>PROMOTION_MARCH_RANGEUNIT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+        <Row>
+			<PromotionType>PROMOTION_MARCH_RANGEUNIT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+        <Row> 
+			<PromotionType>PROMOTION_RANGE_NAVAL</PromotionType> 
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType> 
+		</Row>
+        <Row>
+			<PromotionType>PROMOTION_MOBILITY_OTHER</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
+		</Row>
+        <Row>
+			<PromotionType>PROMOTION_MOBILITY_OTHER</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+        <Row>
+			<PromotionType>PROMOTION_MOBILITY_OTHER</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+        <Row>
+			<PromotionType>PROMOTION_MOBILITY_OTHER</PromotionType>
+			<UnitCombatType>UNITCOMBAT_CARRIER</UnitCombatType>
+		</Row>
+        <Row>
+			<PromotionType>PROMOTION_WOODSMAN_SCOUT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType> 
+		</Row>
+        <!-- Delete March for archers, since the have march_rangeunit now-->
+        <Delete>
+            <PromotionType>PROMOTION_MEDIC</PromotionType>
+            <UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+        </Delete>
+        <Delete>
+            <UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+            <PromotionType>PROMOTION_MARCH</PromotionType>
+        </Delete>
+        <Delete>
+            <UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+            <PromotionType>PROMOTION_MARCH</PromotionType>
+        </Delete>
+        <Delete>
+            <UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+            <PromotionType>PROMOTION_RANGE</PromotionType>
+        </Delete>
+        <Delete>
+            <UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
+            <PromotionType>PROMOTION_MOBILITY</PromotionType>
+        </Delete>
+        <Delete>
+            <UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+            <PromotionType>PROMOTION_MOBILITY</PromotionType>
+        </Delete>
+        <Delete>
+            <UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+            <PromotionType>PROMOTION_MOBILITY</PromotionType>
+        </Delete>
+        <Delete>
+            <UnitCombatType>UNITCOMBAT_CARRIER</UnitCombatType>
+            <PromotionType>PROMOTION_MOBILITY</PromotionType>
+        </Delete>
+        
+        
+		<!--ADDITIONAL CUSTOM PROMOTION-->
+
+		<!--
+		UNITCOMBAT_MOUNTED
+		UNITCOMBAT_MELEE
+		UNITCOMBAT_ARCHER
+		UNITCOMBAT_SIEGE
+		UNITCOMBAT_ARMOR
+		UNITCOMBAT_NAVALMELEE
+		UNITCOMBAT_NAVALRANGED
+		UNITCOMBAT_FIGHTER
+		UNITCOMBAT_BOMBER
+		UNITCOMBAT_HELICOPTER
+		UNITCOMBAT_GUN
+		UNITCOMBAT_RECON
+		-->
+
+		<!--PROMOTION_REPUTATION-->
+		<Row>
+			<PromotionType>PROMOTION_REPUTATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_REPUTATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_REPUTATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_REPUTATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_REPUTATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_REPUTATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_REPUTATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_REPUTATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_REPUTATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_CARRIER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_REPUTATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_REPUTATION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		
+		<!--PROMOTION_FOREIGN_M-->
+		<Row>
+			<PromotionType>PROMOTION_FOREIGN_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FOREIGN_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FOREIGN_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FOREIGN_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FOREIGN_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FOREIGN_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FOREIGN_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FOREIGN_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FOREIGN_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_CARRIER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FOREIGN_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FOREIGN_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FOREIGN_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+
+		<!--PROMOTION_FRIEND_M-->
+		<Row>
+			<PromotionType>PROMOTION_FRIEND_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FRIEND_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FRIEND_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FRIEND_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FRIEND_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FRIEND_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FRIEND_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FRIEND_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FRIEND_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_CARRIER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FRIEND_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FRIEND_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FRIEND_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+
+		<!--PROMOTION_GUARD_M-->
+		<Row>
+			<PromotionType>PROMOTION_GUARD_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GUARD_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GUARD_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GUARD_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GUARD_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GUARD_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GUARD_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GUARD_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GUARD_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_CARRIER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GUARD_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GUARD_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GUARD_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+
+		<!--PROMOTION_GEN_M-->
+		<Row>
+			<PromotionType>PROMOTION_GEN_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GEN_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GEN_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GEN_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GEN_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GEN_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GEN_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GEN_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+
+		<!--PROMOTION_PILL_M-->
+		<Row>
+			<PromotionType>PROMOTION_PILL_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PILL_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PILL_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PILL_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PILL_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PILL_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PILL_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+
+		<!--PROMOTION_PHEAL_M-->
+		<Row>
+			<PromotionType>PROMOTION_PHEAL_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PHEAL_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PHEAL_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PHEAL_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PHEAL_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PHEAL_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_PHEAL_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+
+		<!--PROMOTION_BRIBE_M
+		<Row>
+			<PromotionType>PROMOTION_BRIBE_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_BRIBE_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_BRIBE_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_BRIBE_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_BRIBE_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_BRIBE_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_BRIBE_M</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+        -->
+		<!--PROMOTION_IND
+		<Row>
+			<PromotionType>PROMOTION_IND</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_IND</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row> 
+        -->
+
+		<!--PROMOTION_ESC-->
+		<Row>
+			<PromotionType>PROMOTION_ESC</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ESC</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+
+		<!--PROMOTION_CITY_GOLD-->
+		<Row>
+			<PromotionType>PROMOTION_CITY_GOLD</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CITY_GOLD</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CITY_GOLD</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CITY_GOLD</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CITY_GOLD</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+
+		<!--PROMOTION_EFLANK-->
+		<Row>
+			<PromotionType>PROMOTION_EFLANK</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_EFLANK</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_EFLANK</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_EFLANK</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_EFLANK</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_EFLANK</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		
+		<!--PROMOTION_EROUTE-->
+		<Row>
+			<PromotionType>PROMOTION_EROUTE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_EROUTE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_EROUTE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_EROUTE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_EROUTE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_EROUTE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_EROUTE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+
+		<!--PROMOTION_SABOTAGE-->
+		<Row>
+			<PromotionType>PROMOTION_SABOTAGE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SABOTAGE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SABOTAGE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SABOTAGE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SABOTAGE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SABOTAGE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+
+		<!--PROMOTION_MOUNTAIN-->
+		<Row>
+			<PromotionType>PROMOTION_MOUNTAIN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MOUNTAIN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MOUNTAIN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MOUNTAIN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MOUNTAIN_SCOUT</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+
+        <Row>
+			<PromotionType>PROMOTION_NUKE_IMMUNE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_NUKE_IMMUNE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_NUKE_IMMUNE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_NUKE_IMMUNE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_NUKE_IMMUNE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_NUKE_IMMUNE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_NUKE_IMMUNE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_NUKE_IMMUNE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALRANGED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_NUKE_IMMUNE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVALMELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_NUKE_IMMUNE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_NUKE_IMMUNE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_CARRIER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_NUKE_IMMUNE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_FIGHTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_NUKE_IMMUNE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_BOMBER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_NUKE_IMMUNE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+        
+        <Row>
+			<PromotionType>PROMOTION_SIEGE_200</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+        
+	</UnitPromotions_UnitCombats>
+    <!-- neither terrain hill, nor feature hill does work -->
+    <!--
+	<UnitPromotions_Terrains>
+	<Row>
+		<PromotionType>PROMOTION_MOUNTAIN</PromotionType>
+		<TerrainType>TERRAIN_HILL</TerrainType>
+		<Defense>43</Defense>
+	</Row>
+	</UnitPromotions_Terrains>
+    -->
+    
+    <UnitPromotions_Features>
+		<!--<Row>
+			<PromotionType>PROMOTION_MOUNTAIN</PromotionType>
+			<FeatureType>FEATURE_HILL</FeatureType>
+			<Defense>44</Defense>
+		</Row>-->
+        
+        <Row>
+			<PromotionType>PROMOTION_WOODSMAN_SCOUT</PromotionType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<DoubleMove>true</DoubleMove>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_WOODSMAN_SCOUT</PromotionType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<DoubleMove>true</DoubleMove>
+		</Row>
+    </UnitPromotions_Features> 
+    
+	<UnitPromotions_UnitClasses>
+		<Row>
+			<PromotionType>PROMOTION_SABOTAGE</PromotionType>
+			<UnitClassType>UNITCLASS_CATAPULT</UnitClassType>
+			<Attack>33</Attack>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SABOTAGE</PromotionType>
+			<UnitClassType>UNITCLASS_TREBUCHET</UnitClassType>
+			<Attack>33</Attack>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SABOTAGE</PromotionType>
+			<UnitClassType>UNITCLASS_CANNON</UnitClassType>
+			<Attack>33</Attack>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SABOTAGE</PromotionType>
+			<UnitClassType>UNITCLASS_ARTILLERY</UnitClassType>
+			<Attack>33</Attack>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_SABOTAGE</PromotionType>
+			<UnitClassType>UNITCLASS_ROCKET_ARTILLERY</UnitClassType>
+			<Attack>33</Attack>
+		</Row>
+	</UnitPromotions_UnitClasses>
+
+
+	<Language_en_US>
+
+		<!--RENAMING-->
+		<Update>
+			<Set Text="Execute" />
+			<Where Tag="TXT_KEY_PROMOTION_CHARGE" />
+		</Update>
+
+		<!--UNLOCK & EXP-->
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_2">
+			<Text>Level 3</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_3">
+			<Text>Level 4</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_4">
+			<Text>Level 5</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_2_H">
+			<Text>Unlock [COLOR_POSITIVE_TEXT]Skill Level 3[ENDCOLOR] and receive +10% [COLOR_POSITIVE_TEXT]EXP[ENDCOLOR] Gain and +2% [ICON_STRENGTH] Attack/Defense</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_3_H">
+			<Text>Unlock [COLOR_POSITIVE_TEXT]Skill Level 4[ENDCOLOR] and receive an additional +20% [COLOR_POSITIVE_TEXT]EXP[ENDCOLOR] Gain and +5% [ICON_STRENGTH] Attack/Defense </Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_4_H">
+			<Text>Unlock [COLOR_POSITIVE_TEXT]Skill Level 5[ENDCOLOR] and receive an additional +30% [COLOR_POSITIVE_TEXT]EXP[ENDCOLOR] Gain and +10% [ICON_STRENGTH] Attack/Defense </Text>
+		</Row>
+
+
+		<!--ADDITIONAL CUSTOM PROMOTION-->
+		
+		<Row Tag="TXT_KEY_PROMOTION_REPUTATION">
+			<Text>Reputation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_REPUTATION_HELP">
+			<Text>Enemy units receive -10% [ICON_STRENGTH] Combat Strength when adjacent to any unit with this promotion. </Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FOREIGN">
+			<Text>Guerilla</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FOREIGN_HELP">
+			<Text>+20% [ICON_STRENGTH] Combat Strength outside friendly territory</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FRIEND">
+			<Text>Militia</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FRIEND_HELP">
+			<Text>+20% [ICON_STRENGTH] Combat Strength inside friendly territory</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GUARD">
+			<Text>Guard</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GUARD_HELP">
+			<Text>+50% [ICON_STRENGTH] near the [ICON_CAPITAL] capital. Based on Capital proximity (-10% per tile distance beetween unit and [ICON_CAPITAL] capital)  </Text>
+		</Row>
+        <!-- 
+		<Row Tag="TXT_KEY_PROMOTION_BRIBE">
+			<Text>Bribe</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_BRIBE_HELP">
+			<Text>Defeated enemy unit joins your side.</Text>
+		</Row> -->
+		<Row Tag="TXT_KEY_PROMOTION_PHEAL">
+			<Text>Victory</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PHEAL_HELP">
+			<Text>Heal 25 HP upon defeating an enemy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GEN">
+			<Text>Leadership</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GEN_HELP">
+			<Text>(+75%) contribution to Great Generals creation when fighting</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PILL">
+			<Text>Pillage</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PILL_HELP">
+			<Text>No Movement Cost to Pillage</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ESC">
+			<Text>Escape</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ESC_HELP">
+			<Text>Unit has a 20% chance to withdraw when faced with melee attack. Chance of withdrawal against fast enemies or if there are limited open tiles behind the unit. </Text>
+		</Row>
+		<!--<Row Tag="TXT_KEY_PROMOTION_IND">
+			<Text>Support Fire</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_IND_HELP">
+			<Text>Provides Support Fire to Friendly Units When Fortified.</Text>
+		</Row>-->
+		<Row Tag="TXT_KEY_PROMOTION_CITY_GOLD">
+			<Text>Plunder</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CITY_GOLD_HELP">
+			<Text>+15% [ICON_STRENGTH] Strength and earn Gold when attacking cities</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_EFLANK">
+			<Text>Flanking</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_EFLANK_HELP">
+			<Text>Doubles the [ICON_STRENGTH] Combat Strength modifier on flanking bonus.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_EROUTE">
+			<Text>Invasion</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_EROUTE_HELP">
+			<Text>Move along enemy roads as if they were your own.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SABOTAGE">
+			<Text>Sabotage</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SABOTAGE_HELP">
+			<Text>+33% [ICON_STRENGTH] Strength against Siege Weapons</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MOUNTAIN">
+			<Text>Hillmen</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MOUNTAIN_HELP">
+			<Text>Double movement rate [COLOR_POSITIVE_TEXT]on Hills[ENDCOLOR].</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_NUKE_IMMUNE">
+			<Text>Nuke Immunity</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_NUKE_IMMUNE_HELP">
+			<Text>This Unit is immune to nuke attacks!</Text>
+		</Row> 
+	</Language_en_US>
+
+    
+    <Language_de_DE>
+
+		<!--RENAMING-->
+		<Update>
+			<Set Text="Execute" />
+			<Where Tag="TXT_KEY_PROMOTION_CHARGE" />
+		</Update>
+
+		<!--UNLOCK & EXP-->
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_2">
+			<Text>Level 3</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_3">
+			<Text>Level 4</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_4">
+			<Text>Level 5</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_2_H">
+			<Text>Schaltet [COLOR_POSITIVE_TEXT]Beförderungen der Stufe 3[ENDCOLOR] frei, erhöht die erhaltene [COLOR_POSITIVE_TEXT]EXP[ENDCOLOR] um 10% und gibt +2% [ICON_STRENGTH] Angriff/Verteidigung. </Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_3_H">
+			<Text>Schaltet [COLOR_POSITIVE_TEXT]Beförderungen der Stufe 4[ENDCOLOR] frei, erhöht die erhaltene [COLOR_POSITIVE_TEXT]EXP[ENDCOLOR] um 20% und gibt +5% [ICON_STRENGTH] Angriff/Verteidigung. </Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_4_H">
+			<Text>Schaltet [COLOR_POSITIVE_TEXT]Beförderungen der Stufe 5[ENDCOLOR] frei, erhöht die erhaltene [COLOR_POSITIVE_TEXT]EXP[ENDCOLOR] um 30% und gibt +10% [ICON_STRENGTH] Angriff/Verteidigung. </Text>
+		</Row>
+
+
+		<!--ADDITIONAL CUSTOM PROMOTION-->
+		
+		<Row Tag="TXT_KEY_PROMOTION_REPUTATION">
+			<Text>Schreckens Aura</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_REPUTATION_HELP">
+			<Text>Feindliche Einheiten erhalten -10% [ICON_STRENGTH] Kampfstärke, wenn sie sich neben dieser Einheit befinden. </Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FOREIGN">
+			<Text>Guerilla</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FOREIGN_HELP">
+			<Text>+20% [ICON_STRENGTH] Kampfstärke außerhalb von freundlichem Territorium.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FRIEND">
+			<Text>Miliz</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FRIEND_HELP">
+			<Text>+20% [ICON_STRENGTH] Kampfstärke innerhalb von freundlichem Territorium</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GUARD">
+			<Text>Wächter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GUARD_HELP">
+			<Text>+50% [ICON_STRENGTH] nahe der [ICON_CAPITAL] Haupstadt. Basiert auf der Entfernung zur Haupstadt (-10% pro Feld Entfernung ziwschen Einheit und [ICON_CAPITAL] Haupstadt). </Text>
+		</Row>
+        <!--
+		<Row Tag="TXT_KEY_PROMOTION_BRIBE">
+			<Text>Bribe</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_BRIBE_HELP">
+			<Text>Defeated enemy unit joins your side.</Text>
+		</Row> -->
+		<Row Tag="TXT_KEY_PROMOTION_PHEAL">
+			<Text>Heilsamer Sieg</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PHEAL_HELP">
+			<Text>Heilt 25 HP beim Vernichten einer feindlichen Einheit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GEN">
+			<Text>Anführer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GEN_HELP">
+			<Text>(+75%) Beitrag zu Großer General Generierung wenn diese Einheit kämpft.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PILL">
+			<Text>Plünderer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PILL_HELP">
+			<Text>Plündern verbraucht keine Bewegungspunkte.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ESC">
+			<Text>Rückzug</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ESC_HELP">
+			<Text>Die Einheit hat eine 20% Chance bei einem Nahkampfangriff auf ein anderes Feld zurückzuweichen und somit dem Angriff zu entgehen. </Text>
+		</Row>
+		<!--<Row Tag="TXT_KEY_PROMOTION_IND">
+			<Text>Support Fire</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_IND_HELP">
+			<Text>Provides Support Fire to Friendly Units When Fortified.</Text>
+		</Row>-->
+		<Row Tag="TXT_KEY_PROMOTION_CITY_GOLD">
+			<Text>Stadtplünderer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CITY_GOLD_HELP">
+			<Text>+15% [ICON_STRENGTH] Kampfstärke und erhalte Gold beim Angriff auf Städte</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_EFLANK">
+			<Text>Flankieren</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_EFLANK_HELP">
+			<Text>Flankieren bringt doppelt soviel zusätzliche [ICON_STRENGTH] Kampfstärke.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_EROUTE">
+			<Text>Invasion</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_EROUTE_HELP">
+			<Text>Bewegt sich auf feindlichen Straßen, als wären es die eigenen.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SABOTAGE">
+			<Text>Sabotage</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SABOTAGE_HELP">
+			<Text>+33% [ICON_STRENGTH] Kampfstärke gegen Belagerungseinheiten.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MOUNTAIN">
+			<Text>Hügelkämpfer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MOUNTAIN_HELP">
+			<Text>Verdoppelt die Bewegungsrate [COLOR_POSITIVE_TEXT]auf Hügeln[ENDCOLOR]. </Text>
+		</Row>
+        <Row Tag="TXT_KEY_PROMOTION_NUKE_IMMUNE">
+			<Text>Atomschlag Immunität</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_NUKE_IMMUNE_HELP">
+			<Text>Diese Einheit ist immun gegen Atomschläge!</Text>
+		</Row> 
+
+	</Language_de_DE>
+    
+	<Language_IT_IT>
+
+		<!--RENAMING-->
+		<Update>
+			<Set Text="Esecuzione" />
+			<Where Tag="TXT_KEY_PROMOTION_CHARGE" />
+		</Update>
+
+		<!--UNLOCK & EXP-->
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_2">
+			<Text>Esecuzione I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_3">
+			<Text>Esecuzione II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_4">
+			<Text>Esecuzione III</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_2_H">
+			<Text>+10% ai [COLOR_POSITIVE_TEXT]punti EXP[ENDCOLOR] guadagnati in combattimento e +2% [ICON_STRENGTH] alla Forza di Combattimento</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_3_H">
+			<Text>+20% ai [COLOR_POSITIVE_TEXT]punti EXP[ENDCOLOR] guadagnati in combattimento e +5% [ICON_STRENGTH] Forza di Combattimento </Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_4_H">
+			<Text>+30% ai [COLOR_POSITIVE_TEXT]punti EXP[ENDCOLOR] guadagnati in combattimento e +10% alla [ICON_STRENGTH] Forza di Combattimento </Text>
+		</Row>
+
+
+		<!--ADDITIONAL CUSTOM PROMOTION-->
+
+		<Row Tag="TXT_KEY_PROMOTION_REPUTATION">
+			<Text>Reputazione</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_REPUTATION_HELP">
+			<Text>Le unita nemiche ricevono -10% alla [ICON_STRENGTH] Forza di Combattimento se adiacenti a questa unita. </Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FOREIGN">
+			<Text>Guerriglia</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FOREIGN_HELP">
+			<Text>Questa unita riceve +20% alla [ICON_STRENGTH] Forza di Combattimento al di fuori del territorio amico </Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FRIEND">
+			<Text>Milizia</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FRIEND_HELP">
+			<Text>Questa unita riceve +20% alla [ICON_STRENGTH] Forza di Combattimento in territorio amico</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GUARD">
+			<Text>Sentinella</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GUARD_HELP">
+			<Text>Questa unita riceve +50% alla [ICON_STRENGTH] Forza di Combattimento vicino alla [ICON_CAPITAL] Capitale. Il bonus si basa sulla vicinanza alla [ICON_CAPITAL] Capitale (-10% per casella di distanza fra l'unita e la [ICON_CAPITAL] Capitale)  </Text>
+		</Row>
+        <!--
+		<Row Tag="TXT_KEY_PROMOTION_BRIBE">
+			<Text>Corruzione</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_BRIBE_HELP">
+			<Text>I nemici sconfitti da questa unita passano dalla tua parte</Text>
+		</Row> -->
+		<Row Tag="TXT_KEY_PROMOTION_PHEAL">
+			<Text>Vittoria!!!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PHEAL_HELP">
+			<Text>Guarisce 25 PS sconfiggendo un nemico</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GEN">
+			<Text>Comando</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GEN_HELP">
+			<Text>+75% alla generazione di Grandi Generali in battaglie che coinvolgono questa unita.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PILL">
+			<Text>Saccheggio</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PILL_HELP">
+			<Text>Saccheggiare non consuma alcun punto movimento</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ESC">
+			<Text>Ritirata</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ESC_HELP">
+			<Text>L'unita ha una possibilita del 20% di indietreggiare quando sconfitta in un attacco in mischia. Le possibilita di indietreggiare diminuiscono con nemici veloci e se ci sono poche caselle libere dietro all'unita. </Text>
+		</Row>
+		<!--<Row Tag="TXT_KEY_PROMOTION_IND">
+			<Text>Fuoco di Supporto</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_IND_HELP">
+			<Text>Fornisce Fuoco di Supporto a unita amiche vicine fortificate.</Text>
+		</Row>-->
+		<Row Tag="TXT_KEY_PROMOTION_CITY_GOLD">
+			<Text>Razzia</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CITY_GOLD_HELP">
+			<Text>+15% alla [ICON_STRENGTH] Forza da Combattimento ed all' [ICON_GOLD] oro guadagnato attaccando citta.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_EFLANK">
+			<Text>Accerchiamento</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_EFLANK_HELP">
+			<Text>+100% al modificatore della [ICON_STRENGTH] Forza da Combattimento del bonus da accerchiamento.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_EROUTE">
+			<Text>Invasione</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_EROUTE_HELP">
+			<Text>Si muove in strade nemiche come se fossero tue.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SABOTAGE">
+			<Text>Sabotaggio</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SABOTAGE_HELP">
+			<Text>+33% alla [ICON_STRENGTH] Forza da Combattimento contro Macchine da Assedio</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MOUNTAIN">
+			<Text>Uomo delle colline</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MOUNTAIN_HELP">
+			<Text>Doppia velocita di movimento ed aumento della [ICON_STRENGTH] Difesa del 0% sulle [COLOR_POSITIVE_TEXT]Colline[ENDCOLOR].</Text>
+		</Row>
+        
+        <Row Tag="TXT_KEY_PROMOTION_NUKE_IMMUNE">
+			<Text>Nuke Immunity</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_NUKE_IMMUNE_HELP">
+			<Text>This Unit is immune to nuke attacks!</Text>
+		</Row> 
+	</Language_IT_IT>
+    
+	<Language_ru_RU>
+		<!--RENAMING-->
+		<Update>
+			<Set Text="Execute" />
+			<Where Tag="TXT_KEY_PROMOTION_CHARGE" />
+		</Update>
+		<!--UNLOCK & EXP-->
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_2">
+			<Text>Повышение 3-го уровня</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_3">
+			<Text>Повышение 4-го уровня</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_4">
+			<Text>Повышение 5-го уровня</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_2_H">
+			<Text>Открывает [COLOR_POSITIVE_TEXT]повышение 3-го уровня[ENDCOLOR] и дает бонус +10% к получению [COLOR_POSITIVE_TEXT]ОО[ENDCOLOR] и +2% [ICON_STRENGTH] к боевой мощи при атаке/обороне.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_3_H">
+			<Text>Открывает [COLOR_POSITIVE_TEXT]повышение 4-го уровня[ENDCOLOR] и дает дополнительный бонус +20% к получению [COLOR_POSITIVE_TEXT]ОО[ENDCOLOR] и +5% [ICON_STRENGTH] к боевой мощи при атаке/обороне.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROM_UNLOCK_LVL_4_H">
+			<Text>Открывает [COLOR_POSITIVE_TEXT]повышение 5-го уровня[ENDCOLOR] и дает дополнительный бонус +30% к получению  [COLOR_POSITIVE_TEXT]ОО[ENDCOLOR] и +10% [ICON_STRENGTH] к боевой мощи при атаке/обороне.</Text>
+		</Row>
+		<!--ADDITIONAL CUSTOM PROMOTION-->
+		<Row Tag="TXT_KEY_PROMOTION_REPUTATION">
+			<Text>Репутация</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_REPUTATION_HELP">
+			<Text>Вражеские юниты получают штраф -10% [ICON_STRENGTH] к боевой мощи, находясь вблизи любого юнита с этим повышением.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FOREIGN">
+			<Text>Герилья</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FOREIGN_HELP">
+			<Text>+20% [ICON_STRENGTH] к боевой мощи за пределами дружественной территории.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FRIEND">
+			<Text>Ополчение</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FRIEND_HELP">
+			<Text>+20% [ICON_STRENGTH] к боевой мощи на дружественной территории.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GUARD">
+			<Text>Страж</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GUARD_HELP">
+			<Text>+50% [ICON_STRENGTH] рядом со [ICON_CAPITAL] столицей (-10% от бонуса за каждую клетку между юнитом и [ICON_CAPITAL] столицей).</Text>
+		</Row>
+        <!--
+		<Row Tag="TXT_KEY_PROMOTION_BRIBE">
+			<Text>Подкуп</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_BRIBE_HELP">
+			<Text>Поверженные юниты присоединяются к вашей армии.</Text>
+		</Row> -->
+		<Row Tag="TXT_KEY_PROMOTION_PHEAL">
+			<Text>Победа</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PHEAL_HELP">
+			<Text>Юнит исцеляет 25 ОЗ, уничтожая врагов.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GEN">
+			<Text>Лидерство</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GEN_HELP">
+			<Text>(+75%) Бой может способствовать появлению великого полководца.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PILL">
+			<Text>Грабеж</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PILL_HELP">
+			<Text>Не тратит ОП на разграбление.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ESC">
+			<Text>Спасение</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ESC_HELP">
+			<Text>Юнит получает 20%-ый шанс к отступлению при вражеской атаке ближнего боя. Шанс отступления против быстрых врагов и/или при наличии не занятых клеток за юнитом.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_IND">
+			<Text>Огневая поддержка</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_IND_HELP">
+			<Text>Обеспечивает огневую поддержку дружественным юнитам при укреплении.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CITY_GOLD">
+			<Text>Добыча</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CITY_GOLD_HELP">
+			<Text>+15% [ICON_STRENGTH] к боевой мощи и сбору золота при атаке городов.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_EFLANK">
+			<Text>Фланговая атака</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_EFLANK_HELP">
+			<Text>+100% [ICON_STRENGTH] к боевой мощи, если рядом с целью есть еще один ваш отряд.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_EROUTE">
+			<Text>Вторжение</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_EROUTE_HELP">
+			<Text>Скорость перещения по вражеским дорогам равна скорости передвижения по союзным дорогам.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SABOTAGE">
+			<Text>Саботаж</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SABOTAGE_HELP">
+			<Text>+33% [ICON_STRENGTH] к боевой мощи против осадных орудий.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MOUNTAIN">
+			<Text>Горец</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MOUNTAIN_HELP">
+			<Text>Удваивает скорость передвижения по холмам и увеличивает [ICON_STRENGTH] защиту на 0% [COLOR_POSITIVE_TEXT]на холмах[ENDCOLOR].</Text>
+		</Row>
+		<!-- Russian translation by Maxyzzz940 -->
+        
+        <Row Tag="TXT_KEY_PROMOTION_NUKE_IMMUNE">
+			<Text>Nuke Immunity</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_NUKE_IMMUNE_HELP">
+			<Text>This Unit is immune to nuke attacks!</Text>
+		</Row> 
+        
+	</Language_ru_RU>
+	
+</GameData>

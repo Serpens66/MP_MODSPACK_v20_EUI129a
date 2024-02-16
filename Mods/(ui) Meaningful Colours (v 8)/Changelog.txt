@@ -1,0 +1,34 @@
+Changelog:
+v8:
+- compatibility with UCS v4,
+- deleted Major Civ part.
+
+v7:
+- tweaked main file,
+- updated Colors.odt file with Canadian CSs.
+
+v6.1:
+- added references for VP.
+
+v6:
+- recoloured Laconia and Odenso.
+
+v5:
+- added next part of compatibility for UCS mod (10 new CSs),
+- fixed Melbourne name,
+- rearranged .odt file content.
+
+v4:
+- renamed mod to "Meaningful Colours",
+- adding compatibility with UCS mod,
+- re-added .odt file with colour comparison,
+- modified colours for Tyre, Cahokia and Antwerp (more orange than brown).
+
+v2, v3:
+- renamed mod to "Meaningful Colours and City-States",
+- merging with RCI mod,
+- fixing loading files order.
+
+v1:
+- recolouring city-states to differentiate them even more,
+- fixing few issues.

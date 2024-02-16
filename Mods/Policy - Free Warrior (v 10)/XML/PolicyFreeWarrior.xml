@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <!--- We chance discipline instead of honor opener -->
+  
+    <Policy_UnitCombatProductionModifiers>
+        <Row> 
+            <PolicyType>POLICY_WARRIOR_CODE</PolicyType> 
+            <UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType> 
+            <ProductionModifier>10</ProductionModifier> 
+        </Row>
+        <Update>
+			<Where PolicyType="POLICY_WARRIOR_CODE" UnitCombatType="UNITCOMBAT_MELEE"/>
+			<Set ProductionModifier="10"/>
+		</Update>
+    </Policy_UnitCombatProductionModifiers>
+    
+    <!-- <Policies> -->
+        <!-- <Update> -->
+			<!-- <Where Type="POLICY_MILITARY_TRADITION"/> -->
+			<!-- <Set UnitSupplyMod="10"/> makes AI spam endless units, too heavy for performance -->
+		<!-- </Update> -->
+    <!-- </Policies> -->
+    
+    
+    <Buildings>
+        <Update>
+			<Where Type="BUILDING_BARRACKS"/>
+			<Set TrainedFreePromotion="PROMOTION_SHOCK_1"/>
+		</Update>
+        <Update>
+			<Where Type="BUILDING_ARMORY"/>
+			<Set TrainedFreePromotion="PROMOTION_SHOCK_2"/>
+		</Update>
+        <Update>
+			<Where Type="BUILDING_MILITARY_ACADEMY"/>
+			<Set TrainedFreePromotion="PROMOTION_SHOCK_3"/>
+		</Update>
+    </Buildings>
+    
+  
+  <Language_en_US>
+    <Replace Tag="TXT_KEY_POLICY_DISCIPLINE_HELP">
+      <Text>[COLOR_POSITIVE_TEXT]Discipline[ENDCOLOR][NEWLINE]A free military meele unit and +15% [ICON_STRENGTH] combat strength for melee Units which have another military Unit in an adjacent tile.</Text>
+    </Replace>
+    <Replace Tag="TXT_KEY_POLICY_WARRIOR_CODE_HELP">
+        <Text>
+            [COLOR_POSITIVE_TEXT]Warrior Code[ENDCOLOR][NEWLINE]+10% [ICON_PRODUCTION] Production when training Melee and Range units and a Great General appears outside the [ICON_CAPITAL] Capital. Great Generals are earned 50% faster.
+        </Text>
+    </Replace>
+    <Replace Tag="TXT_KEY_POLICY_MILITARY_TRADITION_HELP">
+        <Text>
+            [COLOR_POSITIVE_TEXT]Military Tradition[ENDCOLOR][NEWLINE]Military Units gain 50% more Experience from combat.
+        </Text>
+    </Replace>
+    
+    <Replace Tag="TXT_KEY_BUILDING_BARRACKS_HELP">
+        <Text>
+            +15 XP and free promotion Shock1 for all Units trained in this city.
+        </Text>
+    </Replace>
+    <Replace Tag="TXT_KEY_BUILDING_ARMORY_HELP">
+        <Text>
+            +15 XP and free promotion Shock2 for all Units trained in this city.[NEWLINE][NEWLINE]City must have a Barracks or Krepost.
+        </Text>
+    </Replace>
+    <Replace Tag="TXT_KEY_BUILDING_MILITARY_ACADEMY_HELP">
+        <Text>
+            +15 XP and free promotion Shock3 for all Units trained in this city.[NEWLINE][NEWLINE]City must have an Armory.
+        </Text>
+    </Replace>
+  </Language_en_US>
+  
+  <Language_de_DE>
+    <Replace Tag="TXT_KEY_POLICY_DISCIPLINE_HELP">
+        <Text>
+            [COLOR_POSITIVE_TEXT]Disziplin[ENDCOLOR][NEWLINE]Eine kostenlose Nahkampfeinheit und +15% [ICON_STRENGTH] Kampfstärke für Nahkampfeinheiten, wenn sich in einem benachbarten Geländefeld eine weitere Militäreinheit befindet. +5% Kampfstärke gegen Barbaren.
+        </Text>
+    </Replace>
+    <Replace Tag="TXT_KEY_POLICY_WARRIOR_CODE_HELP">
+        <Text>
+            [COLOR_POSITIVE_TEXT]Kriegerkodex[ENDCOLOR][NEWLINE]+10% [ICON_PRODUCTION] Produktion bei der Ausbildung von Nah- und Fernkampfeinheiten und außerhalb der [ICON_CAPITAL] Hauptstadt erscheint ein Großer General. Große Generäle werden 50% schneller erlangt. +5% Kampfstärke gegen Barbaren.
+        </Text>
+    </Replace>
+    <Replace Tag="TXT_KEY_POLICY_MILITARY_TRADITION_HELP">
+        <Text>
+            [COLOR_POSITIVE_TEXT]Militärtradition[ENDCOLOR][NEWLINE]Militäreinheiten gewinnen im Kampf 50% mehr Erfahrung. +10% Kampfstärke gegen Barbaren.
+        </Text>
+    </Replace>
+    <Replace Tag="TXT_KEY_POLICY_MILITARY_CASTE_HELP"> 
+        <Text>
+            [COLOR_POSITIVE_TEXT]Kriegerkaste[ENDCOLOR][NEWLINE]Für jede Garnisonsstadt steigt die lokale [ICON_HAPPINESS_1] Stadt-Zufriedenheit um 1 und die [ICON_CULTURE] Kultur um 2. +10% Kampfstärke gegen Barbaren.
+        </Text>
+    </Replace>
+    <Replace Tag="TXT_KEY_POLICY_PROFESSIONAL_ARMY_HELP"> 
+        <Text>
+            [COLOR_POSITIVE_TEXT]Berufsarmee[ENDCOLOR][NEWLINE][ICON_GOLD] Goldkosten für die Modernisierung von Militäreinheiten sinken um 33% und Kasernen, Waffenkammern und Militärakademien werden 50% schneller gebaut. +15% Kampfstärke gegen Barbaren.
+        </Text>
+    </Replace>
+    
+    <Replace Tag="TXT_KEY_BUILDING_BARRACKS_HELP">
+        <Text>
+            +15 EP und kostenlose Beförderung Schock1 für alle Einheiten die in dieser Stadt rekrutiert werden.
+        </Text>
+    </Replace>
+    <Replace Tag="TXT_KEY_BUILDING_ARMORY_HELP">
+        <Text>
+            +15 EP und kostenlose Beförderung Schock2 für alle Einheiten die in dieser Stadt rekrutiert werden.[NEWLINE][NEWLINE]Stadt benötigt Kaserne oder Krepost.
+        </Text>
+    </Replace>
+    <Replace Tag="TXT_KEY_BUILDING_MILITARY_ACADEMY_HELP">
+        <Text>
+            +15 EP und kostenlose Beförderung Schock3 für alle Einheiten die in dieser Stadt rekrutiert werden.[NEWLINE][NEWLINE]Stadt benötigt eine Waffenkammer.
+        </Text>
+    </Replace>
+    
+  </Language_de_DE>
+</GameData>

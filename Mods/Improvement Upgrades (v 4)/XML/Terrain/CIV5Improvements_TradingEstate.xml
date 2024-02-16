@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/24/2012 4:37:55 PM -->
+<!-- Changed by Serp multiplayer modpack, complete change to Trading Company! -->
+<GameData>
+	<Improvements>
+		<Row>
+			<Type>IMPROVEMENT_TRADING_ESTATE</Type>
+			<Description>TXT_KEY_IMPROVEMENT_TRADING_ESTATE</Description>
+			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_TRADING_ESTATE_TEXT</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_MANUFACTORY</ArtDefineTag>
+			<!--<RequiresFlatlands>true</RequiresFlatlands>-->
+			<PillageGold>50</PillageGold>
+			<PortraitIndex>32</PortraitIndex>
+            <NoTwoAdjacent>true</NoTwoAdjacent>
+            <AdjacentLuxury>true</AdjacentLuxury>
+			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+		</Row>
+	</Improvements>
+	<Improvement_ValidTerrains>
+		<Row>
+			<ImprovementType>IMPROVEMENT_TRADING_ESTATE</ImprovementType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_TRADING_ESTATE</ImprovementType>
+			<TerrainType>TERRAIN_PLAINS</TerrainType>
+		</Row>
+        <Row>
+			<ImprovementType>IMPROVEMENT_TRADING_ESTATE</ImprovementType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+		</Row>
+        <Row>
+			<ImprovementType>IMPROVEMENT_TRADING_ESTATE</ImprovementType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+		</Row>
+        <Row>
+			<ImprovementType>IMPROVEMENT_TRADING_ESTATE</ImprovementType>
+			<TerrainType>TERRAIN_HILL</TerrainType>
+		</Row>
+        <Row>
+			<ImprovementType>IMPROVEMENT_TRADING_ESTATE</ImprovementType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+		</Row>
+	</Improvement_ValidTerrains>
+	<Improvement_Yields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_TRADING_ESTATE</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Improvement_Yields>
+	<Improvement_TechYieldChanges>
+		<Row>
+			<ImprovementType>IMPROVEMENT_TRADING_ESTATE</ImprovementType>
+			<TechType>TECH_ECONOMICS</TechType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+        <Row>
+			<ImprovementType>IMPROVEMENT_TRADING_ESTATE</ImprovementType>
+			<TechType>TECH_ELECTRONICS</TechType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_TechYieldChanges>
+    
+    <Improvement_RiverSideYields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_TRADING_ESTATE</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_RiverSideYields>
+    
+    <Policy_ImprovementYieldChanges>
+        <Row>
+			<PolicyType>POLICY_COMMERCE_FINISHER</PolicyType>
+			<ImprovementType>IMPROVEMENT_TRADING_ESTATE</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_FREE_THOUGHT</PolicyType>
+			<ImprovementType>IMPROVEMENT_TRADING_ESTATE</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+    </Policy_ImprovementYieldChanges>
+    
+    <!-- text changes of commerce and free thought in new text -->
+    
+</GameData>

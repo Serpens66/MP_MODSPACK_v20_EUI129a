@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_STORAGEYARD</Type>
+			<DefaultBuilding>BUILDING_STORAGEYARD</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_STORAGEYARD</Description>
+		</Row>
+	</BuildingClasses>
+
+	<Buildings>
+		<Row>
+			<Type>BUILDING_STORAGEYARD</Type>
+			<BuildingClass>BUILDINGCLASS_STORAGEYARD</BuildingClass>
+			<Cost>10</Cost>
+			<Description>TXT_KEY_BUILDING_STORAGEYARD</Description>
+			<Help>TXT_KEY_BUILDING_STORAGEYARD_STRATEGY</Help>
+			<Strategy>TXT_KEY_BUILDING_STORAGEYARD_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_BUILDING_STORAGEYARD_TEXT</Civilopedia>
+			<ArtDefineTag>ART_DEF_BUILDING_WORKSHOP</ArtDefineTag>
+			<MinAreaSize>-1</MinAreaSize>
+			<NeverCapture>true</NeverCapture>
+			<HurryCostModifier>50</HurryCostModifier>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>16</PortraitIndex>
+		</Row>
+	</Buildings>
+
+	<Building_Flavors>
+		<!-- Lua is used to restrict these buildings to human players, so no flavours are needed -->
+	</Building_Flavors>
+
+	<Processes>
+		<Row>
+			<Type>PROCESS_STOCKPILE</Type>
+			<Description>TXT_KEY_PROCESS_STOCKPILE</Description>
+			<Help>TXT_KEY_PROCESS_STOCKPILE_HELP</Help>
+			<Strategy>TXT_KEY_PROCESS_STOCKPILE_STRATEGY</Strategy>
+			<TechPrereq>TECH_AGRICULTURE</TechPrereq>
+			<IconAtlas>CITIZEN_ATLAS</IconAtlas>
+			<PortraitIndex>1</PortraitIndex>
+		</Row>
+	</Processes>
+	
+	<Process_ProductionYields>
+		<Row>
+			<ProcessType>PROCESS_STOCKPILE</ProcessType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>80</Yield>
+		</Row>
+	</Process_ProductionYields>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_BUILDING_STORAGEYARD">
+			<Text>Storage Yard</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_STORAGEYARD_STRATEGY">
+			<Text>A Storage Yard permits stockpiles of materials and tools to be stored for upcoming building projets.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_STORAGEYARD_TEXT">
+			<Text>A Storage Yard is a plot of land set aside for storing materials - building stone, lumber, roofing slates, etc - and tools for upcoming building projects.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROCESS_STOCKPILE">
+			<Text>Stockpile</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_STOCKPILE_STRATEGY">
+			<Text>A stockpile is a reserve of building materials ([ICON_PRODUCTION]production) that can be used to jump-start the city's next building project.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_STOCKPILE_HELP">
+			<Text>A stockpile is a reserve of building materials and/or tools - permitting work on building projects to be jump-started.</Text>
+		</Row>
+	</Language_en_US>
+    
+    <Language_de_DE>
+		<Row Tag="TXT_KEY_BUILDING_STORAGEYARD">
+			<Text>Lagerraum</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_STORAGEYARD_STRATEGY">
+			<Text>Ein Lagerraum erlaubt es Produktion bis zu einem bestimmten Grad für zukünftige Projekte zu horten.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_STORAGEYARD_TEXT">
+			<Text>A Storage Yard is a plot of land set aside for storing materials - building stone, lumber, roofing slates, etc - and tools for upcoming building projects.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROCESS_STOCKPILE">
+			<Text>Lagerbestände aufbauen</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_STOCKPILE_STRATEGY">
+			<Text>Die Lagerbestände werden in [ICON_PRODUCTION] Produktion angelegt und können genutzt werden, um ein zukünftiges Bauprojekt mit einem Produktionsbonus zu beginnen.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_STOCKPILE_HELP">
+			<Text>Die Lagerbestände werden in [ICON_PRODUCTION] Produktion angelegt und können genutzt werden, um ein zukünftiges Bauprojekt mit einem Produktionsbonus zu beginnen.</Text>
+		</Row>
+	</Language_de_DE>
+</GameData>

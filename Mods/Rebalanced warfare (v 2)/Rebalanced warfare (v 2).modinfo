@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="a7c0af8f-56d9-4420-8936-1680e26607b7" version="2">
+  <Properties>
+    <Name>Rebalanced warfare</Name>
+    <Teaser>Many unit changes to improve warfare through the ages</Teaser>
+    <Description>Change list:
+
+Siege units all have range 3 and the indirect fire promotion.
+
+Gatling guns, machine guns and bazooka units have range 2 and reduced melee strength.
+
+Infantry units all have the siege promotion.</Description>
+    <Authors>Gort</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="53F347F80C8D85348867E7FEB1E19859" import="0">XML/RangedUnitChanges.xml</File>
+    <File md5="B55458F659C620E84EE7DD7147A6B109" import="0">XML/SiegeUnitChanges.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/SiegeUnitChanges.xml</UpdateDatabase>
+      <UpdateDatabase>XML/RangedUnitChanges.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/5/2012 5:27:30 AM -->
+<GameData>
+	<Builds>
+		<Row>
+			<Type>BUILD_HUNTING_LODGE</Type>
+			<PrereqTech>TECH_GUNPOWDER</PrereqTech>
+			<Time>1200</Time>
+			<ImprovementType>IMPROVEMENT_HUNTING_LODGE</ImprovementType>
+			<Description>TXT_KEY_BUILD_HUNTING_LODGE</Description>
+            <Help>TXT_KEY_BUILD_HUNTING_LODGE_HELP</Help>
+			<EntityEvent>ENTITY_EVENT_CAMP</EntityEvent>
+			<OrderPriority>98</OrderPriority>
+			<IconIndex>32</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+	</Builds>
+	<BuildFeatures>
+		<Row>
+			<BuildType>BUILD_HUNTING_LODGE</BuildType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<Time>700</Time>
+		</Row>
+		<Row>
+			<BuildType>BUILD_HUNTING_LODGE</BuildType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<PrereqTech>TECH_MINING</PrereqTech>
+			<Time>400</Time>
+			<Production>20</Production>
+		</Row>
+		<Row>
+			<BuildType>BUILD_HUNTING_LODGE</BuildType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
+			<Time>600</Time>
+		</Row>
+	</BuildFeatures>
+</GameData>

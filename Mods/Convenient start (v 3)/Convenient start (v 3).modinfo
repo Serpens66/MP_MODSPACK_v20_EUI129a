@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="e3a9da9c-541d-41f4-bfef-10654a0e4b0b" version="3">
+  <Properties>
+    <Name>Convenient start</Name>
+    <Teaser>This simple mod allows a quicker assesment of starting conditions and more flexible 1st city placement.</Teaser>
+    <Description>Serp: Added MeetHumans code, so all Humans will meet at start. This mod is for those of you who want to avoid the luck accusations when playing MP, or just more flexibility with 1st city placement when in poor starting location in SP. 
+[NEWLINE]
+[NEWLINE]Your starting settler (and only the starting settler) will have the following perks for the 1st (and only 1st turn of the game):
+[NEWLINE]- Air Recon promotion, so that you can immediately assess your starting conditions and tiles around you and not be limited by the mountains
+[NEWLINE]- 5 moves, so that you can actually move from the crappy starting place and still settle on 1st turn
+[NEWLINE]- Ignore Terrain Cost, so that this annoying jungle don't stop you
+[NEWLINE]
+[NEWLINE]In order to block potential abuse and uncovering a lot of map on the expense of not founding 1st city immediately, the starting settler loses all his abilities after 1st turn.
+[NEWLINE]
+[NEWLINE][COLOR_GREEN]This mod is fully compatible with all the other mods, including:
+- multiplayer via MPMPM
+- all Mod Civilizations (including the ones replacing Settlers - tested on Haiti)[ENDCOLOR]
+[NEWLINE]
+[NEWLINE]The only incompatibility appears when other mods remove the "Future Technology" from the game.</Description>
+    <Authors>manekk</Authors>
+    <SpecialThanks>SushiSquid/Joe Danger - initial concept, Nutty(Nutzzz) sql and lua coding, Serp - creative discussion</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="9843EDEE95EF8723E514024902B5362A" import="0">convenientstart.lua</File>
+    <File md5="AD26F5B3458D671115114B334EBAA872" import="0">convenientstart.sql</File>
+    <File md5="988A63115831F58022333711E3931201" import="0">convenientstart.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>convenientstart.xml</UpdateDatabase>
+      <UpdateDatabase>convenientstart.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="convenientstart.lua">
+      <Name>convenientstart</Name>
+      <Description>convenientstart</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

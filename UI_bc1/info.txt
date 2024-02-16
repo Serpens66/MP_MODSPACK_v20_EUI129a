@@ -1,0 +1,95 @@
+Crash der 1.29 beta versionen wurde in 1.29a behoben, daher verwendbar.
+
+Modpack ohne EUI:
+Im UI Ordner des modpacks die InGame.lua, CityView.lua und LeaderHeadRoot.lua durch die originalen des Spiels ersetzen (liegen mit "_NO_EU" bezeichnet bei, also umbenennen reicht auch).
+
+Verwendung mit EUI 1.28e (meine angepasste Version aus modpack19):
+Im UI Ordner des modpacks die InGame.lua, CityView.lua und LeaderHeadRoot.lua mit Dateien aus EUR 1.28e ersetzen, wobei InGame.lua die originale des Spiels ist (mit "_EUI_128e" gekennzeichnet)
+
+Verwendung mit EUI 1.29a:
+Im UI Ordner des modpacks die InGame.lua, CityView.lua und LeaderHeadRoot.lua mit Dateien aus EUR 1.28e ersetzen (mit "_EUI_129a" gekennzeichnet)
+
+ACHTUNG:
+Bei der InGame.lua immer darauf achten, dass die letzten Zeilen (alle davon), die wie folgt aussehen in jeder Version am ende dabei stehen, sie gehören zum modpack:
+ContextPtr:LoadNewContext("BarbarianScripts")
+
+
+Für Nutzung ohne EUI oder mit 1.28:
+den Mod "City States Gift" nehmen.
+Für 1.29 und neuer:
+"City States Gift EUI" nehmen.
+
+TradeLogic.lua im LeaderHead Ordner von EUI löschen, wird dann aus meinem Display AI Values mod genommen.
+
+
+
+meine Anpassungen:
+
+ActionInfoPanel:
+- keine notification bei stadt-bürger/grenzen wachstum (nervt nur)
+- kompatibel zu UI City Expansion (auch wenn dieser andere bugs seit neuer dll hat)
+- multiplayer endturnbutton oder auch politik rechtsklick==speichern muss nicht mehr gefixt werden, weil bc1 das gefixt hat in 129a.
+
+CityStateDiploPopup.lua
+-- gestrichen -- if condition by serp, because on greeting, ondisplay() is called twice
+- made compatible to citystate gifts mod and added information about protecting civilization - does not break if played without this mod.
+
+CityView.lua:
+- serp: removed the cost-cash stuff, always show the cost
+- wenn plot-kaufkosten 0, dann "Free" anzeigen und ansonsten die Kosten, nicht die Differenz.
+- plot-kaufmodus forcieren erlauben, fuer UI Expansion.
+- return Network.SendUpdateCityCitizens( city:GetID() ) from 1.29b added to OnSlackersSelected and ToggleSpecialist.
+
+InGame.lua:
+- Geh-Schießreichweite von angeklickter Einheit nicht dauerhaft anzeigen (nervt)
+-> nur noch während rechtsklick gedrückt gehalten wird.
+- im angriffsmodus sorgt klick auf freies geländefeld jetzt dafür den angriffsmodus zu verlassen.
+im bewegenmodus die Geh-Schiefreichweite auch wieder ausblenden, wenn befehl gegeben.
+- move_to wird nun auch korrekt beendet (selectionmode).
+- city bombrad auch korrekt beendet und kompatibel zu bombard range mod gemacht.
+
+InfoTooltipInclude.lua:
+- kompatibel zum RandomTraits mod, welcher icons an die leadernamen hängt -> Falls icons da, diese auch an die Nicknames hängen, die EUI zeigt.
+- :gsub("%. .*","."):gsub("。.*:","。") ) from 1.29b to TXT_KEY_LEAGUE_PROJECT_POPUP_TOTAL_COST added.
+
+UnitFlagManager:
+- immer die promotions aller spieler anzeigen, nicht nur wenn im Krieg.
+- genauere Beschreibung der promotions beim hovern anzeigen, wie beim flagpromotions mod.
+
+FrontEnd:
+evlt ganzen Ordner löschen, da Änderungen am Menü zuletzt noch ziemlich stark verbuggt waren
+und es das risiko nicht wert ist.
+Aktuell aber LoadScreen/PopulateUmies/UniqueBonuses dringelassen und FrontEnd.lua+EULA.lua vom Community Patch Projekt genommen.
+
+TradeLogic.lua (im LeaderHead Ordner):
+gelöscht. Stattdessen wird die TradeLogic.lua in DisplayAIValue mod verwendet.
+
+DiploTrade.lua im Improvements Ordner zeile 35 auskommentiert, da sonst die ressourcen in der Handelsübersicht zugeklappt sind, wenn wir nicht die EUI-tradelogic verwenden. (dann ist zwar "spinning globe" nicht gefixt, aber nicht so wild)
+SimpleDiploTrade.lua in Improvements ebenfalls OnShowHide zeile 30 auskommentiert. 
+(kann stattdessen auch gelöscht werden)
+
+CivilopediaScreen.lua:
+line 1806 "list of traits" do not show dummy traits in leader screen.
+
+PlotHelp:
+plot tooltips für aktuellen yield zugefügt (woher dieser kommt)
+
+UnitPanel:
+von 1.29b übernommen.
+
+
+Zusatzinfos:
+
+YieldIconmanager von whoward dll loeschen
+
+
+
+
+
+
+
+
+
+
+
+

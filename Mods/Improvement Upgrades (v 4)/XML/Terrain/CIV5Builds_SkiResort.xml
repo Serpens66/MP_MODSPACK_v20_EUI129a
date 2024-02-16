@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/5/2012 5:28:09 AM -->
+<GameData>
+	<!--Ski Resort Build-->
+	<Builds>
+		<Row>
+			<Type>BUILD_SKI_RESORT</Type>
+			<PrereqTech>TECH_ACOUSTICS</PrereqTech>
+			<Time>900</Time>
+			<ImprovementType>IMPROVEMENT_SKI_RESORT</ImprovementType>
+			<Description>TXT_KEY_BUILD_SKI_RESORT</Description>
+            <Help>TXT_KEY_BUILD_SKI_RESORT_HELP</Help>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<OrderPriority>98</OrderPriority>
+			<IconIndex>57</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+	</Builds>
+</GameData>

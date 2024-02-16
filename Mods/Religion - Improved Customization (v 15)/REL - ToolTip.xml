@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 7/5/2012 9:17:52 PM -->
+<GameData>
+	<Language_en_US>
+		<Update>
+			<Set Text="All Cities get a free Shrine. Holy Sites provide 50% more [ICON_PEACE] Faith" />
+			<Where Tag="TXT_KEY_TRAIT_EXTRA_BELIEF" />
+		</Update>
+		</Language_en_US>
+        
+        	<Language_de_DE>
+		<Update>
+			<Set Text="Alle Städte bekommen einen kostenlosen Schrein. Heilige Stätte produzieren 50% mehr [ICON_PEACE] Glauben." />
+			<Where Tag="TXT_KEY_TRAIT_EXTRA_BELIEF" />
+		</Update>
+		</Language_de_DE>
+</GameData>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="52f3dc29-6f76-4c1b-a692-491e7c774763" version="4">
+  <Properties>
+    <Name>Global - No Followup From Cities</Name>
+    <Teaser>Units attacking out of cities will not follow up</Teaser>
+    <Description>Units attacking from a fortified position (cities, citadels and forts) will not follow-up into the hex if they kill the defender, but they will remain within their walls.
+
+Also fixes the bug where a melee unit may not attack from a city if another unit is present in the city (including ships) but a ranged unit may.  Solves the problem where you have to move a ship out of the city before a ground unit can attack, and also the issue where a newly built ranged unit may fire (and use up its moves) even though the stacking limits are exceeded.
+
+Also fixes the bug where a unit that can move after attacking may not capture a civilian unit, eg the worker in the barbarian camp where we just destroyed the defender</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="87" maxversion="999" title="DLL - Various Mod Components" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="075797441C569E7AE63728EF1B78AD78" import="0">XML/GlobalNoFollowupFromCities.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/GlobalNoFollowupFromCities.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

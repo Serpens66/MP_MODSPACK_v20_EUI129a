@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<CustomModOptions>
+		<Update>
+			<Where Name="GLOBAL_STACKING_RULES"/>
+			<Set Value="1"/>
+		</Update>
+		<Update>
+			<Where Name="BUGFIX_CITY_STACKING"/>
+			<Set Value="1"/>
+		</Update>
+	</CustomModOptions>
+	
+	<Improvements>
+		<Update>
+			<Where Type="IMPROVEMENT_FORT"/>
+			<Set AdditionalUnits="1"/>
+		</Update>
+		<Update>
+			<Where Type="IMPROVEMENT_CITADEL"/>
+			<Set AdditionalUnits="1"/>
+		</Update>
+	</Improvements>
+</GameData>

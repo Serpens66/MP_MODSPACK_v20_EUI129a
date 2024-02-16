@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 12/20/2013 1:01:45 AM -->
+<GameData>
+	<!-- should still be very good, but not utterly overpowered, by serp 
+    
+    AIGrowthPercent ( AI braucht nur diese prozentzahl an Nahrung für einen neuen Bürger in einer stadt ) 
+    AITrainPercent  (prozent einheiten prodktionskosten)
+    AIConstructPercent  (prozent gebäude prduktionskosten)
+    AICreatePercent (prozent projekte produkionkosten)
+    AIUnitCostPercent (prozent maintenance kosten)
+    AIUnitSupplyPercent (maximal anzahl an einheiten die man haben "kann", wobei ein überschreiten food und production um 5% por unit reduziertrt, bis zu 75%. Wert wird durch zahl der städte/Bürger und Gebäude darin erhöht)
+    AIPerEraModifier ( wert wird mit zeitalternummer multipliziert und soviel prozent "teurer" (bei negativem wert günstiger) werden ALLE Produktionskosten (einheiten, gebäude, projekte) und auch AIGrowthPercent)
+    
+    -->
+    <HandicapInfos>
+        <Update>
+			<Where Type="HANDICAP_AI_DEFAULT"/>
+			<Set AIUnitSupplyPercent="-15" AIUnitCostPercent="90" AITrainPercent="100" AIConstructPercent="100" AICreatePercent="100" AIBuildingCostPercent="100" AIGrowthPercent="50" AIPerEraModifier="0" />
+		</Update>
+        <Update>
+			<Where Type="HANDICAP_SETTLER"/>
+			<Set AIUnitSupplyPercent="-15" AIUnitCostPercent="160" AITrainPercent="160" AIConstructPercent="160" AICreatePercent="160" AIBuildingCostPercent="160" AIGrowthPercent="160" AIPerEraModifier="0" />
+		</Update>
+        <Update>
+			<Where Type="HANDICAP_CHIEFTAIN"/>
+			<Set AIUnitSupplyPercent="-15" AIUnitCostPercent="120" AITrainPercent="130" AIConstructPercent="130" AICreatePercent="130" AIBuildingCostPercent="130" AIGrowthPercent="130" AIPerEraModifier="0" />
+		</Update>
+        <Update>
+			<Where Type="HANDICAP_WARLORD"/>
+			<Set AIUnitSupplyPercent="-10" AIUnitCostPercent="100" AITrainPercent="110" AIConstructPercent="110" AICreatePercent="110" AIBuildingCostPercent="110" AIGrowthPercent="110" AIPerEraModifier="0" />
+		</Update>
+        <Update>
+			<Where Type="HANDICAP_PRINCE"/>
+			<Set AIUnitSupplyPercent="-10" AIUnitCostPercent="100" AITrainPercent="100" AIConstructPercent="100" AICreatePercent="100" AIBuildingCostPercent="100" AIGrowthPercent="100" AIPerEraModifier="0" />
+		</Update>
+        <Update>
+			<Where Type="HANDICAP_KING"/>
+			<Set AIUnitSupplyPercent="-10" AIUnitCostPercent="100" AITrainPercent="90" AIConstructPercent="90" AICreatePercent="90" AIBuildingCostPercent="95" AIGrowthPercent="95" AIPerEraModifier="-1" />
+		</Update>
+        <Update>
+			<Where Type="HANDICAP_EMPEROR"/>
+			<Set AIUnitSupplyPercent="-10" AIUnitCostPercent="100" AITrainPercent="85" AIConstructPercent="85" AICreatePercent="85" AIBuildingCostPercent="75" AIGrowthPercent="90" AIPerEraModifier="-2" />
+		</Update>
+        <Update>
+			<Where Type="HANDICAP_IMMORTAL"/>
+			<Set AIUnitSupplyPercent="0" AIUnitCostPercent="95" AITrainPercent="75" AIConstructPercent="75" AICreatePercent="75" AIBuildingCostPercent="65" AIGrowthPercent="85" AIPerEraModifier="-3" />
+		</Update>
+        <Update>
+			<Where Type="HANDICAP_DEITY"/>
+			<Set AIUnitSupplyPercent="10" AIUnitCostPercent="90" AITrainPercent="65" AIConstructPercent="65" AICreatePercent="65" AIBuildingCostPercent="50" AIGrowthPercent="75" AIPerEraModifier="-4" />
+		</Update>
+    </HandicapInfos>
+    
+</GameData>

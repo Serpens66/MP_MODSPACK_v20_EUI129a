@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context ColorSet="Beige_Black_Alpha" Font="TwCenMT16" FontStyle="Base">
+	<Instance Name="CivilizationInstance">
+		<Box ID="CivilizationRoot" Offset="0,0" Anchor="L,T" Size="937,34" Color="0,0,0,0">
+			<Box Anchor="L,C" Size="222,32" Offset="8,0" Color="0,0,0,0">
+				<Box Color="0,0,0,0" Anchor="L,T" Size="32,32">
+					<Image ID="CivIconBG" Size="32,32" Anchor="L,C" Offset="0,0" TextureOffset="32,0" Texture="CivIconBGSizes.dds" />
+					<Image ID="CivIconShadow" Size="24,24" Anchor="C,C" Offset="1,1" Texture="CivSymbolAtlas16.dds" Color="Black,128"/>
+					<Image ID="CivSymbol" Size="24,24" Offset="0,0" Anchor="C,C" Texture="CivSymbolsColor256.dds" />
+				</Box>
+
+				<Label Anchor="L,C" Offset="36,0" ID="Civ" FontStyle="Shadow"/>
+			</Box>
+
+			<Stack ID="ErasStack" Anchor="L,T" Offset="230,0" StackGrowth="Right" Padding="0"/>
+
+			<Image ID="Divider" Anchor="L,B" Offset="0,0" Texture="bar900x2.dds" Size="900,1"/>
+		</Box>
+	</Instance>
+
+	<Instance Name="EraInstance">
+		<Box ID="EraRoot" Offset="0,0" Anchor="L,T" Size="88,32" Color="0,0,0,0">
+			<Button ID="EraButton" Anchor="L,C" Offset="0,0" Size="64,32">
+				<Stack ID="CountStack" Anchor="C,C" Offset="0,0" StackGrowth="Right" Padding="0">
+					<Button Anchor="C,C" ID="DigButton" Size="32,24">
+						<Image ID="DigBG" Anchor="C,C" Size="24,24" Offset="0,0" Texture="GreatWorks_Artifact.dds" TextureOffset="4,100">
+							<Label ID="DigCount" Anchor="C,C"  Offset="0,-1" Font="TwCenMT22"/>
+						</Image>
+					</Button>
+					<Button Anchor="C,C" ID="ArtButton" Size="32,24">
+						<Image ID="ArtBG" Anchor="C,C" Size="24,24" Offset="0,0" Texture="GreatWorks.dds" TextureOffset="4,100">
+							<Label ID="ArtCount" Anchor="C,C"  Offset="0,-1" Font="TwCenMT22"/>
+						</Image>
+					</Button>
+					<Button Anchor="C,C" ID="LitButton" Size="32,24">
+						<Image ID="LitBG" Anchor="C,C" Size="24,24" Offset="0,0" Texture="GreatWorks_Book.dds" TextureOffset="4,100">
+							<Label ID="LitCount" Anchor="C,C"  Offset="0,-1" Font="TwCenMT22"/>
+						</Image>
+					</Button>
+					<Button Anchor="C,C" ID="MusButton" Size="32,24">
+						<Image ID="MusBG" Anchor="C,C" Size="24,24" Offset="0,0" Texture="GreatWorks_Music.dds" TextureOffset="4,100">
+							<Label ID="MusCount" Anchor="C,C"  Offset="0,-1" Font="TwCenMT22"/>
+						</Image>
+					</Button>
+				</Stack>
+			</Button>
+
+			<Button ID="SwapButton" Anchor="R,C" Offset="-3,0" Size="32,32" ToolTipType="TooltipTypeTopPanel">
+				<Image Anchor="C,C" Offset="0,0" TextureOffset="0,96" Texture="CitizenIcons128.dds" Size="32,32"/>
+				<Label ID="Swap" Anchor="C,C" Offset="0,-1" Font="TwCenMT20"/>
+			</Button>
+		</Box>
+	</Instance>
+
+	<Instance Name="CityInstance">
+		<Box ID="CityRoot" Offset="0,0" Anchor="L,T" Size="937,38" Color="0,0,0,0">
+			<Stack Anchor="L,T" StackGrowth="Right" Padding="0">
+				<Box Anchor="C,C" Size="230,24" Color="0,0,0,0">
+					<Label ID="CityStatus" Anchor="L,C" Offset="10,6"/>
+					<Label ID="City" Anchor="L,C" Offset="36,6" FontStyle="Shadow"/>
+					<Label ID="CityTourism" Anchor="R,C" Offset="40,6" Color="255,235,0,255" Font="TwCenMT14"/>
+					<Label ID="CityCulture" Anchor="R,C" Offset="2,6" Color="Culture,255" Font="TwCenMT14"/>
+				</Box>
+				<Box Anchor="C,C" Size="700,24" Color="0,0,0,0">
+					<Stack Anchor="L,T" Size="700,24" StackGrowth="Right" Padding="0" ID="BuildingsStack"/>
+				</Box>
+			</Stack>
+			<Image ID="Divider" Anchor="L,B" Offset="0,0" Texture="bar900x2.dds" Size="900,1"/>
+		</Box>
+	</Instance>
+
+	<Instance Name="BuildingInstance">
+		<Box ID="BuildingRoot" Offset="0,0" Anchor="L,T" Size="70,38" Color="0,0,0,0">
+			<Button Anchor="L,C" ID="BuildingButton" Size="45,36" ToolTipType="TooltipTypeTopPanel">
+				<Image ID="BuildingIcon" Size="45,45" Offset="0,0" Anchor="L,C" />
+			</Button>
+
+			<Box Anchor="L,C" Offset="40,0" Size="4,30" Color="0,0,0,255" ID="SlotBarHolder">
+				<Bar Anchor="C,B" Offset="0,0" Size="4,30" FGColor="255,0,255,255" ID="SlotBar" Direction="Up"/>
+				<Box Anchor="L,B" Offset="0,0" Size="3,30" Color="0,0,0,64"/>
+				<Box Anchor="R,B" Offset="0,0" Size="1,30" Color="255,0,255,64"/>
+			</Box>
+			
+			<TextButton Anchor="L,C" Offset="46,0" ID="BuildingBonus"/>
+		</Box>
+	</Instance>
+
+	<Instance Name="PlaceWorkInstance">
+		<Box ID="PlaceWorkRoot" Size="438,30" Color="0,0,0,0">
+			<CheckBox ID="PlaceWorkOption" Anchor="L,T" Offset="10,0" TextAnchorSide="R,C" Font="TwCenMT16" TextOffset="35,0" TruncateWidth="375" />
+		</Box>
+	</Instance>
+
+	<Instance Name="MySwapWorkInstance">
+		<Box ID="SwapWorkRoot" Size="438,30" Color="0,0,0,0">
+			<RadioButton ID="SwapWorkOption" Anchor="L,T" Offset="10,0" TextAnchorSide="R,C" Font="TwCenMT16" TextOffset="35,0" TruncateWidth="375" RadioGroup="MySwapWorkGroup" />
+		</Box>
+	</Instance>
+
+	<Instance Name="TheirSwapWorkInstance">
+		<Box ID="SwapWorkRoot" Size="438,30" Color="0,0,0,0">
+			<RadioButton ID="SwapWorkOption" Anchor="L,T" Offset="10,0" TextAnchorSide="R,C" Font="TwCenMT16" TextOffset="35,0" TruncateWidth="375" RadioGroup="TheirSwapWorkGroup" />
+		</Box>
+	</Instance>
+
+	
+	<Container ID="GwManager" Size="Full,Full" Hidden="1">
+		<Box Style="BGBlock_ClearTopBar"/>
+		
+		<Grid Size="990,653" Anchor="C,C" Offset="0,6" Padding="0,0" Style="Grid9DetailFive140">
+			<Image Anchor="C,T" AnchorSide="I,O" Size="256,64" Offset="0,-14" Texture="assets\UI\Art\Icons\Top512IconTrim.dds">
+				<Image ID="CivIconBG" Size="64,64" Anchor="C,C" Offset="-1,-1" TextureOffset="77,0" Texture="CivIconBGSizes.dds"/>
+				<Image ID="CivIconShadow" Size="48,48" Anchor="C,C" Offset="0,0" Texture="CivSymbolAtlas48.dds" Color="Black.128"/>
+				<Image ID="CivIcon" Size="48,48" Offset="-1,-1" Anchor="C,C" Texture="CivSymbolsColor512.dds"/>
+			</Image>
+
+			<Label Style="MenuTitleCaption" String="TXT_KEY_GW_MANAGER_TITLE" FontStyle="Shadow"/>
+
+			<Box Style="MenuLeftSideTreatment"/>
+			<Box Style="MenuRightSideTreatment"/>
+
+			<Box Anchor="C,T" Size="955,32" Offset="0,44" Color="0.0.0.128">
+				<Stack Anchor="C,T" Size="971,32" Offset="0,0" Padding="0" StackGrowth="Right">
+					<Button Anchor="L,T" Size="191,24" Offset="0,0" String="TXT_KEY_GW_MANAGER_ARTIFACTS" ID="TabButtonArtifact">
+						<ShowOnMouseOver>
+							<AlphaAnim Anchor="L,C" Size="191,27" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="2" AlphaEnd="1">
+								<Grid Size="191,27" Offset="0,2" Padding="0,0" Style="Grid9FrameTurnsHL"/>
+							</AlphaAnim>
+						</ShowOnMouseOver>
+						<Grid Anchor="C,C" Offset="0,1" Size="191,26" Style="Grid9FrameTurns" Hidden="1" ID="TabButtonArtifactHighlight"/>
+					</Button>
+
+					<Button Anchor="L,T" Size="191,24" Offset="0,0" String="TXT_KEY_GW_MANAGER_ART" ID="TabButtonArt">
+						<ShowOnMouseOver>
+							<AlphaAnim Anchor="L,C" Size="191,27" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="2" AlphaEnd="1">
+								<Grid Size="191,27" Offset="0,2" Padding="0,0" Style="Grid9FrameTurnsHL"/>
+							</AlphaAnim>
+						</ShowOnMouseOver>
+						<Grid Anchor="C,C" Offset="0,1" Size="191,26" Style="Grid9FrameTurns" Hidden="1" ID="TabButtonArtHighlight"/>
+					</Button>
+
+					<Button Anchor="L,T" Size="191,24" Offset="0,0" String="TXT_KEY_GW_MANAGER_ARTIFACTS_OR_ART" ID="TabButtonArtifactOrArt">
+						<ShowOnMouseOver>
+							<AlphaAnim Anchor="L,C" Size="191,27" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="2" AlphaEnd="1">
+								<Grid Size="191,27" Offset="0,2" Padding="0,0" Style="Grid9FrameTurnsHL"/>
+							</AlphaAnim>
+						</ShowOnMouseOver>
+						<Grid Anchor="C,C" Offset="0,1" Size="191,26" Style="Grid9FrameTurns" Hidden="1" ID="TabButtonArtifactOrArtHighlight"/>
+					</Button>
+
+					<Button Anchor="L,T" Size="191,24" Offset="0,0" String="TXT_KEY_GW_MANAGER_WRITING" ID="TabButtonLiterature">
+						<ShowOnMouseOver>
+							<AlphaAnim Anchor="L,C" Size="191,27" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="2" AlphaEnd="1">
+								<Grid Size="191,27" Offset="0,2" Padding="0,0" Style="Grid9FrameTurnsHL"/>
+							</AlphaAnim>
+						</ShowOnMouseOver>
+						<Grid Anchor="C,C" Offset="0,1" Size="191,26" Style="Grid9FrameTurns" Hidden="1" ID="TabButtonLiteratureHighlight"/>
+					</Button>
+
+					<Button Anchor="L,T" Size="191,24" Offset="0,0" String="TXT_KEY_GW_MANAGER_MUSIC" ID="TabButtonMusic">
+						<ShowOnMouseOver>
+							<AlphaAnim Anchor="L,C" Size="191,27" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="2" AlphaEnd="1">
+								<Grid Size="191,27" Offset="0,2" Padding="0,0" Style="Grid9FrameTurnsHL"/>
+							</AlphaAnim>
+						</ShowOnMouseOver>
+						<Grid Anchor="C,C" Offset="0,1" Size="191,26" Style="Grid9FrameTurns" Hidden="1" ID="TabButtonMusicHighlight"/>
+					</Button>
+				</Stack>
+
+				<Image Anchor="C,B" Offset="0,0" Texture="HorizontalTrim.dds" Size="971,5"/>
+			</Box>
+
+			<!-- Close Button -->-->
+			<TextButton Anchor="C,B" Offset="0,25" String="TXT_KEY_CLOSE" ID="CloseButton" Font="TwCenMT14" ColorSet="Beige_Black_Alpha" FontStyle="Shadow" MouseOverStyle="SoftShadow" ConsumeMouse="1"/>
+
+			<!-- Content Panel -->
+			<Box Size="956,459" Color="0,0,0,0" Offset="17,77">
+				<Box Size="956,304" Color="0,0,0,0" ID="CivilizationsPanel">
+					<!-- Column Backgrounds-->
+					<Stack Anchor="L,T" StackGrowth="Right" Padding="0">
+						<Box Anchor="L,T" Offset="0,26" Size="230,275" Color="0,0,0,0"/>
+						<Box Anchor="L,T" Offset="0,0" Size="1,301" Color="18,108,98,255"/>
+						<Box Anchor="L,T" Offset="0,26" Size="87,275" Color="1,26,23,255"/>
+						<Box Anchor="L,T" Offset="0,0" Size="1,301" Color="18,108,98,255"/>
+						<Box Anchor="L,T" Offset="0,26" Size="87,275" Color="0,0,0,0"/>
+						<Box Anchor="L,T" Offset="0,0" Size="1,301" Color="18,108,98,255"/>
+						<Box Anchor="L,T" Offset="0,26" Size="87,275" Color="1,26,23,255"/>
+						<Box Anchor="L,T" Offset="0,0" Size="1,301" Color="18,108,98,255"/>
+						<Box Anchor="L,T" Offset="0,26" Size="87,275" Color="0,0,0,0"/>
+						<Box Anchor="L,T" Offset="0,0" Size="1,301" Color="18,108,98,255"/>
+						<Box Anchor="L,T" Offset="0,26" Size="87,275" Color="1,26,23,255"/>
+						<Box Anchor="L,T" Offset="0,0" Size="1,301" Color="18,108,98,255"/>
+						<Box Anchor="L,T" Offset="0,26" Size="87,275" Color="0,0,0,0"/>
+						<Box Anchor="L,T" Offset="0,0" Size="1,301" Color="18,108,98,255"/>
+						<Box Anchor="L,T" Offset="0,26" Size="87,275" Color="1,26,23,255"/>
+						<Box Anchor="L,T" Offset="0,0" Size="1,301" Color="18,108,98,255"/>
+						<Box Anchor="L,T" Offset="0,26" Size="87,275" Color="0,0,0,0"/>
+					</Stack>
+
+					<!-- Column Headers -->
+					<Stack Anchor="L,T" StackGrowth="Right" Padding="0">
+						<Box Anchor="C,C" Size="230,24" Color="0,0,0,0" ToolTip="TXT_KEY_GW_MANAGER_CIVILIZATION_TT">
+							<Label Anchor="L,C" Offset="10,-2" Font="TwCenMT20" String="TXT_KEY_GW_MANAGER_CIVILIZATION" FontStyle="Shadow"/>
+						</Box>
+						<Box Anchor="C,C" Size="88,24" Color="0,0,0,0" ToolTip="TXT_KEY_GW_MANAGER_ERA_0_TT">
+							<Label Anchor="C,C" Offset="0,-1" Font="TwCenMT18" String="TXT_KEY_ERA_0_SHORT" FontStyle="Shadow"/>
+						</Box>
+						<Box Anchor="C,C" Size="88,24" Color="0,0,0,0" ToolTip="TXT_KEY_GW_MANAGER_ERA_1_TT">
+							<Label Anchor="C,C" Offset="0,-2" Font="TwCenMT18" String="TXT_KEY_ERA_1_SHORT" FontStyle="Shadow"/>
+						</Box>
+						<Box Anchor="C,C" Size="88,24" Color="0,0,0,0" ToolTip="TXT_KEY_GW_MANAGER_ERA_2_TT">
+							<Label Anchor="C,C" Offset="0,-2" Font="TwCenMT18" String="TXT_KEY_ERA_2_SHORT" FontStyle="Shadow"/>
+						</Box>
+						<Box Anchor="C,C" Size="88,24" Color="0,0,0,0" ToolTip="TXT_KEY_GW_MANAGER_ERA_3_TT">
+							<Label Anchor="C,C" Offset="0,-2" Font="TwCenMT18" String="TXT_KEY_ERA_3_SHORT" FontStyle="Shadow"/>
+						</Box>
+						<Box Anchor="C,C" Size="88,24" Color="0,0,0,0" ToolTip="TXT_KEY_GW_MANAGER_ERA_4_TT">
+							<Label Anchor="C,C" Offset="0,-2" Font="TwCenMT18" String="TXT_KEY_ERA_4_SHORT" FontStyle="Shadow"/>
+						</Box>
+						<Box Anchor="C,C" Size="88,24" Color="0,0,0,0" ToolTip="TXT_KEY_GW_MANAGER_ERA_5_TT">
+							<Label Anchor="C,C" Offset="0,-2" Font="TwCenMT18" String="TXT_KEY_ERA_5_SHORT" FontStyle="Shadow"/>
+						</Box>
+						<Box Anchor="C,C" Size="88,24" Color="0,0,0,0" ToolTip="TXT_KEY_GW_MANAGER_ERA_6_TT">
+							<Label Anchor="C,C" Offset="0,-2" Font="TwCenMT18" String="TXT_KEY_GW_MANAGER_ATOMIC" FontStyle="Shadow"/>
+						</Box>
+						<Box Anchor="C,C" Size="88,24" Color="0,0,0,0" ToolTip="TXT_KEY_GW_MANAGER_ERA_7_TT">
+							<Label Anchor="C,C" Offset="0,-2" Font="TwCenMT18" String="TXT_KEY_GW_MANAGER_INFO" FontStyle="Shadow"/>
+						</Box>
+					</Stack>
+
+					<Image Anchor="L,T" Offset="0,25" Texture="bar900x2.dds" Size="900,1"/>
+
+					<ScrollPanel Anchor="L,T" Offset="0,26" Size="956,276" Vertical="1" AutoScrollBar="1" ID="CivilizationsScroll">
+						<ScrollBar  Anchor="R,T" Offset="0,18" Length="240" Style="VertSlider"/>
+						<UpButton   Anchor="R,T" Offset="0,0" Style="ScrollBarUp"/>
+						<DownButton Anchor="R,B" Offset="0,0" Style="ScrollBarDown"/>
+						<Stack Anchor="L,T" Size="937,275" StackGrowth="Bottom" Padding="0" ID="CivilizationsStack"/>
+					</ScrollPanel>
+				</Box>
+
+				<Image Anchor="C,T" Offset="1,304" Texture="HorizontalTrim.dds" Size="971,5"/>
+
+				<Box Size="956,150" Offset="0,309" Color="0,0,0,0" ID="CitiesPanel">
+					<!-- Column Backgrounds-->
+					<Stack Anchor="L,T" StackGrowth="Right" Padding="0">
+						<Box Anchor="L,T" Offset="0,26" Size="230,196" Color="0,0,0,0"/>
+						<Box Anchor="L,T" Offset="0,0" Size="1,222" Color="18,108,98,255"/>
+						<Box Anchor="L,T" Offset="0,26" Size="706,196" Color="1,26,23,255"/>
+					</Stack>
+
+					<!-- Column Headers -->
+					<Stack Anchor="L,T" StackGrowth="Right" Padding="0">
+						<Button ID="CityHeader" Anchor="C,C" Size="230,24" Style="BoxButton" ToolTip="TXT_KEY_GW_MANAGER_CITIES_TT">
+							<ShowOnMouseOver>
+								<AlphaAnim Anchor="C,C" Offset="0,0" Size="230,30" Pause="0" Cycle="Bounce" Speed="1" AlphaStart="2" AlphaEnd="1">
+									<Grid Size="250,30" Anchor="C,C" Offset="0,0" Padding="0,0" Style="Grid9FrameTurnsHL"/>
+								</AlphaAnim>
+							</ShowOnMouseOver>
+							<Label Anchor="L,C" Offset="36,-2" Font="TwCenMT20" String="TXT_KEY_GW_MANAGER_CITIES" FontStyle="Shadow" TruncateWidth="150"/>
+
+							<TextButton ID="CityTypeHeader" Anchor="L,C" Offset="10,-2" Font="TwCenMT20" String="[ICON_CITY_STATE]" ToolTip="TXT_KEY_GW_MANAGER_CITIES_TYPE_TT"/>
+							<TextButton ID="CityTourismHeader" Anchor="R,C" Offset="40,-2" Font="TwCenMT20" String="[ICON_TOURISM]" ToolTip="TXT_KEY_GW_MANAGER_CITIES_TOURISM_TT"/>
+							<TextButton ID="CityCultureHeader" Anchor="R,C" Offset="10,-2" Font="TwCenMT20" String="[ICON_CULTURE]" ToolTip="TXT_KEY_GW_MANAGER_CITIES_CULTURE_TT"/>
+						</Button>
+						<Box Anchor="C,C" Size="700,24" Color="0,0,0,0" ToolTip="TXT_KEY_GW_MANAGER_BUILDINGS_TT">
+							<Label Anchor="L,C" Offset="10,-2" Font="TwCenMT20" String="TXT_KEY_GW_MANAGER_BUILDINGS" FontStyle="Shadow"/>
+						</Box>
+						<Box Anchor="C,C" Size="26,24" Color="0,0,0,0">
+							<TextButton ID="WorksCart" Anchor="C,C" Offset="0,-2" Font="TwCenMT20" String="[ICON_TOURISM]" ToolTipType="TooltipTypeTopPanel"/>
+						</Box>
+					</Stack>
+
+					<Image Anchor="L,T" Offset="0,25" Texture="bar900x2.dds" Size="900,1"/>
+
+					<ScrollPanel Anchor="L,T" Offset="0,26" Size="956,196" Vertical="1" AutoScrollBar="1" ID="CitiesScroll">
+						<ScrollBar  Anchor="R,T" Offset="0,18" Length="160" Style="VertSlider"/>
+						<UpButton   Anchor="R,T" Offset="0,0" Style="ScrollBarUp"/>
+						<DownButton Anchor="R,B" Offset="0,0" Style="ScrollBarDown"/>
+						<Stack Anchor="L,T" Size="937,196" StackGrowth="Bottom" Padding="0" ID="CitiesStack"/>
+					</ScrollPanel>
+				</Box>
+			</Box>
+		</Grid>
+	</Container>
+
+	
+	<Container ID="GwPlaceDialog" Size="Full,Full" Hidden="1">
+		<Box Size="Full,30" Offset="0,0" Anchor="C,T" Color="0,0,0,0" ConsumeMouse="0" >
+			<Box Size="Full,Full" Offset="0,30" Anchor="C,T" Color="0,0,0,0" ConsumeMouse="1" />
+		</Box>
+
+		<Grid Size="480,440" Anchor="C,C" Offset="0,0" Style="Grid9DetailFive140">
+			<!-- Top Decoration -->
+			<Image Anchor="C,T" AnchorSide="I,O" Size="256,64" Offset="0,-14" Texture="assets\UI\Art\Icons\Top512IconTrim.dds">
+				<Image ID="PlaceIcon" Size="64,64" Anchor="C,C" Offset="0,0" TextureOffset="77,0" Texture="CivIconBGSizes.dds"/>
+			</Image>
+
+			<Label Style="MenuTitleCaption" String="TXT_KEY_GW_DIALOG_TITLE" FontStyle="Shadow"/>
+
+			<Label ID="PlaceHeader" Anchor="C,T" Offset="0,50" Font="TwCenMT20" ColorSet="Beige_Black_Alpha" String="Capital City Building" />
+			<Label ID="PlaceBonus" Anchor="L,T" Offset="25,80" Font="TwCenMT16" ColorSet="Beige_Black_Alpha" String="TXT_KEY_LOUVRE_THEMING_BONUS_HELP" WrapWidth="435" LeadingOffset="-4"/>
+			<Label ID="PlaceSelect" Anchor="L,T" Offset="25,155" Font="TwCenMT16" ColorSet="Beige_Black_Alpha" String="" />
+
+			<ScrollPanel ID="PlaceWorksScroll" Anchor="L,T" Vertical="1" Offset="15,175" Size="448,176" AutoScrollBar="1">
+				<ScrollBar  Anchor="R,T" Offset="0,18" Length="140" Style="VertSlider"/>
+				<UpButton   Anchor="R,T" Offset="0,0" Style="ScrollBarUp"/>
+				<DownButton Anchor="R,B" Offset="0,0" Style="ScrollBarDown"/>
+
+				<Stack ID="PlaceWorksStack" Anchor="L,T" StackGrowth="Bottom"/>
+			</ScrollPanel>
+
+			<Image Anchor="C,B" Offset="0,83" Texture="HorizontalTrim.dds" Size="447,5" />
+
+			<GridButton Anchor="L,B" ID="PlaceCancelButton" Offset="95,47" Size="100,32" Style="BaseButton" String="TXT_KEY_CANCEL_BUTTON" />
+			<GridButton Anchor="R,B" ID="PlaceOkButton" Offset="95,47" Size="100,32" Style="BaseButton" String="TXT_KEY_OK_BUTTON" />
+		</Grid>
+	</Container>
+
+	
+	<Container ID="GwSwapDialog" Size="Full,Full" Hidden="1">
+		<Box Size="Full,30" Offset="0,0" Anchor="C,T" Color="0,0,0,0" ConsumeMouse="0" >
+			<Box Size="Full,Full" Offset="0,30" Anchor="C,T" Color="0,0,0,0" ConsumeMouse="1" />
+		</Box>
+
+		<Grid Size="480,440" Anchor="C,C" Offset="0,0" Style="Grid9DetailFive140">
+			<!-- Top Decoration -->
+			<Image Anchor="C,T" AnchorSide="I,O" Size="256,64" Offset="0,-14" Texture="assets\UI\Art\Icons\Top512IconTrim.dds">
+				<Image ID="SwapCivIconBG" Size="64,64" Anchor="C,C" Offset="-1,-1" TextureOffset="77,0" Texture="CivIconBGSizes.dds"/>
+				<Image ID="SwapCivIconShadow" Size="48,48" Anchor="C,C" Offset="0,0" Texture="CivSymbolAtlas48.dds" Color="Black.128"/>
+				<Image ID="SwapCivIcon" Size="48,48" Offset="-1,-1" Anchor="C,C" Texture="CivSymbolsColor512.dds"/>
+			</Image>
+
+			<Label Style="MenuTitleCaption" String="TXT_KEY_GW_DIALOG_TITLE" FontStyle="Shadow"/>
+
+			<Label ID="SwapSelect" Anchor="L,T" Offset="25,50" Font="TwCenMT16" ColorSet="Beige_Black_Alpha" String="TXT_KEY_GW_DIALOG_SELECT_SWAP" />
+
+			<ScrollPanel ID="MySwapWorksScroll" Anchor="L,T" Vertical="1" Offset="15,80" Size="448,156" AutoScrollBar="1">
+				<ScrollBar  Anchor="R,T" Offset="0,18" Length="120" Style="VertSlider"/>
+				<UpButton   Anchor="R,T" Offset="0,0" Style="ScrollBarUp"/>
+				<DownButton Anchor="R,B" Offset="0,0" Style="ScrollBarDown"/>
+
+				<Stack ID="MySwapWorksStack" Anchor="L,T" StackGrowth="Bottom"/>
+			</ScrollPanel>
+
+			<ScrollPanel ID="TheirSwapWorksScroll" Anchor="L,T" Vertical="1" Offset="15,250" Size="448,106" AutoScrollBar="1">
+				<ScrollBar  Anchor="R,T" Offset="0,18" Length="70" Style="VertSlider"/>
+				<UpButton   Anchor="R,T" Offset="0,0" Style="ScrollBarUp"/>
+				<DownButton Anchor="R,B" Offset="0,0" Style="ScrollBarDown"/>
+
+				<Stack ID="TheirSwapWorksStack" Anchor="L,T" StackGrowth="Bottom"/>
+			</ScrollPanel>
+
+			<Image Anchor="C,B" Offset="0,83" Texture="HorizontalTrim.dds" Size="447,5" />
+
+			<GridButton Anchor="L,B" ID="SwapCancelButton" Offset="95,47" Size="100,32" Style="BaseButton" String="TXT_KEY_CANCEL_BUTTON" />
+			<GridButton Anchor="R,B" ID="SwapOkButton" Offset="95,47" Size="100,32" Style="BaseButton" String="TXT_KEY_OK_BUTTON" />
+		</Grid>
+	</Container>
+</Context>

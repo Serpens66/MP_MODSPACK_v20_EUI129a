@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <!-- update only works, if this entry alreday exists. it does exist in CP custommodoptions and in my own version, but not in whowards original -->
+    <CustomModOptions>
+        <Update>
+			<Where Name="ANY_PANTHEON"/>
+			<Set Value="1"/>
+		</Update>
+	</CustomModOptions>
+    
+</GameData>

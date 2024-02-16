@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+<!-- updated to expansion2 textes and added new improvement Trading Company, by Serp --> 
+  <Language_en_US>
+    <Replace Tag="TXT_KEY_POLICY_BRANCH_PATRONAGE_HELP">
+      <Text>[COLOR_POSITIVE_TEXT]Patronage[ENDCOLOR] reveals the location of all City States and enhances the benefits of City-State friendship.[NEWLINE][NEWLINE]Adopting Patronage will cause [ICON_INFLUENCE] Influence with City-States to degrade 25% slower than normal. Unlocks building the Forbidden Palace.[NEWLINE][NEWLINE]Adopting all policies in the Patronage tree will cause allied City-States to occasionally gift you [ICON_GREAT_PEOPLE] Great People.</Text>
+    </Replace>
+    <Replace Tag="TXT_KEY_POLICY_BRANCH_COMMERCE_HELP">
+      <Text>[COLOR_POSITIVE_TEXT]Commerce[ENDCOLOR] reveals the location of all Capital cities and  provides bonuses to empires focused on [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Adopting Commerce will boost [ICON_GOLD] Gold output in [ICON_CAPITAL] Capital City by 25%. Unlocks building Big Ben.[NEWLINE][NEWLINE]Adopting all Policies in the Commerce tree will grant +1 [ICON_GOLD] Gold from every Trading Post / Trading Company. It also allows the purchase of Great Merchants with [ICON_PEACE] Faith starting in the Industrial Era</Text>
+    </Replace>
+  </Language_en_US>
+  
+  <Language_de_DE>
+    <Replace Tag="TXT_KEY_POLICY_BRANCH_PATRONAGE_HELP">
+      <Text>[COLOR_POSITIVE_TEXT]Patronat[ENDCOLOR] enthüllt die Positionen aller Stadtstaaten und erhöht die Vorteile der Freundschaft zwischen Stadtstaaten.[NEWLINE][NEWLINE]Durch das Patronat sinkt der [ICON_INFLUENCE] Einfluss auf Stadtstaaten 25% langsamer als normalerweise. Schaltet den Bau der Verbotenen Stadt frei.[NEWLINE][NEWLINE]Bei Übernahme aller Politiken im Patronat-Zweig schenken Euch verbündete Stadtstaaten von Zeit zu Zeit [ICON_GREAT_PEOPLE] Große Persönlichkeiten.</Text>
+    </Replace>
+    <Replace Tag="TXT_KEY_POLICY_BRANCH_COMMERCE_HELP">
+        <Text>[COLOR_POSITIVE_TEXT]Wirtschaft[ENDCOLOR] enthüllt die Positionen aller Hauptstädte und verschafft Reichen einen Bonus, die auf [ICON_GOLD] Gold fokussiert sind.[NEWLINE][NEWLINE]Wenn man Wirtschaft wählt, erhöht sich der [ICON_GOLD] Goldertrag in der [ICON_CAPITAL] Hauptstadt um 25%. Schaltet den Bau von Big Ben frei.[NEWLINE][NEWLINE]Bei Übernahme aller Politiken des Wirtschaftszweigs wird für jeden Handelsposten bzw. jede Trading Company +1 [ICON_GOLD] Gold gewährt. Ermöglicht außerdem den Kauf von Großen Händlern mit [ICON_PEACE] Glauben ab dem Industriezeitalter.</Text>
+    </Replace>
+  </Language_de_DE>
+  
+
+</GameData>

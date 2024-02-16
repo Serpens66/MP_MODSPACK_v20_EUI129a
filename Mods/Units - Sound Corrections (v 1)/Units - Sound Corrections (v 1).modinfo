@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="356f9676-6318-4218-a92b-47a147ae4ac1" version="1">
+  <Properties>
+    <Name>Units - Sound Corrections</Name>
+    <Teaser>Corrects birth and selection sounds for certain units</Teaser>
+    <Description>Corrects birth and selection sounds for Barbarian Warriors and Horsemen, Gatling Guns, Privateers and Swedish Carolean</Description>
+    <Authors>William Howard</Authors>
+    <SpecialThanks>Sub6</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="A348261362737FAE88193003F1F2232A" import="0">XML/UnitsSoundCorrections.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/UnitsSoundCorrections.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

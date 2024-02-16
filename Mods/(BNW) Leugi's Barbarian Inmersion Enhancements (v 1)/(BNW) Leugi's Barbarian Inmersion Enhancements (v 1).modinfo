@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="84dc210e-0bdd-440a-b1cd-a0a886064863" version="1">
+  <Properties>
+    <Name>(BNW) Leugi's Barbarian Inmersion Enhancements</Name>
+    <Teaser>Adds Barbarian Great Generals and other bonuses. (rewritten by Serp)</Teaser>
+    <Description>Adds Barbarian Great Generals and other bonuses depending on the era. Rewritten by Serp, needs whowards/CP dll now.</Description>
+    <Authors>Leugi</Authors>
+    <SpecialThanks>Gedemon, JFD</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="26" maxversion="999" title="DLL - Various Mod Components" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="12D8054377AD3967BBC5F9CD579DAC5B" import="1">Art/BarbarianTopPopupIcon.dds</File>
+    <File md5="85116DA197103BD8204507E19F708C3F" import="1">Art/notificationbarbarian.dds</File>
+    <File md5="6B601102A85642121FA7EF392799BF94" import="1">Art/notificationbarbarianglow.dds</File>
+    <File md5="C10545E7A6C6F5F83B23B8F85D680E92" import="0">Core/BarbarianGeneral.xml</File>
+    <File md5="22592735152C22E0509474FFAFA1DDFA" import="0">Core/EraPromotions.xml</File>
+    <File md5="7A26E789208C82D1A5B5AAB051C7C468" import="0">Core/TextUpdates.xml</File>
+    <File md5="036D502A39CDF3FF33E70D18EFF20A26" import="0">Lua/BarbarianScripts.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Core/BarbarianGeneral.xml</UpdateDatabase>
+      <UpdateDatabase>Core/EraPromotions.xml</UpdateDatabase>
+      <UpdateDatabase>Core/TextUpdates.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/BarbarianScripts.lua">
+      <Name>BarbarianScripts</Name>
+      <Description>BarbarianScripts</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="859ded83-cd1c-4d5c-8861-c81a97a8379b" version="1">
+  <Properties>
+    <Name>Global - Early Coop War Lock</Name>
+    <Teaser>Starting a war early counts as entering into any co-op war agreements and locks the player into war for the associated number of turns.</Teaser>
+    <Description>If player A agrees to a co-op war in X turns with B against C,
+and then immediately declares war on C, A can make peace with C before the X turn limit.
+When B shows up after X turns to start the war, A can agree and, despite having a peace treaty with C, will immediately declare war!
+
+The simple fix for this is to lock player A into war for at least X turns, if any co-op war agreements include A warring against C</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>0</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="86" maxversion="999" title="DLL - Various Mod Components" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="4683ADEC9B0A53AA0928E9140E1CA3E8" import="0">XML/GlobalEarlyCoopWarLock.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/GlobalEarlyCoopWarLock.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

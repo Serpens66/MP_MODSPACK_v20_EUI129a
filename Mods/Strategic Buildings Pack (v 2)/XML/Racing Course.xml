@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 2/23/2014 3:34:33 PM -->
+<!-- Racing Course: +2 Happiness, +2 Gold, +1 Gold from each Horse resource. Requires 2 Horses.-->
+<GameData>
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_RACING_COURSE</Type>
+			<DefaultBuilding>BUILDING_RACING_COURSE</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_RACING_COURSE</Description>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_RACING_COURSE</Type>
+			<BuildingClass>BUILDINGCLASS_RACING_COURSE</BuildingClass>
+			<Cost>300</Cost>
+			<GoldMaintenance>1</GoldMaintenance>
+			<PrereqTech>TECH_MILITARY_SCIENCE</PrereqTech>
+			<Description>TXT_KEY_BUILDING_RACING_COURSE</Description>
+			<Civilopedia>TXT_KEY_BUILDING_RACING_COURSE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_RACING_COURSE_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_RACING_COURSE_HELP</Help>
+			<MinAreaSize>-1</MinAreaSize>
+			<NeverCapture>true</NeverCapture>
+			<Happiness>2</Happiness>
+			<HurryCostModifier>25</HurryCostModifier>
+			<IconAtlas>MOD_ICON_ATLAS</IconAtlas>
+			<PortraitIndex>14</PortraitIndex>
+		</Row>
+	</Buildings>
+	<Building_ResourceQuantityRequirements>
+		<Row>
+			<BuildingType>BUILDING_RACING_COURSE</BuildingType>
+			<ResourceType>RESOURCE_HORSE</ResourceType>
+			<Cost>3</Cost>
+		</Row>
+	</Building_ResourceQuantityRequirements>
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_RACING_COURSE</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Building_YieldChanges>
+	<Building_ResourceYieldChanges>
+		<Row>
+			<BuildingType>BUILDING_RACING_COURSE</BuildingType>
+			<ResourceType>RESOURCE_HORSE</ResourceType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_ResourceYieldChanges>
+	<Building_Flavors>
+		<Row>
+			<BuildingType>BUILDING_RACING_COURSE</BuildingType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RACING_COURSE</BuildingType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+	</Building_Flavors>
+	<Language_en_US>
+		<!-- Description Tags-->
+		<Row Tag="TXT_KEY_BUILDING_RACING_COURSE">
+			<Text>Racing Course</Text>
+		</Row>
+		<!-- Help Tags-->
+		<Row Tag="TXT_KEY_BUILDING_RACING_COURSE_HELP">
+			<Text>+2 Happiness and +2 Gold. +1 Gold from each Horse resource worked by this city.[NEWLINE][NEWLINE]Requires 3 Horses.</Text>
+		</Row>
+		<!-- Quote Tags, use for Wonders
+		<Row Tag="TXT_KEY_BUILDING_EXAMPLE_QUOTE">
+			<Text></Text>
+		</Row>
+		-->
+		<!-- Strategy Tags-->
+		<Row Tag="TXT_KEY_BUILDING_RACING_COURSE_STRATEGY">
+			<Text>Racing Courses provide a late game Happiness and Gold boost, but requires three Horses. Be sure to build in cities with workable Horses as it increases revenue from the resource.</Text>
+		</Row>
+		<!-- Pedia Tags-->
+		<Row Tag="TXT_KEY_BUILDING_RACING_COURSE_PEDIA">
+			<Text>Horse racing is an equestrian sport that has a long history. Archaeological records indicate that horse racing occurred in ancient Greece, Babylon, Syria, and Egypt. Both chariot and mounted horse racing were events in the ancient Greek Olympics by 648 BC. In the Roman Empire, chariot and mounted horse racing were major industries. Thoroughbred racing was, and is, popular with the aristocrats and royalty of British society, earning it the title "Sport of Kings."[NEWLINE][NEWLINE]The style of racing, the distances and the type of events vary significantly by the country in which the race is occurring, and many countries offer different types of horse races. There are three major types of racing: flat racing, steeplechasing (racing over jumps), and harness racing, where horses trot or pace while pulling a driver in a sulky. A major part of horse racing's economic importance lies in the gambling associated with it, an activity that in 2008 generated a world-wide market worth around US$115 billion.[NEWLINE][NEWLINE]--Wikipedia</Text>
+		</Row>
+	</Language_en_US>
+    
+    <Language_de_DE>
+		<!-- Description Tags-->
+		<Row Tag="TXT_KEY_BUILDING_RACING_COURSE">
+			<Text>Pferderennbahn</Text>
+		</Row>
+		<!-- Help Tags-->
+		<Row Tag="TXT_KEY_BUILDING_RACING_COURSE_HELP">
+			<Text>Benötigt 3 [ICON_RES_HORSE] Pferde! [NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold von jeder Quelle [ICON_RES_HORSE] Pferde, die von einer Stadt bearbeitet werden.</Text>
+		</Row>
+		<!-- Strategy Tags-->
+		<Row Tag="TXT_KEY_BUILDING_RACING_COURSE_STRATEGY">
+			<Text>Die Pferderennbahn erhöht im späten Spielverlauf die Zufriedenheit und Goldzufuhr, aber benötigt 3 Pferde. Besonders sinnvoll sind sie in Städten mit vielen Pferdequellen.</Text>
+		</Row>
+		<!-- Pedia Tags-->
+		<Row Tag="TXT_KEY_BUILDING_RACING_COURSE_PEDIA">
+			<Text>Horse racing is an equestrian sport that has a long history. Archaeological records indicate that horse racing occurred in ancient Greece, Babylon, Syria, and Egypt. Both chariot and mounted horse racing were events in the ancient Greek Olympics by 648 BC. In the Roman Empire, chariot and mounted horse racing were major industries. Thoroughbred racing was, and is, popular with the aristocrats and royalty of British society, earning it the title "Sport of Kings."[NEWLINE][NEWLINE]The style of racing, the distances and the type of events vary significantly by the country in which the race is occurring, and many countries offer different types of horse races. There are three major types of racing: flat racing, steeplechasing (racing over jumps), and harness racing, where horses trot or pace while pulling a driver in a sulky. A major part of horse racing's economic importance lies in the gambling associated with it, an activity that in 2008 generated a world-wide market worth around US$115 billion.[NEWLINE][NEWLINE]--Wikipedia</Text>
+		</Row>
+	</Language_de_DE>
+</GameData>

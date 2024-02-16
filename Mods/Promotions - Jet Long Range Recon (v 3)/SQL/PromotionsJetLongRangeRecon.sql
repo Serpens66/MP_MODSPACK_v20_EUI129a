@@ -1,0 +1,5 @@
+INSERT INTO Unit_FreePromotions(UnitType, PromotionType)
+  SELECT Type, 'PROMOTION_RECON_LONG_RANGE'
+    FROM Units
+    WHERE Type='UNIT_JET_FIGHTER' 
+    AND EXISTS (SELECT Value FROM CustomModOptions WHERE Name='PROMOTIONS_VARIABLE_RECON' AND Value=1);

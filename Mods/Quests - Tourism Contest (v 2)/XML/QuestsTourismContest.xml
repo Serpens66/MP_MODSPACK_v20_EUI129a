@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<CustomModOptions>
+		<Update>
+			<Where Name="EVENTS_QUESTS"/>
+			<Set Value="1"/>
+		</Update>
+	</CustomModOptions>
+
+	<Quests>
+		<Row>
+			<Type>MINOR_CIV_QUEST_TOURISM_CONTEST</Type>
+			<!-- If we can't generate culture, we can't defend against tourism, so consequently we don't generate any -->
+			<DisabledOnOption>GAMEOPTION_NO_POLICIES</DisabledOnOption>
+			<Global>true</Global>
+			<Contest>true</Contest>
+			<Duration>30</Duration>
+			<MinPlayers>3</MinPlayers>
+			<RevokeOnBully>false</RevokeOnBully>
+			<Friendship>40</Friendship>
+			<FinishSummary>TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_FINISH_S</FinishSummary>
+			<FinishMessage>TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_FINISH</FinishMessage>
+			<CancelSummary>TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_CANCEL_S</CancelSummary>
+			<CancelMessage>TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_CANCEL</CancelMessage>
+			<BiasFriendly>200</BiasFriendly>
+			<BiasHostile>50</BiasHostile>
+			<BiasCultured>300</BiasCultured>
+			<BiasMercantile>200</BiasMercantile>
+			<BiasMaritime>150</BiasMaritime>
+			<BiasMilitaristic>75</BiasMilitaristic>
+			<Priority>4</Priority>
+			<Icon>[ICON_TOURISM]</Icon>
+			<Tooltip>GetTourismContestQuestTooltip</Tooltip>
+		</Row>
+	</Quests>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_START">
+			<Text>The desire to travel is flourishing in {3_MinorCivName:textkey}, and they seek tourism guidance.  Whoever can produce the most [ICON_TOURISM] Tourism in a period of {2_TurnsDuration} turns will gain [ICON_INFLUENCE] Influence with them.  [COLOR_POSITIVE_TEXT]{1_TurnsRemaining} turns remaining.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_START_S">
+			<Text>{1_MinorCivName:textkey} longs for tourism!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_FINISH">
+			<Text>You have impressed {1_MinorCivName:textkey} with your tourism!  They turn a blind eye to the tourism of other civilizations, and your [ICON_INFLUENCE] Influence over them has increased by [COLOR_POSITIVE_TEXT]{2_InfluenceReward}[ENDCOLOR].  Civilizations that succeeded (ties are allowed):[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_FINISH_S">
+			<Text>{1_MinorCivName:textkey} is in awe of you!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_CANCEL">
+			<Text>Another civilization has impressed {1_MinorCivName:textkey} with its tourism.  Your tourism growth was not enough, and your [ICON_INFLUENCE] Influence remains the same as before.  Civilizations that succeeded (ties are allowed):[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_CANCEL_S">
+			<Text>{1_MinorCivName:textkey} looks elsewhere</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_FORMAL">
+			<Text>They will reward the player with the largest Tourism growth.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_WINNING_FORMAL">
+			<Text>{TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_FORMAL} So far, you have the lead with [ICON_TOURISM][COLOR_POSITIVE_TEXT]{1_PlayerScore}[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_LOSING_FORMAL">
+			<Text>{TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_FORMAL} So far, the leader has [ICON_TOURISM]{1_LeaderScore} and you have [ICON_TOURISM][COLOR_POSITIVE_TEXT]{2_PlayerScore}[ENDCOLOR].  </Text>
+		</Row>
+	</Language_en_US>
+    
+    <Language_de_DE>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_START">
+			<Text>Der Wunsch zu Reisen erblüht in {3_MinorCivName:textkey}, und sie suchen nach Unterweisung in Tourismus.  Wer auch immer den meisten [ICON_TOURISM] Tourismus in einer Zeitspanne von {2_TurnsDuration} Runden generiert, erhält [ICON_INFLUENCE] Einfluss bei ihnen.  [COLOR_POSITIVE_TEXT]Noch {1_TurnsRemaining} Runden.[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_START_S">
+			<Text>{1_MinorCivName:textkey} Will Tourismus!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_FINISH">
+			<Text>Ihr habt {1_MinorCivName:textkey} mit Eurem Tourismus beeindruckt!  Euer [ICON_INFLUENCE] Einfluss bei ihnen ist gestiegen um [COLOR_POSITIVE_TEXT]{2_InfluenceReward}[ENDCOLOR].  Erfolgreiche Zivilisationen (Bündnisse erlaubt):[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_FINISH_S">
+			<Text>{1_MinorCivName:textkey} Ist Von Euch Beeindruckt!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_CANCEL">
+			<Text>Eine andere Zivilisation hat {1_MinorCivName:textkey} mit ihrem Tourismus beeindruckt.  Euer Tourismus Wachstum war nicht genug, und Euer [ICON_INFLUENCE] Einfluss bleibt unverändert.  Erfolgreiche Zivilisationen (Bündnisse erlaubt):[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_CANCEL_S">
+			<Text>{1_MinorCivName:textkey} Schaut Sich Woanders Um</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_FORMAL">
+			<Text>Sie werden den Spieler mit dem größten Tourismus Wachstum belohnen.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_WINNING_FORMAL">
+			<Text>{TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_FORMAL} Bisher führt Ihr mit [ICON_TOURISM][COLOR_POSITIVE_TEXT]{1_PlayerScore}[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_LOSING_FORMAL">
+			<Text>{TXT_KEY_MINOR_CIV_QUEST_TOURISM_CONTEST_FORMAL} Bisher hat der Führende [ICON_TOURISM]{1_LeaderScore} und Ihr habt [ICON_TOURISM][COLOR_POSITIVE_TEXT]{2_PlayerScore}[ENDCOLOR].  </Text>
+		</Row>
+	</Language_de_DE>
+</GameData>

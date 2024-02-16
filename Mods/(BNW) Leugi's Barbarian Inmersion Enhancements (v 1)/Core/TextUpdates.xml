@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 3/4/2014 5:48:45 PM -->
+<!-- Changed by Serp multiplayer modpack, deactivated name changes -->
+<GameData>
+	<Language_en_US>
+		<!-- deactivated the name changes!
+        <Replace Tag="TXT_KEY_POP_BARBARIAN_CLEARED">
+			<Text>Victory!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_VS_BARBARIANS_BONUS">
+			<Text>Bonus VS Neutral Hostile</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BARB_CAMP_CLEARED">
+			<Text>You have captured a {1_camp} and recovered {2_Num} [ICON_GOLD] Gold!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_ENCAMPMENT">
+			<Text>Encampment</Text>
+		</Replace> -->
+        <Replace Tag="TXT_KEY_BARB_CAMP_GENERAL_CLEARED">
+			<Text>You have captured a barbarian General at its Encampment and recovered {1_Num} [ICON_GOLD] Gold and {2_Culture} [ICON_CULTURE] Culture!</Text>
+		</Replace>
+        <Replace Tag="TXT_KEY_BARB_CAMP_GENERAL_CLEARED_TITLE">
+			<Text>You killed a barbarian General!</Text>
+		</Replace>
+        
+		
+        <Row Tag="TXT_KEY_UPGRADE_BRIGAND_TITLE">
+			<Text>Barbarians upgraded to [COLOR_NEGATIVE_TEXT]Brigands![ENDCOLOR]</Text> 
+		</Row>
+        <Row Tag="TXT_KEY_UPGRADE_PIRATE_TITLE">
+			<Text>Barbarians upgraded to [COLOR_NEGATIVE_TEXT]Pirates![ENDCOLOR]</Text> 
+		</Row>
+        <Row Tag="TXT_KEY_UPGRADE_REBEL_TITLE">
+			<Text>Barbarians upgraded to [COLOR_NEGATIVE_TEXT]Rebels![ENDCOLOR]</Text> 
+		</Row>
+        <Row Tag="TXT_KEY_UPGRADE_TERRORISTS_TITLE">
+			<Text>Barbarians upgraded to [COLOR_NEGATIVE_TEXT]Terrorists![ENDCOLOR]</Text> 
+		</Row>
+        
+	</Language_en_US>
+    
+    <Language_de_DE>
+        <!--
+		<Replace Tag="TXT_KEY_POP_BARBARIAN_CLEARED">
+			<Text>Sieg!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_EUPANEL_VS_BARBARIANS_BONUS">
+			<Text>Bonus gegen Barbaren</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BARB_CAMP_CLEARED">
+			<Text>Ihr habt ein Barbarenlager eingenommen und {2_Num} [ICON_GOLD] Gold erbeutet!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_IMPROVEMENT_ENCAMPMENT">
+			<Text>Barbarenlager</Text>
+		</Replace> -->
+        <Replace Tag="TXT_KEY_BARB_CAMP_GENERAL_CLEARED">
+			<Text>Ihr habt einen Barbaren General in seinem Lager getötet und {1_Num} [ICON_GOLD] Gold and {2_Culture} [ICON_CULTURE] Kultur erbeutet!</Text>
+		</Replace>
+        <Replace Tag="TXT_KEY_BARB_CAMP_GENERAL_CLEARED_TITLE">
+			<Text>Ihr habt einen Barbaren General getötet!</Text>
+		</Replace>
+        
+        <Row Tag="TXT_KEY_UPGRADE_BRIGAND_TITLE">
+			<Text>Barbaren aufgewertet zu [COLOR_NEGATIVE_TEXT]Banditen![ENDCOLOR]</Text>
+		</Row>
+        <Row Tag="TXT_KEY_UPGRADE_PIRATE_TITLE">
+			<Text>Barbaren aufgewertet zu [COLOR_NEGATIVE_TEXT]Piraten![ENDCOLOR]</Text> 
+		</Row>
+        <Row Tag="TXT_KEY_UPGRADE_REBEL_TITLE">
+			<Text>Barbaren aufgewertet zu [COLOR_NEGATIVE_TEXT]Rebellen![ENDCOLOR]</Text> 
+		</Row>
+        <Row Tag="TXT_KEY_UPGRADE_TERRORISTS_TITLE">
+			<Text>Barbaren aufgewertet zu [COLOR_NEGATIVE_TEXT]Terroristen![ENDCOLOR]</Text> 
+		</Row>
+        
+	</Language_de_DE>
+    
+    <!-- making barbarian warrior/archer obsolete -->
+    <Units>
+        <Update>
+			<Where Type="UNIT_BARBARIAN_WARRIOR" />
+			<Set ObsoleteTech="TECH_METAL_CASTING"/>
+		</Update>
+        <Update>
+			<Where Type="UNIT_BARBARIAN_ARCHER" />
+			<Set ObsoleteTech="TECH_CONSTRUCTION"/>
+		</Update>
+    </Units>
+    
+    <!-- allow these units to the barbarians -->
+	<Civilization_UnitClassOverrides>
+
+        <Delete>
+			<Where CivilizationType="CIVILIZATION_BARBARIAN" UnitClassType="UNITCLASS_CAVALRY"/>
+		</Delete>
+		<Delete>
+			<Where CivilizationType="CIVILIZATION_BARBARIAN" UnitClassType="UNITCLASS_HELICOPTER_GUNSHIP"/>
+		</Delete>
+		<Delete>
+			<Where CivilizationType="CIVILIZATION_BARBARIAN" UnitClassType="UNITCLASS_CANNON"/>
+		</Delete>
+        <Delete>
+			<Where CivilizationType="CIVILIZATION_BARBARIAN" UnitClassType="UNITCLASS_CATAPULT"/>
+		</Delete>
+        <Delete>
+			<Where CivilizationType="CIVILIZATION_BARBARIAN" UnitClassType="UNITCLASS_KNIGHT"/>
+		</Delete>
+        <Delete>
+			<Where CivilizationType="CIVILIZATION_BARBARIAN" UnitClassType="UNITCLASS_TREBUCHET"/>
+		</Delete>
+        <Delete>
+			<Where CivilizationType="CIVILIZATION_BARBARIAN" UnitClassType="UNITCLASS_LANCER"/>
+		</Delete>
+        <Delete>
+			<Where CivilizationType="CIVILIZATION_BARBARIAN" UnitClassType="UNITCLASS_ARTILLERY"/>
+		</Delete>
+        <Delete>
+			<Where CivilizationType="CIVILIZATION_BARBARIAN" UnitClassType="UNITCLASS_TANK"/>
+		</Delete>
+        <Delete>
+			<Where CivilizationType="CIVILIZATION_BARBARIAN" UnitClassType="UNITCLASS_ANTI_TANK_GUN"/>
+		</Delete>
+        <Delete>
+			<Where CivilizationType="CIVILIZATION_BARBARIAN" UnitClassType="UNITCLASS_ROCKET_ARTILLERY"/>
+		</Delete>
+        <Delete>
+			<Where CivilizationType="CIVILIZATION_BARBARIAN" UnitClassType="UNITCLASS_MECHANIZED_INFANTRY"/>
+		</Delete>
+        <Delete>
+			<Where CivilizationType="CIVILIZATION_BARBARIAN" UnitClassType="UNITCLASS_MODERN_ARMOR"/>
+		</Delete>
+        <Delete>
+			<Where CivilizationType="CIVILIZATION_BARBARIAN" UnitClassType="UNITCLASS_BATTLESHIP"/>
+		</Delete>
+        <Delete>
+			<Where CivilizationType="CIVILIZATION_BARBARIAN" UnitClassType="UNITCLASS_SUBMARINE"/>
+		</Delete>
+        <Delete>
+			<Where CivilizationType="CIVILIZATION_BARBARIAN" UnitClassType="UNITCLASS_MISSILE_CRUISER"/>
+		</Delete>
+
+	</Civilization_UnitClassOverrides>
+</GameData>
+

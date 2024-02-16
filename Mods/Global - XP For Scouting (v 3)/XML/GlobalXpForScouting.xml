@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<CustomModOptions>
+		<Replace Name="EVENTS_TILE_REVEALED" Value="1"/>
+		<Replace Name="EVENTS_NW_DISCOVERY" Value="1"/>
+	</CustomModOptions>
+	
+	<UnitPromotions>
+        <!-- 30 xp max --> 
+		<Row>
+			<Type>PROMOTION_XP_FOR_SCOUTING</Type>
+			<Description>TXT_KEY_PROMOTION_XP_FOR_SCOUTING</Description>
+			<Help>TXT_KEY_PROMOTION_XP_FOR_SCOUTING_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_XP_FOR_SCOUTING_HELP</PediaEntry>
+			<CannotBeChosen>true</CannotBeChosen>
+            <LostWithUpgrade>true</LostWithUpgrade> 
+		</Row>
+        <!-- 50 xp max -->
+        <Row>
+			<Type>PROMOTION_XP_FOR_SCOUTING_II</Type>
+			<Description>TXT_KEY_PROMOTION_XP_FOR_SCOUTING_II</Description>
+			<Help>TXT_KEY_PROMOTION_XP_FOR_SCOUTING_HELP_II</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_XP_FOR_SCOUTING_HELP_II</PediaEntry>
+			<CannotBeChosen>true</CannotBeChosen>
+            <LostWithUpgrade>true</LostWithUpgrade> 
+		</Row>
+        <!-- 70 xp max -->
+        <Row>
+			<Type>PROMOTION_XP_FOR_SCOUTING_III</Type>
+			<Description>TXT_KEY_PROMOTION_XP_FOR_SCOUTING_III</Description>
+			<Help>TXT_KEY_PROMOTION_XP_FOR_SCOUTING_HELP_III</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_XP_FOR_SCOUTING_HELP_III</PediaEntry>
+			<CannotBeChosen>true</CannotBeChosen>
+            <LostWithUpgrade>true</LostWithUpgrade> 
+		</Row>
+        <!-- 90 xp max -->
+        <Row>
+			<Type>PROMOTION_XP_FOR_SCOUTING_IV</Type>
+			<Description>TXT_KEY_PROMOTION_XP_FOR_SCOUTING_IV</Description>
+			<Help>TXT_KEY_PROMOTION_XP_FOR_SCOUTING_HELP_IV</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_XP_FOR_SCOUTING_HELP_IV</PediaEntry>
+			<CannotBeChosen>true</CannotBeChosen>
+            <LostWithUpgrade>true</LostWithUpgrade> 
+		</Row>
+        <!-- 100 xp max -->
+        <Row>
+			<Type>PROMOTION_XP_FOR_SCOUTING_V</Type>
+			<Description>TXT_KEY_PROMOTION_XP_FOR_SCOUTING_V</Description>
+			<Help>TXT_KEY_PROMOTION_XP_FOR_SCOUTING_HELP_V</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_XP_FOR_SCOUTING_HELP_V</PediaEntry>
+			<CannotBeChosen>true</CannotBeChosen>
+            <LostWithUpgrade>true</LostWithUpgrade> 
+		</Row>
+	</UnitPromotions>
+	
+	<!-- We use SQL to give PROMOTION_XP_FOR_SCOUTING to recon units, as we need a trigger --> 
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_PROMOTION_XP_FOR_SCOUTING">
+			<Text>Scouting</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_XP_FOR_SCOUTING_HELP">
+			<Text>Units gain XP from scouting (first discover landtiles/naturalwonders, max 30XP)</Text>
+		</Row>
+        <Row Tag="TXT_KEY_PROMOTION_XP_FOR_SCOUTING_II">
+			<Text>Scouting2</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_XP_FOR_SCOUTING_HELP_II">
+			<Text>Units gain XP from scouting (first discover landtiles/naturalwonders, max 50XP)</Text>
+		</Row>
+        <Row Tag="TXT_KEY_PROMOTION_XP_FOR_SCOUTING_III">
+			<Text>Scouting3</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_XP_FOR_SCOUTING_HELP_III">
+			<Text>Units gain XP from scouting (first discover landtiles/naturalwonders, max 70XP)</Text>
+		</Row>
+        <Row Tag="TXT_KEY_PROMOTION_XP_FOR_SCOUTING_IV">
+			<Text>Scouting4</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_XP_FOR_SCOUTING_HELP_IV">
+			<Text>Units gain XP from scouting (first discover landtiles/naturalwonders, max 90XP)</Text>
+		</Row>
+        <Row Tag="TXT_KEY_PROMOTION_XP_FOR_SCOUTING_V">
+			<Text>Scouting5</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_XP_FOR_SCOUTING_HELP_V">
+			<Text>Units gain XP from scouting (first discover landtiles/naturalwonders, max 100XP)</Text>
+		</Row>
+	</Language_en_US>
+    
+    <Language_de_DE>
+		<Row Tag="TXT_KEY_PROMOTION_XP_FOR_SCOUTING">
+			<Text>Entdecker</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_XP_FOR_SCOUTING_HELP">
+			<Text>Diese Einheit erhält ein wenig Erfahrung durchs Erkunden.(Erstentdeckung Landfelder/Naturwunder, max 30XP)</Text>
+		</Row>
+        <Row Tag="TXT_KEY_PROMOTION_XP_FOR_SCOUTING_II">
+			<Text>Entdecker2</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_XP_FOR_SCOUTING_HELP_II">
+			<Text>Diese Einheit erhält ein wenig Erfahrung durchs Erkunden.(Erstentdeckung Landfelder/Naturwunder, max 50XP)</Text>
+		</Row>
+        <Row Tag="TXT_KEY_PROMOTION_XP_FOR_SCOUTING_III">
+			<Text>Entdecker3</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_XP_FOR_SCOUTING_HELP_III">
+			<Text>Diese Einheit erhält ein wenig Erfahrung durchs Erkunden.(Erstentdeckung Landfelder/Naturwunder, max 70XP)</Text>
+		</Row>
+        <Row Tag="TXT_KEY_PROMOTION_XP_FOR_SCOUTING_IV">
+			<Text>Entdecker4</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_XP_FOR_SCOUTING_HELP_IV">
+			<Text>Diese Einheit erhält ein wenig Erfahrung durchs Erkunden.(Erstentdeckung Landfelder/Naturwunder, max 90XP)</Text>
+		</Row>
+        <Row Tag="TXT_KEY_PROMOTION_XP_FOR_SCOUTING_V">
+			<Text>Entdecker5</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_XP_FOR_SCOUTING_HELP_V">
+			<Text>Diese Einheit erhält ein wenig Erfahrung durchs Erkunden.(Erstentdeckung Landfelder/Naturwunder, max 100XP)</Text>
+		</Row>
+	</Language_de_DE>   
+    
+</GameData>

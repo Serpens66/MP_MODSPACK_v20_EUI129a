@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="3885caca-b878-4d3a-8794-9fcde08f80bd" version="5">
+  <Properties>
+    <Name>Promotions - Extra Cargo</Name>
+    <Teaser>Two promotions to increase cargo capacity (added 16dds file, serp)</Teaser>
+    <Description>Two promotions to increase cargo capacity (ie extra planes or missiles for Carriers, Cruisers and Subs)</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.2kgames.com/showthread.php?107263-MOD-Promotions-Extra-Cargo</Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+    <PediaCategory>UNITS</PediaCategory>
+    <PediaAtlas>PROMO_CARGO_ICON_ATLAS</PediaAtlas>
+    <PediaIndex>1</PediaIndex>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="77755DDCD975172B33C05E0D40660A84" import="1">ART/PromoIconAtlas256.dds</File>
+    <File md5="7B5C09CA8ABD69AC7D09765E714931A2" import="1">ART/PromoIconAtlas32.dds</File>
+    <File md5="3F914B84B485B37F075AFB7B65388EFA" import="1">ART/PromoIconAtlas45.dds</File>
+    <File md5="C0FBEA0468C6C5F39359C0DF24B91E60" import="1">ART/PromoIconAtlas64.dds</File>
+    <File md5="984223C2E74F0A5D4F1D02F3B87F7ABB" import="0">XML/PromotionsExtraCargo.xml</File>
+    <File md5="7B5C09CA8ABD69AC7D09765E714931A2" import="1">ART/PromoIconAtlas16.dds</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/PromotionsExtraCargo.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

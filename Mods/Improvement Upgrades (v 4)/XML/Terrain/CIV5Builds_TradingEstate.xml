@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/24/2012 4:40:05 PM -->
+<!-- Changed by Serp multiplayer modpack, complete change to Trading Company! -->
+<GameData>
+	<Builds>
+		<Row>
+			<Type>BUILD_TRADING_ESTATE</Type>
+			<PrereqTech>TECH_STEAM_POWER</PrereqTech>
+			<Time>1100</Time>
+			<ImprovementType>IMPROVEMENT_TRADING_ESTATE</ImprovementType>
+			<Description>TXT_KEY_BUILD_TRADING_ESTATE</Description>
+            <Help>TXT_KEY_BUILD_TRADING_ESTATE_HELP</Help>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<OrderPriority>97</OrderPriority>
+			<IconIndex>56</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+	</Builds>
+	<BuildFeatures>
+		<Row>
+			<BuildType>BUILD_TRADING_ESTATE</BuildType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<Time>600</Time>
+            <Remove>false</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_TRADING_ESTATE</BuildType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<PrereqTech>TECH_MINING</PrereqTech>
+			<Time>500</Time>
+            <Remove>false</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_TRADING_ESTATE</BuildType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
+			<Time>600</Time>
+            <Remove>false</Remove> 
+		</Row>
+	</BuildFeatures>
+</GameData>

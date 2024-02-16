@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="efd0d4a0-c2ae-43f8-a0b5-27ebbff5d23d" version="5">
+  <Properties>
+    <Name>FlagPromotions ModSupport ohne UnitFlagManger</Name>
+    <Teaser>Only includes Icons, flags are used from EUI 1.29a</Teaser>
+    <Description>We believe Civilization is a fantastic game, and want to perfect it while remaining as close to the core experience as possible.
+
+This version includes support for the following mods:
+
+(BNW) Leugi's Barbarian Inmersion Enhancements
+Promotions - Level Promotions
+Promotions - Terrain Crossing
+Promotions - AntiAir Specialisations
+Promotions - Extra Cargo</Description>
+    <Authors>[COLOR_CYAN]Thalassicus</Authors>
+    <SpecialThanks>edited by [COLOR_YELLOW]Barra[/COLOR], mod-support by [COLOR_YELLOW]Serp[/COLOR], a few fixes by [COLOR_YELLOW]Lynnes[/COLOR]</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="bdc541c0-c129-41b5-85cd-c8a9e7869104" minversion="0" maxversion="999" title="Promotions - Level Promotions" />
+    <!-- <Mod id="84dc210e-0bdd-440a-b1cd-a0a886064863" minversion="0" maxversion="999" title="(BNW) Leugi's Barbarian Inmersion Enhancements" /> -->
+    <!-- <Mod id="4f184876-e029-4aad-98a4-10e5334ce52e" minversion="0" maxversion="999" title="Promotions - Terrain Crossing" /> -->
+    <!-- <Mod id="a6e2d8b9-4675-4409-aa06-b9a9469d3cef" minversion="0" maxversion="999" title="Promotions - AntiAir Specialisations" /> -->
+    <!-- <Mod id="3885caca-b878-4d3a-8794-9fcde08f80bd" minversion="0" maxversion="999" title="Promotions - Extra Cargo" /> -->
+    <!-- <Mod id="ae3e22d3-47cc-4ff1-aaed-55d7a9c1631f" minversion="0" maxversion="999" title="MP Fix - Goody Hut Bonus" /> -->
+    <!-- <Mod id="2890f440-93a7-4227-ab6f-5c5c1ba175cf" minversion="0" maxversion="999" title="Global - XP For Scouting" /> -->
+    <!-- <Mod id="0f96f649-aaf6-45f3-9b5c-65010eac2669" minversion="0" maxversion="999" title="Global - Capture Great People" /> -->
+  </Dependencies>
+  <References>
+    <Mod id="f7bd99da-ca25-4c9e-a6f3-9f9719255e14" minversion="0" maxversion="999" title="Improvement - Airbases" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="7A844699ABEF68AAE1109470E160724B" import="1">Interface/FlagPromotions/Cep_Icons.xml</File>
+    <File md5="554EAE560B0A73A6D38481040DAC4FF2" import="0">Interface/FlagPromotions/FP_Data.sql</File>
+    <File md5="26A1B4784B7D104E35836A80F2B3FECA" import="1">Interface/FlagPromotions/UnitFlagManager.lua</File>
+    <File md5="A1DBEB784D69D5FF089EDBF6B5D7F0D3" import="1">Interface/FlagPromotions/UnitFlagManager.xml</File>
+    <File md5="FCD3F1F2FF1702CF3545C6935820A7DB" import="1">Interface/FlagPromotions/UnitFlagManager_addin.lua</File>
+    <File md5="0AFC6FEB7C8BFE859C803B4CF44E49C2" import="1">Interface/Icons/CepFontIcons.dds</File>
+    <File md5="F215F5D1137150B7D5F3C802A2B3EBEC" import="1">Interface/Icons/CepFontIcons.ggxml</File>
+    <File md5="B7318EC4324FC16AD7A1CF53E1669063" import="1">Interface/Icons/expansion1-16.dds</File>
+    <File md5="22EF2B50F8F7A716FD050BEBAF919671" import="1">Interface/Icons/expansion1-256.dds</File>
+    <File md5="811370126DCEC6ABEC3B27D044D09E4B" import="1">Interface/Icons/expansion1-32.dds</File>
+    <File md5="E08C3D6D40A3ECAFA8D4102A01611922" import="1">Interface/Icons/expansion1-45.dds</File>
+    <File md5="1A5969F5F7165688C260557B399EF3AE" import="1">Interface/Icons/expansion1-64.dds</File>
+    <File md5="A9ADEA64C0FD5F54ECD7BAF778EA6AC5" import="0">Interface/Icons/expansion2_promotion16.dds</File>
+    <File md5="2831A66C2FFC7733A5BA618A39DE605D" import="0">Interface/Icons/expansion2_promotion256.dds</File>
+    <File md5="32460F10E111B5716BA7599E8B8BD5FD" import="0">Interface/Icons/expansion2_promotion32.dds</File>
+    <File md5="FDD2E083FF79C2CB454D34AC396111F3" import="0">Interface/Icons/expansion2_promotion45.dds</File>
+    <File md5="194F9A10305CE08AD14618DC6A2971FD" import="0">Interface/Icons/expansion2_promotion64.dds</File>
+    <File md5="B6897DC113927341F383E03D84184A4E" import="1">Interface/Icons/NewPromos16.dds</File>
+    <File md5="A0138F50C8E1EFCDCDE286F3660DC55F" import="1">Interface/Icons/NewPromos256.dds</File>
+    <File md5="3965804C3D7DC094FF3D9B3B07F2B050" import="1">Interface/Icons/NewPromos32.dds</File>
+    <File md5="22A1E81074DF2103138FE90A9874BF96" import="1">Interface/Icons/NewPromos45.dds</File>
+    <File md5="D774E596282284D5D11B3DAD4F04D0DB" import="1">Interface/Icons/NewPromos64.dds</File>
+    <File md5="A91B599BEA9A2A79205B5FD813F723AA" import="1">Interface/Icons/promotions128.dds</File>
+    <File md5="E1557175CF2C2870349BEFE2906EEEC5" import="1">Interface/Icons/promotion_kris16_exp2.dds</File>
+    <File md5="690DBA42620E456C9A6A8AFBAA489EC8" import="1">Interface/Icons/promotion_kris256_exp2.dds</File>
+    <File md5="7A41F0AFEF8E4D08D1FD62D3EC204926" import="1">Interface/Icons/promotion_kris32_exp2.dds</File>
+    <File md5="DD00221E39562CE58C4D23D2E0FD9731" import="1">Interface/Icons/promotion_kris45_exp2.dds</File>
+    <File md5="E0A0A3136CC0E119B6C4B4A59183EF77" import="1">Interface/Icons/promotion_kris64_exp2.dds</File>
+    <File md5="4785881C3E03FCF398D45CCB46E0E010" import="0">Interface/Icons/UNUSED/AttackMove.dds</File>
+    <File md5="10721D80A5CFA9A3F4FB1F6403E903B3" import="0">Interface/Icons/UNUSED/desert256.dds</File>
+    <File md5="E615F3E6C69B77D4AD4E0259EFFCA839" import="0">Interface/Icons/UNUSED/foreignLands256.dds</File>
+    <File md5="21964F67CD42005BC431E983EABFF461" import="0">Interface/Icons/UNUSED/Invulnerabiility256.dds</File>
+    <File md5="8E48624DD14BB80F1624EB73F607F139" import="0">Interface/Icons/UNUSED/JFD_ExCEAttritionPromotions_256.dds</File>
+    <File md5="52A96D613BC130670BA3139BDCBF2D95" import="0">Interface/Icons/UNUSED/JFD_ExCEAttritionPromotions_32.dds</File>
+    <File md5="F7926F9CA75713A19F663B474952218E" import="0">Interface/Icons/UNUSED/JFD_ExCEAttritionPromotions_45.dds</File>
+    <File md5="188D8C22BA45A5CCDE5C7EB12D02002D" import="0">Interface/Icons/UNUSED/JFD_ExCEAttritionPromotions_64.dds</File>
+    <File md5="50D294A12D9E4E75D7D67648928602B6" import="0">Interface/Icons/UNUSED/kris256.dds</File>
+    <File md5="5ED09B21DF2D63FE7EE07822D0AF408E" import="0">Interface/Icons/UNUSED/krisSword256.dds</File>
+    <File md5="CF1A492FCDBA7983699D4F979684F8C5" import="0">Interface/Icons/UNUSED/NewIcons16.dds</File>
+    <File md5="B4295F16C756BF066B9765B53FE7CF8E" import="0">Interface/Icons/UNUSED/NewIcons256.dds</File>
+    <File md5="0468214C229B68CF1B51E65575668606" import="0">Interface/Icons/UNUSED/NewIcons32.dds</File>
+    <File md5="89ADC00531F5EB7A67FA31BC745E254B" import="0">Interface/Icons/UNUSED/NewIcons45.dds</File>
+    <File md5="1DDB35A179FAF778F7D5740CF7B53BEF" import="0">Interface/Icons/UNUSED/NewIcons64.dds</File>
+    <File md5="74EA9ED162FEE447484C5BB04C2012F1" import="0">Interface/Icons/UNUSED/prize_ship.dds</File>
+    <File md5="2210ADDA95A427E48347C8EFEDE6551D" import="0">Interface/Icons/UNUSED/promotions2048.png</File>
+    <File md5="E4E3FA43DF6FF5963B1BDE7514D69845" import="0">Interface/Icons/UNUSED/promotions256.png</File>
+    <File md5="36F0ACF0BDEF494F40B39629105B5553" import="0">Interface/Icons/UNUSED/promotions256_exp2_civilwar.dds</File>
+    <File md5="F7D7F34B0E613F86B346EFDCEF33C482" import="0">Interface/Icons/UNUSED/promotions32_exp2_civilwar.dds</File>
+    <File md5="8F6CA43117D54E05293888BE3DDF2748" import="0">Interface/Icons/UNUSED/promotions512.png</File>
+    <File md5="3E17AC205AFE28A909A27D0581F0C027" import="0">Interface/Icons/UNUSED/promotions64_exp2_civilwar.dds</File>
+    <File md5="12A626ACEEEC2651F29E893AF8216814" import="0">Interface/Icons/UNUSED/shielded256.dds</File>
+    <File md5="BAC3ED5E13D117F5562100D10CC4C704" import="0">Interface/Icons/UNUSED/SKULL256.dds</File>
+    <File md5="69511053F9A4CC3C4AFD50092FD6CCDF" import="1">Interface/Icons/VanguardPromos16.dds</File>
+    <File md5="F4A986881D7212BD4FC3CA029D8CCECD" import="1">Interface/Icons/VanguardPromos256.DDS</File>
+    <File md5="98D987ED31F028EE924F20350695B8AA" import="1">Interface/Icons/VanguardPromos32.dds</File>
+    <File md5="27DE3960944F443A1A60CE1C88189EE4" import="1">Interface/Icons/VanguardPromos45.dds</File>
+    <File md5="F4E7B962EB634B4170C9C09862DCFA9A" import="1">Interface/Icons/VanguardPromos64.DDS</File>
+    
+    <File md5="69511053F9A4CC3C4AFD50092FD6CCTR" import="1">Interface/Icons/NewIcons16.dds</File>
+    <File md5="F4A986881D7212BD4FC3CA029D8CCEQF" import="1">Interface/Icons/NewIcons256.DDS</File>
+    <File md5="98D987ED31F028EE924F20350695B8JJ" import="1">Interface/Icons/NewIcons32.dds</File>
+    <File md5="27DE3960944F443A1A60CE1C88189ERR" import="1">Interface/Icons/NewIcons45.dds</File>
+    <File md5="F4E7B962EB634B4170C9C09862DCFAIG" import="1">Interface/Icons/NewIcons64.DDS</File>
+    
+    <File md5="69511053F9A4CC3C4AFD50092FD6CCQQ" import="1">Interface/Icons/JFD_ExCEAttritionPromotions_16.dds</File>
+    <File md5="F4A986881D7212BD4FC3CA029D8CCEQQ" import="1">Interface/Icons/JFD_ExCEAttritionPromotions_256.DDS</File>
+    <File md5="98D987ED31F028EE924F20350695B8QQ" import="1">Interface/Icons/JFD_ExCEAttritionPromotions_32.dds</File>
+    <File md5="27DE3960944F443A1A60CE1C88189EQQ" import="1">Interface/Icons/JFD_ExCEAttritionPromotions_45.dds</File>
+    <File md5="F4E7B962EB634B4170C9C09862DCFAQQ" import="1">Interface/Icons/JFD_ExCEAttritionPromotions_64.DDS</File>
+    
+    <File md5="27DE3960944F443A1A60CE1C88189EPP" import="1">Interface/Icons/exp2_promotion16.dds</File>
+    
+    <File md5="343801B7515D316D94C5DCB3F18DF2C9" import="1">Interface/Icons/YieldAtlas_Cep.dds</File>
+    <File md5="366117BC64B20DC4F1F474B453BE3514" import="0">Tools/CAT_AlterTables.sql</File>
+    <File md5="3455D4AE65E33B51FED7C30B81883D67" import="1">Tools/Cat_Data.xml</File>
+    <File md5="C44B325B502C67B4AED6921A70D293F8" import="0">Tools/Cat_PromotionOrder.sql</File>
+    <File md5="4A501744BC4666183A3B60F3B162D430" import="0">Tools/Cat_Promotions.sql</File>
+    <File md5="FA5E9C581885E5CF131F22C9B92EBA20" import="1">Tools/ModTools.lua</File>
+    <File md5="A115AF97824E7EF71C2F6D0B9F8565D7" import="1">Tools/MT_Enums.lua</File>
+    <File md5="E2FFC926DEA38A43311D33AD2482310F" import="1">Tools/MT_Unit.lua</File>
+    <File md5="A9375784133E99A5B3C543278A9F98DE" import="1">Tools/MT_Utils.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Tools/CAT_AlterTables.sql</UpdateDatabase>
+      <UpdateDatabase>Tools/Cat_Promotions.sql</UpdateDatabase>
+      <UpdateDatabase>Interface/FlagPromotions/Cep_Icons.xml</UpdateDatabase>
+      <UpdateDatabase>Interface/FlagPromotions/FP_Data.sql</UpdateDatabase>
+
+    </OnModActivated>
+  </Actions>
+</Mod>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/5/2012 5:42:13 AM -->
+<GameData>
+	<Improvements>
+		<Row>
+			<Type>IMPROVEMENT_FARMLAND_ESTATE</Type>
+			<Description>TXT_KEY_IMPROVEMENT_FARMLAND_ESTATE</Description>
+			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_FARMLAND_ESTATE_TEXT</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_ARABLE</ArtDefineTag> <!-- from farm replacement mod. So the mod needs this to work! -->
+            <!-- <NoTwoAdjacent>true</NoTwoAdjacent> -->
+            <FreshWaterMakesValid>true</FreshWaterMakesValid>
+            <RequiresFlatlandsOrFreshWater>true</RequiresFlatlandsOrFreshWater>
+			<PillageGold>50</PillageGold>
+			<PortraitIndex>22</PortraitIndex>
+			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+		</Row>
+	</Improvements>
+	<Improvement_Yields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FARMLAND_ESTATE</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Improvement_Yields>
+	<Improvement_ValidTerrains>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FARMLAND_ESTATE</ImprovementType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FARMLAND_ESTATE</ImprovementType>
+			<TerrainType>TERRAIN_PLAINS</TerrainType>
+		</Row>
+	</Improvement_ValidTerrains>
+	<Improvement_ResourceTypes>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FARMLAND_ESTATE</ImprovementType>
+			<ResourceType>RESOURCE_WHEAT</ResourceType>
+		</Row>
+	</Improvement_ResourceTypes>
+	
+    <Improvement_FreshWaterYields>
+		<Row> 
+			<ImprovementType>IMPROVEMENT_SUBURB</ImprovementType> 
+			<YieldType>YIELD_FOOD</YieldType> 
+			<Yield>1</Yield> 
+		</Row>
+	</Improvement_FreshWaterYields> 
+    
+    <Improvement_ResourceType_Yields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FARMLAND_ESTATE</ImprovementType>
+			<ResourceType>RESOURCE_WHEAT</ResourceType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_ResourceType_Yields>
+    
+    <Improvement_TechYieldChanges>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FARMLAND_ESTATE</ImprovementType>
+			<TechType>TECH_ECOLOGY</TechType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_TechYieldChanges>
+	<Improvement_TechNoFreshWaterYieldChanges>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FARMLAND_ESTATE</ImprovementType>
+			<TechType>TECH_FERTILIZER</TechType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_TechNoFreshWaterYieldChanges>
+	<Improvement_TechFreshWaterYieldChanges>
+		<Row>
+			<ImprovementType>IMPROVEMENT_FARMLAND_ESTATE</ImprovementType>
+			<TechType>TECH_CIVIL_SERVICE</TechType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_TechFreshWaterYieldChanges>
+    
+</GameData>

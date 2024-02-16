@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/24/2012 1:00:28 PM -->
+<GameData>
+	<Builds>
+		<Row>
+			<Type>BUILD_SUBURB</Type>
+			<PrereqTech>TECH_THE_WHEEL</PrereqTech>
+			<Time>1800</Time>
+			<ImprovementType>IMPROVEMENT_SUBURB</ImprovementType>
+			<Description>TXT_KEY_BUILD_SUBURB</Description>
+            <Help>TXT_KEY_BUILD_SUBURB_HELP</Help>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<OrderPriority>97</OrderPriority>
+			<IconIndex>57</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+            <Cost>25</Cost>
+			<!-- <CostIncreasePerImprovement>5</CostIncreasePerImprovement> increases for every improvement, so also non suburbs! so dont use this..-->
+		</Row>
+	</Builds>
+	<BuildFeatures>
+		<Row>
+			<BuildType>BUILD_SUBURB</BuildType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<Time>700</Time>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_SUBURB</BuildType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<PrereqTech>TECH_MINING</PrereqTech>
+			<Time>400</Time>
+			<Production>20</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_SUBURB</BuildType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
+			<Time>600</Time>
+			<Remove>true</Remove>
+		</Row>
+	</BuildFeatures>
+    
+    <!-- adjust the HandicapInfos the ImprovementCostPercent which is always 100 otherwise (because the game isnt using improvement gold costs) -> this makes it more expensive for humans on higher difficulty -->
+    <HandicapInfos>
+		<Update>
+			<Where Type="HANDICAP_SETTLER"/>
+			<Set ImprovementCostPercent="0"/>
+		</Update>
+        <Update>
+			<Where Type="HANDICAP_CHIEFTAIN"/>
+			<Set ImprovementCostPercent="25"/>
+		</Update>
+        <Update>
+			<Where Type="HANDICAP_WARLORD"/>
+			<Set ImprovementCostPercent="50"/>
+		</Update>
+        <Update>
+			<Where Type="HANDICAP_PRINCE"/>
+			<Set ImprovementCostPercent="100"/>
+		</Update>
+        <Update>
+			<Where Type="HANDICAP_KING"/>
+			<Set ImprovementCostPercent="125"/>
+		</Update>
+        <Update>
+			<Where Type="HANDICAP_EMPEROR"/>
+			<Set ImprovementCostPercent="150"/>
+		</Update>
+        <Update>
+			<Where Type="HANDICAP_IMMORTAL"/>
+			<Set ImprovementCostPercent="200"/>
+		</Update>
+        <Update>
+			<Where Type="HANDICAP_DEITY"/>
+			<Set ImprovementCostPercent="300"/>
+		</Update>
+	</HandicapInfos>
+    
+</GameData>

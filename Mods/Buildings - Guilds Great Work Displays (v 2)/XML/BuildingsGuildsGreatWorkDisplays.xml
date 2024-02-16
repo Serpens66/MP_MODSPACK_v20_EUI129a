@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Buildings>
+		<Update>
+			<Where Type="BUILDING_ARTISTS_GUILD"/>
+			<Set>
+				<ThemingBonusHelp>TXT_KEY_ARTISTS_GUILD_THEMING_BONUS_HELP</ThemingBonusHelp>
+				<GreatWorkSlotType>GREAT_WORK_SLOT_ART_ARTIFACT</GreatWorkSlotType>
+				<GreatWorkCount>3</GreatWorkCount>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="BUILDING_WRITERS_GUILD"/>
+			<Set>
+				<ThemingBonusHelp>TXT_KEY_WRITERS_GUILD_THEMING_BONUS_HELP</ThemingBonusHelp>
+				<GreatWorkSlotType>GREAT_WORK_SLOT_LITERATURE</GreatWorkSlotType>
+				<GreatWorkCount>3</GreatWorkCount>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="BUILDING_MUSICIANS_GUILD"/>
+			<Set>
+				<ThemingBonusHelp>TXT_KEY_MUSICIANS_GUILD_THEMING_BONUS_HELP</ThemingBonusHelp>
+				<GreatWorkSlotType>GREAT_WORK_SLOT_MUSIC</GreatWorkSlotType>
+				<GreatWorkCount>3</GreatWorkCount>
+			</Set>
+		</Update>
+	</Buildings>
+
+	<Building_ThemingBonuses>
+		<Row>
+			<BuildingType>BUILDING_ARTISTS_GUILD</BuildingType>
+			<Description>TXT_KEY_ARTISTS_GUILD_THEMING_BONUS</Description>
+			<Bonus>3</Bonus>
+			<ConsecutiveEras>1</ConsecutiveEras>
+			<MustBeArt>true</MustBeArt>
+			<RequiresOwner>true</RequiresOwner>
+			<AIPriority>3</AIPriority>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_WRITERS_GUILD</BuildingType>
+			<Description>TXT_KEY_WRITERS_GUILD_THEMING_BONUS</Description>
+			<Bonus>3</Bonus>
+			<ConsecutiveEras>1</ConsecutiveEras>
+			<RequiresOwner>true</RequiresOwner>
+			<AIPriority>3</AIPriority>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_MUSICIANS_GUILD</BuildingType>
+			<Description>TXT_KEY_MUSICIANS_GUILD_THEMING_BONUS</Description>
+			<Bonus>3</Bonus>
+			<ConsecutiveEras>1</ConsecutiveEras>
+			<RequiresOwner>true</RequiresOwner>
+			<AIPriority>3</AIPriority>
+		</Row>
+	</Building_ThemingBonuses>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_ARTISTS_GUILD_THEMING_BONUS">
+			<Text>Showplace for the Nation's Art</Text>
+		</Row>
+		<Row Tag="TXT_KEY_ARTISTS_GUILD_THEMING_BONUS_HELP">
+			<Text>To maximize your bonus, make sure the Great Work Slots are all filled with your civilization's Art from consecutive eras.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WRITERS_GUILD_THEMING_BONUS">
+			<Text>Showplace for the Nation's Literature</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WRITERS_GUILD_THEMING_BONUS_HELP">
+			<Text>To maximize your bonus, make sure the Great Work Slots are all filled with your civilization's Literature from consecutive eras.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MUSICIANS_GUILD_THEMING_BONUS">
+			<Text>Showplace for the Nation's Music</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MUSICIANS_GUILD_THEMING_BONUS_HELP">
+			<Text>To maximize your bonus, make sure the Great Work Slots are all filled with your civilization's Music from consecutive eras.</Text>
+		</Row>
+	</Language_en_US>
+    <Language_de_DE>
+		<Row Tag="TXT_KEY_ARTISTS_GUILD_THEMING_BONUS">
+			<Text>Ausstellungsort für die Kunst deiner Nation.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_ARTISTS_GUILD_THEMING_BONUS_HELP">
+			<Text>Um deinen Bonus zu maximieren, sorge dafür, dass die Große-Werke-Plätze mit der Kunst aufeinander folgender Zeitalter deiner Zivilisation gefüllt sind.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WRITERS_GUILD_THEMING_BONUS">
+			<Text>Ausstellungsort für die Literatur deiner Nation.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WRITERS_GUILD_THEMING_BONUS_HELP">
+			<Text>Um deinen Bonus zu maximieren, sorge dafür, dass die Große-Werke-Plätze mit der Literatur aufeinander folgender Zeitalter deiner Zivilisation gefüllt sind.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MUSICIANS_GUILD_THEMING_BONUS">
+			<Text>Ausstellungsort für die Musik deiner Nation.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MUSICIANS_GUILD_THEMING_BONUS_HELP">
+			<Text>Um deinen Bonus zu maximieren, sorge dafür, dass die Große-Werke-Plätze mit der Musik aufeinander folgender Zeitalter deiner Zivilisation gefüllt sind.</Text>
+		</Row>
+	</Language_de_DE>
+</GameData>

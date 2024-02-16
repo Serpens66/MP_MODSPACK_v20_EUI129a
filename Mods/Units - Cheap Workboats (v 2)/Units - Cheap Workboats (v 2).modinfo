@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="c9561bca-c364-4e3b-b077-0589cc7f6f0d" version="2">
+  <Properties>
+    <Name>Units - Cheap Workboats</Name>
+    <Teaser>Reduces the cost of workboats to about one quarter</Teaser>
+    <Description>One Worker (cost 70 hammers) can build/repair an unlimited number of improvements, but one Work Boat (cost 50 hammers) can build/repair only one.
+
+Rather than attempting to permit Work Boats to build/repair a (limited) number of improvements (3 or 4) before they are "consumed" (which would require significan Lua coding) the same effect can be achieved by simply reducing their cost.</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+    <PediaCategory>RULES</PediaCategory>
+    <PediaAtlas>POLICY_ATLAS</PediaAtlas>
+    <PediaIndex>47</PediaIndex>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="EB5042859BDDA31F2C3CCF59EF861C64" import="0">XML/UnitsCheapWorkboats.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/UnitsCheapWorkboats.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

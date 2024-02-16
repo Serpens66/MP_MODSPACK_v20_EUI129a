@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/5/2012 5:27:50 AM -->
+<GameData>
+	<Builds>
+		<Row>
+			<Type>BUILD_FARMLAND_ESTATE</Type>
+			<PrereqTech>TECH_STEAM_POWER</PrereqTech>
+			<Time>1200</Time>
+			<ImprovementType>IMPROVEMENT_FARMLAND_ESTATE</ImprovementType>
+			<Description>TXT_KEY_BUILD_FARMLAND_ESTATE</Description>
+            <Help>TXT_KEY_BUILD_FARMLAND_ESTATE_HELP</Help>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<OrderPriority>97</OrderPriority>
+			<IconIndex>21</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+	</Builds>
+	<BuildFeatures>
+		<Row>
+			<BuildType>BUILD_FARMLAND_ESTATE</BuildType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<Time>700</Time>
+			<Production>25</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_FARMLAND_ESTATE</BuildType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<PrereqTech>TECH_MINING</PrereqTech>
+			<Time>400</Time>
+			<Production>25</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_FARMLAND_ESTATE</BuildType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
+			<Time>600</Time>
+			<Remove>true</Remove>
+		</Row>
+	</BuildFeatures>
+</GameData>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="28B6FCBC-12EF-9A50-1892-29A764B9555E" version="1">
+  <Properties>
+    <Name>StratBuildRemove</Name>
+    <Teaser>Buildings that require a resource, will be removed if you dont have enough resource anymore.</Teaser>
+    <Description>Buildings that require a resource, will be removed if you dont have enough resource anymore. Stops exploit by simply buying (trade) coal, build factory and loose ressource - no malus. The mod will remove as many buildings until you have a positive amount of resources again. But it will also set the production for this building needed to 0, so you can build it again without any loss, as soon as you have enough resources again.</Description>
+    <Authors>Serp</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="2EFFAAC9FBD462E13747230C8EE3C2F5" import="0">StratBuildRemove.lua</File>
+    <File md5="2EFFAAC9FBD462E13747230C8EE3C2F6" import="0">StratBuildRemove.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>StratBuildRemove.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="StratBuildRemove.lua">
+      <Name>StratBuildRemove</Name>
+      <Description>StratBuildRemove</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

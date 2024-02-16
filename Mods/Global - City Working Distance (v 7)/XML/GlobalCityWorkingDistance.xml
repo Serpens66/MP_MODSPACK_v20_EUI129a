@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<CustomModOptions>
+		<!-- None of these are strictly necessary, as the options are always on in the DLL -->
+		<Update>
+			<Where Name="GLOBAL_CITY_WORKING"/>
+			<Set Value="1"/>
+		</Update>
+		<Update>
+			<Where Name="TRAITS_CITY_WORKING"/>
+			<Set Value="1"/>
+		</Update>
+		<Update>
+			<Where Name="POLICIES_CITY_WORKING"/>
+			<Set Value="1"/>
+		</Update>
+		<Update>
+			<Where Name="BUILDINGS_CITY_WORKING"/>
+			<Set Value="1"/>
+		</Update>
+        <Update>
+			<Where Name="TECHS_CITY_WORKING"/>
+			<Set Value="1"/>
+		</Update>
+	</CustomModOptions>
+
+	<Defines>
+		<Replace>
+			<!-- General work tile maximum distance from city centre (default is 3) -->
+			<!-- Min value is 2, max value is 5 (these are hard-coded in the DLL) -->
+			<!-- Traits, techs, policies and buildings can increase this value for specific civs and specific cities -->
+			<Name>MAXIMUM_WORK_PLOT_DISTANCE</Name>
+			<Value>3</Value>
+		</Replace>
+		<Replace>
+			<!-- General buy tile maximum distance from city centre (default is 3) -->
+			<!-- Min value is 2, max value is 5 (these are hard-coded in the DLL) -->
+			<!-- The buy plot distance for a specific city will never be less than the work plot distance for that city -->
+			<Name>MAXIMUM_BUY_PLOT_DISTANCE</Name>
+			<Value>3</Value>
+		</Replace>
+	</Defines>
+    
+    <!--
+	<Traits>
+		<Update>
+			<Where Type="TRAIT_POPULATION_GROWTH"/>
+			<Set CityWorkingChange="1"/>
+		</Update>
+	</Traits>
+
+	<Language_en_US>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_POPULATION_GROWTH"/>
+			<Set>
+				<Text>[ICON_HAPPINESS_4] Unhappiness from number of Cities doubled, [ICON_HAPPINESS_4] Unhappiness from number of [ICON_CITIZEN] Citizens halved. Cities may work one additional ring of tiles.</Text>
+			</Set>
+		</Update>
+	</Language_en_US>
+
+	<Buildings>
+		<Update>
+			<Where Type="BUILDING_HANGING_GARDEN"/>
+			<Set CityWorkingChange="1"/>
+		</Update>
+	</Buildings>
+
+	<Language_en_US>
+		<Update>
+			<Where Tag="TXT_KEY_WONDER_HANGING_GARDEN_HELP"/>
+			<Set>
+				<Text>Provides a free Garden in the city in which it is built and the city may work one additional ring of tiles.</Text>
+			</Set>
+		</Update>
+	</Language_en_US>
+
+    
+    <Language_de_DE>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_POPULATION_GROWTH"/>
+			<Set>
+				<Text>[ICON_HAPPINESS_4] Unhappiness from number of Cities doubled, [ICON_HAPPINESS_4] Unhappiness from number of [ICON_CITIZEN] Citizens halved. Cities may work one additional ring of tiles.</Text>
+			</Set>
+		</Update>
+	</Language_de_DE>
+    
+    <Policies>
+		<Update>
+			<Where Type="POLICY_EXPLORATION_FINISHER"/>
+			<Set CityWorkingChange="1"/>
+		</Update>
+	</Policies>
+    
+    <Language_de_DE>
+		<Update>
+			<Where Tag="TXT_KEY_WONDER_HANGING_GARDEN_HELP"/>
+			<Set>
+				<Text>Provides a free Garden in the city in which it is built and the city may work one additional ring of tiles. ubersetzen</Text>
+			</Set>
+		</Update>
+	</Language_de_DE> -->
+    
+    <Technologies>
+    <Update>
+			<Where Type="TECH_CIVIL_SERVICE"/>
+			<Set CityWorkingChange="1"/>
+    </Update>
+    <Update>
+			<Where Type="TECH_RAILROAD"/>
+			<Set CityWorkingChange="1"/>
+    </Update>
+    </Technologies>
+    
+    <Language_de_DE>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_RAILROAD_HELP"/>
+			<Set>
+				<Text>Ermöglicht Bautrupps auf Geländefeldern [COLOR_POSITIVE_TEXT]Eisenbahnen[ENDCOLOR] zu errichten. Städte mit Eisenbahnen zu verbinden steigert die [ICON_PRODUCTION] Produktion und Einheiten können sich darauf schneller fortbewegen. Außerdem bekommen Städte +1 Reichweite um Felder zu bewirtschaften!</Text>
+			</Set>
+		</Update>
+	</Language_de_DE> 
+    
+        <Language_de_DE>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_CIVIL_SERVICE_HELP"/>
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Bauernhöfe[ENDCOLOR] neben Flüssen und Seen produzieren +1 [ICON_FOOD] Nahrung, was ein enorm nützlicher Bonus ist. Ermöglicht außerdem die Ausbildung von [COLOR_POSITIVE_TEXT]Pikenieren[ENDCOLOR], einer Einheit, die gegen berittene Gegner wie Reiter und Ritter enorm effektiv ist. Außerdem bekommen Städte +1 Reichweite um Felder zu bewirtschaften!</Text>
+			</Set>
+		</Update>
+	</Language_de_DE> 
+    
+</GameData>

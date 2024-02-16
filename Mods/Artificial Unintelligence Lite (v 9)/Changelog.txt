@@ -1,0 +1,167 @@
+Version Changelog:
+
+v9 Hotfix 3 - 2015-05-27:
+  * Fixed a typo that caused military strategy changes to not load
+  * Lowered minimum fertility to 30000 (from 40000, default is 20000)
+
+v9 Mini-Update - 2015-05-24:
+  * Fixed various flavor modifications not being applied
+  * Changed citizen automation values of Food/Production/Gold/Science/Culture/Faith from <default>/9/<default>/8/7/5 to 16/12/6/9/8/7 (14/12/8/7/15/5 in Brave New World, 14/12/8/7/6/5 in Gods and Kings, 12/8/6/6/8/NA in vanilla)
+  * Changed settler yield multipliers to match citizen automation values
+  * Increased minimum fertility to 40000 to compensate for greatly increased settler yield multipliers
+
+v9 Hotfix 2 - 2015-04-09:
+  * Increased the lowest levels of minor civ disputes and wonder disputes to 0 (from -1, vanilla is 0) to avoid odd behaviors.
+
+v9 Hotfix - 2015-04-05:
+  * Due to poor unit handling in operations, removed the operation slots that allowed for a single naval unit in land-based operations
+
+v9 - 2015-01-09:
+  * Raised City strategy "Need Tile Improvers" threshold to 67 (from 50, vanilla is 67)
+  * Lowered minimum settle fertility to 5000 (from 20000)
+  * Increased belief score city multiplier to 5 (from 3) to equal the unowned plot multiplier
+  * Increased Science and Culture worker plot evaluation multipliers when removing features to 4 (from 3 and 2, vanilla is 1 and 1)
+  * Adding missing UnitAIType values to the Shoshone Pathfinder (Explore), Paratrooper (Attack, Defense), XCOM Squad (Attack, Fast Attack, Defense), and Giant Death Robot (Counter, Defense)
+
+v8 - 2014-11-27:
+  * Updated a BNW-specific formation used only by AIs on higher difficulty that could be updated without breaking compatibility with non-BNW versions of the game
+  * Increased "Early Expansion" default city target to 7 (from 6, vanilla is 8)
+  * Units executing the following tactical moves can now be recruited into operations: Pillage, Safe Bombard, Bastion, Garrison, Guard Improvement
+
+v6 - 2014-10-26:
+  * Minimum personality set to 1 (from 0) to fix possible divide-by-zero situations in the DLL code
+  * Economic Strategy "Losing Money" now alters Gold flavor by +40 (from +25), Mobile flavor by -10, Ranged flavor by -10, and Naval flavor by -10
+  * Economic Strategy "Losing Money" now checks and can trigger every turn (from 5 turns)
+  * Economic Strategy "Early Expansion" now alters Defense flavor by +10
+  * Grand Strategy priority multipliers for Culture and Tourism ratios are now 50 and 100 respectively (from 75 each)
+  * Increased the move priorities for tactical moves "Barbarian Camp" and "Reposition" to 13 (from 11)
+  * Increased the move priority for tactical move "Low Priority Attrition" to 11 (from 10, vanilla is 12)
+
+v5 - 2014-10-23:
+  * Split the mod off into Main and Lite (XML-only) versions
+  * Lowered threshold to trigger the City Strategies prompting the AI to build Workers
+  * Primary flavor influence on the base Grand Strategy priority for Conquest and Spaceship is now 9 and 16 respectively (from 10 and 15, vanilla is 9 and 13) 
+  * Altered AIGrandStrategy_Yields values based on the revelation that they do affect target yields, but rather add to weights for city specializations focused on a yield: Conquest no longer increases Science spec., Culture no longer increased Food spec., and both Diplomacy and Culture now increase Science spec. by 50
+  * Annexation thresholds set to 0.4 for normal (from 0.45, vanilla is 0.5) and 0.8 for aggressive (from 0.65, vanilla is 0.75)
+  * Religion plot multipliers for unowned/owned/worked changed to 5/6/6 (from 4/6/6. vanilla is 3/5/8)
+  * Increased early AI expansion baseline to 6 cities (from 5, vanilla is 8)
+  * Lowered influence of Cramped and Conquered City State on Conquest Grand Strategy priority back to vanilla values of +20 and +10 (from +40 and +20)
+  * Reroll weight modifier on Conquest Grand Strategy for having met nobody now activates 40 turns in (from 20), but gives -100 (from -50)
+  * Rolled back the personality resolution changes a bit due to the DLL's reliance on the vanilla limits of 0 to 20
+  * Personality randomization set to 3 (vanilla is 2) to make up for lack of randomization logic changes that are in the mod's full version
+
+v4 - 2014-10-07:
+  * Added the Defense Unit AI type to Modern ranged units (eg. Gatling Gun, Machine Gun) so the AI doesn't stick them in the second row of formations
+  * The AI is much more likely to attack weak city-states for conquest
+  * Reduced weight of Culture flavor on Culture GS during rerolls to 10 (from 12, vanilla is 10)
+  * Lowered randomness factor to 12 (from 25, vanilla is 50) and "sticky" factor to 50 (from 100, vanilla is 50) for GS rerolls ("sticky" factor is how big of a bonus the current GS gets during rerolls)
+  * Altered expansion constants so that the AI is much more likely to plop down an opportunistic city to grab important, neutral terrain
+  * Lowered base gold priority for upgrading units to 200 (from 250, vanilla is 150)
+  * Builder plot evaluation yield multipliers for food/production/gold/science/culture changed to 6/6/3/3/2 (from 3/3/2/2/1, vanilla is 2/2/1/1/1)
+  * Religion plot multipliers for unowned/owned/worked changed to 4/6/6 (from 2/6/8. vanilla is 3/5/8)
+  * Fixed my altered ideology scores actually adding to ideologies of hostile civs instead of subtracting
+  * Added Great General slots to formations for attacking City-States
+
+v3 - 2014-09-20:
+  * Updated "fuzzy" diplomatic values (ones that aren't as game-y) to heighten animosity between competing AIs
+  * Updated war evaluation values to make the AI both more cautious, more pragmatic, and more suspicious.
+  * Adjusted religion spread parameters to make the AI a bit less missionary-crazed
+  * Adjusted AI ideology preference parameters so that the AI is more pragmatic with them and that diplomatic relations affect ideology choice (not just the other way around)
+  * Drastically lowered city specialization reroll parameter because it partially makes up for finite-state drawbacks
+  * Modified Damage City and Low Priority Attrition tactical move priorities to make them possibly exchangeable with heal (since randomness gives +-3 relative priority)
+  * XML Code fully commented
+
+v2 - 2014-09-17:
+  * Changelog created
+  * XML code commented
+  * Typos that caused certain changes to not activate have been fixed
+
+v1 - 2014-09-07: 
+  * Initial Release
+
+------------
+
+XML Changes (in no particular order):
+- City strategy "Want Tile Improvers" has a threshold of 33 (from 40)
+- City strategy "Have Training Facility" alters flavors for tile improvement, expansion, growth, and happiness by -1 (from -3)
+- City Strategy "Capital Under Threat" alters Defense flavor by +35 (from +25)
+- Expansion flavor +5 in the AI's original capital
+- Economic strategies "Expand Like Crazy" and "Grow Like Crazy" give +75 Expansion and +75 Growth flavors respectively by (from +10)
+- Economic Strategy "Losing Money" now alters Gold flavor by +40 (from +25), Mobile flavor by -10, Ranged flavor by -10, and Naval flavor by -10
+- Economic Strategy "Losing Money" now checks and can trigger every turn (from 5 turns)
+- Economic Strategy "Early Expansion" now alters Defense flavor by +10
+- Economic strategy for Conquest Grand Strategy alters Air flavor by +10 (from +5), Mobile flavor by +5, and Gold flavor by +5 (to pay for unit upkeep)
+- Economic strategy for Spaceship Grand Strategy alters Growth flavor by +20 (population = science) and Gold flavor by +5 (to put it on similar footing as the other Grand Strategy stuff)
+- Economic strategy for Spaceship Homestretch alters Science flavor by +40 (from +25; helps the AI complete techs for parts it has not unlocked yet), Gold flavor by +10 (both an equalizer and helps the Freedom ideology), and Production flavor by +15 (helps direct towards improvements that increase production, thereby speeding up parts production)
+- Increased the effect grand strategies' primary flavor has on the AI choosing said grand strategy to 9/10/10/16 (from 9/10/10/13) for Conquest/Culture/Diplomacy/Spaceship respectively
+- Increased the influence of Grand Strategies on certain City Specializations: Conquest increases Gold specialization weight by 50, Diplomacy and Culture increases Science specialization weight by 50, Spaceship increases Food specialization (ie. Settler Pump) weight by 50
+- AI Conquest Grand Strategy's flavor effects added or altered: Offense by +3 (from +2), Expansion by +2 (from +1), Military Training by +2 (from +1), Air by +2 (from +1), Nukes by +6 (from +1), Mobile by +2, Defense by +1, Naval by +1, and Water Connection by +3
+- AI Culture Grand Strategy's flavor effects added or altered: Culture by +3 (from +2) and Religion by +2 (from +1)
+- AI Spaceship Grand Strategy's flavor effects added or altered: Spaceship by +4 (from +2), Science by +3 (from +2), Production by +2 (from +1), Religion by -2 (from -5), Great People by +1, and Gold by +1
+- Nukes flavor now increases drastically depending on the AI's Military Strategy: "At War" gives +20, "Empire Defense" gives +15, "Empire Defense Critical" gives +50, "War Mobilization" gives +10,  and "Losing Wars" gives +30. For reference, the "Need Nuke" gives +150 Nukes flavor.
+- AI Military Strategy "War Mobilization" alters Growth flavor by -10 (from -50 in vanilla, -10 in Brave New World, this helps with warlike civs' science)
+- Commerce City Specialization alters Production flavor by +20 (from +10) and Growth flavor by +30 (from +20)
+- Science City Specialization alters Production flavor by +20 (from +10)
+- General Economic City Specialization alters Production flavor by +25 (from +20), Growth flavor by +30 (from +20), and Culture flavor by +20 (from +30)
+- Target gold and science yields per citizen increased by 0.3 and 0.5 respectively for the following city specializations: General Economic (now 0.3/0.5), Military Training (now 0.3/0.5), Military Naval (now 0.3/0.5), Commerce (now 1.3/0.5), and Science (now 0.3/1.5). Target food and production yields per citizen remain unchanged.
+- Modified Multi-Unit Formation settings to 1) allow for more flexibility between ranged and siege units, 2) allow for smaller task forces, 3) allow certain land task forces to also contain a single naval unit, 4) no longer have the AI place melee units into "slots" meant for ranged units, and 5) force fast-moving task forces (eg. Fast Pillagers) to only contain fast-moving units
+- Minimum Personality score now set to 1 (from 0) to fix possible divide-by-zero situations in the DLL code leading to wonky AI behavior
+- The AI can now send Great Generals with City-State attack squads
+- The AI will now place ranged units with a range of 1 (ie. gatling guns, machine guns, and bazookas) into the front row of formations when necessary
+- The AI will consider rushing items that take over 5 turns to build (from over 15 turns to build)
+- The AI places an extra 15 priority on techs that unlock unique units/buildings/improvements (from extra 5 priority)
+- The AI is a lot less schizophrenic when it comes to grand strategies: it will keep Grand Strategy directions active for at least 20 turns (from 10 turns), and during Grand Strategy rerolls, it will give each Grand Strategy a random extra priority up to +12 (from +50)
+- Grand Strategy rerolls do not force the AI to switch to less desirable options: other players' grand strategies multiply a certain grand strategy's weight by up to 10 (from up to 50) during AI rerolls.
+- Grand Strategy priority multipliers for Culture and Tourism ratios are now 50 and 100 respectively (from 75 each)
+- Reroll weight modifiers for the Conquest Grand Strategy have been adjusted as follows: being at war gives +20 (from +10), nobody met gives -25 (from -50), and conquered civilizations give +50 each (from +15 each). To compensate for possible overaggression, power ratio for Conquest Grand Strategy weight is multiplied by 125 (from 100).
+- Reroll weight modifier on the Conquest Grand Strategy for having met nobody now activates 40 turns in (from 20), but gives -100 (from -50)
+- Early AI expansion baseline set to 6 cities (from 8).
+- Plot value for strategic resources increased by +80 (from +50, the bonus is now double a luxury resource's plot value bonus)
+- Fierce land dispute increases plot value by +8 (from +6)
+- 250 Gold priority given to buying plots (from 275), but buying requirement is halved when treasury has contains over 500 gold (from 1000 gold)
+- Diplomacy has 50 Gold base priority each (from 150) and Defensive buildings have 250 Gold base priority (from 400), while Upgrades have 200 Gold base priority (from 150)
+- Worker plot evaluation when removing features is multiplied by 6/6/3/4/4 based on food, production, gold, science, and culture yields respectively (from 2/2/1/1/1)
+- Military threat weights for Minor/Major/Severe/Critical are now 1/3/9/27 (from 1/3/6/10)
+- Minimum units the AI desires to defend lands now increases by 1.5 per city (from 1.0 per city), allowing a unit to patrol between two cities to defend against barbarians
+- City specializations are rerolled every 4 turns (from 50)
+- City specialization reroll weight modifiers have been modified as follows: food specialization weights alter by -25 per number of cities (from -50), production weights alter by +1 for building the next wonder (from +0.2), science specialization weight alters by +40 for science flavor (from +20) and +40 for spaceship flavor (from +10)
+- City categorization thresholds altered: medium is now 6 population (from 5), large is now 15 population (from 12)
+- Negative gold income alters target gold yield per citizen by +0.5 (from +0)
+- Automatic Citizen Management's yield values for Food/Production/Gold/Science/Culture/Faith are now 16/12/6/9/8/7 (from 14/12/8/7/15/5 in Brave New World, 14/12/8/7/6/5 in Gods and Kings, 12/8/6/6/8/NA in vanilla)
+- Plot settling yield multipliers now match automatic citizen management's yield values (from 15/3/3/1/NA/1)
+- AI's now recruit units within 6 tiles for City Attack operations (from 5 tiles), but only 3 tiles for Tactical Pillage operations (from 5 tiles). Up to 6 turns can be spent recruiting units for operations (from up to 5 turns), up to 12 turns in case of operations in enemy territory (from up to 10 turns)
+- Forward Muster commands are considered at 25% danger or less (from 20% or less)
+- When evaluating the AI tactical map, unit strength is multiplied by 20 (from 10); a zone is considered dominant at 40% ownership (from 25% ownership)
+- Tactical move priority randomness range is now 3 (from 6); homeland tactical move priority randomness range is now 5 (from 10)
+- Max turns to move for homeland defense is now 3 (from 4). This doesn't stop the AI from defending its homeland, but instead forces it to use units that don't have to travel as far.
+- Diplomatic weights for Weak/Strong/Fierce land disputes are now 1/3/9 (from 1/3/5)
+- Danger values for diplomatic approaches have been altered as follows: Deceptive is 0.4 (from 0.1), Hostile is 0.8 (from 0.2), Bully is 0.8 (from 0.9)
+- When spreading religion, unowned plots are multiplied by 4 (from 3), owned plots are multiplied by 6 (from 5), and worked plots are multiplied by 6 (from 8)
+- Missionaries will be sent to destinations up to 8 turns away (from 10 turns)
+- Annexation thresholds set to 0.4 for normal (from 0.5) and 0.8 for aggressive (from 0.75)
+- Ideology value based on Hostile/Guarded/Afraid/Friendly approaches to players already running the ideology is -20/-10/10/20 (from -8/-4/6/12)
+- Ideology value based on Happiness set to 5 (from 3)
+- Ideology value bonus for each free tenet set to 40 (from 36)
+- Ideology value based on Grand Strategies set to 400 (from 300)
+- Diplomatic Opinion modifier based on no/weak/strong/fierce land disputes set to -1/5/25/125 (from -6/10/20/30)
+- Diplomatic Opinion modifier based on no/weak/strong/fierce victory disputes set to -1/5/25/125 (from -6/10/20/30)
+- Diplomatic Opinion modifier based on no/weak/strong/fierce wonder disputes set to 0/5/10/20 (from 0/10/15/20)
+- Diplomatic Opinion modifier based on no/weak/strong/fierce minor civ disputes set to 0/4/16/64 (from 0/10/20/30)
+- Opinion Threshold to possibly declare war if current Grand Strategy is Conquest set to 10 (from 50)
+- War evaluation if not prepared set to -150 (from -100)
+- War evaluation for game threats none/minor/major/severe/critical set to 10/25/75/150/300 (from 0/20/50/100/150)
+- War evaluation based on soft/favorable/average/bad/impossible target set to 200/100/-25/-150/-300 (from 100/50/-25/-100/-200)
+- Thresholds for observations of aggressiveness levels low/medium/high/incredibly set to 5/15/25/35 (from 10/25/50/80)
+- Military and Economic strength ratio multipliers for diplomatic/war evaluation set to 125 and 110 respectively (from 100 each)
+- Barbarian "Capture City" tactical move's priority is now 11 (from 9, placing it above Blockade Resource, Attrition, and Move to Safety for barbarians)
+- "Move to Safety" tactical move's priority is now 20 (from 11, placing it above Pillage Resource, Attrition, and Damage City)
+- "Damage City" tactical move's priority is now 11 (from 15, making it possibly exchangeable with Heal and Low Priority Attrition once randomness factor is taken acount)
+- "Heal" tactical move's priority is now 10 (from 8, placing it above Park on Trade Route and equal to Low Priority Attrition)
+- "Low Priority Attrition" tactical move's priority is now 11 (from 12)
+- "Barbarian Camp" tactical move's priority is now 13 (from 11)
+- Base war preference against City States when running a Conquest Grand Strategy is now 5 (from 8), but 20 when they're also neighbors (from 10)
+- War preference against City States who are neighbors is now 2 (from 1)
+- War preference against City States based on Impossible/Bad/Average/Favorable/Soft target is now 0/10/50/100/150 (from 10/20/40/110/130)
+- "Area is full" threshold is now at 80% tile ownership (from 50%)
+- 19 empty tiles are required for the early expansion strategy now (from 25 tiles)
+- Units executing the following tactical moves can now be recruited into operations: Pillage, Safe Bombard, Bastion, Garrison, Guard Improvement

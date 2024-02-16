@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="2890f440-93a7-4227-ab6f-5c5c1ba175cf" version="3">
+  <Properties>
+    <Name>Global - XP For Scouting</Name>
+    <Teaser>Scouts gain XP for revealing tiles, improved by Serp</Teaser>
+    <Description>Scouts gain 1xp for every 6 tiles they first discover and 2xp for every natural wonder they first discover</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="83" maxversion="999" title="DLL - Various Mod Components" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="739F1639FFFDB01DAEE181011161ECF1" import="0">LUA/GlobalXpForScouting.lua</File>
+    <File md5="99B77DEAF7101E7A88AB304AEBC7927E" import="0">SQL/GlobalXpForScouting.sql</File>
+    <File md5="F08F27E6A893BF1AD35FA83387A32594" import="0">XML/GlobalXpForScouting.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/GlobalXpForScouting.xml</UpdateDatabase>
+      <UpdateDatabase>SQL/GlobalXpForScouting.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="LUA/GlobalXpForScouting.lua">
+      <Name>GlobalXpForScouting</Name>
+      <Description>GlobalXpForScouting</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

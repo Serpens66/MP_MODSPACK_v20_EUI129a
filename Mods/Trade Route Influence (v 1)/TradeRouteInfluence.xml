@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    
+    
+    
+    
+    <CustomModOptions>
+		<Update>
+			<Where Name="BUGFIX_DUMMY_POLICIES"/>
+			<Set Value="1"/>
+		</Update>
+        <Update>
+			<Where Name="TRADE_ROUTE_SCALING"/>
+			<Set Value="1"/>
+		</Update>
+	</CustomModOptions>
+    
+    <!-- this policy is given to every player at game start via lua -->
+    <Policies>
+		<Row>
+			<Type>TRAIT_MOD_TRADEROUTE_INFLUENCE</Type>
+			<Description>TXT_KEY_TRAIT_MOD_TRADEROUTE_INFLUENCE</Description>
+			<Civilopedia>TXT_KEY_TRAIT_MOD_TRADEROUTE_INFLUENCE</ShortDescription>
+			<ProtectedMinorPerTurnInfluence>80</ProtectedMinorPerTurnInfluence>  <!-- 0.8 influence per turn, so nearly +-0 with patronat -->
+            <CityStateTradeChange>-150</CityStateTradeChange> <!-- reduce the gold gained by city states by 2 per turn -->
+            <Dummy>1</Dummy>
+		</Row>
+	</Policies>
+    
+    <Defines>
+        <Update>
+			<Where Name="TRADE_ROUTE_SCIENCE_DIVISOR_TIMES100"/>
+			<Set Value="175"/> <!-- instead of 200, so more science from international trade routes, to compensate for the influence for city states -->
+		</Update>
+		<Update>
+			<Where Name="TRADE_ROUTE_BASE_LAND_DISTANCE"/>
+			<Set Value="15"/>
+		</Update>
+        <Update>
+			<Where Name="TRADE_ROUTE_BASE_SEA_DISTANCE"/>
+			<Set Value="25"/>
+		</Update>
+        <Update>
+			<Where Name="TRADE_ROUTE_BASE_PRODUCTION_VALUE"/>
+			<Set Value="400"/> <!-- instead of 300 -->
+		</Update>
+        <Update>
+			<Where Name="TRADE_ROUTE_BASE_FOOD_VALUE"/>
+			<Set Value="350"/>
+		</Update>
+	</Defines>
+	<Traits>
+		<Update>
+			<Where Type="TRAIT_LAND_TRADE_GOLD"/>
+			<Set SeaTradeRouteRangeBonus="10"/> <!-- was added with dll, so this trait can also increase sea trade, not only land -->
+		</Update>
+	</Traits>
+    
+    <Language_en_US>
+        <Row Tag="TXT_KEY_TRAIT_MOD_TRADEROUTE_INFLUENCE">
+			<Text>dummy</Text>
+		</Row>
+    </Language_en_US>
+    
+</GameData>

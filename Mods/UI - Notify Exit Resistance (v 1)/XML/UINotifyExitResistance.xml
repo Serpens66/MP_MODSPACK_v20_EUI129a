@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Language_en_US>
+    <Row Tag="TXT_KEY_CITY_NOTIFICATIONS_RESISTANCE" Text="City Resistance"/>
+    <Row Tag="TXT_KEY_CITY_NOTIFICATIONS_RESISTANCE_HEADING">
+      <Text>Resistance ended in {1_CityName}</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_NOTIFICATIONS_RESISTANCE_TEXT">
+      <Text>The City of {1_CityName}  has exited [ICON_RESISTANCE] resitance</Text>
+    </Row>
+  </Language_en_US>
+  
+  <Language_de_DE>
+    <Row Tag="TXT_KEY_CITY_NOTIFICATIONS_RESISTANCE" Text="Stadt Widerstand"/>
+    <Row Tag="TXT_KEY_CITY_NOTIFICATIONS_RESISTANCE_HEADING">
+      <Text>Widerstand in {1_CityName} beendet</Text>
+    </Row>
+    <Row Tag="TXT_KEY_CITY_NOTIFICATIONS_RESISTANCE_TEXT">
+      <Text>Die Stadt {1_CityName} hat ihren [ICON_RESISTANCE] Widerstand beendet.</Text>
+    </Row>
+  </Language_de_DE>
+</GameData>

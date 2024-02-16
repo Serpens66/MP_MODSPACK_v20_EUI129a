@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 7/6/2012 1:29:26 AM -->
+<GameData>
+	<Traits>
+		<Update>
+			<Set BonusReligiousBelief="true" />
+		</Update>
+		<Update>
+			<Set FreeBuilding="BUILDING_SHRINE" />
+			<Where Type="TRAIT_EXTRA_BELIEF" />
+		</Update>
+		<Row>
+			<Type>TRAIT_LONG_COUNT_PLUS</Type>
+			<Description>TXT_KEY_TRAIT_LONG_COUNT</Description>
+			<ShortDescription>TXT_KEY_TRAIT_LONG_COUNT_SHORT</ShortDescription>
+			<BonusReligiousBelief>true</BonusReligiousBelief>
+		</Row>
+	</Traits>
+	<Leader_Traits>
+		<Row>
+			<LeaderType>LEADER_PACAL</LeaderType>
+			<TraitType>TRAIT_LONG_COUNT_PLUS</TraitType>
+		</Row>
+	</Leader_Traits>
+	<Trait_ImprovementYieldChanges>
+		<Row>
+			<TraitType>TRAIT_EXTRA_BELIEF</TraitType>
+			<ImprovementType>IMPROVEMENT_HOLY_SITE</ImprovementType>
+			<YieldType>YIELD_FAITH</YieldType>
+			<Yield>3</Yield>
+		</Row>
+	</Trait_ImprovementYieldChanges>
+</GameData>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

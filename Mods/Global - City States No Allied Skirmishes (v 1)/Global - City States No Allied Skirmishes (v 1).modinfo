@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="15cd975d-7d94-4845-be4a-4e34bcd3fa1b" version="1">
+  <Properties>
+    <Name>Global - City States No Allied Skirmishes</Name>
+    <Teaser>City States at war with each other but allied to the same major will declare peace</Teaser>
+    <Description>City States at war with each other but allied to the same major will declare peace</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="38" maxversion="999" title="DLL - Various Mod Components" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="AD31FBE8870179B0520952F7C67017C2" import="0">XML/GlobalCityStatesNoAlliedSkirmishes.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/GlobalCityStatesNoAlliedSkirmishes.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

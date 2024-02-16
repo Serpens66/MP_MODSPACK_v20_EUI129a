@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/28/2012 2:13:30 PM -->
+<GameData>
+	<Improvement_Flavors>
+		<Row>
+			<ImprovementType>IMPROVEMENT_SUBURB</ImprovementType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_SUBURB</ImprovementType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_SUBURB</ImprovementType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>40</Flavor>
+		</Row>
+        <Row>
+			<ImprovementType>IMPROVEMENT_SUBURB</ImprovementType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>40</Flavor>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>33</Flavor>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_ENHANCED_MINE</ImprovementType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_TRADING_ESTATE</ImprovementType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>33</Flavor>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_TRADING_ESTATE</ImprovementType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>45</Flavor>
+		</Row>
+        
+        <Row>
+			<ImprovementType>IMPROVEMENT_FARMLAND_ESTATE</ImprovementType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>40</Flavor>
+		</Row>
+
+	</Improvement_Flavors>
+</GameData>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_GW_MANAGER_TITLE">
+			<Text>Great Works Manager</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_ARTIFACTS">
+			<Text>Artifacts</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_ART">
+			<Text>Art</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_ARTIFACTS_OR_ART">
+			<Text>Artifacts and Art</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_WRITING">
+			<Text>Writing</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_MUSIC">
+			<Text>Music</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_CIVILIZATION">
+			<Text>Civilization</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_CIVILIZATION_TT">
+			<Text>Civilizations that you have Great Works of from the currently selected type</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_ERA_0_TT">
+			<Text>Great Works from the Ancient Era</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_ERA_1_TT">
+			<Text>Great Works from the Classical Era</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_ERA_2_TT">
+			<Text>Great Works from the Medieval Era</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_ERA_3_TT">
+			<Text>Great Works from the Renaissance Era</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_ERA_4_TT">
+			<Text>Great Works from the Industrial Era</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_ERA_5_TT">
+			<Text>Great Works from the Modern Era</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_ERA_6_TT">
+			<Text>Great Works from the Atomic Era</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_ERA_7_TT">
+			<Text>Great Works from the Information Era</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_ATOMIC">
+			<Text>Atomic</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_INFO">
+			<Text>Information</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_CITIES">
+			<Text>City</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_CITIES_TT">
+			<Text>Cities with buildings that can house Great Works</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_CITIES_TYPE_TT">
+			<Text>Click to sort by city type and name</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_CITIES_CULTURE_TT">
+			<Text>Click to sort by city culture modifier</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_CITIES_TOURISM_TT">
+			<Text>Click to sort by city tourism modifier</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_BUILDINGS">
+			<Text>Great Works Buildings</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_BUILDINGS_TT">
+			<Text>Buildings already built that can house Great Works of the currently selected type</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_WORK">
+			<Text>{1_Name} {3_Location}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_WORK_BONUS">
+			<Text>{1_Name} ([COLOR_POSITIVE_TEXT]+{2_Bonus}[ENDCOLOR]) {3_Location}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_SWAP">
+			<Text>{1_Name} (offered by {2_Civ})</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_FILLED">
+			<Text>{1_GreatWork}, {2_Era} {3_Civ}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_EMPTY">
+			<Text>[COLOR_GREY]Empty[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_IN_LOCATION">
+			<Text>in {1_Building}, {2_City}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_LOCATION">
+			<Text>{1_Building}, {2_City}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_GW_MANAGER_SELECT_TT">
+			<Text>Click to select non-bonus works[NEWLINE]Shift-Click to add non-bonus works[NEWLINE]Control-Click / Control-Shift-Click for [COLOR_POSITIVE_TEXT]ALL[ENDCOLOR] works</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_SELECT_BUILDING_TT">
+			<Text>Click to select non-bonus works[NEWLINE]Control-Click for [COLOR_POSITIVE_TEXT]ALL[ENDCOLOR] works</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_SELECT_SWAP_TT">
+			<Text>Click to swap works</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_PLACE_TT">
+			<Text>Click to place works into empty slots[NEWLINE]Control-Click to place works into ALL slots</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_GW_MANAGER_WORKSCART">
+			<Text>Selected works</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_WORKSCART_EMPTY">
+			<Text>No works selected</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_WORKSCART_TT">
+			<Text>Click to clear current selection</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_GW_MANAGER_DIPLO_CORNER_HOOK">
+			<Text>Great Works Manager</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_DIPLO_CORNER_HOOK_TT">
+			<Text>Manage Great Works from one summary screen</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_GW_DIALOG_TITLE">
+			<Text>Choose Great Works</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_DIALOG_SELECT_PLACE">
+			<Text>Select up to {1} Great Work{1: plural 2?s;}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_DIALOG_SELECT_SWAP">
+			<Text>Select the Great Works to swap</Text>
+		</Row>
+	</Language_en_US>
+
+	<Language_DE_DE>
+		<Row Tag="TXT_KEY_GW_MANAGER_TITLE">
+			<Text>Gro&#223;e Werke Manager</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_ARTIFACTS">
+			<Text>Artefakte</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_ART">
+			<Text>Kunstwerke</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_ARTIFACTS_OR_ART">
+			<Text>Artefakte und Kunstwerke</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_WRITING">
+			<Text>Schriftwerke</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_MUSIC">
+			<Text>Musikwerke</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_CIVILIZATION">
+			<Text>Zivilisation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_CIVILIZATION_TT">
+			<Text>Zivilisationen, die Gro&#223;e Werke der aktuell gew�hlten Art haben</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_ERA_0_TT">
+			<Text>Gro&#223;e Werke aus der Antiken &#196;ra</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_ERA_1_TT">
+			<Text>Gro&#223;e Werke aus der Klassischen &#196;ra</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_ERA_2_TT">
+			<Text>Gro&#223;e Werke aus dem Mittelalter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_ERA_3_TT">
+			<Text>Gro&#223;e Werke aus der Renaissance</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_ERA_4_TT">
+			<Text>Gro&#223;e Werke aus dem Industriezeitalter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_ERA_5_TT">
+			<Text>Gro&#223;e Werke aus der Moderne</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_ERA_6_TT">
+			<Text>Gro&#223;e Werke aus dem Atomzeitalter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_ATOMIC">
+			<Text>Atomzeitalter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_CITIES">
+			<Text>Stadt</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_CITIES_TT">
+			<Text>St&#228;dte mit Geb�uden, die Gro&#223;e Werke behausen k&#246;nnen</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_CITIES_TYPE_TT">
+			<Text>Klicken, um nach Stadttyp -und namen zu sortieren</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_CITIES_CULTURE_TT">
+			<Text>Klicken, um nach St&#228;dten mit Kulturmodifizierung zu sortieren</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_CITIES_TOURISM_TT">
+			<Text>Klicken, um nach St&#228;dten mit Tourismusmodifizierung zu sortieren</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_BUILDINGS">
+			<Text>Gro&#223;e Werke Geb&#228;ude</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_BUILDINGS_TT">
+			<Text>Geb&#228;ude die bereits gebaut sind, und den aktuell gew&#228;hlten typ behausen k�nnen</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_WORK">
+			<Text>{1_Name} {3_Location}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_WORK_BONUS">
+			<Text>{1_Name} ([COLOR_POSITIVE_TEXT]+{2_Bonus}[ENDCOLOR]) {3_Location}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_SWAP">
+			<Text>{1_Name} (angeboten von {2_Civ})</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_FILLED">
+			<Text>{1_GreatWork}, {2_Era} {3_Civ}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_EMPTY">
+			<Text>[COLOR_GREY]Leer[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_IN_LOCATION">
+			<Text>in {1_Building}, {2_City}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_LOCATION">
+			<Text>{1_Building}, {2_City}</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_GW_MANAGER_SELECT_TT">
+			<Text>Klicken, um ein Werk ohne Bonus auszuw&#228;hlen[NEWLINE]Shift-Klick um ein Werk ohne Bonus hinzuzuf&#252;gen[NEWLINE]Strg-Klick / Strg-Shift-Klick f&#252;r [COLOR_POSITIVE_TEXT]ALLE[ENDCOLOR] Werke</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_SELECT_BUILDING_TT">
+			<Text>Klicken, um ein Werk ohne Bonus auszuw&#228;hlen[NEWLINE]Strg-Klick f&#252;r [COLOR_POSITIVE_TEXT]ALLE[ENDCOLOR] Werke</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_SELECT_SWAP_TT">
+			<Text>Klicken um tauschbare Werke auszuw&#228;hlen</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_PLACE_TT">
+			<Text>Klicken, um ein Werk in einem leeren Slot zu platzieren[NEWLINE]Strg-Klick um Werke in alle Slots zu platzieren</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_GW_MANAGER_WORKSCART">
+			<Text>Ausgew&#228;hlte Werke</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_WORKSCART_EMPTY">
+			<Text>Keine ausgew&#228;hlten Werke</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_WORKSCART_TT">
+			<Text>Klicken, um aktuelle Auswahl aufzuheben</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_GW_MANAGER_DIPLO_CORNER_HOOK">
+			<Text>Gro&#223;e Werke Manager</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_MANAGER_DIPLO_CORNER_HOOK_TT">
+			<Text>Verwalte Gro&#223;e Werke von einem Bildschirm aus</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_GW_DIALOG_TITLE">
+			<Text>W&#228;hle Gro&#223;es Werk</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_DIALOG_SELECT_PLACE">
+			<Text>W&#228;hle bis zu {1} Gro&#223;es Werk{1: plural 2?e;}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GW_DIALOG_SELECT_SWAP">
+			<Text>W&#228;hle ein Gro&#223;es Werk</Text>
+		</Row>
+	</Language_DE_DE>
+</GameData>

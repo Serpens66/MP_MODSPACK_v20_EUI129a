@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="4c756864-da74-4831-abc1-329b1150b9b4" version="4">
+  <Properties>
+    <Name>Improvement Upgrades</Name>
+    <Teaser>Changed version by Serp. New improvements for middle/lategmae. Works with "more luxuries" and needs FarmReplacement Mod.</Teaser>
+    <Description> This version is improved by Serp. I think it is much more balanced now and less bugs! v3 again heavily nerfed.</Description>
+    <Authors>Davii Adams, Serp</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <Dependencies>
+        <Mod id="be2d13ee-d18d-410e-8f04-7cd19cd99a98" minversion="0" maxversion="999" title="More Luxuries" />
+    </Dependencies>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="5B9F72198D74AC5C4D7FBE84748D2B34" import="0">XML/NewText/en_US/GameTextInfo_CivilopediaImpMod.xml</File>
+    <File md5="4B3A1CE6355FBA7863BAD7EFE09E22BD" import="0">XML/NewText/en_US/GameTextInfo_ImprovementUpgrades.xml</File>
+    <File md5="82C509009A56FCAB1F79510786A08E45" import="0">XML/Terrain/CIV5Builds_BeachResort.xml</File>
+    <File md5="3020D08CA0C160D4C4520A835C68327D" import="0">XML/Terrain/CIV5Builds_EnhancedMine.xml</File>
+    <File md5="CC60BDF4B319426C70964B40AD9A05AD" import="0">XML/Terrain/CIV5Builds_EnhancedQuarry.xml</File>
+    <File md5="A2FF40DEE00A2F493862C75B44C9D93E" import="0">XML/Terrain/CIV5Builds_FairTradePlantation.xml</File>
+    <File md5="7A0275566FD0760B767F6BE4AB2FB305" import="0">XML/Terrain/CIV5Builds_FarmlandEstate.xml</File>
+    <File md5="F6146C2BB227986DE0B9E285F109F278" import="0">XML/Terrain/CIV5Builds_HuntingLodge.xml</File>
+    <File md5="D96A77491A642B7EECC94F9BE89566BA" import="0">XML/Terrain/CIV5Builds_LuxuryResort.xml</File>
+    <File md5="A9DDC330EB71DC77A4E9092F2CCF4CF3" import="0">XML/Terrain/CIV5Builds_NuclearTesting.xml</File>
+    <File md5="8063A661140C64E8386D97C60C76B226" import="0">XML/Terrain/CIV5Builds_Ranch.xml</File>
+    <File md5="BA5F03AE64DEA4285BB17A52C3AE6978" import="0">XML/Terrain/CIV5Builds_ResearchStation.xml</File>
+    <File md5="EFFF7849F70C34F4A5D8BCD98AB6CAE5" import="0">XML/Terrain/CIV5Builds_SawMill.xml</File>
+    <File md5="B3846B65B62BA04E16A24F60ACAA396F" import="0">XML/Terrain/CIV5Builds_SkiResort.xml</File>
+    <File md5="102D1F2746791E508C7862C74E8F344D" import="0">XML/Terrain/CIV5Builds_Suburbs.xml</File>
+    <File md5="1E838CB35800C6EB96800F89B17A1434" import="0">XML/Terrain/CIV5Builds_TradingEstate.xml</File>
+    <File md5="9DDC8BCEFD0E5ADF1414933DA42AD3CC" import="0">XML/Terrain/CIV5EntityEvents_Upgrades.xml</File>
+    <File md5="A2F48A02659753A0B0A427D9FA686B20" import="0">XML/Terrain/CIV5Features.xml</File>
+    <File md5="6F9D21B52DFD841494241E8A73FF00C5" import="0">XML/Terrain/CIV5FeatureUpdate_Atoll.xml</File>
+    <File md5="D790E88CB14E8BC4558FF92D6F8F8C49" import="0">XML/Terrain/CIV5Improvements_BeachResort.xml</File>
+    <File md5="A8DA462048CE7A11AA40344721C22AFD" import="0">XML/Terrain/CIV5Improvements_EnhancedMine.xml</File>
+    <File md5="96030D5D02BAD668C13AB694B3DBF56B" import="0">XML/Terrain/CIV5Improvements_FairTradePlantation.xml</File>
+    <File md5="D5A3C6F7120EAF290E6FE1949E47FFD7" import="0">XML/Terrain/CIV5Improvements_FarmlandEstate.xml</File>
+    <File md5="6E8F757F8088A9C50E0208B899CB5886" import="0">XML/Terrain/CIV5Improvements_FarmUpdate.xml</File>
+    <File md5="CA013CE39E8759AC51E99CE03D17FA29" import="0">XML/Terrain/CIV5Improvements_Flavours.xml</File>
+    <File md5="DF1A5E2C9A2FA198D5DA3EA4716FD4C6" import="0">XML/Terrain/CIV5Improvements_HuntingLodge.xml</File>
+    <File md5="D94F63F23F767E4DE0BC9422B567EBAE" import="0">XML/Terrain/CIV5Improvements_LuxuryResort.xml</File>
+    <File md5="1D0FBE7F8D68D3A3A63C4157F55C6752" import="0">XML/Terrain/CIV5Improvements_NuclearTesting.xml</File>
+    <File md5="95DBE2F9C56B3B20125AA8A4A3242EB2" import="0">XML/Terrain/CIV5Improvements_Ranch.xml</File>
+    <File md5="3E92217CDF1B68B61ECBADC2EB84EE38" import="0">XML/Terrain/CIV5Improvements_ResearchStation.xml</File>
+    <File md5="4EA872B30B110CDC3908B37FC3B5D24C" import="0">XML/Terrain/CIV5Improvements_SawMill.xml</File>
+    <File md5="6413A22DFF5E29DFFCAEAE8237C37396" import="0">XML/Terrain/CIV5Improvements_SkiResort.xml</File>
+    <File md5="28AE02560037C6AAB89E093B92D2B15D" import="0">XML/Terrain/CIV5Improvements_Suburbs.xml</File>
+    <File md5="E29C0761D337A704174F5EC2D40090B0" import="0">XML/Terrain/CIV5Improvements_TradingEstate.xml</File>
+    <File md5="1FE61D71C5F73C739AA303B6C97C03AF" import="0">XML/Terrain/CIV5Improvements_Upgrades.xml</File>
+    <File md5="F23EC18CBD5FDBC80711A943BB66CD26" import="0">XML/Terrain/CIV5Improvements_EnhancedQuarry.xml</File>
+    <File md5="654EB7EA5BD7AF71914BB5B2E3BD0D82" import="0">XML/Units/CIV5Units_WorkerUpdate.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/Units/CIV5Units_WorkerUpdate.xml</UpdateDatabase>
+      <UpdateDatabase>XML/NewText/en_US/GameTextInfo_CivilopediaImpMod.xml</UpdateDatabase>
+      <UpdateDatabase>XML/NewText/en_US/GameTextInfo_ImprovementUpgrades.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5FeatureUpdate_Atoll.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Builds_BeachResort.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Builds_EnhancedMine.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Builds_EnhancedQuarry.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Builds_FairTradePlantation.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Builds_FarmlandEstate.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Builds_HuntingLodge.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Builds_LuxuryResort.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Builds_NuclearTesting.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Builds_Ranch.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Builds_ResearchStation.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Builds_SawMill.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Builds_SkiResort.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Builds_Suburbs.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Builds_TradingEstate.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Improvements_BeachResort.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Improvements_EnhancedMine.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Improvements_EnhancedQuarry.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Improvements_FairTradePlantation.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Improvements_FarmlandEstate.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Improvements_FarmUpdate.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Improvements_HuntingLodge.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Improvements_LuxuryResort.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Improvements_NuclearTesting.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Improvements_Ranch.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Improvements_ResearchStation.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Improvements_SkiResort.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Improvements_SawMill.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Improvements_Suburbs.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Improvements_TradingEstate.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Terrain/CIV5Improvements_Upgrades.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints />
+</Mod>

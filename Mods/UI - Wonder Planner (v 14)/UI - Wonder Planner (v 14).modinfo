@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="d4a7e692-5d05-4436-bc84-13236d75575f" version="14">
+  <Properties>
+    <Name>UI - Wonder Planner</Name>
+    <Teaser>Lists available Wonders by tech/focus</Teaser>
+    <Description>Lists World Wonders that can still be built.  The list can be limited to a maximum era and sorted by number of technologies required to be researched before the wonder can be built and also by "focus" (culture, scrience, defense, gold, food, etc)
+
+Permits the next "key" wonder for your strategy to be quickly determined.  For example, if you're going for a culture victory, the Oracle and Terracotta Army are probably on your "hit list" of wonders.  Sort the list by "culture" and you can quickly see what other wonders will also help.</Description>
+    <Authors>William Howard</Authors>
+    <SpecialThanks>EUI Icon: Lynnes</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References>
+    <Mod id="21e78f1f-06f9-4147-ac61-75aa7c403d18" minversion="3" maxversion="999" title="Utils - Modular DiploCorner" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="B9E61391E0E9CFAB2C8435F9BAC02703" import="1">ART/EUI_DC45_WonderPlanner.dds</File>
+    <File md5="9784324991BE4C847AF27FCD1993DE37" import="0">UI/WonderPlanner.lua</File>
+    <File md5="A5DB3431A0AD18983975FB1D7C5BC527" import="0">UI/WonderPlanner.xml</File>
+    <File md5="EDFC4442044366B578A7D1C199AAD489" import="0">XML/UIWonderPlanner.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/UIWonderPlanner.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="UI/WonderPlanner.xml">
+      <Name>Wonder Planner</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

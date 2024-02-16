@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/25/2014 3:11:24 AM -->
+<GameData>
+	<Gamespeeds>
+		<Row>
+			<Type>GAMESPEED_STANDARD_EPIC_RESEARCH</Type>
+			<Description>TXT_KEY_GAMESPEED_STANDARD_EPIC_RESEARCH</Description>
+			<Help>TXT_KEY_GAMESPEED_STANDARD_EPIC_RESEARCH_HELP</Help>
+            <DealDuration>30</DealDuration> 
+			<GrowthPercent>100</GrowthPercent> 
+			<TrainPercent>100</TrainPercent> 
+			<ConstructPercent>100</ConstructPercent> 
+			<CreatePercent>100</CreatePercent> 
+			<ResearchPercent>150</ResearchPercent> 
+			<GoldPercent>100</GoldPercent> 
+			<GoldGiftMod>100</GoldGiftMod> 
+			<BuildPercent>100</BuildPercent> 
+			<ImprovementPercent>100</ImprovementPercent> 
+			<GreatPeoplePercent>100</GreatPeoplePercent> 
+			<CulturePercent>100</CulturePercent> 
+			<FaithPercent>100</FaithPercent> 
+			<BarbPercent>100</BarbPercent> 
+			<FeatureProductionPercent>100</FeatureProductionPercent> 
+			<UnitDiscoverPercent>100</UnitDiscoverPercent> 
+			<UnitHurryPercent>100</UnitHurryPercent> 
+			<UnitTradePercent>100</UnitTradePercent> 
+			<GoldenAgePercent>100</GoldenAgePercent> 
+			<HurryPercent>100</HurryPercent> 
+			<InflationPercent>30</InflationPercent> 
+			<InflationOffset>-90</InflationOffset> 
+			<ReligiousPressureAdjacentCity>60</ReligiousPressureAdjacentCity> 
+			<VictoryDelayPercent>100</VictoryDelayPercent> 
+			<MinorCivElectionFreqMod>100</MinorCivElectionFreqMod> 
+			<OpinionDurationPercent>100</OpinionDurationPercent> 
+			<SpyRatePercent>100</SpyRatePercent> 
+			<PeaceDealDuration>10</PeaceDealDuration> 
+			<RelationshipDuration>50</RelationshipDuration> 
+			<LeaguePercent>100</LeaguePercent> 
+			<PortraitIndex>2</PortraitIndex> 
+			<IconAtlas>GAMESPEED_ATLAS</IconAtlas> 
+			<TradeRouteSpeedMod>100</TradeRouteSpeedMod> 
+        </Row>   
+        <Row> 
+            <Type>GAMESPEED_EPIC_MARATHON_RESEARCH</Type> 
+			<Description>TXT_KEY_GAMESPEED_EPIC_MARATHON_RESEARCH</Description> 
+			<Help>TXT_KEY_GAMESPEED_EPIC_MARATHON_RESEARCH_HELP</Help> 
+			<DealDuration>45</DealDuration> 
+			<GrowthPercent>150</GrowthPercent> 
+			<TrainPercent>150</TrainPercent> 
+			<ConstructPercent>150</ConstructPercent> 
+			<CreatePercent>150</CreatePercent> 
+			<ResearchPercent>300</ResearchPercent> 
+			<GoldPercent>150</GoldPercent> 
+			<GoldGiftMod>75</GoldGiftMod> 
+			<BuildPercent>150</BuildPercent> 
+			<ImprovementPercent>150</ImprovementPercent> 
+			<GreatPeoplePercent>150</GreatPeoplePercent> 
+			<CulturePercent>150</CulturePercent> 
+			<FaithPercent>150</FaithPercent> 
+			<BarbPercent>150</BarbPercent> 
+			<FeatureProductionPercent>150</FeatureProductionPercent> 
+			<UnitDiscoverPercent>150</UnitDiscoverPercent> 
+			<UnitHurryPercent>150</UnitHurryPercent> 
+			<UnitTradePercent>150</UnitTradePercent> 
+			<GoldenAgePercent>125</GoldenAgePercent> 
+			<HurryPercent>100</HurryPercent> 
+			<InflationPercent>20</InflationPercent> 
+			<InflationOffset>-135</InflationOffset> 
+			<ReligiousPressureAdjacentCity>40</ReligiousPressureAdjacentCity> 
+			<VictoryDelayPercent>150</VictoryDelayPercent> 
+			<MinorCivElectionFreqMod>150</MinorCivElectionFreqMod> 
+			<OpinionDurationPercent>150</OpinionDurationPercent> 
+			<SpyRatePercent>100</SpyRatePercent> 
+			<PeaceDealDuration>15</PeaceDealDuration> 
+			<RelationshipDuration>75</RelationshipDuration> 
+			<LeaguePercent>150</LeaguePercent> 
+			<PortraitIndex>1</PortraitIndex> 
+			<IconAtlas>GAMESPEED_ATLAS</IconAtlas> 
+			<TradeRouteSpeedMod>150</TradeRouteSpeedMod>
+		</Row>
+	</Gamespeeds>
+	<GameSpeed_Turns>
+		<Row> 
+			<GameSpeedType>GAMESPEED_STANDARD_EPIC_RESEARCH</GameSpeedType> 
+			<MonthIncrement>300</MonthIncrement> 
+			<TurnsPerIncrement>140</TurnsPerIncrement> 
+		</Row>
+		<Row> 
+			<GameSpeedType>GAMESPEED_STANDARD_EPIC_RESEARCH</GameSpeedType> 
+			<MonthIncrement>180</MonthIncrement> 
+			<TurnsPerIncrement>90</TurnsPerIncrement> 
+		</Row>
+		<Row> 
+			<GameSpeedType>GAMESPEED_STANDARD_EPIC_RESEARCH</GameSpeedType> 
+			<MonthIncrement>120</MonthIncrement> 
+			<TurnsPerIncrement>40</TurnsPerIncrement> 
+		</Row>
+		<Row> 
+			<GameSpeedType>GAMESPEED_STANDARD_EPIC_RESEARCH</GameSpeedType> 
+			<MonthIncrement>60</MonthIncrement> 
+			<TurnsPerIncrement>90</TurnsPerIncrement> 
+		</Row>
+		<Row> 
+			<GameSpeedType>GAMESPEED_STANDARD_EPIC_RESEARCH</GameSpeedType> 
+			<MonthIncrement>24</MonthIncrement> 
+			<TurnsPerIncrement>70</TurnsPerIncrement> 
+		</Row>
+		<Row> 
+			<GameSpeedType>GAMESPEED_STANDARD_EPIC_RESEARCH</GameSpeedType> 
+			<MonthIncrement>12</MonthIncrement> 
+			<TurnsPerIncrement>100</TurnsPerIncrement> 
+		</Row>
+		<Row> 
+			<GameSpeedType>GAMESPEED_STANDARD_EPIC_RESEARCH</GameSpeedType> 
+			<MonthIncrement>6</MonthIncrement> 
+			<TurnsPerIncrement>220</TurnsPerIncrement> 
+		</Row>
+        
+        <Row>
+			<GameSpeedType>GAMESPEED_EPIC_MARATHON_RESEARCH</GameSpeedType>
+			<MonthIncrement>180</MonthIncrement>
+			<TurnsPerIncrement>100</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_EPIC_MARATHON_RESEARCH</GameSpeedType>
+			<MonthIncrement>120</MonthIncrement>
+			<TurnsPerIncrement>300</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_EPIC_MARATHON_RESEARCH</GameSpeedType>
+			<MonthIncrement>60</MonthIncrement>
+			<TurnsPerIncrement>170</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_EPIC_MARATHON_RESEARCH</GameSpeedType>
+			<MonthIncrement>24</MonthIncrement>
+			<TurnsPerIncrement>201</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_EPIC_MARATHON_RESEARCH</GameSpeedType>
+			<MonthIncrement>12</MonthIncrement>
+			<TurnsPerIncrement>129</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_EPIC_MARATHON_RESEARCH</GameSpeedType>
+			<MonthIncrement>6</MonthIncrement>
+			<TurnsPerIncrement>180</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_EPIC_MARATHON_RESEARCH</GameSpeedType>
+			<MonthIncrement>3</MonthIncrement>
+			<TurnsPerIncrement>264</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_EPIC_MARATHON_RESEARCH</GameSpeedType>
+			<MonthIncrement>1</MonthIncrement>
+			<TurnsPerIncrement>156</TurnsPerIncrement>
+		</Row>
+	</GameSpeed_Turns>
+	
+    <!-- increase from 30. the amount of production one can stockpile with the stockpile mod per era. In sql will also be a trigger, so mod load order does not matter -->
+    <CustomModOptions>
+        <Update>
+			<Set Value="60"/> 
+			<Where Name="PROCESS_STOCKPILE_PER_ERA"/>
+		</Update>
+    </CustomModOptions>
+        
+    
+	<Processes>
+		<Update>
+			<Set TechPrereq="TECH_MINING"/>
+			<Where Type="PROCESS_WEALTH"/>
+		</Update>
+        <Update>
+			<Set TechPrereq="TECH_WRITING"/>
+			<Where Type="PROCESS_RESEARCH"/>
+		</Update>
+	</Processes>
+	
+    <!-- increase from 25% -->
+    <Process_ProductionYields>
+		<Update>
+			<Set Yield="35"/>
+			<Where ProcessType="PROCESS_WEALTH"/>
+		</Update>
+        <Update>
+			<Set Yield="35"/>
+			<Where ProcessType="PROCESS_RESEARCH"/>
+		</Update>
+        <!-- increase from 80. the percentage conversion of production for stockpile mod In sql will also be a trigger, so mod load order does not matter-->
+		<Update>
+			<Set Yield="95"/>
+			<Where ProcessType="PROCESS_STOCKPILE"/>
+		</Update>
+	</Process_ProductionYields>
+    
+    <!-- maximal science modifier, vermutlich in prozent, den man bekommt wenn alle anderen civs die tech schon erforscht haben (und man diese bereits getroffen hat), erhoet von 30 -->
+    <Defines>
+        <Update>
+			<Set Value="40"/> 
+			<Where Name="TECH_COST_TOTAL_KNOWN_TEAM_MODIFIER"/>
+		</Update>
+    </Defines>
+    
+    <Language_en_US>
+		<Row Tag="TXT_KEY_GAMESPEED_STANDARD_EPIC_RESEARCH">
+			<Text>Standard Epic Research</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAMESPEED_STANDARD_EPIC_RESEARCH_HELP">
+			<Text>Standard Game Speed with Epic (*1.5) Research Times</Text>
+		</Row>
+        
+        <Row Tag="TXT_KEY_GAMESPEED_EPIC_MARATHON_RESEARCH">
+			<Text>Epic Marathon Research</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAMESPEED_EPIC_MARATHON_RESEARCH_HELP">
+			<Text>Epic Game Speed with Marathon (*2) Research Times</Text>
+		</Row>
+	</Language_en_US>
+    <Language_de_DE>
+		<Row Tag="TXT_KEY_GAMESPEED_STANDARD_EPIC_RESEARCH">
+			<Text>Standard Episch Forschung</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAMESPEED_STANDARD_EPIC_RESEARCH_HELP">
+			<Text>Standard Geschwindigkeit Episch (*1.5) Forschungskosten</Text>
+		</Row>
+        
+        <Row Tag="TXT_KEY_GAMESPEED_EPIC_MARATHON_RESEARCH">
+			<Text>Episch Marathon Forschung</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAMESPEED_EPIC_MARATHON_RESEARCH_HELP">
+			<Text>Epic Geschwindigkeit mit Marathon (*2) Forschungskosten</Text>
+		</Row>
+	</Language_de_DE>
+    
+	<!-- <Buildings> -->
+		<!-- <Update> -->
+			<!-- <Set Happiness="3"/> -->
+			<!-- <Where Type="BUILDING_COLOSSEUM"/> -->
+		<!-- </Update> -->
+		<!-- <Update> -->
+			<!-- <Set Happiness="3"/> -->
+			<!-- <Where Type="BUILDING_SATRAPS_COURT"/> -->
+		<!-- </Update> -->
+		<!-- <Update> -->
+			<!-- <Set Happiness="3"/> -->
+			<!-- <Where Type="BUILDING_BURIAL_TOMB"/> -->
+		<!-- </Update> -->
+		<!-- <Update> -->
+			<!-- <Set Happiness="3"/> -->
+			<!-- <Where Type="BUILDING_CIRCUS"/> -->
+		<!-- </Update> -->
+		<!-- <Update> -->
+			<!-- <Set Happiness="4"/> -->
+			<!-- <Where Type="BUILDING_THEATRE"/> -->
+		<!-- </Update> -->
+		<!-- <Update> -->
+			<!-- <Set Happiness="5"/> -->
+			<!-- <Where Type="BUILDING_STADIUM"/> -->
+		<!-- </Update> -->
+		<!-- <Update> -->
+			<!-- <Set UnmoddedHappiness="6"/> -->
+			<!-- <Where Type="BUILDING_CIRCUS_MAXIMUS"/> -->
+		<!-- </Update> -->
+		<!-- <Update> -->
+			<!-- <Set UnmoddedHappiness="11"/> -->
+			<!-- <Where Type="BUILDING_NOTRE_DAME"/> -->
+		<!-- </Update> -->
+		<!-- <Update> -->
+			<!-- <Set Happiness="5"/> -->
+			<!-- <Where Type="BUILDING_TAJ_MAHAL"/> -->
+		<!-- </Update> -->
+		<!-- <Update> -->
+			<!-- <Set Happiness="2"/> -->
+			<!-- <Where Type="BUILDING_STONE_WORKS"/> -->
+		<!-- </Update> -->
+		<!-- <Update> -->
+			<!-- <Set UnmoddedHappiness="6"/> -->
+			<!-- <Where Type="BUILDING_EIFFEL_TOWER"/> -->
+		<!-- </Update> -->
+	<!-- </Buildings> -->
+	<!-- <Unit_Flavors> -->
+		<!-- <Update> -->
+			<!-- <Set Flavor="10"/> -->
+			<!-- <Where UnitType="UNIT_SETTLER"/> -->
+		<!-- </Update> -->
+	<!-- </Unit_Flavors> -->
+	<!-- <Defines> -->
+		<!-- <Update> -->
+			<!-- <Set Value="20"/> -->
+			<!-- <Where Name="RELIGION_MIN_FAITH_FIRST_PANTHEON"/> -->
+		<!-- </Update> -->
+		<!-- <Update> -->
+			<!-- <Set Value="300"/> -->
+			<!-- <Where Name="RELIGION_MIN_FAITH_FIRST_PROPHET"/> -->
+		<!-- </Update> -->
+		<!-- <Update> -->
+			<!-- <Set Value="1500"/> -->
+			<!-- <Where Name="RELIGION_MIN_FAITH_FIRST_GREAT_PERSON"/> -->
+		<!-- </Update> -->
+		<!-- <Update> -->
+			<!-- <Set Value="150"/> -->
+			<!-- <Where Name="RELIGION_FAITH_DELTA_NEXT_PROPHET"/> -->
+		<!-- </Update> -->
+		<!-- <Update> -->
+			<!-- <Set Value="750"/> -->
+			<!-- <Where Name="RELIGION_FAITH_DELTA_NEXT_GREAT_PERSON"/> -->
+		<!-- </Update> -->
+	<!-- </Defines> -->
+	<!-- <Units> -->
+		<!-- <Update> -->
+			<!-- <Set FaithCost="300"/> -->
+			<!-- <Where Type="UNIT_MISSIONARY"/> -->
+		<!-- </Update> -->
+	<!-- </Units> -->
+	
+</GameData>

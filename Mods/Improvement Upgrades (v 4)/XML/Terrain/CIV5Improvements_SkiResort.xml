@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/5/2012 5:43:41 AM -->
+<GameData>
+	<!--Ski Resort-->
+	<Improvements>
+		<Row>
+			<Type>IMPROVEMENT_SKI_RESORT</Type>
+			<Description>TXT_KEY_IMPROVEMENT_SKI_RESORT</Description>
+			<Civilopedia>TXT_KEY_CIV5_IMPROVEMENTS_SKI_RESORT_TEXT</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_CUSTOMS_HOUSE</ArtDefineTag>
+            <NoTwoAdjacent>true</NoTwoAdjacent>
+            <RequiresHills>true</RequiresHills> <!-- implemented by my DLL -->
+			<PillageGold>100</PillageGold>
+			<PortraitIndex>33</PortraitIndex>
+			<IconAtlas>TERRAIN_ATLAS</IconAtlas>
+		</Row>
+	</Improvements>
+	<Improvement_ValidTerrains>
+		<Row>
+			<ImprovementType>IMPROVEMENT_SKI_RESORT</ImprovementType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+		</Row>
+        <Row>
+			<ImprovementType>IMPROVEMENT_SKI_RESORT</ImprovementType>
+			<TerrainType>TERRAIN_HILL</TerrainType>
+		</Row>
+	</Improvement_ValidTerrains>
+	<Improvement_HillsYields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_SKI_RESORT</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+        <Row>
+			<ImprovementType>IMPROVEMENT_SKI_RESORT</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_HillsYields>
+	<Improvement_AdjacentMountainYieldChanges>
+		<Row>
+			<ImprovementType>IMPROVEMENT_SKI_RESORT</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+        <Row>
+			<ImprovementType>IMPROVEMENT_SKI_RESORT</ImprovementType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_AdjacentMountainYieldChanges>
+    
+    <Improvement_TechYieldChanges>
+		<Row>
+			<ImprovementType>IMPROVEMENT_RESEARCH_STATION</ImprovementType>
+			<TechType>TECH_PLASTIC</TechType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+        <Row>
+			<ImprovementType>IMPROVEMENT_RESEARCH_STATION</ImprovementType>
+			<TechType>TECH_PLASTIC</TechType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Improvement_TechYieldChanges>
+</GameData>

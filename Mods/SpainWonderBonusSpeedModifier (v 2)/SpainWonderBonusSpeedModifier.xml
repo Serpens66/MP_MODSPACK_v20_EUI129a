@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    
+    <CustomModOptions>
+		<Update>
+			<Where Name="EVENTS_NW_DISCOVERY"/>
+			<Set Value="1"/>
+		</Update>
+	</CustomModOptions>
+    
+    <!-- remove the usual effect from spain in database. now it is handled via lua. -->
+    <Traits>
+		<Update>
+			<Where Type="TRAIT_SEVEN_CITIES"/>
+			<Set NaturalWonderFirstFinderGold="0"/>
+		</Update>
+        <Update>
+			<Where Type="TRAIT_SEVEN_CITIES"/>
+            <Set NaturalWonderSubsequentFinderGold="0"/>
+		</Update>
+	</Traits>
+
+</GameData>

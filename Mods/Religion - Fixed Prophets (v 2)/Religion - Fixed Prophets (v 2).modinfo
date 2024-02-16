@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="db6d0ead-b436-4764-857b-5a3a64be32d6" version="2">
+  <Properties>
+    <Name>Religion - Fixed Prophets</Name>
+    <Teaser>Religion - Fixed Prophets</Teaser>
+    <Description>Removes the random element from how much faith is required for pre-Industrial era prophets</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="21" maxversion="999" title="DLL - Various Mod Components" />
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="A0ABF96232FA20CD0D35DC31E71AB1CA" import="0">XML/ReligionFixedProphets.xml</File>
+    <File md5="508FA07543EEB7E1ACB6C4CB06BD2DD4" import="0">XML/ReligionFixedProphetsDLL.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/ReligionFixedProphets.xml</UpdateDatabase>
+      <UpdateDatabase>XML/ReligionFixedProphetsDLL.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

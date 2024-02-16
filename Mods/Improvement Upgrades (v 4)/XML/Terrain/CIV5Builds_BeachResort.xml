@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/5/2012 5:28:28 AM -->
+<GameData>
+	<!--Beach Resort-->
+	<Builds>
+		<Row>
+			<Type>BUILD_BEACH_RESORT</Type>
+			<PrereqTech>TECH_GUNPOWDER</PrereqTech>
+			<Time>1000</Time>
+			<ImprovementType>IMPROVEMENT_BEACH_RESORT</ImprovementType>
+			<Description>TXT_KEY_BUILD_BEACH_RESORT</Description>
+            <Help>TXT_KEY_BUILD_BEACH_RESORT_HELP</Help>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<OrderPriority>98</OrderPriority>
+			<IconIndex>57</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+	</Builds>
+	<BuildFeatures>
+		<Row>
+			<BuildType>BUILD_BEACH_RESORT</BuildType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<Time>700</Time>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_BEACH_RESORT</BuildType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<PrereqTech>TECH_MINING</PrereqTech>
+			<Time>400</Time>
+			<Production>20</Production>
+			<Remove>true</Remove>
+		</Row>
+	</BuildFeatures>
+</GameData>

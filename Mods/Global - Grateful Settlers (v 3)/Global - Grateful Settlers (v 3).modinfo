@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="2d00d048-8df2-4ced-8a38-ae4e8d55baa2" version="3">
+  <Properties>
+    <Name>Global - Grateful Settlers</Name>
+    <Teaser>Settlers liberated from Barbarians will sometimes remain as settlers</Teaser>
+    <Description>Other player's settlers captured from Barbarians will sometimes remain as settlers and not convert to workers.
+
+The chance depends on the relationship between the original civ and the capturing civ and the popularity difference between the two civs</Description>
+    <Authors>William Howard</Authors>
+    <SpecialThanks>Mordino for the German translation</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="1" maxversion="999" title="DLL - Various Mod Components" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="CF84A0FB76B3C54A946890B4D951F715" import="0">XML/GlobalGratefulSettlers.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/GlobalGratefulSettlers.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

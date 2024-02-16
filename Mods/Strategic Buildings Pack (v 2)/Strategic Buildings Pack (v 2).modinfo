@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="b7daf00d-35e5-4f14-9ed6-8558c138a29c" version="2">
+  <Properties>
+    <Name>Strategic Buildings Pack</Name>
+    <Teaser>(german transl. from serp) This mod adds several buildings to make use of obsolete strategic resources in later eras.</Teaser>
+    <Description>This mod adds several buildings to the later eras which make use of Horses and Iron to ensure that those strategic resources maintain value for the entire game.
+
+The new building yields are below.
+-------------------------------------
+Racing Course (New):
++2 Happiness
++2 Gold
++1 Gold from each Horse resource worked by this city 
+Requires 2 Horses 
+1 maintenance
+Unlocked by Combustion
+
+School of Equestrian Art (New):
++2 Culture
++2 Tourism
++1 Happiness and Culture from every Stable
+Requires 1 Horse
+Each Civilization may only build 1
+Unlocked by Ecology
+
+Steel Mill (New):
++4 Production
++2 Production from Iron resources worked by this city
+Requires 2 Iron
+2 Maintenance
+Unlocked by Steam Power
+
+Ironworks (Updated):
+Now requires 1 Iron
+Now adds +1 Production from Iron resources worked by this city
+------------------------------------------
+FAQ
+
+Q. Does this support multiplayer?
+A. Not at this time. You may be able to make them work with Network Multiplayer as I have enabled that option for all of them, but not Internet.
+
+Q. Is this compatible with Vanilla/G&amp;amp;K/BNW?
+A. All of my mods are compatible with BNW alone or BNW + G&amp;amp;K. At this time I have no plans to make mods that require BNW compatible with G&amp;amp;K alone or Vanilla.
+
+Q. Is there a mac download?
+A. The best thing I can do is point you to this thread in the Discussions section: http://steamcommunity.com/workshop/discussions/-1/558747922193105748/?appid=8930#c558747922250061535</Description>
+    <Authors>thecrazyscotsman</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="F5C7E12EADEAB3B45FBE07510FB1AEE2" import="1">Art/mod_atlas_128.dds</File>
+    <File md5="1EF1C861F9B9EC3A7AECED455A0A684A" import="1">Art/mod_atlas_256.dds</File>
+    <File md5="C7DA9485B34311AD9F06C42220335FEA" import="1">Art/mod_atlas_45.dds</File>
+    <File md5="7F097F9A14C8DBBB7895A36934FE32B0" import="1">Art/mod_atlas_64.dds</File>
+    <File md5="DD8DE0D045AFF942558E88159F0EE4C4" import="1">Art/mod_atlas_80.dds</File>
+    <File md5="5D99C2C871CC402EB95D5B21BF96E09C" import="0">XML/Racing Course.xml</File>
+    <File md5="1F20A61A8C1B40D7D043B42019827684" import="0">XML/School of Equestrian Art.xml</File>
+    <File md5="29A3789049C5C199BEF34A08AC39AF88" import="0">XML/Steel Mill.xml</File>
+    <File md5="FD98418A1FEB1D58A8D9F48D6F52FAB0" import="0">XML/Strategic_IconAtlases.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/Strategic_IconAtlases.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Racing Course.xml</UpdateDatabase>
+      <UpdateDatabase>XML/School of Equestrian Art.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Steel Mill.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="afe4cfd0-971a-438c-be16-25b76edc819e" version="10">
+  <Properties>
+    <Name>Policy - Free Warrior</Name>
+    <Teaser>(Slightly changed version by Serp) Free Warrior with the Discipline (Honor) Policy. Warrior Code increase production of melee/ranged untis by 10%. Barracks/Armory/Military Academy provide free promotions Shock1/Shock2/Shock3.</Teaser>
+    <Description>Free combat unit with the Honor Policy (in much the same vein as you get a free Settler and Worker with Liberty policies)
+
+The combat unit will be the "best" unit from the following list that you can currently train
+
+Warrior - Spearman - Pikeman - Rifleman - Infantry - Mechanized Infantry
+
+The unit will have XP from any buildings in the Capital (eg Barracks) and also the Morale promotion if the Heroic Epic has been built in the Capital</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage>http://forums.2kgames.com/showthread.php?107264-MOD-Policy-Free-Warrior</Homepage>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+    <PediaCategory>POLICIES</PediaCategory>
+    <PediaAtlas>POLICY_ATLAS</PediaAtlas>
+    <PediaIndex>18</PediaIndex>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="50B5C25CD49E9D0EE17391D53C71D420" import="0">LUA/PolicyFreeWarrior.lua</File>
+    <File md5="E26F379F6AC1086F925E3BD4B2625D74" import="0">XML/PolicyFreeWarrior.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/PolicyFreeWarrior.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="LUA/PolicyFreeWarrior.lua">
+      <Name>PolicyFreeWarrior</Name>
+      <Description>PolicyFreeWarrior</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

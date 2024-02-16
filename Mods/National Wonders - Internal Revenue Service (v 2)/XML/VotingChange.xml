@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	
+    <!-- to catch the city state mbargo event and change influence in lua -->
+    <CustomModOptions>
+		<Replace Name="EVENTS_RESOLUTIONS" Value="1"/>
+        <Replace Name="EVENTS_MINORS" Value="1"/>
+        <Update>
+			<Where Name="BUGFIX_DUMMY_POLICIES"/>
+			<Set Value="1"/>
+		</Update>
+        <Update>
+			<Where Name="TRAITS_OTHER_PREREQS"/>
+			<Set Value="1"/>
+		</Update>
+	</CustomModOptions>
+	
+    
+    <!-- this trait will reduce the influence gain per turn abd increase the decrease per turn (depending in stable influence point) -->
+    <Traits>
+        <Row>
+			<Type>TRAIT_LESS_INFLUENCE_X</Type>
+			<Description>TXT_KEY_POLICY_LESS_INFLUENCE_X</Description>
+			<ShortDescription>TXT_KEY_POLICY_LESS_INFLUENCE_X</ShortDescription>
+			<CityStateFriendshipModifier>-50</CityStateFriendshipModifier> 
+			<PrereqPolicy>POLICY_LESS_INFLUENCE_X</PrereqPolicy>
+		</Row>
+    </Traits>
+    <!-- this dummy policy will reduce gold und quest influence -->
+    <Policies>
+		<Row>
+			<Type>POLICY_LESS_INFLUENCE_X</Type>
+			<Description>TXT_KEY_POLICY_LESS_INFLUENCE_X</Description>
+			<Civilopedia>TXT_KEY_POLICY_LESS_INFLUENCE_X</Civilopedia>
+			<Help>TXT_KEY_POLICY_LESS_INFLUENCE_X</Help>
+			<PortraitIndex>24</PortraitIndex>
+			<IconAtlas>POLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+            <MinorGoldFriendshipMod>-50</MinorGoldFriendshipMod>
+            <MinorQuestFriendshipMod>-50</MinorQuestFriendshipMod>
+            <Dummy>1</Dummy>
+		</Row>
+    </Policies>
+    
+	<Language_en_US>
+		<Replace Tag="TXT_KEY_RESOLUTION_ALL_CITY_STATES_EMBARGO_HELP"> 
+			<Text>
+				No [ICON_INTERNATIONAL_TRADE] Trade Routes can be established with City-States.  Any such Trade Routes are ended and must be reassigned.[NEWLINE]Every civilizations [ICON_INFLUENCE] influence with every city state is set to 0 and the gain halved!
+			</Text>
+		</Replace>
+        <Row Tag="TXT_KEY_POLICY_LESS_INFLUENCE_X"> 
+			<Text>
+				Only on citystate embargo: [ICON_INFLUENCE] Influence gain halved!
+			</Text>
+		</Row>
+	</Language_en_US>
+    
+    <Language_de_DE>
+		<Replace Tag="TXT_KEY_RESOLUTION_ALL_CITY_STATES_EMBARGO_HELP"> 
+			<Text>
+				Keine [ICON_INTERNATIONAL_TRADE] Handelswege können zwischen Stadtstaaten eingerichtet werden. Sämtliche Handelswege werden beendet und müssen neu initiiert werden.[NEWLINE]Der [ICON_INFLUENCE] Einfluss jeder Zivilisation wird zu jedem Stadtstaat auf 0 gesetzt und der Zuwachs halbiert!
+			</Text>
+		</Replace>
+        <Row Tag="TXT_KEY_POLICY_LESS_INFLUENCE_X"> 
+			<Text>
+				Nur bei Stadtstaat Embargo: [ICON_INFLUENCE] Einfluss Zuwachs halbiert!
+			</Text>
+		</Row>
+	</Language_de_DE>   
+    
+</GameData>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/19/2012 8:30:27 PM -->
+<GameData>
+	<EntityEvents>
+		<Row>
+			<Type>ENTITY_EVENT_REIRRIGATE</Type>
+			<UpdateFormation>true</UpdateFormation>
+		</Row>
+	</EntityEvents>
+	<EntityEvent_AnimationPaths>
+		<Row>
+			<EntityEventType>ENTITY_EVENT_REIRRIGATE</EntityEventType>
+			<AnimationPathType>ANIMATIONPATH_IRRIGATE</AnimationPathType>
+		</Row>
+	</EntityEvent_AnimationPaths>
+</GameData>

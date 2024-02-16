@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<CustomModOptions>
+		<Update>
+			<Where Name="EVENTS_QUESTS"/>
+			<Set Value="1"/>
+		</Update>
+		<Update>
+			<Where Name="EVENTS_CIRCUMNAVIGATION"/>
+			<Set Value="1"/>
+		</Update>
+	</CustomModOptions>
+
+	<Quests>
+		<Row>
+			<Type>MINOR_CIV_QUEST_CIRCUMNAVIGATE</Type>
+			<Global>true</Global>
+			<MinPlayers>2</MinPlayers>
+			<RevokeOnBully>false</RevokeOnBully>
+			<Friendship>50</Friendship>
+			<!-- While we could easily use simple TXT_KEYs here, we'll use the Lua GameEvent (as this is an example!)
+			<StartSummary>TXT_KEY_MINOR_CIV_QUEST_CIRCUMNAVIGATE_START_S</StartSummary>
+			<StartMessage>TXT_KEY_MINOR_CIV_QUEST_CIRCUMNAVIGATE_START</StartMessage -->
+			<FinishSummary>TXT_KEY_MINOR_CIV_QUEST_CIRCUMNAVIGATE_FINISH_S</FinishSummary>
+			<FinishMessage>TXT_KEY_MINOR_CIV_QUEST_CIRCUMNAVIGATE_FINISH</FinishMessage>
+			<CancelSummary>TXT_KEY_MINOR_CIV_QUEST_CIRCUMNAVIGATE_CANCEL_S</CancelSummary>
+			<CancelMessage>TXT_KEY_MINOR_CIV_QUEST_CIRCUMNAVIGATE_CANCEL</CancelMessage>
+			<BiasMaritime>300</BiasMaritime>
+			<BiasMercantile>200</BiasMercantile>
+			<Priority>150</Priority>
+			<!-- To prove a point, we'll get the icon and tooltip via Lua functions - see CityStateQuests_Helpers_Circumnavigate.lua -->
+			<!--Icon>[ICON_TRADE]</Icon -->
+			<Icon>GetCircumnavigateQuestIcon</Icon>
+			<!--Tooltip>TXT_KEY_MINOR_CIV_QUEST_CIRCUMNAVIGATE_FORMAL</Tooltip-->
+			<Tooltip>GetCircumnavigateQuestTooltip</Tooltip>
+		</Row>
+	</Quests>
+
+	<Language_en_US>
+		<!-- We can ONLY use the {1_MinorName:textkey} replacement, and {2_InfluenceReward} for _FINISH, no others are available -->
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_CIRCUMNAVIGATE_START">
+			<Text>{1_MinorName:textkey} wants you to circumnavigate the map.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_CIRCUMNAVIGATE_START_S">
+			<Text>{1_MinorName:textkey} Wants The Map Circumnavigated</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_TRANSCONTINENT_START">
+			<Text>{1_MinorName:textkey} wants you to cross the continent.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_TRANSCONTINENT_START_S">
+			<Text>{1_MinorName:textkey} Wants The Continent Crossed</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_CIRCUMNAVIGATE_FINISH">
+			<Text>You have successfully circumnavigated the map, much to the delight of {1_MinorName:textkey}! Your [ICON_INFLUENCE] Influence over them has increased by [COLOR_POSITIVE_TEXT]{2_InfluenceReward}[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_CIRCUMNAVIGATE_FINISH_S">
+			<Text>Map circumnavigated for {1_MinorName:textkey}!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_CIRCUMNAVIGATE_CANCEL">
+			<Text>The map has been circumnavigated by someone else!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_CIRCUMNAVIGATE_CANCEL_S">
+			<Text>Someone Else Circumnavigated For {1_MinorName:textkey}</Text>
+		</Row>
+	</Language_en_US>
+
+	<Language_en_US>
+		<!-- We can use {1_TargetName:textkey} if there is a target for the quest -->
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_CIRCUMNAVIGATE_FORMAL">
+			<Text>They want the map circumnavigated.</Text>
+		</Row>
+	</Language_en_US>
+    
+    <Language_de_DE>
+		<!-- We can ONLY use the {1_MinorName:textkey} replacement, and {2_InfluenceReward} for _FINISH, no others are available -->
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_CIRCUMNAVIGATE_START">
+			<Text>{1_MinorName:textkey} möchte, dass Ihr die Welt umrundet.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_CIRCUMNAVIGATE_START_S">
+			<Text>{1_MinorName:textkey} Will Die Welt Umrundet</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_TRANSCONTINENT_START">
+			<Text>{1_MinorName:textkey} will, dass Ihr den Kontinent komplett durchquert.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_TRANSCONTINENT_START_S">
+			<Text>{1_MinorName:textkey} Will Den Kontinent Durchquert</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_CIRCUMNAVIGATE_FINISH">
+			<Text>Ihr habt erfolgreich die Welt umrundet, sehr zur Freude von {1_MinorName:textkey}! Euer [ICON_INFLUENCE] Einfluss bei ihnen ist gestiegen um [COLOR_POSITIVE_TEXT]{2_InfluenceReward}[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_CIRCUMNAVIGATE_FINISH_S">
+			<Text>Welt für {1_MinorName:textkey} umrundet!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_CIRCUMNAVIGATE_CANCEL">
+			<Text>Die Welt wurde von jemand anderem umrundet!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_CIRCUMNAVIGATE_CANCEL_S">
+			<Text>Jemand Anders Umrundete Für {1_MinorName:textkey}</Text>
+		</Row>
+	</Language_de_DE>
+
+	<Language_de_DE>
+		<!-- We can use {1_TargetName:textkey} if there is a target for the quest -->
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_CIRCUMNAVIGATE_FORMAL">
+			<Text>Sie wollen die Welt umrundet.</Text>
+		</Row>
+	</Language_de_DE>
+</GameData>

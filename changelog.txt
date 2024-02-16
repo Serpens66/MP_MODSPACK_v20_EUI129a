@@ -1,0 +1,47 @@
+from beta1 to beta2:
+- fixed "move_to" command in EUI not ending, after moving the unit.
+- enabled CustomMods.log for events.
+
+beta2 to beta3:
+- fixed being stuck in religion founding screen, if someone has the same panthon like any other.
+- english localization fixed
+- reduced units in city limit from 3 to 2.
+- unpause the game after every multiplayer load (in case it was saved while paused, because someone disconnected)
+- added beliefs culture/faith/science back for tundra/forest/jungle, while for jungle/forest it is only for unimproved tiles.
+
+beta3 to beta4:
+- made explorer-trait ruin bonus also work for shoshones
+- improved the AI religion founding code (2 times faster)
+- disabled EVENTS_PLOT (because it send by far too much events, possibly causing problems and disabling it again speeds up AI religion founding and more) and added instead improvement rules RequiresHills and RequiresAdjacentCity to DLL.
+- disabled EVENTS_PLAYER_TURN, cause this also might cause problems. And removed Visible TradeUnits mod. (the theory is, that any event which is too close to an autosave, can cause freeze/corupted saves https://forums.civfanatics.com/threads/efficient-use-of-saveutilis.668750/#post-16062487 )
+- disabled EVENTS_UNIT_UPGRADES and added code for my level promotions mod into DLL instead of lua.
+- cache CityBombardRange instead of calling it thousand times.
+- EUI: end city attack mode, if clicked on a plot without a target. and made compatible with bombard range mod.
+- replaced "No Auto_Map" with "No Map" goodyhut mod. Also disabled the event GoodyHutCanNotReceive in DLL. Added some custom goody rewards, all techs can be found in goody huts.
+- removed XP for scouting, because of too heavy events. instead all goodyhuts will give 10 experience.
+- made barbs not spawn obsolete units
+
+beta4 to beta5:
+- fixed notification barbs to terrorists not displaying text in last era.
+- fixed german description of science from unimproved forest belief.
+- added nearly all combat units (which do not require a town/base) to barbarians. 
+- fixed some beliefs providing too much yield.
+- fixed shoshone ruins desync introduced with beta4
+- no tech you are currently mresearching from goodyhut into DLL -> removed TechRefund mod.
+- minor changes to some eUI files
+
+beta5 to beta6:
+- handicap difficulty: increased AI production a bit again. (still lower than orig game)
+- fixed crash in DLL code when: a settler founded a city, the city collected the goody hut and the reward was settler/worker
+- added new code from whoward dll v95,96 and 97 (which added: ships in cities on hills do not have hill benefits. tunnel provide immunity agsinst mountain damage. fixed ""no capital if only occupied/puppet cities" and the "use an occupied/puppet city over a settled city" bugs".
+- reduced the 10% science boost from charismatic trait to 1%, because it was intended as "10% from exceeding happiness", but the game only knows a flat bonus.
+- fixed EUI weltaustellung tooltip (inofficiall already fixed in beta5, but not all distributed versions)
+- fixed description from national treasure building (that it provides +2 voices)
+- city states should no longer give the quest to circumnavigate on maps where this is not possible.
+- outcommented in DLL GAMEEVENT_GoodyHutCanNotReceive to be able to check GameEvents.GoodyHutCanNotReceive~=nil in lua if this event is active or not (eg used in my ExplorerGoodyBonus.lua )
+
+beta6 to beta7 (WIP):
+- german translation byzanz 50% faith bonus is for "Heilige Stätte" not "Heilige Städte".
+
+
+

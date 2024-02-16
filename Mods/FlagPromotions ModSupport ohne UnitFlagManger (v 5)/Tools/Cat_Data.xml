@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+
+	<PromotionClasses>
+		<Row ID="0" Type="PROMOTION_CLASS_PERSISTANT" />
+		<Row Type="PROMOTION_CLASS_ATTRIBUTE_POSITIVE" />
+		<Row Type="PROMOTION_CLASS_ATTRIBUTE_NEGATIVE" />
+	</PromotionClasses>
+
+		<!--
+		<Update>
+			<Where Class="UNITCLASS_SUBMARINE"/>
+			<Set CombatClass="UNITCOMBAT_SUBMARINE"/>
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_NUCLEAR_SUBMARINE"/>
+			<Set CombatClass="UNITCOMBAT_SUBMARINE"/>
+		</Update>
+
+
+	<UnitPromotions>
+		<Update>
+			<Where Type="PROMOTION_STATUE_ZEUS"/>
+			<Set PortraitIndex="42"/>
+		</Update>
+	</UnitPromotions>
+		-->
+	<LoadedFile>
+		<Update>
+			<Where Type="MT_Data.xml"/>
+			<Set Value="1"/>
+		</Update>
+	</LoadedFile>
+</GameData>

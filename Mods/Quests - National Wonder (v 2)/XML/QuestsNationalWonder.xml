@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<CustomModOptions>
+		<Update>
+			<Where Name="EVENTS_QUESTS"/>
+			<Set Value="1"/>
+		</Update>
+	</CustomModOptions>
+
+	<Quests>
+		<Row>
+			<Type>MINOR_CIV_QUEST_NATIONAL_WONDER</Type>
+			<Friendship>30</Friendship>
+			<BiasFriendly>200</BiasFriendly>
+			<BiasNeutral>150</BiasNeutral>
+			<BiasHostile>50</BiasHostile>
+			<BiasCultured>150</BiasCultured>
+			<Priority>56</Priority>
+			<Icon>[ICON_GOLDEN_AGE]</Icon>
+			<Tooltip>GetNationalWonderQuestTooltip</Tooltip>
+		</Row>
+	</Quests>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_NATIONAL_WONDER_START">
+			<Text>{1_MinorName:textkey} wants you to build {2_WonderName:textkey}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_NATIONAL_WONDER_START_S">
+			<Text>{1_MinorName:textkey} desires {2_WonderName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_NATIONAL_WONDER_FINISH">
+			<Text>As {1_MinorName:textkey} requested, you have successfully constructed {2_WonderName:textkey}! Your [ICON_INFLUENCE] Influence over them has increased by [COLOR_POSITIVE_TEXT]{3_InfluenceReward}[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_NATIONAL_WONDER_FINISH_S">
+			<Text>{2_WonderName:textkey} Constructed for {1_MinorName:textkey}!</Text>
+		</Row>
+	</Language_en_US>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_NATIONAL_WONDER_FORMAL">
+			<Text>They want you to build {1_WonderName:textkey}.</Text>
+		</Row>
+	</Language_en_US>
+    
+    <Language_de_DE>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_NATIONAL_WONDER_START">
+			<Text>{1_MinorName:textkey} möchte, dass Ihr folgendes baut: {2_WonderName:textkey}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_NATIONAL_WONDER_START_S">
+			<Text>{1_MinorName:textkey} Wünscht Sich {2_WonderName:textkey}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_NATIONAL_WONDER_FINISH">
+			<Text>Wie von {1_MinorName:textkey} gewünscht, habt Ihr erfolgreich {2_WonderName:textkey} gebaut! Euer [ICON_INFLUENCE] Einfluss bei ihnen ist gestiegen um [COLOR_POSITIVE_TEXT]{3_InfluenceReward}[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_NATIONAL_WONDER_FINISH_S">
+			<Text>{2_WonderName:textkey} Erbaut Für {1_MinorName:textkey}!</Text>
+		</Row>
+	</Language_de_DE>
+
+	<Language_de_DE>
+		<Row Tag="TXT_KEY_MINOR_CIV_QUEST_NATIONAL_WONDER_FORMAL">
+			<Text>Sie möchten, dass Ihr {1_WonderName:textkey} erbaut.</Text>
+		</Row>
+	</Language_de_DE>
+</GameData>

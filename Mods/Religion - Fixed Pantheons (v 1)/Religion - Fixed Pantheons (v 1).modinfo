@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="fe6a5ff6-b7d4-49f4-9f6a-732d39c7b194" version="1">
+  <Properties>
+    <Name>Religion - Fixed Pantheons</Name>
+    <Teaser>Religion - Fixed Pantheons</Teaser>
+    <Description>Increases the faith for a Pantheon to 20 (from 10) but removes the per-Pantheon increment (so all players get their Pantheon at 20 faith)</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="0363EF81C58B4EE40757FB200F51A905" import="0">XML/ReligionFixedPantheons.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/ReligionFixedPantheons.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

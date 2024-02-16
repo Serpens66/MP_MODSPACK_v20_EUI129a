@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="75d92b9d-b908-45fe-b492-5955eab82b78" version="3">
+  <Properties>
+    <Name>War - Less Damaged Captured Cities</Name>
+    <Teaser>This mod reduce the damage to population and building that are instantly applied when you capture an enemy city.</Teaser>
+    <Description>This mod reduce the damage to population and building that are instantly applied when you capture an enemy city.</Description>
+    <Authors>Bloublou</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="9C048227177B14B8342C7CC4FCDD5E20" import="0">WAR - CapCity.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>WAR - CapCity.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

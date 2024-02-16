@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="846f2b90-8d83-4b30-a62a-2a5ec801b1d4" version="2">
+  <Properties>
+    <Name>Global - Commander Influence Borders</Name>
+    <Teaser>Displays an "influence border" around all Great Commanders (Generals or Admirals) when any one is selected</Teaser>
+    <Description>Displays an "influence border" around all Great Commanders (Generals or Admirals) when any one is selected</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="E5257964FC415B445AD83DA02BB26F56" import="0">LUA/GlobalCommanderInfluenceBorders.lua</File>
+  </Files>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="LUA/GlobalCommanderInfluenceBorders.lua">
+      <Name>Global Commander Influence Borders</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

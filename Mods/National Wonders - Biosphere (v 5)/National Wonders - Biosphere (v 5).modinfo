@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="cb3b2d57-a58d-4774-a67a-d2b4951e4a4a" version="5">
+  <Properties>
+    <Name>National Wonders - Biosphere</Name>
+    <Teaser>+1 Food and +1 Production. Provides +1 Food on all desert and snow tiles.</Teaser>
+    <Description>+1 Food and +1 Production. Provides +1 Food on all desert and snow tiles.</Description>
+    <Authors>Envoy (@fourfourhero),Serp</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="BBEEF5277D50F937CA9DF13FAD762F50" import="1">ART/BiosphereIconAtlas128.dds</File>
+    <File md5="C682E8BFE85B23E6483FDA82F7BAC2FB" import="1">ART/BiosphereIconAtlas256.dds</File>
+    <File md5="AA1ECA215E68ABD48D7FBE8190B14C7A" import="1">ART/BiosphereIconAtlas45.dds</File>
+    <File md5="822517767DC6BDA402CA68B2DBCF5494" import="1">ART/BiosphereIconAtlas64.dds</File>
+    <File md5="A286DFC53E7B2864B82DEDD06DE673C9" import="0">XML/Buildings/Biosphere_IconTextureAtlases.xml</File>
+    <File md5="8CEAB048C271E6E30B83DE8EBA8AA286" import="0">XML/Buildings/Biosphere_Buildings.xml</File>
+    <File md5="118D026866831D3FB6994607A943B0A0" import="0">XML/Civilizations/Biosphere_Civilizations.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/Buildings/Biosphere_IconTextureAtlases.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Buildings/Biosphere_Buildings.xml</UpdateDatabase>
+      <UpdateDatabase>XML/Civilizations/Biosphere_Civilizations.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Projects>
+		<Row>
+			<Type>PROJECT_KEYHOLE_PROJECT</Type>
+			<Description>TXT_KEY_PROJECT_KEYHOLE_PROJECT</Description>
+			<Help>TXT_KEY_PROJECT_KEYHOLE_PROJECT_HELP</Help>
+			<Civilopedia>TXT_KEY_PROJECT_KEYHOLE_PROJECT_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_PROJECT_KEYHOLE_PROJECT_STRATEGY</Strategy>
+			<TechPrereq>TECH_SATELLITES</TechPrereq>
+			<MaxGlobalInstances>-1</MaxGlobalInstances>
+			<MaxTeamInstances>1</MaxTeamInstances>
+			<Cost>750</Cost>
+			<IconAtlas>KEYHOLE_ICON_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+			<MovieDefineTag>KeyholeProject.dds</MovieDefineTag>
+		</Row>
+	</Projects>
+
+	<PostDefines>
+		<Row Name="KEYHOLE_PROJECT">
+			<Key>PROJECT_KEYHOLE_PROJECT</Key>
+			<Table>Projects</Table>
+		</Row>
+	</PostDefines>
+
+  <IconTextureAtlases>
+    <Row>
+      <Atlas>KEYHOLE_ICON_ATLAS</Atlas>
+      <IconSize>256</IconSize>
+      <Filename>ART/KeyHole256.dds</Filename>
+      <IconsPerRow>1</IconsPerRow>
+      <IconsPerColumn>1</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>KEYHOLE_ICON_ATLAS</Atlas>
+      <IconSize>128</IconSize>
+      <Filename>ART/KeyHole128.dds</Filename>
+      <IconsPerRow>1</IconsPerRow>
+      <IconsPerColumn>1</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>KEYHOLE_ICON_ATLAS</Atlas>
+      <IconSize>80</IconSize>
+      <Filename>ART/KeyHole80.dds</Filename>
+      <IconsPerRow>1</IconsPerRow>
+      <IconsPerColumn>1</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>KEYHOLE_ICON_ATLAS</Atlas>
+      <IconSize>64</IconSize>
+      <Filename>ART/KeyHole64.dds</Filename>
+      <IconsPerRow>1</IconsPerRow>
+      <IconsPerColumn>1</IconsPerColumn>
+    </Row>
+    <Row>
+      <Atlas>KEYHOLE_ICON_ATLAS</Atlas>
+      <IconSize>45</IconSize>
+      <Filename>ART/KeyHole45.dds</Filename>
+      <IconsPerRow>1</IconsPerRow>
+      <IconsPerColumn>1</IconsPerColumn>
+    </Row>
+  </IconTextureAtlases>
+
+  <Language_en_US>
+		<Row Tag="TXT_KEY_PROJECT_KEYHOLE_PROJECT">
+			<Text>The Keyhole Project</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROJECT_KEYHOLE_PROJECT_HELP">
+			<Text>Allows you to see all units adjacent to a city.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROJECT_KEYHOLE_PROJECT_PEDIA">
+			<Text>The Keyhole Project was a series of strategic reconnaissance satellites.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROJECT_KEYHOLE_PROJECT_STRATEGY">
+			<Text>The Keyhole Project allows a civilization to see all units adjacent to a city.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROJECT_KEYHOLE_PROJECT_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"And the eye-in-the-sky is watching us all."[NEWLINE][TAB][TAB] - Ace Rothstein, Casino[NEWLINE][TAB]</Text>
+		</Row>
+	</Language_en_US>
+    
+  <Language_de_DE>
+		<Row Tag="TXT_KEY_PROJECT_KEYHOLE_PROJECT">
+			<Text>The Keyhole Project</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROJECT_KEYHOLE_PROJECT_HELP">
+			<Text>Alle Einheiten um eine Stadt herum werden sichtbar.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROJECT_KEYHOLE_PROJECT_PEDIA">
+			<Text>The Keyhole Project was a series of strategic reconnaissance satellites.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROJECT_KEYHOLE_PROJECT_STRATEGY">
+			<Text>The Keyhole Project erlaubt es alle Einheiten um eine Stadt herum zu sehen.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROJECT_KEYHOLE_PROJECT_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"And the eye-in-the-sky is watching us all."[NEWLINE][TAB][TAB] - Ace Rothstein, Casino[NEWLINE][TAB]</Text>
+		</Row>
+	</Language_de_DE>
+</GameData>

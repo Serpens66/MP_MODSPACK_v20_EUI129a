@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="b04d0ea2-15a3-40db-9bd8-971abc9a2b35" version="1">
+  <Properties>
+    <Name>Global - No Lost Greatworks</Name>
+    <Teaser>Great Artists, Writers and Musicians that do NOT create a Great Work can be reborn</Teaser>
+    <Description>A Great Artist, Writer or Musician who does NOT create a Great Work (eg they are killed by capture or use their other power), can be reborn such that the Great Work is not lost.</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="84" maxversion="999" title="DLL - Various Mod Components" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="F0F00C62A2221D9648701E5ED1681CFE" import="0">XML/GlobalNoLostGreatworks.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/GlobalNoLostGreatworks.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

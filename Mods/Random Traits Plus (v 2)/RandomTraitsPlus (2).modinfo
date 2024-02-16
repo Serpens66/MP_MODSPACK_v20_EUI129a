@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="76C9CFDB-77BA-1E81-7554-37D903B8190F" version="2">
+  <Properties>
+    <Name>Random Traits Plus</Name>
+    <Teaser>Every Civ gets 2 randomly choosen characteristics attached.</Teaser>
+    <Description>Every Civ gets 2 randomly choosen characteristics attached at game start. These 16 different traits are characteristics like Agressive, Diplomatic, Expansive, Mercantile...You will get a new button on the top right, which will explain the traits.[NEWLINE]Idea from -Civ IV Leader Traits in Civ V- mod from Wes.[NEWLINE]Requires my(Serps) custom dll or the one from whoward! CP dll might work or might not, depending on how they handle dummy policies.</Description>
+    <Authors>Serp</Authors>
+    <SpecialThanks>Wes, Machiavelli, JFD, Tomatekh, Whoward</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <Homepage></Homepage>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>0</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="77" maxversion="999" title="DLL - Various Mod Components" />
+  </Dependencies>
+  <References>
+  </References>
+  <Blocks />
+  <Files>
+    <File md5="80D00B890C29AA404E50ECA7A33999E8" import="0">AssignDummyTraitsAll.sql</File>
+    <File md5="96980FBEA6F86489633E8A7380B4A19E" import="0">Randomize_Traits.lua</File>
+    <File md5="F7AE57461460384679361AD83636FF11" import="0">Traits.xml</File>
+    <File md5="199019F117E000A8801AB6374F360F01" import="0">ExplorerGoodyBonus.lua</File>
+    <File md5="8B394994CFF7FD15971D7429B085C700" import="0">UI/LeaderTraitInfo.lua</File>
+    <File md5="491A1E118191F86ECAD5A282976E040D" import="0">UI/LeaderTraitInfo.xml</File>
+    <File md5="773C9A1DA282E2A347754796C2774AB6" import="0">UI/LeaderTraitText.xml</File>
+    <File md5="A359C8059B3C463F243FEF24482109A3" import="0">Lua/ChoosePantheonPopup.lua</File>
+    <File md5="B97E8262ED75502942A0E7AABFE88495" import="0">LUA/ChooseReligionPopup.lua</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Traits.xml</UpdateDatabase>
+      <UpdateDatabase>UI/LeaderTraitText.xml</UpdateDatabase>
+      <UpdateDatabase>AssignDummyTraitsAll.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Randomize_Traits.lua">
+      <Name>Randomize_Traits</Name>
+      <Description>Randomize_Traits</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="UI/LeaderTraitInfo.xml">
+      <Name>Leader traits Menu</Name>
+      <Description>Leader traits menu</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="ExplorerGoodyBonus.lua">
+      <Name>ExplorerGoodyBonus</Name>
+      <Description>ExplorerGoodyBonus</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/Randomize_Traits.lua">
+      <Name>ChoosePantheonPopup</Name>
+      <Description>ChoosePantheonPopup</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="Lua/ExplorerGoodyBonus.lua">
+      <Name>ChooseReligionPopup</Name>
+      <Description>ChooseReligionPopup</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

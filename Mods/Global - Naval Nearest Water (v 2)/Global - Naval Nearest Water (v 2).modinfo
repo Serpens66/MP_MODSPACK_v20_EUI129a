@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="e4cc6d22-502f-4c55-bc44-a3da5b4d7021" version="2">
+  <Properties>
+    <Name>Global - Naval Nearest Water</Name>
+    <Teaser>Naval units in razed cities jump to the nearest water</Teaser>
+    <Description>Fixes the problem where the naval units jump to the nearest city and not the nearest available water plot</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="1" maxversion="999" title="DLL - Various Mod Components" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="92550A5BC2B7C8E15E68558EB104623B" import="0">XML/GlobalNavalNearestWater.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>XML/GlobalNavalNearestWater.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="93979cf3-1aed-4520-b8c5-8231ce048f93" version="1">
+  <Properties>
+    <Name>Global - GA Happiness</Name>
+    <Teaser>Happiness continues to accumulate during Golden Ages</Teaser>
+    <Description>During a Golden Age, any excess happiness continues to accumulate towards the next Golden Age</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="73F4C0A94C263EA54ACF0B0B5F6089A4" import="0">LUA/GlobalGAHappiness.lua</File>
+  </Files>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="LUA/GlobalGAHappiness.lua">
+      <Name>GAHappiness</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

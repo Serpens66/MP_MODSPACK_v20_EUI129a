@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/19/2012 2:11:44 PM -->
+<GameData>
+	<Builds>
+		<Row>
+			<Type>BUILD_ENHANCED_QUARRY</Type>
+			<PrereqTech>TECH_DYNAMITE</PrereqTech>
+			<Time>1000</Time>
+			<ImprovementType>IMPROVEMENT_ENHANCED_QUARRY</ImprovementType>
+			<Description>TXT_KEY_BUILD_ENHANCED_QUARRY</Description>
+            <Help>TXT_KEY_BUILD_ENHANCED_QUARRY_HELP</Help>
+			<EntityEvent>ENTITY_EVENT_MINE</EntityEvent>
+			<OrderPriority>96</OrderPriority>
+			<IconIndex>26</IconIndex>
+			<IconAtlas>UNIT_ACTION_ATLAS</IconAtlas>
+		</Row>
+	</Builds>
+	<BuildFeatures>
+		<Row>
+			<BuildType>BUILD_ENHANCED_QUARRY</BuildType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<Time>700</Time>
+			<Production>25</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_ENHANCED_QUARRY</BuildType>
+			<FeatureType>FEATURE_FOREST</FeatureType>
+			<PrereqTech>TECH_MINING</PrereqTech>
+			<Time>400</Time>
+			<Production>25</Production>
+			<Remove>true</Remove>
+		</Row>
+		<Row>
+			<BuildType>BUILD_ENHANCED_QUARRY</BuildType>
+			<FeatureType>FEATURE_MARSH</FeatureType>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
+			<Time>600</Time>
+			<Remove>true</Remove>
+		</Row>
+	</BuildFeatures>
+</GameData>

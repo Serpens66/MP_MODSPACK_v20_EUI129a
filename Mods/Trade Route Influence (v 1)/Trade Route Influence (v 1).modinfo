@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="72E6BCEB-29DD-9B45-2620-57B198A5260F" version="1">
+  <Properties>
+    <Name>Trade Route Influence</Name>
+    <Teaser>Buff trades routes a little bit. 5 more base range, influence to city states, ~20% more food/production, 20% more science.</Teaser>
+    <Description>Buff trades routes. 20% more food/production, 20% more science, 0.8 influence per turn to city states, so with patronat you will have +-0. Also increases the base range by 5, while trade route scaling based on map size is active.</Description>
+    <Authors>Serp</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <References />
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="DLL - Various Mod Components" />
+  </Dependencies>
+  <Blocks />
+  <Files>
+    <File md5="F6AD9C90F04716AACBD52947B1718276" import="0">TradeRouteInfluence.lua</File>
+    <File md5="26C304EEDA6186DD90A2C374EFEDFA45" import="0">TradeRouteInfluence.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <!-- <UpdateDatabase>TradeRouteInfluence.lua</UpdateDatabase> -->
+      <UpdateDatabase>TradeRouteInfluence.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="TradeRouteInfluence.lua">
+      <Name>TradeRouteInfluence Lua</Name>
+      <Description>TradeRouteInfluence Lua</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

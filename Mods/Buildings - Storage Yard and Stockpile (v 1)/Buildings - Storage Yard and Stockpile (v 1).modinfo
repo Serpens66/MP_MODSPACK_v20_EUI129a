@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="2eae4b52-7f26-473a-8690-2cd073526e80" version="1">
+  <Properties>
+    <Name>Buildings - Storage Yard and Stockpile</Name>
+    <Teaser>A Storage Yard permits production to be stockpiled, speeding the city's next building project</Teaser>
+    <Description>A Storage Yard permits stockpiles of materials and tools to be stored for upcoming building projets.
+
+A stockpile is a reserve of building materials (production) that can be used to jump-start the city's next building project.
+
+These can only be built by human players.  The amount of production that can be stockpiled is limited by era.</Description>
+    <Authors>William Howard</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="23" maxversion="999" title="DLL - Various Mod Components" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="A359C8059B3C463F243FEF24482109A3" import="0">LUA/BuildingsStorageYardAndStockpile.lua</File>
+    <File md5="B97E8262ED75502942A0E7AABFE88495" import="0">SQL/BuildingsStorageYardAndStockpile.sql</File>
+    <File md5="686745CCFE4676F231AF82FDABC471C3" import="0">XML/BuildingsStorageYardAndStockpile.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>SQL/BuildingsStorageYardAndStockpile.sql</UpdateDatabase>
+      <UpdateDatabase>XML/BuildingsStorageYardAndStockpile.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="LUA/BuildingsStorageYardAndStockpile.lua">
+      <Name>Buildings Storage Yard And Stockpile</Name>
+      <Description>
+      </Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>
